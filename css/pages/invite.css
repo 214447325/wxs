@@ -1,0 +1,89 @@
+/* 邀请好友拿奖励 */
+.invite{
+  background-color: #e54b3d;
+  overflow-y: auto;
+  .wrapper{
+    padding-top: 13px;
+    height: 1008px;
+    background: url(../images/pages/invite/bg.jpg) no-repeat center bottom;
+    background-size: cover; 
+  }
+
+  .title{
+    height: 228px;
+    background: url(../images/pages/invite/title.png) no-repeat center center;
+    background-size: 529px 228px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .ball{
+    background: url(../images/pages/invite/ball.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 418px;
+    height: 198px;
+    top: 215px;
+    right: 12px;
+  }
+
+  .qrcode{
+    width: 220px;
+    height: 212px;
+    position: absolute; 
+    top: 375px;
+    right: 115px;
+    z-index: 999;
+    background-color: #FFF;
+  }
+  
+  .qrcode img{
+    width: 100%;
+  }
+
+  .code{
+    width: 185px;
+    height: 87px;
+    border: 1px solid #FFF; /*no*/
+    background-color: #d53a25;
+    text-align: center;
+    line-height: 38px;
+    position: absolute;
+    top: 597px;
+    right: 130px;
+    z-index: 999
+  }
+  
+  .code p{
+    color: #FFF;
+  }
+
+  .code p:nth-child(1){
+    font-size: 24px;
+  }
+
+  .code p:nth-child(2){
+    font-size: 36px;
+  } 
+
+  .c1{
+    background: url(../images/pages/invite/c1.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    width: 471px;
+    height: 356px;
+    top: 533px;
+    left: 25px;
+  }
+
+  .invite-btn{
+    background: url(../images/pages/invite/share-btn.png) no-repeat center center;
+    background-size: cover;
+    width: 508px;
+    height: 76px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%); 
+  }
+}

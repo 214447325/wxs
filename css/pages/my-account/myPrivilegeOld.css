@@ -1,0 +1,493 @@
+/*
+* @Author: User
+* @Date:   2016-10-25 19:33:12
+* @Last Modified by:   User
+* @Last Modified time: 2017-01-14 01:12:00
+*/
+body{
+	background: rgb(231,233,236) url() 0 0 no-repeat;
+}
+.head{
+	width: 100%;
+	height: 5.4rem;
+	/* padding: 0.4rem 0.5rem; */
+	box-sizing: border-box;
+	background: rgb(55,78,171) url() 0 0 no-repeat;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.vip{
+	margin-top: 0.05rem;
+	margin-left: 0.45rem;
+    color: #997C13;
+    font-size:0.35rem;
+    text-decoration: underline;
+}
+
+.vwzinfo{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-left:0.1733rem;
+	vertical-align:text-bottom;
+}
+.vwzinfo img{
+	width: 1.5rem;
+	height: 0.45rem;
+}
+
+.rank{
+	width: 1.425rem;
+	height: 1.525rem;
+	position: absolute;
+	top: 0.625rem;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);	
+}
+.rank img{
+	width: 1.425rem;
+	height: 1.525rem;
+	border: none;
+}
+.info{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.3rem;
+	color: rgb(231,233,236);
+	position: absolute;
+	left: 0;
+	top:2.3rem;
+	margin-top: 0.2rem;
+}
+.info1{
+	top:2.7rem;
+}
+.info2{
+	top:4.6rem;
+}
+.info span{
+	color: rgb(251,203,33);
+}
+.vip-level{/* 会员等级 */
+	width: 100%;
+	height: 1.5rem;
+	/* padding: 0 0.1rem; */
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 3.1rem;
+	overflow: hidden;
+	z-index: 1;
+}
+.vip-level .levelContain{
+	width: 100%;
+	height: 1.5rem;
+	position: relative;
+}
+.vip-progress{
+	width: 80%;
+	height: 0.05rem;
+	background: rgb(24,49,150) url() 0 0 no-repeat;
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+}
+.vip-progress #progress{/* 等级进度条 */
+	height: 0.05rem;
+	background: rgb(255,206,32) url() 0 0 no-repeat;
+}
+.vip-icon{
+	width: 100%;
+	height: 0.9rem;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 10;
+	display: flex;
+	justify-content: space-between;
+}
+.vwz{
+	width: 100%;
+	height: 0.35rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+    z-index: 10;
+}
+.vwz span{
+	display: inline-block;
+	width: 1.26rem;
+	height: 0.35rem;
+	font-size: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+}
+.dialog-content .dialog-article p {
+    font-size: .35rem;
+    text-align: center;
+}
+.vip-icon img{
+	width: 1.26rem;
+	height: 0.9rem;
+}
+.container{
+	width: 100%;
+	/*background: #fff url() 0 0 no-repeat;*/
+	margin-top: 0.1rem;
+}
+.container .top{
+	width: 100%;
+	height: 1.3566rem;
+	background: #fff url() 0 0 no-repeat;
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+	line-height: 1.3566rem;
+	font-size: 0.4rem;
+	color: #333;
+	border-bottom: 1px solid rgba(236,236,236,0.5);
+}
+/*.container .top img:nth-child(1){
+	width: 0.44rem;
+	height: 0.36rem;
+	margin-right: 0.25rem;
+	margin-top: 0.32rem;
+	float: left;
+}
+.container .top img:nth-child(2){
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-top: 0.3rem;
+	float: right;
+}*/
+.container .top img{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin-top: 0.478rem;
+	float: right;
+}
+.container ul{
+	width: 100%;
+	height: 2.2rem;
+	background: #fff url() 0 0 no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container ul li{
+	width: 100%;
+/* 	height: 2.4rem; */
+	background: #fff url() 0 0 no-repeat;
+}
+.container ul li img{
+	display: block;
+	width: 1rem;
+	height:1rem;
+	margin: 0 auto;
+}
+.container ul li span{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 0.25rem;
+}
+.rightsAndInterest{
+	width: 100%;
+	height: 1rem;
+	/*background: transparent url() 0 0 no-repeat;*/
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	overflow: hidden;
+	z-index: 1;
+}
+.rightsAndInterest span:nth-child(1){
+	color: rgb(50,50,50);
+	float: left;
+}
+.rightsAndInterest span:nth-child(2){
+	font-size:0.34rem;
+	color: #6C6FFF;
+	float: right;
+}
+.couponList{
+	width: 100%;
+}
+.coupon{
+	width: 9.1466rem;
+	// height: 2.7733rem;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 1;
+	margin-bottom: 0.15rem;
+	background:url(../../../images/pages/my-account3.0/exclusive/privilegebg.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+
+}
+.setGray{
+	background:url(../../../images/pages/my-account3.0/exclusive/privilegebg2.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+/* .coupon img{
+	display: inline-block;
+	width: 2.675rem;
+	height: 2.5rem;
+	float: left;
+} */
+.coupon .detail{
+	display: block;
+/* 	width: -moz-calc(100% - 2.675rem);
+	width: -webkit-calc(100% - 2.675rem);
+	width: calc(100% - 2.675rem); */
+	width: 8.02rem;
+	height: 100%;
+	/*background: #fff;*/
+	float: left;
+	margin-left: 0.3rem;
+	/* padding: 0.2rem 0.5rem; */
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: 1;
+}
+.coupon .state{
+	width: 0.75rem;
+	height: 100%;
+	height:2.7733rem;
+	background-size: 0.75rem 2.7rem;
+	float: right;
+	position: relative;
+	color: #FF791F;
+	font-size: 0.35rem;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .coupon .state img{
+ 	width: 1.2533rem;
+    height: 1.0666rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+ }
+ .statu01{
+ 	/*background: url(../../../images/pages/my-account3.0/reward3.0/rew02.png) 0 0 no-repeat;/* 立即领取 */
+ }
+ .statu03{
+ 	/*background: url(../../../images/pages/my-account3.0/reward3.0/rew01.png) 0 0 no-repeat;/* 立即领取  加息券*/
+ }
+ .statu04{
+ 	/*background: url(../../../images/pages/my-account3.0/reward3.0/rew03.png) 0 0 no-repeat;/* 立即使用或立即提现 */
+ }
+ .statu02{
+ 	/*background: url(../../../images/pages/my-account3.0/reward3.0/rew04.png) 0 0 no-repeat;/* 灰 */
+ }
+/* .state img{
+	width: 0.75rem;
+	height: 2.7rem;	
+	position: absolute;
+	top: 0;
+	left: 0;
+ } */
+.detail .inprods{
+	display: inline-block;
+	width: 2.395rem;
+	height: 2.5rem;
+	float: left;
+	padding-top: 0.9rem;
+	box-sizing: border-box;
+}
+.detail .inprods span{
+	display: block;
+	height: 0.625rem;
+	line-height: 0.625rem;
+	text-align: center;
+	color: #FF791F;
+}
+.indata{
+	font-size: 0.5866rem;
+	font-weight:bold;
+}
+.indataTwo{
+	font-size:0.4266rem;
+}
+.intitle{
+	font-size: 0.32rem;
+}
+/*.detail .dashed{
+	display: inline-block;
+	width: 0.05rem;
+	height: 2.5rem;
+	background:url(../../../images/pages/my-account3.0/couponline.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	float: left;	
+}*/
+.detail .cpinfo{ 
+	display: inline-block;
+	width: 5.5rem;
+	font-size:0.32rem;
+/* 	width: -moz-calc(100% - 1.925rem);
+	width: -webkit-calc(100% - 1.925rem);
+	width: calc(100% - 1.925rem); */
+	float: left;
+	padding: 0.6rem 0 0 0.5rem;
+	box-sizing: border-box;
+}
+.detail .cpinfo>span{
+	display: block;
+	width: 100%;
+	line-height: 0.5rem;
+}
+.detail .cpinfo span>span:nth-child(1){
+	color:#888;
+}
+.tabcon2 .detail .cpinfo span{
+	line-height: 0.4rem;
+}
+/* .detail .cpget{
+	display: inline-block;
+	width: 1.925rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background: url(../../../images/pages/my-account3.0/get.png) 0 0 no-repeat;
+	background-size: contain;
+	float: left;
+	margin-top: 0.65rem;
+	color: rgb(55,78,171);
+} */
+.ratevalue{
+	font-size: 0.45rem;
+	color: rgb(255,121,99);	
+	line-height: 0.6rem;
+}
+.setGrayTwo span{ 
+	color: #888;
+	// color: #AAAAAA!important;
+}
+.setGray .state span{ 
+	color: #888;
+}
+.up{
+	width: 0.25rem;
+	height: 0.3rem;
+}
+.red-layer{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) url() 0 0 no-repeat;
+	z-index: 10000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.red-layer .red{
+	width: 8.15rem;
+	height: 7.725rem;
+	background: url(../../../images/pages/my-account3.0/hb.png) 0 0 no-repeat;
+	background-size: contain;
+	position: relative;
+}
+.redfalse{
+	width: 100%;
+	height: 1rem;
+	margin-top: 1rem;
+}
+.redfalse img{
+	display: block;
+	margin: 0 auto;
+	width: 1rem;
+	height: 1rem;
+}
+.redinfo{
+	margin-top: 2.8625rem;
+}
+.redinfo span{
+	display: block;
+	font-size: 0.35rem;
+	line-height: 1rem;
+	text-align: center;
+}
+.redbtn{
+	width: 3.075rem;
+	height: 1rem;
+	margin: 0 auto;
+	margin-top: 1.2rem;
+	line-height: 1rem;
+	color: #fff;
+	background:  url(../../../images/pages/my-account3.0/hbbtn.png) 0 0 no-repeat;
+	background-size: contain;
+	text-align: center;
+	font-size: 0.4rem;
+}
+.alert-layer{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) url() 0 0 no-repeat;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.resalert{
+	width: 6rem;
+	height: 4rem;
+	border-radius: 0.2rem;
+	background: #fff url() 0 0 no-repeat;
+	color: rgb(51,51,51);
+	font-size: 0.35rem;
+	text-align: center;
+}
+.resalert div:nth-child(1){
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.resmes{
+	height: 2.2rem;
+	padding: 0.1rem  0.5rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#resmes{
+/* 	height: 2.2rem;
+	padding: 0.1rem  0.5rem;
+	box-sizing: border-box; */
+}
+.resalert div:nth-child(3){
+	height: 0.8rem;
+	font-size: 0.35rem;
+	line-height: 0.8rem;
+	width: 2rem;
+	margin: 0 auto;	
+	background: rgb(55,78,171) url() 0 0 no-repeat;
+	color: #fff;
+}
+
+.setGrayTwo .detail .inprods span {
+	color:#888;
+}

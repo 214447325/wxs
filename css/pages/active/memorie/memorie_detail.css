@@ -1,0 +1,120 @@
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background: url(../../../../images/pages/activity/memorie/detail.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1rem;
+}
+
+.detail_content {
+    width: 7.2rem;
+    height: 13.3rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 0.1rem;
+}
+
+.detail_title {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    color: #b30000;
+    font-size: 0.55rem;
+    font-weight: bold;
+    margin-top: 0.4rem;
+}
+
+.vice_title {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    color: #000000;
+    font-size: 0.55rem;
+    font-weight: bold;
+    margin-top: 0.1rem;
+}
+
+.bill {
+    width: 100%;
+    height: 9.5rem;
+    margin-top: 0.3rem;
+    /*background: red;*/
+    overflow-y: auto;
+}
+
+.bill_div {
+    width: 100%;
+    line-height: 0.7rem;
+    color: #010000;
+    font-size: 0.3rem;
+    float: left;
+    border-bottom: 0.05rem dashed  #c6c3bc;
+}
+
+.bill_left {
+    width: 3rem;
+    float: left;
+}
+
+.bill_right {
+    width: 4.2rem;
+    float: right;
+    overflow: hidden;
+}
+
+.font {
+    color: #b20403;
+}
+
+.bill_end {
+    border: none;
+}
+
+.note_end {
+    width: 100%;
+    height: 100%;
+    background: url(../../../../images/pages/activity/memorie/end.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1.8rem;
+}
+
+.note_bottom {
+    width: 6.5rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.note_button {
+    width: 100%;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/memorie/endbutton.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.bill_no_data {
+    border: none;
+    text-align: center;
+    font-size: 0.35rem;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 0.36rem;
+}
+
+@-webkit-keyframes bluePulse {
+    from { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+    50% { background-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }
+    to { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+.note_button {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: bluePulse;
+    -webkit-animation-duration: 1s;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>提现说明</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+  <style>
+.withdrawalDesc{
+	background: #fff url() 0 0 no-repeat;
+}
+.withdrawalDesc  .title{
+	width:100%;
+	height:1rem;
+	line-height:1rem;
+	padding: 0 0.5rem;
+	box-sizing:border-box;
+	color:red;
+	font-size:0.4rem;
+	font-weight:600;
+	
+	overflow:hidden;
+	z-index:1;
+}
+.withdrawalAccount i{
+	display: block;
+	float: left;
+	width:0.546875rem;
+	height:0.546875rem;
+background:  url(../../images/pages/withdrawal/icon-account.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.withdrawalTime i{
+	display: block;
+	float: left;
+	width:0.546875rem;
+	height:0.546875rem;
+background: #fff url(../../images/pages/withdrawal/icon-time.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.withdrawalLimit i{
+	display: block;
+	float: left;
+	width:0.546875rem;
+	height:0.546875rem;
+background: #fff url(../../images/pages/withdrawal/icon-money.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+
+.limit,.time,.account{
+	width:100%;
+	
+	line-height:1rem;
+	padding: 0 0.5rem;
+	box-sizing:border-box;
+	background: #ececec url() 0 0 no-repeat;
+	font-size:0.35rem;
+	line-height:2;
+	color:#666;
+}
+.time .special{
+	display: inline-block;
+	font-size:0.35rem;
+	line-height:2;
+	font-style:normal;
+font-weight:bold;
+color:#333;
+}
+
+  </style>
+
+
+</head>
+
+<body class="withdrawalDesc bg">
+  <div class="wrapper">
+ <div class="title withdrawalLimit"><i></i>
+ 	提现限额
+ </div>
+ <div class="limit">
+ 	<p>1、每笔提现最低100.00元。</p>
+ 	<p>2、每日提现无限额。</p>
+ 	
+ </div>
+ <div class="title withdrawalTime"><i></i>
+ 	提现到账时间
+ </div>
+ <div class="time">
+ 	<p><i  class="special">连连支付提现：</i>为提升服务品质，提高批量代付、对公提现的处理时效。自2016年8月3日起，连连支付在工作日（国家法定节假日除外）期间处理的批次变更为5个批次：9:00、11:00、13:00、15:00、16:30，请及时做好通知，感谢您对连连支付的支持！</p>
+ 	<p><i  class="special">富友支付提现：</i>
+ 	提现金额实时到账（单笔提现金额达到100000元需人工审核，资金于将于工作时间（周一至周五9:00~18:00）人工审核后到账）。</p>
+ </div>
+ <div class="title withdrawalAccount"><i></i>
+ 	交易明细
+ </div>
+ <div class="account">
+ 	<p>在账户—设置—交易记录中可以查看交易明细</p>
+ 	
+ </div>
+  </div>
+</body>
+</html>

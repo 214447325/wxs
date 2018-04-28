@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+<!--   <script src="../../js/pages/my-account/echarts.common.min.js"></script> -->
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/float-detail3.0.css">
+  <link rel="stylesheet" href="../../css/pages/financing/prodDetail.css" />
+</head>
+<body class="financing ftDetail" data-target="money">
+<!-- 	<div class="topContain">
+		<a href="float.html" class="back-btn"><img src="../../images/pages/financing/regular3.0/back.png"></a><span class="prod-title"></span>
+	</div> -->
+	<div class="wrapper"><!-- wrapper外层 -->
+		<div class="current-bg">
+			<div class="p1">预期年化收益率(%)</div>
+			<div class="p2"><span class="floatYearRate">8.0~33.0</span>
+				<!--<span class="btn-detail" >详情</span>-->
+			</div>
+			
+			<div class="p3">
+				<span class="p3text">本金保护</span>
+				<span class="p3text">双重收益</span>
+				<span class="p3text">组合配置</span>
+			</div>
+			<!-- <div class="p4 canBuyAmt"></div> -->
+            <div class="p3 p8">可投份额:<a class="float_amount"></a>份</div>
+		</div>
+		<p class="p5 floatimg-title">择时稳赢往期走势图</p>
+		<!-- <img src="../../images/pages/financing/float3.0/weightvalue.png" class="floatimg hide"> -->
+		<!-- seriesName -->
+		<div style="height:0.75rem;font-size:0.3173rem;color:#666;font-weight:bold;padding:0 0.3rem;background:#fff;">
+			<div style="float:left;">单位净值</div>
+			<div style="float:right;"><span style="display:inline-block;width:0.2133rem;height:0.2133rem;border-radius:50%;background:#B1B3FF;margin-right:0.2133rem;"></span>上证指数</div>
+			<div style="float:right;margin-right:0.5rem;"><span style="display:inline-block;width:0.2133rem;height:0.2133rem;border-radius:50%;background:#FF791F;margin-right:0.2133rem;"></span>择时稳赢</div>
+		</div>
+		<div id="floatChart" style="height:6rem" class="floatChart"></div>
+		<p class="p6">该图为择时稳赢<span class="firstMonth"></span>月产品至今的净值走势图，红色线为上证指数同期走势。该产品最新净值为<span class="newNetValue"></span>，年化收益率为<span class="newYearRate"></span>%，大幅跑赢各类同期沪深股指。</p>
+
+		<!-- <div class="zczh">资产组合</div> -->
+		<div class="look">资产组合<span style="float:right;color:#888888;font-size:0.32rem;">更多详情<img src="../../images/pages/my-account3.0/nextPage3.0.png"></span></div>
+		<div id="portfolioChart" style="height: 5.12rem;"></div>
+		<!-- <div class="look">查看资产组合详情<img src="../../images/pages/my-account3.0/nextPage3.0.png"></div> -->
+
+		<div class="zczh">产品详情</div>
+		<section class="detailtips">
+		<div class="singel">
+			<div class="sg-top">产品说明</div>	
+		             <p>该系列产品的资产组合包含银行、证券、基金等机构参与的标的资产。利用金融机构强大的抗风险能力及成熟的风控体系，极大的降低了风险，与传统的p2p有着本质的区别。</p>
+	             </div>
+		<div class="singel">
+			<div class="sg-top">产品收益</div>	
+		            <p>基础收益+浮动收益，8%+（0%-25%）
+                        <!--<br>计息方式：（到期净值-买入净值）*购买份数</p>-->
+	             </div>
+		<div class="singel">
+			<div class="sg-top">计息方式</div>	
+		            <p>(到期净值-买入净值)*购买份数</p>
+	             </div>
+		<!--<div class="singel">-->
+			<!--<div class="sg-top">产品期限</div>	-->
+		             <!--<p><span id="investCycle"></span>天</p>-->
+	             <!--</div>-->
+		<div class="singel">
+			<div class="sg-top">赎回方式</div>	
+		             <p>到期日前无法赎回，到期后一次返还本金和收益</p>
+	             </div>
+		<!--<div class="singel">-->
+			<!--<div class="sg-top">资产组合</div>	-->
+		             <!--<p>固定收益为个人借贷，保障投资者基础收益；浮动收益为各类金融资产，提供超额收益。</p>-->
+	             <!--</div>-->
+	             </section>
+
+
+	</div>
+	<a href="javascript:;" class="buy_btn"></a>
+
+	<div class="ui-dialog ui-dialog-name backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未完成实名认证，请先完成实名认证</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+	       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="ui-dialog ui-dialog-trade backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未设置交易密码，请先设置交易密码</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+	       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/highcharts.js"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/float-detail3.0.js?v=9.1.0"></script>	
+</body>
+</html>

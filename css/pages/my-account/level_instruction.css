@@ -1,0 +1,269 @@
+
+.group {
+    width: 100%;
+    height: 1.5rem;
+    background: url(../../../images/pages/my-account/level-group.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.content {
+    /*height: 100%;*/
+    background: #ffffff;
+    /*padding-top: 0.5rem;*/
+}
+
+.copy {
+    width:100%;
+    /*height: 12.0933rem;*/
+    padding:0.3766rem;
+    margin: 0 auto;
+    background: url(../../../images/pages/my-account/vipbg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    /*margin-top: 0.5rem;*/
+}
+.bargraph{
+    width:100%;
+    min-height:12.0933rem;
+    margin-bottom:0.1733rem;
+    background:url(../../../images/pages/my-account/bargraph.png) 0 0 no-repeat;
+    background-size:100% auto;
+    background-position: bottom;
+}
+
+.div1 {
+    width: 100%;
+    height: 1.6rem;
+    margin-top: 0.8rem;
+    /*background: red;*/
+    border-bottom: 0.02rem solid rgb(236,236,236);
+}
+
+.div2 {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    /*background: bisque;*/
+}
+
+.divIcon {
+    width: 0.3rem;
+    height: 0.5rem;
+    float: left;
+    /*background: darkgoldenrod;*/
+}
+
+.icon1 {
+    width: 0.25rem;
+    height: 0.25rem;
+    float: left;
+    margin: 0.1rem auto;
+    background: rgb(55,78,171);
+}
+
+.div2-content {
+    width: 8.5rem;
+    height: 100%;
+    /*background: darkcyan;*/
+    float: left;
+}
+
+.divContent {
+    width: 8.3rem;
+    height: 0.5rem;
+    float: right;
+    line-height: 0.5rem;
+    text-align: left;
+    font-size: 0.3rem;
+    color: rgb(51,51,51);
+}
+
+.level {
+    width: 100%;
+    background: #ffffff;
+}
+
+.upgrade {
+    width:9rem;
+    height: 1rem;
+    margin: 0.5rem auto;
+    /*margin-top: 0.5rem;*/
+    /*background: #ff0000;*/
+}
+
+.icon2 {
+    width: 0.25rem;
+    height: 0.25rem;
+    float: left;
+    margin: 0.1rem auto;
+    background: url(../../../images/pages/my-account/level-up.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.divIcon-up {
+    width: 8.5rem;
+    height: 100%;
+    float: right;
+    text-align: left;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    /*background: darkcyan;*/
+}
+
+.level-up {
+    height: 0.5rem;
+    font-weight: bold;
+}
+
+.demotion {
+    width: 9rem;
+    height: 2rem;
+    /*background: red;*/
+    margin: 0 auto;
+}
+
+.icon3 {
+    width: 0.25rem;
+    height: 0.25rem;
+    float: left;
+    margin: 0.1rem auto;
+    background: url(../../../images/pages/my-account/level-de.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.interests {
+    width: 100%;
+    background: #ffffff;
+    margin-top: 0.2533rem;
+    padding-top: 0.5rem;
+}
+
+.div-interest {
+    width: 9rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+.div3 {
+    width: 9rem;
+    height: 0.5rem;
+    margin: 0.1rem auto;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    /*margin-top: 0.2rem;*/
+}
+
+.table {
+    width: 9rem;
+    height: 7.74798rem;
+    background: url(../../../images/pages/my-account/level-table.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+.table2 {
+    width: 9rem;
+    height: 7.74798rem;
+    background: url(../../../images/pages/my-account/level-table2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.footer {
+    width: 100%;
+    height: 1rem;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.4533rem;
+    color: #666;
+}
+
+/*---------------ly----------------------*/
+.barList{
+    height:auto;
+    color:#82702E;
+    font-size:0.3733rem;
+}
+.barList:nth-child(1){
+    padding-left:2.3066rem;
+}
+.barList:nth-child(2){
+    padding-left:1.0533rem;
+}
+.barList:nth-child(3){
+    padding-left:0.1066rem;
+}
+.barList-content{
+    position:relative;
+    top:-0.1rem;left:0;
+    white-space: pre-line;
+    display:table-cell;
+    padding:0.3466rem;
+    font-size:0.2933rem;
+    opacity:0;
+    filter:Alpha(opacity=0);
+    background: url(../../../images/pages/my-account/contentbg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.vipButton{
+    display:inline-block;
+    height:1.2rem;
+    line-height:1.2rem;
+    padding:0 0.62rem;
+    background: url(../../../images/pages/my-account/level-group.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.vipbtn-img-hide{
+    display:inline-block;
+    width:0.2533rem;
+    height:0.2133rem;
+    background: url(../../../images/pages/my-account/showbtn.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.vipbtn-img-show{
+    display:inline-block;
+    width:0.2533rem;
+    height:0.2133rem;
+    background: url(../../../images/pages/my-account/hidebtn.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+
+}
+

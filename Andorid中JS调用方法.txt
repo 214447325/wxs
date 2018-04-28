@@ -1,0 +1,43 @@
+
+调用形式：在js中调用window.AndroidWebView.方法名。
+以下为Android，H5需要判断为安卓机调用的情况下才可以调用以下方法
+
+IsLogin()判断用户是否登录（未登录情况下会跳转登录）
+
+getUserId()获取用户id 返回值String类型
+
+getLoginToken()获取logintoken 返回值String类型
+
+setH5Share(String type) 调用安卓分享功能，传入shareId
+
+setRegular()跳转理财定期页面
+
+setCurrent()跳转理财活期页面
+
+setFloat()跳转理财浮动页面
+
+setAccount()跳转账户页面
+
+setHome()跳转首页
+
+setBuy(String pid)跳转产品购买页面 请传入产品的pid
+
+setLogin()跳转登录页面
+
+setMyInvite()跳转我的邀请记录
+
+setMyPrivilege跳转我的特权页面
+
+setMyreward()跳转现金奖励页面
+
+setCenterreward()跳转超值礼券页面
+
+setCurrent_tow()跳转已购买活期页面
+
+setRegular_tow()跳转已购买定期页面
+
+setRecord()跳转我的交易记录页面
+
+setresh()刷新当前页
+
+setRecordActivity()跳转活期赎回页面

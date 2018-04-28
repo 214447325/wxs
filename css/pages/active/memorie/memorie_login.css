@@ -1,0 +1,59 @@
+
+.banner {
+    width: 100%;
+    /*height: 100%;*/
+    background: url(../../../../images/pages/activity/memorie/login_banner.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.login_bottom {
+    width: 8rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login_bottom_box {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.login_bottom .login_input {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.input_text {
+    width: 100%;
+    height: 0.8rem;
+    border: none;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.login_input form .login_button {
+    width: 4rem;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/memorie/button1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0.5rem auto;
+    margin-top: 2rem;
+}
+
+.login_input form .login_page {
+    width: 100%;
+    height: 0.8rem;
+    color: #ffffff;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.login_input form .login_page a {
+    color: rgb(246,187,117);
+    text-decoration:underline;
+}
+

@@ -1,0 +1,248 @@
+
+.wrapper {
+    background: rgb(231,233,236);
+}
+.currentTitle {
+    width: 100%;
+    height: 1.2rem;
+    background: rgb(255,255,255);
+}
+
+.currentContent {
+    width: 9rem;
+    height:0.6rem;
+    float: left;
+    margin: 0 0.476rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    line-height: 0.6rem;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.server {
+    margin: 0 auto;
+    width: 3rem;
+}
+
+.returnImg {
+    float: left;
+    width: 0.6rem;
+    /*margin-top: 0.09rem;*/
+}
+
+.world {
+    float: right;
+    width: 0.5rem;
+    margin-top: 0.09rem;
+}
+
+.header {
+    width: 100%;
+    height: 5.3rem;
+    background: rgb(55,78,171);
+}
+
+.serverBox {
+    width: 9rem;
+    height: 3.8rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.todayEarnings {
+    width: 100%;
+    height: 1.6rem;
+    float: left;
+    margin-top: 1rem;
+}
+
+.solidMoney {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.76rem;
+    color: rgb(255,255,255);
+
+}
+
+.solidWord {
+    width: 100%;
+    text-align: center;
+    color: rgb(255,255,255);
+    letter-spacing:0.06rem;
+}
+
+.earnings {
+    width: 9rem;
+    height:1.2rem;
+    margin: 0 auto;
+}
+
+.accumulated {
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+    border-right: 0.02rem solid rgb(255,255,255);
+}
+
+.principal {
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+}
+
+.accumulatedContent {
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    letter-spacing:0.04rem;
+}
+
+.accumulatedMoney {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: rgb(255,255,255);
+}
+
+.principalContent {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+}
+
+.lj {
+    width: 3.25rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+    text-align: right;
+    letter-spacing:0.04rem;
+}
+.img {
+    width: 0.25rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.img1 {
+    margin-top: 0.1rem;
+}
+
+
+.principalMoney {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: rgb(255,255,255);
+}
+
+.headerContent {
+    margin-top: 0.15rem;
+    width: 100%;
+    height: 10.5rem;
+    overflow-y: auto;
+    background:rgb(255,255,255);
+}
+.choosing {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 0.02rem solid rgb(236,236,236);
+}
+
+.choosingContent {
+    width: 9.5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.choosingworld {
+    width: 4.5rem;
+    height: 100%;
+    line-height: 1.2rem;
+    font-weight: bold;
+    float: left;
+    font-size: 0.35rem;
+}
+
+.portfolio {
+    width: 4.5rem;
+    height: 100%;
+    line-height: 1.2rem;
+    /*font-weight: bold;*/
+    float: left;
+    text-align: right;
+    color: rgb(62,80,180);
+    font-size: 0.35rem;
+}
+
+.choosingData {
+    width: 100%;
+    height:4rem;
+    border-bottom: 0.02rem solid rgb(236,236,236);
+}
+
+.choosingDataRow1 {
+    width: 9.5rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.35rem;
+    margin: 0 auto;
+    color: rgb(153,153,153);
+}
+
+.choosingDataCol {
+    width: 4.6rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: left;
+    font-size: 0.31rem;
+    color:rgb(153,153,153)
+}
+
+.floatData {
+    color: rgb(255,109,85); //橘红
+}
+
+.floatSpan {
+   margin-left: 0.2rem;
+}
+
+.img1 {
+    width: 0.36rem;
+    line-height: 0.4rem;
+}
+
+.spacing {
+    letter-spacing:0.04rem;
+}
+
+.null {
+    width: 4rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(153,153,153);
+    font-size: 0.35rem;
+    margin-top: 1.5rem;
+}
+
+.nullImg {
+    margin-top: 0.5rem;
+}
+
+.fontColor {
+    color: rgb(255,109,85);
+}

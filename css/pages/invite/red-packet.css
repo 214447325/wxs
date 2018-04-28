@@ -1,0 +1,93 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 15:59:16
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 16:27:09
+*/
+.invitefriend{
+    position: relative;
+    overflow-y:scroll;
+    background: #174389 ;
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:100%;
+    background:  url(../../../images/pages/invite/moneyAppend1.jpg) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-bottom:1.53125rem;
+}
+
+.money-active ul {
+    color: #fff200;
+    font-weight:bold;
+    font-size: 0.4375rem;
+    margin-bottom:1.53125rem;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+}
+
+.money-active li {
+    font-size: 0.4375rem;
+    color: #FDFFF8;
+    font-weight:normal;
+}
+
+
+/*.navn {  */
+    /*position: fixed; */
+    /*width: 100%;*/
+    /*height: 2rem;*/
+    /*bottom:0;*/
+    /*z-index: 1;*/
+    /*border: none;*/
+  /*}*/
+/*.navn a { */
+    /*width: 100%; */
+    /*margin:0 auto;*/
+    /*text-align: center;*/
+     /*font-size: 18px; */
+     /*color: #757575; */
+     /*line-height: 140px; */
+    /*border: none;*/
+/*}*/
+ /*.register-Img{*/
+ 	/*width:100%;*/
+ 	/*height:1.5rem;*/
+ 	/*background: url(../../../images/pages/invite/getMoney.png) 0 0 no-repeat;*/
+ 	/*background-size:contain;*/
+ 	/*border:none;*/
+ /*}*/
+
+.regist{
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    background: url(../../../images/pages/invite/redister1.png) no-repeat 0 center;
+    /*border-radius: 0.5rem;*/
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position:fixed;
+    bottom:0;
+}
+
+.registered-img {
+    width: 100%;
+}
+
+.redContent {
+    width: 100%;
+    height: 22rem;
+    background: url(../../../images/pages/invite/moneyAppend1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.register {
+    width: 100%;
+    height: 1.35rem;
+    line-height: 1.35rem;
+    font-size: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+}

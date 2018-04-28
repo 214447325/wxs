@@ -1,0 +1,129 @@
+
+
+.platform-title {
+    width: 10rem;
+    height:1.2rem;
+    border-bottom: 0.02rem solid rgb(153,153,153);
+
+}
+
+.title-content {
+    width: 9rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    color: rgb(55, 78, 171);
+}
+
+.return-btn {
+    width: 0.3rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.title {
+    font-size: 0.5rem;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    color: rgb(55,78,171);
+    font-size: 0.6rem;
+    margin: 0.55rem auto;
+    font-weight: bolder;
+    font-family: '汉仪菱星体';
+}
+
+.footer {
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    bottom:0;
+}
+
+.footer-btn {
+    width: 1rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn1 {
+    width: 0.68rem;
+    margin-top: 0.8rem;
+}
+
+.header {
+    width: 100%;
+    /*height:12rem;*/
+    /*background: red;*/
+    margin-top: 1rem;
+}
+
+.header-content {
+    width: 9rem;
+    height: 100%;
+    /*background: green;*/
+    margin: 0 auto;
+}
+
+.header-div1 {
+    width: 100%;
+    height: 3.5rem;
+    /*background: greenyellow;*/
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.header-div2 {
+    width: 100%;
+    height: 3.5rem;
+    /*background: greenyellow;*/
+    float: left;
+    margin-top: 0.89rem;
+}
+
+.header-div3 {
+    width: 100%;
+    height: 3.5rem;
+    /*background: greenyellow;*/
+    float: left;
+    /*margin-top: 0.4rem;*/
+}
+
+.header-content-div1 {
+    width: 2.5rem;
+    height: 100%;
+    float: left;
+    /*background: bisque;*/
+    text-align: center;
+}
+
+.f1 {
+    width: 1.35rem;
+   margin-top: 0.6rem;
+}
+
+.f2 {
+    width: 1.35rem;
+    margin-top: 0.3rem;
+}
+
+.paper1 {
+    font-size: 0.4rem;
+    font-weight: bold;
+    margin-top: 0.2rem;
+}
+
+.header-content-div2 {
+    width: 100%;
+    height: 100%;
+    /*background: hotpink;*/
+    color: rgb(153, 153, 153);
+    font-size: 0.38rem;
+}

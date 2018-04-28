@@ -1,0 +1,370 @@
+/*
+* @Author: User
+* @Date:   2016-07-26 10:28:08
+* @Last Modified by:   User
+* @Last Modified time: 2016-09-02 15:01:58
+*/
+.topup-cash .vm{
+    color:#2B6FF9;
+  }
+.topup-cash{
+	background: #f1f1f1 url() 0 0 no-repeat;
+}
+.topup-cash .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.475rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom:0.2rem;
+  color:  rgb(55,78,171);
+}
+.topup-cash .caption a.back{
+  display: block;
+    width: .275rem;
+    height: .45rem;
+    background: url(../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+/*     transform:rotate(180deg);
+-ms-transform:rotate(180deg);
+-moz-transform:rotate(180deg);
+-webkit-transform:rotate(180deg);
+-o-transform:rotate(180deg);  */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+a.titleHref{
+	color: rgb(55,78,171);
+}
+.topup-cash .caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+.topup-cash .caption .title{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.35rem;
+    color: #999;
+}
+.addCard{
+	width:100%;
+	height:2.8rem;
+	background: #fff url() 0 0 no-repeat;
+	position:relative;
+}
+.addCard .add{
+	width:4.95rem;
+	height:1.8rem;
+	background: #FFF url(../../images/pages/topup-cash/add.png) left 0 no-repeat;
+	background-size:contain;
+	position:absolute;
+	top:50%;
+	 left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align:right;
+	font-size:0.5rem;
+	line-height:1.8rem;
+	color:#666;
+}
+
+.bankinfoList{
+	width:100%;
+	height:2.8rem;
+	background: #fff url() 0 0 no-repeat;
+	position:relative;
+}
+.bankinfoList .logo{
+	width:0.9333rem;
+	height:0.9333rem;
+	position:absolute;
+	top:50%;
+	left:0.5rem;
+	-webkit-transform: translateY( -50%);
+	-ms-transform: translateY( -50%);
+	-o-transform: translateY( -50%);
+	transform: translateY( -50%);
+	background: #fff url() 0 0 no-repeat;
+	background-size:contain;
+
+}
+.bankinfoList .bankName{
+	// width:2.8rem;
+	width:7rem;
+	height:0.78125rem;
+	position:absolute;
+	top:0.5875rem;
+	left:50%;
+	-webkit-transform: translateX( -50%);
+	-ms-transform: translateX( -50%);
+	-o-transform: translateX( -50%);
+	transform: translateX( -50%);
+	text-align:left;
+	font-size:0.4266rem;
+	color:#4A4A4A;
+	line-height:0.78125rem;
+
+}
+.bankinfoList .cardNum{
+	width:2.8rem;
+	height:0.78125rem;
+	position:absolute;
+	bottom:0.5875rem;
+	left:50%;
+	-webkit-transform: translateX( -50%);
+	-ms-transform: translateX( -50%);
+	-o-transform: translateX( -50%);
+	transform: translateX( -50%);
+	text-align:left;
+	font-size:0.4rem;
+	line-height:0.78125rem;
+
+}
+.ui-text-input li label {
+    width: 2.125rem;
+    float: left;
+    // font-size: .40625rem;
+    font-size: 0.3733rem !important;
+    color:#4A4A4A;
+    padding-left: 0;
+}
+.topup-cash .wrapper .somebanks{
+	width:100%;
+	color:#4A4A4A;
+	line-height:0.7rem;
+	font-size:0.3733rem;
+	padding: 0.35rem ;
+	box-sizing:border-box;
+	background:#fff;
+}
+.topupChannels{
+	width:100%;
+	height:3rem;
+	overflow:hidden;
+	z-index:1;
+	// margin-top:0.5rem;
+}
+#bfChannel{
+	width:4.65rem;
+	height:1.75rem;
+	background:  url(../../images/pages/topup-cash/no-active.png) 0 0 no-repeat;
+	background-size:contain;
+	float: left;
+	margin-left:0.35rem;
+}
+#fyChannel{
+	// width:4.65rem;
+	width:100%;
+	padding:0.25rem;
+	height:1.75rem;
+	// background:  url(../../images/pages/topup-cash/no-active.png) 0 0 no-repeat;
+	background-size:contain;
+	float: left;
+	background:#fff;
+    // margin-left:0.35rem;
+	/*margin-right: 0.25rem;*/
+}
+#bfChannel p,#fyChannel p{
+	width:100%;
+	height:0.55rem;
+	line-height:0.55rem;
+	font-size:0.35rem;
+	padding-left:0.25rem;
+	padding-top:0.1rem;
+	color:#999;
+}
+.bftitle,.fytitle{
+	font-size:0.4rem;
+	line-height:0.525rem;
+	color:#fff;
+	text-indent:0.25rem;
+
+}
+.choose{
+	display:block;
+	width:100%;
+	float: left;
+	text-indent:0.35rem;
+	font-size:0.4rem;
+	margin-bottom:0.25rem;
+}
+.addCard{
+    display:none;
+}
+.addCard, .bankinfoList{
+    margin-bottom: 0.25rem;
+}
+
+.topup_alert {
+    display: none;
+}
+
+.topup_back {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+}
+
+.topup_box {
+    width: 9rem;
+    height: auto;
+    background: #ffffff;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    border-radius: 0.1333rem;
+}
+
+.topup_content {
+    width: 7.8rem;
+    height: 1.2533rem;
+    line-height: 1.2533rem;
+    margin: 0 auto;
+    font-size: 0.4533rem;
+    color: #666;
+    text-align: center;
+}
+
+.btn_group {
+    width: 100%;
+    height: 1.3066rem;
+    color: rgb(55,78,171);
+    font-size: 0.4rem;
+    line-height: 1.3066rem;
+    text-align: center;
+    border-top: 0.0133rem solid #D2D3D5;
+    font-weight: bolder;
+}
+
+.topup_user {
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #666;
+    border-right: 0.0133rem solid #D2D3D5;
+}
+
+.topup_regular {
+    width: 50%;
+    height: 100%;
+    float: right;
+    color: #6C6FFF;
+}
+
+/*---------ly-----------*/
+.topup_close{
+	height:0.44rem;
+}
+.topup_close img{
+	display:block;
+	float:right;
+	width:0.44rem;
+	height:0.44rem;
+}
+.topup_title{
+	width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    margin: 0 auto;
+    font-size: 0.48rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+
+}
+.li-money-title{
+	font-size:0.3733rem !important;
+	color:#4A4A4A;
+	padding-left:0.35rem;
+}
+.topup_top_box{
+    padding:0.3733rem;
+}
+.li-text-input .money-label{
+	width:0.5rem !important;
+	font-size:0.5866rem !important;
+}
+.li-text-input input{
+	width:8rem !important;
+	font-size:0.5866rem !important;
+	margin-top:0.25rem !important;
+	color:#4A4A4A !important;
+}
+.ul-card{
+	margin-bottom:0.25rem;
+}
+.black{
+	float:right;
+}
+.li-text-limit{
+	background: #fff;
+	margin-top:0.25rem;
+}
+.li-text-limit li{
+	border-bottom:0.0133rem solid #DEDEDE;
+	line-height:0.9333rem;
+	font-size:0.3466rem;
+	color:#4A4A4A;
+	padding:0 0.35rem;
+}
+.somebanks:before{
+	display: block;
+	content:'';
+	clear:both;
+}
+.somebanks:after{
+	display: block;
+	content:'';
+	clear:both;
+}
+.next-btn{
+	background:#AAC5FC;
+}
+.limitOnce{
+	padding-left:1.2355rem;
+	color:#FF503E;
+	border:none;
+	display:none;
+	// line-height: 0.8rem;
+}
+
+
+.wrapper{
+	width:9.5rem;
+	margin:auto;
+	padding-top:0.25rem;
+}
+.ui-text-input{
+   border:none;
+}
+.ui-text-input li{
+	height:auto;
+	border:none;
+}
+.ui-text-input .txt{
+	width:6rem;
+	padding-right:0;
+}
+.top-up .mt75{
+ margin-top:0;
+ background: #fff;
+ padding:0.17rem 0 0.8rem 0;
+}
+.li-text-input{
+	padding:0.35rem;
+}
+#formpay{
+	display:none;
+}

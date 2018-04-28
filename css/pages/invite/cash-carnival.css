@@ -1,0 +1,183 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 16:34:38
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 19:18:32
+*/
+.invitefriend{
+    position: relative;
+    overflow-y:scroll;
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/invite/apphead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    /* position: absolute;
+    top:0;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); */
+}
+
+.inviteform{
+    width:100%;
+    height: auto;
+    overflow:hidden;
+
+}
+
+.act-Img {
+   position: absolute;
+    top: 640px;
+}
+
+.act-Span1 {
+    font-size: 42pt;
+    color: #000000;
+    position: absolute;
+    left: 10px;
+    top: 635px;
+}
+
+.cont .ul .title {
+    color: #FDFFF8;
+}
+
+.cont .ul {
+    color: #FDFFF8;
+}
+
+.cont .ul .act-li {
+	width:90%;
+	font-size:0.4375rem;
+	margin:0 auto;
+}
+
+.example1 {
+    margin-top: 32px;
+}
+
+.money-Act2 {
+    margin-top: 94px;
+}
+
+.act-Img2 {
+    position: absolute;
+    top: 1610px;
+}
+
+.act-Span2 {
+    font-size: 42pt;
+    color: #000000;
+    position: absolute;
+    left: 10px;
+    top: 1605px;
+}
+
+.actvontent ul {
+   width:100%;
+   padding:0 0.5rem;
+   box-sizing:border-box;
+    color: #ffff00;
+    font-size: 0.4375rem;
+
+}
+
+.actvontent li {
+
+    font-size: 0.4375rem;
+    color: #FDFFF8;
+}
+
+.act-Redister {
+    margin-top: 50px;
+}
+.navn {  
+    position: fixed; 
+    width: 100%;
+    height: 2rem;
+   bottom:0;
+      z-index: 1; 
+  }
+.navn a { 
+    width: 100%; 
+    margin:0 auto;
+    text-align: center;
+     font-size: 18px; 
+     color: #757575; 
+     line-height: 140px; 
+}
+.act-TitleContent span{
+	display: block;
+	width:90%;
+	box-sizing:border-box;
+	border-top:3px #333 solid;
+	margin:0 auto;
+    position:relative;
+}
+.act-TitleContent span i{
+	display:inline-block;
+	color:#000;
+	font-size:0.45rem;
+	line-height:1.296875rem;
+	font-style:normal;
+	font-weight:bold;
+	text-align:center ;
+	width:2.421875rem;
+	height:1.296875rem;
+	background:  url(../../../images/pages/invite/active.png) 0 0 no-repeat;
+	background-size:contain;
+}
+.act-TitleContent span i.head{
+    display:inline-block;
+    color:#000;
+    font-size:0.55rem;
+    line-height:1.296875rem;
+    font-style:normal;
+    font-weight:normal;
+    color:#fff;
+    text-align:center ;
+    width:4rem;
+    height:1.296875rem;
+    background: transparent;
+    position: absolute;
+    top:0;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.example1,.example2{
+	width:90%;
+	height:7.196875rem;
+	margin:0 auto;
+	padding:0 0.5rem;
+	box-sizing:border-box;
+	background:  url(../../../images/pages/invite/example1.png) 0 0 no-repeat;
+	background-size:contain;
+}
+.example2{
+	background:  url(../../../images/pages/invite/example2.png) 0 0 no-repeat;
+		background-size:contain;
+}
+.regist{
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    /*background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;*/
+    /*border-radius: 0.5rem;*/
+    background-size: cover;
+    margin: 0 auto;
+    position:fixed;
+    bottom:0;
+}
+
+.registered-img {
+    width: 100%;
+}

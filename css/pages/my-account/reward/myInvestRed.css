@@ -1,0 +1,205 @@
+
+.tickercontainer .mask ul.newsticker {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 10rem;
+    font: bold 10px Verdana;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.newsticker li {
+    width:99999px;
+    margin: 0;
+    padding:0;
+    font-size: 0.35rem;
+}
+ul.newsticker a {
+    display: block;
+    white-space: nowrap;
+    padding: 0;
+    padding-right:1rem;
+    font: lighter 0.35rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    float: left;
+    color: #ffffff;
+    margin-top: 0.075rem;
+}
+
+.notice{
+    width:100%;
+    height:4%;
+    border:none;
+    margin:0 auto;
+    box-sizing:border-box;
+    overflow:hidden;
+    z-index:1;
+    background: rgb(92,111,181);
+}
+
+.notice .noticeleft{
+    float:left;
+    display:block;
+    width:0.5rem;
+    height: 0.5rem;
+    background: transparent url(../../../../images/pages/my-account3.0/radio.png) 0 0 no-repeat;
+    background-size:cover;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.tickercontainer {
+    display: block;
+    width: -moz-calc(100% - 2rem);
+    width: -webkit-calc(100% - 2rem);
+    width: calc(100% - 2rem);
+    height:100%;
+    margin: 0;
+    padding: 0;
+    float:left;
+    margin-left:0.2rem;
+    overflow:hidden;
+    line-height:0.6rem;
+}
+
+.tickercontainer .mask {
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.tickercontainer .mask ul.newsticker {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 10rem;
+    font: bold 10px Verdana;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ticker02 {
+    height: 100%;
+    text-align: center;
+    line-height: 0.6rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+.content {
+    width: 9rem;
+    height: 90%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.footer{
+    width: 100%;
+    height: 6%;
+    line-height: 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.45rem;
+    background: rgb(55,78,171);
+}
+
+.rate {
+    width: 100%;
+    height: 3rem;
+    background: url(../../../../images/pages/my-account3.0/mycouponbg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 0.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.left {
+    width:3rem;
+    height: 100%;
+    float: left;
+}
+
+.left1 {
+    width: 100%;
+    height: 100%;
+    float: right;
+    line-height: 3rem;
+    text-align: center;
+    color: rgb(255,142,101);
+    font-size: 0.6rem;
+    font-weight: bold;
+    border-right: 0.05rem dotted rgb(231,233,236);
+}
+
+.right {
+    width: 5.8rem;
+    height: 100%;
+    float: right;
+}
+
+.right-title {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.35rem;
+    font-weight: bold;
+    float: left;
+}
+
+.right-rules {
+    width: 100%;
+    float: left;
+    line-height: 0.4rem;
+}
+
+.rules-title {
+    width: 1.5rem;
+    height: 100%;
+    float: left;
+    line-height: 0.4rem;
+}
+
+.right-content {
+    width: 4rem;
+    height: 100%;
+    line-height: 0.4rem;
+    overflow: hidden;
+}
+
+.regular {
+    width: 100%;
+    /*height: 0.5rem;*/
+    line-height: 0.4rem;
+    float: left;
+}
+
+.title1 {
+    width: 1.5rem;
+    height: 100%;
+    float: left;
+}
+
+.content1 {
+    width: 4rem;
+    height: 100%;
+    float: left;
+}
+
+.time {
+    width: 100%;
+    height: 0.5rem;
+}
+
+.choose {
+    width: 0.975rem;
+    height: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.choose img{
+    width: 0.975rem;
+    height: 0.9rem;
+}

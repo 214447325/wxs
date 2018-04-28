@@ -1,0 +1,140 @@
+.wrapper{
+	padding-bottom:1.5rem;
+}
+.mui-inner-wrap {
+	height:2.133rem;
+	background:#fff;
+	border-bottom:0.0133rem solid #E6E6E6;
+    position: relative;
+    left:0;
+    z-index: 1;
+    overflow: visible;
+    width: 100%;
+	padding:0.2666rem 0.4rem;
+}
+.isDefault{
+	margin-bottom:0.2666rem;
+}
+
+.mui-content{
+	width:8.5rem;
+}
+.name{
+	font-size: 0.4266rem;
+	color: #4A4A4A;
+	padding-bottom:0.2666rem;
+}
+.name span:nth-child(1){
+	display:inline-block;
+	max-width:55%;
+	height:0.55rem;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	// overflow: hidden;
+	margin-right:0.45rem;
+}
+.address{
+	font-size: 0.3733rem;
+	color: #9B9B9B;
+}
+.mui-off-canvas-right{
+	width:2rem;
+	line-height: 2.133rem;
+	position:absolute;
+	left:0;
+	top:0;
+    -webkit-transform: translate3d(10rem,0,0);
+    transform: translate3d(10rem,0,0);
+    font-size: 0.4266rem;
+	color: #FFFFFF;
+    background: #FE3824;
+    text-align: center;
+}
+.edit{
+	display:block;
+	width:0.4533rem;
+	paddign:0.5rem;
+	height:;
+	margin-top:0.6rem;
+	vertical-align: middle;
+}
+.myAddress-button{
+	width:100%;
+	height:1.3066rem;
+	background: #2B6FF9;
+	line-height: 1.3066rem;
+	font-size: 0.4266rem;
+	text-align:center;
+	color: #FFFFFF;
+	position:fixed;
+	left:0;bottom:0;
+}
+
+
+
+/*修改地址  editAddress*/
+.mui-input-group{
+	background:transparent;
+	font-size: 0.4266rem;
+}
+.mui-input-row{
+	background: #fff !important;
+}
+.mui-input-row .mui-switch{
+	margin-top:0.3666rem;
+}
+.mui-button-row .mui-switch {
+    float: right;
+}
+.mui-input-row label{	
+	color: #4A4A4A;
+	line-height: inherit;
+    float: left;
+    padding: 0 0 0 15px;
+}
+.mui-input-group .mui-input-row{
+	height:1.333rem;
+	line-height: 1.333rem;
+}
+.mui-input-group input{
+	float: right;
+	height:1.333rem;
+	line-height: 1.333rem;
+    font-size: 0.4266rem;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top:0;
+    padding-bottom:0;
+    border: 0;
+}
+.map{
+	width:0.48rem;
+	position: absolute;
+    top: 0.366rem;
+    right: 0.48rem;
+
+}
+.mui-poppicker-btn-ok{
+	color:#25ddfe;
+	background:transparent;
+	border:0
+}
+.mui-poppicker-btn-cancel{
+	color:#25ddfe;
+	background:transparent;
+	border:0
+}
+.addAddress{
+	width: 100%;
+	height:1.3066rem;
+	line-height:1.3066rem;
+	text-align:center;
+	position:fixed;
+	left:0;bottom:0;
+	color:#fff;
+	background:#2B6FF9;
+	font-size:0.4266rem;
+}
+#detailAddress{
+	height:2rem;
+}

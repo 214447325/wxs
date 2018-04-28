@@ -1,0 +1,638 @@
+/*
+* @Author: User
+* @Date:   2016-11-02 12:01:06
+* @Last Modified by:   User
+* @Last Modified time: 2017-03-09 14:46:57
+*/
+.page-buy{
+	min-height:11.5rem;
+	position:relative;
+}
+.page-buy .rechargeBtn{
+display: block;
+width:1.6rem;
+height:0.8rem;
+border: 1px solid #fff;
+box-sizing:border-box;
+border-radius:0.2rem;
+text-align:center;
+line-height:0.8rem;
+float: right;
+margin-top:0.303125rem;
+}
+
+.page-buy .auto{
+width:100%;
+height:0.7rem;
+padding: 0.2rem .4375rem   0;
+font-size:0.5rem;
+color: #fff;
+box-sizing:border-box;
+z-index:1;
+}
+
+.page-buy .auto p1{
+display: inline-block;
+width:50%;
+height:0.5rem;
+line-height:.5rem;
+float: left;
+}
+
+.page-buy .auto .joinActive{
+border-radius:0;
+width:0.5rem;
+height:0.5rem;
+float: left;
+background:#fff url(../../images/pages/buy7day_true.png) center center no-repeat;
+background-size:cover;
+}   
+
+.sevdaycontent{
+width:100%;
+height:1.475rem;
+margin:0 auto;
+position: relative;
+margin-top:0.3rem; 
+margin-bottom:0.3rem;
+}
+.sev{
+display: none;
+}
+.page-buy  .trangle{
+width:0.85rem;
+height:1.375rem; 
+background:#fff url(../../images/pages/buy7day_context_arrow.png) center center no-repeat;
+background-size:contain;
+position: absolute;
+top:0;
+right:0.5rem;
+z-index:3;
+}
+
+.page-buy  .sevday{
+width:8.3125rem;
+height:1.475rem;
+background:#fff url(../../images/pages/financing/da.png) center center no-repeat;
+background-size:contain;
+position: absolute;
+top:0;
+left:50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+
+}
+.page-buy .detail {
+height: 0.8rem;
+line-height: 0.4rem;
+margin-right: 0.2rem;
+border: none;
+padding: 0 0.5rem;
+box-sizing: border-box;
+font-size: 0.3rem;
+}
+.page-buy .ui-list{
+border: none;
+}
+
+.maskLayer{
+width:100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+position: fixed;
+top:0;
+left:50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%); 
+display: none;
+z-index:200;
+}
+.maskLayer .juzhong{
+width:100%;
+height: 100%;
+position:relative;
+}
+.bunus{
+width:9rem;
+height:14rem;
+background: #f4f2e6;
+position: absolute;
+bottom:1.109375rem;
+left:50%;
+-webkit-transform: translate(-50%);
+-ms-transform: translate(-50%);
+-o-transform: translate(-50%);
+transform: translate(-50%); 
+font-size:0.4rem;
+padding:0.35rem;
+z-index:999;
+
+}
+.bunus .close{
+width:0.8rem;
+height:0.8rem;
+background:  url(../../images/pages/invite/p2-x.png) 0 0 no-repeat;
+background-size:contain;
+position: absolute;
+top:0.45rem;
+right:0.4rem;
+}
+.bunus h1{
+font-size:0.6rem;
+line-height:0.859375rem;
+color:#fff;
+width:7.1875rem;
+height:0.859375rem;
+background:  url(../../images/pages/invite/p2-4.png) 0 0 no-repeat;
+background-size:contain;
+margin:0 auto;
+text-align:center;
+}
+span{
+color:#ee5e00;
+}
+.page-buy .agreement {
+display: inline;
+// width: 80%;
+text-align: left;
+font-size: 0.32rem;
+margin-top: 0.25rem;
+color: #9B9B9B;
+// padding-left: 0.6rem;
+margin-top:0.5rem;
+}
+.page-buy .agreement i{
+font-style:normal;
+color: #2B6FF9;
+}
+.page-buy .Bonusrules{
+color: rgb(51,51,51);
+font-size:0.305rem;
+
+}
+.page-buy .Bonusrules span{
+color: rgb(55,78,171);
+}
+/* 新样式 */
+.my-product .caption{
+height:1.25rem;
+width:100%;
+text-align:center;
+font-size:0.475rem;
+line-height:1.25rem;
+position: relative;
+border-bottom: 1px solid #dfdfdf;
+margin-bottom:0.2rem;
+color: rgb(55,78,171);
+background: #fff url() 0 0 no-repeat;
+}
+.my-product .caption a.back{
+display: block;
+width: .21785rem;
+height: .421875rem;
+background: url(../../images/pages/financing/regular3.0/back.png) no-repeat;
+background-size: contain;
+/*     transform:rotate(180deg);
+-ms-transform:rotate(180deg);  
+-moz-transform:rotate(180deg);  
+-webkit-transform:rotate(180deg); 
+-o-transform:rotate(180deg);  */
+position: absolute;
+left:0.4140625rem;
+top: .359375rem;
+
+}
+.my-product .caption a.check{
+position: absolute;
+right:0.4140625rem;
+top: 0;
+font-size:0.325rem;
+}
+.page-buy .row {
+margin:0;
+border-bottom: 0px solid #dfdfdf!important;
+padding-left:0.32rem;
+box-sizing:border-box;
+color: #333;
+height: 1.025rem;
+line-height: 1.025rem;
+font-size: 0.35rem;
+background: #fff url() 0 0 no-repeat;
+}
+.page-buy .row.top-row{
+// margin-top:0.25rem; 
+color:#9B9B9B;
+background:none;
+}
+.page-buy .row.margin{
+// margin-bottom:0.2rem;
+padding-bottom:0.2rem;
+color:#9B9B9B;
+box-sizing: content-box;
+}
+.page-buy .row span,u{
+color:#9B9B9B;
+}
+.page-buy .row u{
+text-decoration:none;
+position:absolute;
+right:0.5rem;
+color: rgb(55,78,171);
+}
+.page-buy .row input.input{
+width:5rem;
+border: none;
+height:100%;
+}
+.page-buy .row.row-invest {
+color: #ef5344;
+position: relative;
+}
+.page-buy .row.row-invest input {
+// width: 4rem;
+width: 9.3rem;
+border: none;
+height: 0.9rem;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+line-height: 0.9rem;
+position: absolute;
+
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+font-size:0.8rem;
+color: #333;
+}
+.page-buy .auto{
+width:100%;
+height:0.7rem;
+padding: 0.2rem .4375rem   0;
+font-size:0.5rem;
+color: #333;
+box-sizing:border-box;
+z-index:1;
+}
+.page-buy .wrapper{
+padding-bottom:0;
+}
+.page-buy .row .selfExtra,.page-buy .row .expectmoney{
+font-size:0.35rem;
+color:#ef5344;
+}
+.page-buy .row.row-invest{
+color: rgb(55,78,171);
+position:relative;
+padding-top:0.5rem;
+padding-bottom:0.5rem;
+-moz-box-sizing: content-box;
+-o-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+}
+.page-buy .row.row-invest input{
+// width: 4rem;
+border: none;
+height: 0.9rem;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+line-height: 0.9rem;
+position: absolute;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+color:#333;
+padding:0;
+}
+.page-buy .row.row-invest .full{
+height: 1.025rem;
+text-align:center;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+line-height: 1.025rem;
+position: absolute;
+right:0.5rem;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+color: rgb(55,78,171);
+padding:0;
+margin:0;
+}
+.page-buy .row.row-invest .full-after{
+height: 1.025rem;
+text-align:center;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+line-height: 1.025rem;
+position: absolute;
+right:0.5rem;
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+color:#ccc;
+padding:0;
+margin:0;
+}
+.page-buy .row .expectmoney{
+// color:#ef5344;
+color:#FF503E;
+}
+.content-Img {
+width: 100%;
+height: 100%;
+}
+
+.content-Span {
+position: absolute;
+width: 0.6rem;
+height: 0.6rem;
+background: red;
+}
+
+.buy-span {
+color: red;
+}
+.buy-div {
+font-size: 0.4rem;
+}
+.content-Img0 {
+width: 1rem;
+position: absolute;
+right: -0.20rem;
+top: -0.20rem;
+}
+.page-buy .btn-box {
+background: #f1f1f1;
+height: 2.5rem;
+padding-top: 0;
+border-top: 0px solid #dfdfdf;
+position:static;
+margin-top:0.5rem;
+}
+.addchart{
+width: 100%;
+text-align: center;
+margin: 0.25rem auto;
+}
+.addimg{
+width: 100%;
+height: auto;
+margin-top: 0.5rem;
+margin-bottom: 2.5rem;
+}
+
+.page-buy .addcoupon,.page-buy .investred,.page-buy .experience{
+	overflow: hidden;
+	z-index: 1;
+	color: #666666;
+}
+.addcoupon a{
+	font-size: 0.35rem;
+	color: rgb(153,153,153)!important;
+	float: right;
+	position: relative;
+}
+.addcoupon span{
+	font-size: 0.35rem;
+	color: #666666!important;
+	float: right;
+	margin-right: 0.32rem;
+}
+.addcoupon img{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0.32rem;
+	top: 0;
+	margin-top: 0.3rem;
+	margin-left: 0.2rem;
+}
+.experience a{
+	font-size: 0.35rem;
+	color: rgb(153,153,153)!important;
+	float: right;
+	position: relative;
+}
+.experience span{
+	font-size: 0.35rem;
+	color: rgb(153,153,153)!important;
+	float: right;
+	margin-right: 0.2rem;
+}
+.experience img{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 0.3rem;
+	margin-left: 0.2rem;
+}
+.investred a{
+	font-size: 0.35rem;
+	color: rgb(153,153,153)!important;
+	float: right;
+	position: relative;
+}
+.investred span{
+	font-size: 0.35rem;
+	color: rgb(153,153,153)!important;
+	float: right;
+	margin-right: 0.2rem;
+}
+.investred img{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 0.3rem;
+	margin-left: 0.2rem;
+}
+.usecoupon,.useinvestred,.useexperience{
+	width: 7rem;
+	height: 100%;
+	padding: 0!important;
+}
+.page-buy .canclick{
+	color: #333;
+}
+.ret{
+	width: 100%;
+	height: 1.025rem;
+	font-size: 0.35rem;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+	background: #fff url() 0 0 no-repeat;
+	line-height: 1.025rem;
+	overflow: hidden;
+	z-index: 1;
+	margin-bottom: 0.2rem;
+	display: none;
+    border-bottom: 1px solid #dfdfdf;
+}
+.indata{
+	float: right;
+}
+.indata span{
+	color: rgb(255,122,100);
+}
+.rowac a span.used{
+	/*color: rgb(255,122,100)!important;*/
+}
+/* 自定义弹框 */
+.alert-layer{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5) url() 0 0 no-repeat;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.resalert{
+	width: 6rem;
+	height: 4rem;
+	border-radius: 0.2rem;
+	background: #fff url() 0 0 no-repeat;
+	color: rgb(51,51,51);
+	font-size: 0.35rem;
+	text-align: center;
+}
+.resalert div:nth-child(1){
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.resmes{
+	height: 2.2rem;
+	padding: 0.1rem  0.5rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#resmes{
+/* 	height: 2.2rem;
+	padding: 0.1rem  0.5rem;
+	box-sizing: border-box; */
+}
+.resalert div:nth-child(3){
+	height: 0.8rem;
+	font-size: 0.35rem;
+	line-height: 0.8rem;
+	width: 2rem;
+	margin: 0 auto;	
+	background: rgb(55,78,171) url() 0 0 no-repeat;
+	color: #fff;
+}
+.showSize{
+	width: 2rem;
+	height: 0.408rem;
+	line-height: 0.408rem;
+	font-size: 0.3rem;
+	color: rgb(255,255,255);
+	border-radius: 0.18rem;
+	background: rgb(255,131,86) url() 0 0 no-repeat;
+	text-align: center;
+	float: left;
+	margin-top: 0.3085rem;
+	display: none;
+}
+
+.annual {
+    color: rgb(255,114,90);
+}
+
+.compre {
+    border-top: 1px solid #dfdfdf;
+}
+
+.btn {
+    background: #2B6FF9;
+}
+.addcoupon2{
+	margin: 0;
+    border-bottom: 0px solid #dfdfdf!important;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
+    color: #333;
+    height: 1.025rem;
+    line-height: 1.025rem;
+    font-size: 0.35rem;
+    background: #fff url() 0 0 no-repeat;
+    display:none;
+}
+.addcoupon2>a{
+	font-size: 0.35rem;
+    color: rgb(153,153,153)!important;
+    float: right;
+    position: relative;
+    width: 7rem;
+    height: 100%;
+    padding: 0!important;
+}
+.addcoupon2>a .coupontext{
+	font-size: 0.35rem;
+    color: #666666!important;
+    float: right;
+    margin-right: 0.5rem;
+}
+.addcoupon2 img{
+	width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0.3rem;
+    margin-left: 0.2rem;
+}
+
+.isAccept {
+    width: 9rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    // margin-top: 0.5rem;
+    text-align: center;
+    color: #9B9B9B;
+    font-size:0.32rem;
+
+}
+.isChecked-img {
+    width:100%;
+    /*width:6rem;*/
+    // height: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.isChecked {
+    width: 0.4rem;
+    vertical-align:middle;
+    margin-top:-0.06rem;
+    margin-left: 0.1rem;
+}
+
+.isChecked-span {
+    color: rgb(153,153,153);
+    float: left;
+    margin-left: 0.1rem;
+}
+
+.page-buy .row a{
+	padding:0 .32rem;
+}

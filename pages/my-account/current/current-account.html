@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+     <title>我的周周涨</title>
+    <script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/account/current-account3.0.css?v=9.0.0">
+</head>
+
+<body class="current-account bg">
+<div class="wrapper">
+<!--         <div class="currentTitle">
+            <div class="currentContent">
+                <img class="returnImg" src="../../../images/pages/my-account3.0/return3.0.png">
+                <span class="server">
+                    我的周周涨
+                </span>
+                <img class="world" src="../../../images/pages/my-account3.0/icon3.0.png">
+            </div>
+        </div> -->
+        <div class="header">
+            <div class="serverBox">
+                <div class="world">
+                    <img src="../../../images/pages/my-account3.0/record.png">
+                </div>
+                <div class="todayEarnings">
+                    <div class="todayData">
+                        0.00
+                    </div>
+                    <div class="todayWord">
+                        昨日收益 (元)
+                    </div>
+                </div>
+            </div>
+            <div class="earnings">
+                <div class="accumulated">
+                    <div class="accumulatedContent">
+                        累计收益 (元)
+                    </div>
+                    <div class="accumulatedMoney">
+                       0.00
+                     </div>
+                </div>
+                <div class="principal">
+                    <div class="principalContent">
+                        在投本金 (元)
+                    </div>
+                    <div class="principalMoney">
+                        0.00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="todayAnnual">
+            <div class="annualContent">
+                <div class="annualworld">
+                    <span class="annualworld-content">昨日综合年化收益率:</span><span class="annualData">0.00%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="todayMoney">
+            <span class="todayMoneycontent active">昨日资金收益明细</span>
+            <span class="line" >&nbsp|&nbsp</span>
+            <span class="couponUselist">加息券使用明细</span>
+        </div>
+
+    <div class="tables">
+              <div class="todayTable">
+                        <div class="todayTableTitle">
+                                    <div class="todayTableTh">
+                                                  <div class="todayTableTitle1">昨日在投本金(元)</div>
+                                                  <div class="todayTableTitle2">预计年化收益率</div>
+                                                  <div class="todayTableTitle3">昨日收益(元)</div>
+                                    </div>
+                        </div>
+                        <div class="todayTableContent">
+                        </div>
+              </div>
+<!--         <div class="addrateTable">
+            <div class="todayTableTitle">
+                <div class="todayTableTh">
+                    <div class="todayTableTitle1">加息利率</div>
+                    <div class="todayTableTitle2">加息天数（天）</div>
+                    <div class="todayTableTitle3">计息时间</div>
+                </div>
+            </div>
+            <div class="couponContent">
+            </div>
+        </div> -->
+    </div>
+
+        <div class="portfolio">
+            <div class="serverPortfolio">
+                <div class="cortfolioContent">
+                    <div class="serverWorld">查看周周涨资产组合</div>
+                    <img src="../../../images/pages/my-account3.0/nextPage3.0.png" class="underPageImg">
+                </div>
+            </div>
+        </div>
+
+        <div class="usecoupon">使用加息券<img src="../../../images/pages/my-account3.0/nextPage3.0.png">
+        </div>
+
+        <div id="container" style="height:5rem"></div>
+
+        <div class="mainbtn">
+               <a href="javascript:;" class="redemption blue" style="width:100%;"><button>赎回</button></a>
+               <a href="javascript:;" class="buy" style="display:none;"><button>购买</button></a>           
+        </div>
+
+</div>
+
+<div class="ui-dialog ui-dialog-name backdrop hide">
+  <div class="dialog-content">
+    <a href="javascript:;" class="close"></a>
+     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+     <div class="dialog-article"> <!-- 内容 -->
+       <p>您还未完成实名认证，请先完成实名认证</p>
+     </div>
+
+     <div class="tc btn-box1  "><!-- 按钮 -->
+       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+     </div>
+  </div>
+</div>
+
+<div class="ui-dialog ui-dialog-trade backdrop hide">
+  <div class="dialog-content">
+    <a href="javascript:;" class="close"></a>
+     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+     <div class="dialog-article"> <!-- 内容 -->
+       <p>您还未设置交易密码，请先设置交易密码</p>
+     </div>
+
+     <div class="tc btn-box1  "><!-- 按钮 -->
+       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+     </div>
+  </div>
+</div>
+
+<script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../../js/lib/highcharts.js"></script>
+<script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../../js/setting.js?v=9.0.0"></script>
+<script src="../../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../../js/pages/my-account/current-account3.0.js?v=9.0.0"></script>
+</body>
+</html>

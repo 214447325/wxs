@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>注册</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/account/registered3.0.css">
+</head>
+<body class="account-page">
+<div class="wrapper">
+    <!--<div class="registered-header">-->
+        <!--<div class="registered-title">-->
+            <!--<img src="../../images/pages/account/login-return.png" class="img-header">-->
+            <!--<div class="login-registered default">注册</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <form class="form-ui tc registered-form" autocomplete="off">
+        <div class="content-div">
+            <div class="icon-phone">
+               <span class="phone">
+                  <!-- <span class="phoneNumber">
+                        +86
+                    </span> -->
+                   <input type="tel" name="phone" placeholder="请输入手机号" value="" class="tel-phone" maxlength="11">
+                    <img src="../../images/pages/account/close.png" class="close" style="float:right;width:0.4266rem;height:0.4266rem;display:none;margin-top:0.18rem;">
+                   
+               </span>
+            </div>
+            <div class="icon-lock">
+                <span class="lock">
+                   <!--  <span class="phoneNumber">
+                         <img src="../../images/pages/account/registered-number3.0.png" class="registered-img">
+                     </span> -->
+
+                    <input type="text" name="vcode" placeholder="请输入图形码" value="" class="vcode">
+                    <div class="Verification-code registernumber"></div>
+                </span>
+            </div>
+             <div class="icon-lock">
+                <span class="#fff">
+                   <!--  <span class="phoneNumber">
+                         <img src="../../images/pages/account/registered-number3.0.png" class="registered-img">
+                     </span> -->
+
+                    <input type="text" name="invitation" placeholder="邀请码（选填）" value="" class="friendNumber">
+                </span>
+            </div>
+        </div>
+        <div class="next-btn">下一步</div>
+    </form>
+
+</div>
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/common2.js?v=9.0.0"></script>
+<script src="../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script src="../../js/pages/account/registered3.0.js?v=9.0.0"></script>
+</body>
+</html>

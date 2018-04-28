@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+ <!--  <meta name="format-detection" content="telephone=no" />
+ <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>充值</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+   <link rel="stylesheet" type="text/css" href="../../css/pages/top-up.css">
+   <style>
+  .top-up .vm{
+    color:#ef5344;
+
+  }
+.bg{
+    background: #fff url() 0 0 no-repeat;
+   }
+.paymentChannel{
+  width:100%;
+  height:4rem;
+  z-index:9999;
+  font-size:.3rem;
+  padding:1rem 0.5rem;
+  box-sizing:border-box;
+  margin:0 auto;
+  
+
+}
+.paymentChannel input{
+ display:inline-block;
+ width:30%;
+ margin-right: 0.1rem;
+ height:100%;
+ box-sizing:border-box;
+background: #ccc url() 0 0 no-repeat;
+
+}
+
+.contentChanel {
+
+       width:100%;
+       height:3.5rem;
+  
+    padding:0.5rem;
+    box-sizing:border-box;
+	}
+.chanelright{
+  width:0.4375rem;
+  height:0.4375rem;
+  background: transparent url(../../images/pages/top-up/bg-right.png) 0 0 no-repeat;
+   background-size:contain;
+   margin-top:-1.8rem;
+   margin-right:-2.875rem;
+   z-index:8877;
+   display:none;
+}	
+	#fyChanel{
+            float:right; 
+	
+		width:3.234375rem;  
+		height:1.84375rem;
+	
+	/* 	border: 1px solid #eee; */
+            background: url(../../images/pages/top-up/bg-gray.jpg) 0 bottom no-repeat;
+            background-size:contain;
+      box-sizing:border-box;
+z-index:22244;
+ cursor: pointer;
+	}
+	 #fyChanel .top,#bfChanel .top{
+
+    width:3.109375rem;
+    height:1.578125rem; 
+    margin-top:0.225rem;
+    z-index:-89555;
+   }
+     #fyChanel .bind,#bfChanel .bind{
+      width:1.6875rem;
+      height:0.515625rem;
+      background:transparent url(../../images/pages/top-up/bg-unselect-small.png) 0 0 no-repeat;
+      background-size:contain;
+margin-top:-0.65rem;
+z-index:4474;
+color:#ccc;
+font-size:0.425rem;
+line-height:0.515625rem;
+     }
+    #fyChanel .top img,#bfChanel .top img{
+      width:80%;
+      z-index:-552522;
+    }
+	#bfChanel{
+            float:left;  
+
+	
+width:3.234375rem;  
+    height:1.84375rem;
+	     background: url(../../images/pages/top-up/bg-gray.jpg) 0 bottom no-repeat;
+            background-size:contain;
+
+       box-sizing:border-box;
+       z-index:20000;
+       cursor: pointer;
+	}
+
+   </style>
+</head>
+<body class="top-up bg">
+  <div class="wrapper">
+<!--      <div class="public-title pl20 mt30">充值银行卡</div> -->
+<!--      class="ui-text-input" -->
+     <ul class="ui-text-input">
+       <li>
+        <label><i class="icon icon-bank-card">银行卡</i></label>
+        <input type="text" name="bankcard" placeholder='输入您实名的银行卡号' class="txt" value="">
+       </li>
+       <li >
+        <label><i class="icon icon-bank">银行</i></label>
+        <input type="text" name="bank" readonly="readonly" class="txt">
+       </li>
+       <li >
+        <label><i class="icon icon-limit">限额</i></label>
+        <p >单笔：<span class="limitonce">0.00</span>元 &nbsp;&nbsp;&nbsp;&nbsp;单日：<span class="limitday">0.00</span>元</p> 
+       </li>
+
+<!--        class="hide" -->
+       <li class="hide">
+        <label><i class="icon icon-bank">签约号</i></label>
+        <input type="text" name="agreeNo" readonly="readonly" class="txt">
+       </li>
+       <li class="hide">
+        <label><i class="icon icon-bank">绑卡</i></label>
+        <input type="text" name="bindType" readonly="readonly" class="txt">
+       </li>
+       
+       <li class="hide">
+        <label><i class="icon icon-bank">银行卡代码</i></label>
+        <input type="text" name="bank_code" readonly="readonly" class="txt">
+       </li>
+       <li class="hide">
+        <label><i class="icon icon-bank">银行卡类型</i></label>
+        <input type="text" name="bank_card_type" readonly="readonly" class="txt">
+       </li>
+       <li class=hide>
+        <label><i class="icon icon-bank">开户名</i></label>
+        <input type="text" name="acctName" placeholder='银行卡开户的姓名'  class="txt">
+       </li>
+       <li class="hide">
+        <label><i class="icon icon-bank">商户号</i></label>
+        <input type="text" name="merchant_id" readonly="readonly" class="txt">
+       </li>
+       <li id="sjh" class="hide"> 
+        <label><i class="icon icon-user">手机号</i></label>
+        <input type="number" name="phone_number" placeholder='银行卡预留手机号' class="txt"   id="phoneNumber">
+       </li>
+     </ul>
+     <div class="public-title pl20 mt30">充值金额</div>
+     <ul class="ui-text-input">
+       <li>
+        <label><i class="icon icon-money">金额 <small> ( 元 )</small></i></label>
+        <input type="number" name="money" placeholder='请输入您要充值的金额' class="txt"   onkeyup="limitInput()" id="inputmoney">
+       </li>
+     </ul>
+<div class="contentChanel">
+	<div id="bfChanel" align="center">
+       <div class="top"><img src="../../images/pages/top-up/logo-1.png" alt=""></div>
+       <div   id="bfbind" class="bind">未绑卡</div>
+       <div class="chanelright"  id="bfright"></div>
+       </div>
+       <div id="fyChanel" align="center">
+       <div class="top"><img src="../../images/pages/top-up/logo-3.png" alt=""></div>
+       <div   id="fybind" class="bind">未绑卡</div>
+       <div class="chanelright"  id="fyright"></div>
+       </div> 
+</div>
+
+    <div class="row tr pt10 pr30 mr20 fz22"> <a href="limitBF.html" class="black"><span class="vm">各支付通道支持银行及限额说明</span><i class="icon icon_dot3 ml5 vm"></i></a></div>
+    <div class="row tc mt75">
+      <p class="blue">充值手续费：<span>0.00</span>元</p>
+      <a href="javascript:;" class="btn btn-default next-btn">下一步</a>
+<!--       <p class="fz20 mt20"><i class="icon icon-safe">账户资金安全由阳光财险承保</i></p> -->
+     </div>
+     <div class="maskLayer" id="maskLayer">
+     	<div class="juzhong" >
+	     <div class="verification clearfix" id="verification">
+	        <h1>确认支付</h1>
+	        <input class="ver-word" type="text" name="check_code" placeholder='请输入验证码' >
+	        <input class="ver-btn" type="button" name="sendSmsAgain" value="重新发送">
+	        <input class="ver-sub" type="submit" name="submit" value="确认">
+	        <input class="ver-cancel" type="button" name="cancel" value="取消">
+	     </div>
+	     </div>
+     </div>
+     <div class="maskLayer" id="maskLayer2">
+	     <div class="verification clearfix" id="verification2">
+	        <h1>充值申请成功</h1>
+	        <input class="ver-sub" type="button" name="submit2" value="查看账户">
+	        <input class="ver-cancel" type="button" name="cancel2" value="去投资">
+	     </div>
+     </div>
+  </div>
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common.js?v=9.0.0"></script>
+  <script src="../../js/pages/my-account/top-upBF.js?v=9.0.0"></script>
+</body>
+</html>

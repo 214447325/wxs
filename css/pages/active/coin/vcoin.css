@@ -1,0 +1,883 @@
+
+
+.wrapper {
+    height: 100%;
+    background: url("../../../../images/pages/activity/coin/background.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+   overflow-x: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.title {
+    width: 9.5rem;
+    height: 6.8rem;
+    background: url("../../../../images/pages/activity/coin/title.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.back .shareActive {
+    width: 1.5rem;
+    height:2rem;
+    background: url("../../../../images/pages/activity/coin/share.gif") 0 0 no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.2rem;
+}
+
+a:active {
+    color: snow;
+}
+
+.back .core {
+    width: 1.5rem;
+    height:2rem;
+    background: url("../../../../images/pages/activity/coin/core.gif") 0 0 no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.2rem;
+}
+
+.area {
+    width: 9rem;
+    height: 12rem;
+    margin: 0.5rem auto;
+    position: relative;
+}
+
+.mui-content {
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.mui-slider {
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+    position: relative;
+}
+
+.mui-slider-indicator {
+    /*background: red;*/
+    position: absolute !important;
+    top: 0;
+    z-index: 100002;
+}
+
+.mui-slider-group {
+    width: 100%;
+    height: 100%;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border: none;
+}
+
+.act1Text p {
+    color: #ffffff !important;
+}
+
+.bottom-div {
+    width: 9rem;
+    height: 6rem;
+    background: url("../../../../images/pages/activity/coin/v.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.bottomdiv {
+    width: 8rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+
+.bottomdiv-top {
+    width: 100%;
+    height: 2rem;
+    font-size: 0.5rem;
+    line-height: 2rem;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+}
+
+.bottomIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("../../../../images/pages/activity/coin/v@3x.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 0.4rem;
+    margin-left: 0.8rem;
+}
+
+.bottomIconHtml {
+    width: 5.5rem;
+    height: 100%;
+    float: right;
+}
+
+.bottomdiv-top .text11 {
+    color: rgb(255,201,2);
+}
+
+.button {
+    width: 100%;
+    height: 1.8rem;
+    display: block;
+    background: url("../../../../images/pages/activity/coin/button@3x.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+     width: 100% !important;
+     height: 100%;
+     background: url("../../../../images/pages/activity/coin/slide1.png") 0 0 no-repeat;
+     background-size: 100% 100%;
+    overflow: hidden;
+    padding-top: 1rem;
+ }
+
+.slide2 {
+    width: 100% !important;
+    height: 100%;
+    background: url("../../../../images/pages/activity/coin/slide2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.slide3 {
+    width: 100% !important;
+    height: 100%;
+    background: url("../../../../images/pages/activity/coin/slide3.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.aslide {
+    width: 33.33%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.slidetitle {
+    width: 100%;
+    height: 1.2rem;
+    opacity: 0.56;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 10.8rem;
+}
+
+
+.content1 {
+    width: 8rem;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+
+.act1 {
+    width: 100%;
+    height: 6rem;
+    background: url("../../../../images/pages/activity/coin/act1.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.5rem;
+    padding-top: 0.1rem;
+}
+
+.act2 {
+    width: 6rem;
+    height: 6rem;
+    background: url("../../../../images/pages/activity/coin/act2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    padding-top: 0.1rem;
+    position: relative;
+}
+
+.act3 {
+    width: 100%;
+    height: 6.6rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    padding-top: 0.6rem;
+    position: relative;
+}
+
+.act1Text {
+    width: 100%;
+    height: 3.5rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    color: #ffffff;
+}
+
+.act1Text p a {
+    color: rgb(255,132,0);
+}
+
+.act1area {
+    width: 7.8rem;
+    height: 5.8rem;
+    background: url("../../../../images/pages/activity/coin/act1back.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.area1 {
+    padding-top: 2.3rem;
+}
+
+.act1area canvas {
+    width: 7.8rem;
+    height: 5.8rem;
+    position: absolute;
+    z-index: 10000;
+}
+
+.abutton1 {
+    width: 5rem;
+    height: 1.2rem;
+    display: block;
+    background: #ff8400;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1.2rem;
+    color: #ffffff;
+    margin:0 auto;
+}
+
+#areacontent {
+    width: 100%;
+    height: 100%;
+    background: #ffffe7;
+    position: absolute;
+    padding-top: 0.5rem;
+}
+
+#areacontent .area1title {
+    width: 7rem;
+    height: 1.6rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+    color: rgb(50,50,50);
+}
+
+#areacontent .area1title a {
+    color: rgb(255,115,46);
+}
+
+#areacontent .actIcon {
+    width: 4rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+#areacontent .actIcon a{
+    font-size: 0.6rem;
+    color: rgb(255,232,83);
+}
+
+#areacontent .actIcon .a1 {
+    font-size: 0.4rem !important;
+}
+
+#areacontent .actIcon1 {
+    background: url("../../../../images/pages/activity/coin/box4.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+#areacontent .actIcon2 {
+    background: url("../../../../images/pages/activity/coin/box2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+#areacontent .actIcon3 {
+    background: url("../../../../images/pages/activity/coin/box3.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.act1bottom {
+    width: 7rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    position: relative;
+}
+
+.act1leftdiv {
+    width: 3rem;
+    height: 100%;
+    background: #ff8400;
+    float: left;
+    border-radius: 0.1rem;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #ffffff;
+}
+
+.act1rightdiv {
+    width: 3rem;
+    height: 100%;
+    background: #ff5049;
+    float: right;
+    border-radius: 0.1rem;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #ffffff;
+}
+
+.act1left {
+    width: 3rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: 20000;
+}
+
+.act1right {
+    width: 3rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 20000;
+}
+
+/*.abutton2 {*/
+    /*width: 2rem;*/
+    /*height: 1.8rem;*/
+    /*display: block;*/
+    /*background: url("../../../../images/pages/activity/coin/abutton2.png") 0 0 no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*position: absolute;*/
+    /*right: -0.7rem;*/
+    /*top: 2.1rem;*/
+/*}*/
+
+.abutton2 {
+    width: 2.6rem;
+    height: 2.2rem;
+    display: block;
+    background: url("../../../../images/pages/activity/coin/abutton2.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -1.1rem;
+    top: 1.8rem;
+}
+
+
+.act2main {
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    left: 1.8rem;
+    top: 1.5rem;
+    bottom: 0;
+    right: 0;
+}
+
+.act2demo{
+    width:100%;
+    height:100%;
+    margin:10px auto;
+}
+
+.act2wrap{
+    width:100%;
+    height:100%;
+    /*margin:120px auto 30px auto;*/
+    position:relative
+}
+
+.act2dice{
+    width:100%;
+    height:100%;
+    background:url("../../../../images/pages/activity/coin/dice.png")0 0 no-repeat;
+    cursor:pointer;
+}
+
+.dice_1{
+    background-position:-5px -4px;
+}
+
+.dice_2{
+    background-position:-5px -107px;
+}
+
+.dice_3{
+    background-position:-5px -212px;
+}
+
+.dice_4{
+    background-position:-5px -317px;
+}
+
+.dice_5{
+    background-position:-5px -427px;
+}
+
+.dice_6{
+    background-position:-5px -535px;
+}
+
+.dice_t{
+    background-position:-5px -651px;
+}
+
+.dice_s{
+    background-position:-5px -763px;
+}
+
+.dice_e{
+    background-position:-5px -876px;
+}
+
+#dice_mask{
+    width:90px;
+    height:90px;
+    background:#fff;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:999
+}
+
+.ui-vcoin-back {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #000000;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+.ui-vcoin-box {
+    width: 8rem;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 100001;
+}
+
+.closediv {
+    width: 100%;
+    height: 0.8rem;
+}
+
+.closea {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    background:url("../../../../images/pages/activity/coin/close.png")0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+.ui-content {
+    width: 100%;
+    height: 5rem;
+    background:url("../../../../images/pages/activity/coin/alert.png")0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.uitext {
+    width: 6.5rem;
+    height: 2.6rem;
+    margin: 0 auto;
+    color: rgb(50,50,50);
+    text-align: center;
+    font-size: 0.4rem;
+    padding:25px;
+    word-wrap:break-word;
+}
+
+.aclose1 {
+    width: 3rem;
+    height: 1rem;
+    display: block;
+    background: #ff8400;
+    font-size: 0.4rem;
+    color: #ffffff;
+    line-height: 1rem;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.actback2-div {
+    width: 8rem;
+    height: 8rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    z-index: 100001;
+}
+
+._scro {
+    overflow: hidden;
+}
+
+.ui2-content {
+    width: 100%;
+    height: 6rem;
+    background:url("../../../../images/pages/activity/coin/actback2.png")0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+.ui2-content1 {
+    height: 6.6rem;
+}
+
+.ui2-content-title {
+    width: 7.8rem;
+    height: 1rem;
+    margin: 0 auto;
+    color: rgb(50,50,50);
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.4rem;
+}
+
+.ui2-content-box {
+    width: 6rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.act2left {
+    width: 2rem;
+    height: 100%;
+    display: block;
+    float: left;
+    background:url("../../../../images/pages/activity/coin/actleft.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.act2right {
+    width: 2rem;
+    height: 100%;
+    display: block;
+    float: right;
+    background:url("../../../../images/pages/activity/coin/actright.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.g {
+    width: 100%;
+    height: 100%;
+}
+
+.isg {
+    width: 2rem;
+    height: 100%;
+    display: block;
+    background:url("../../../../images/pages/activity/coin/gou.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.act2button {
+    width: 3rem;
+    height: 1rem;
+    display: block;
+    background: #ff8400;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 0.2rem;
+}
+
+.ui2-showcontent-title {
+    width: 7.8rem;
+    height: 1rem;
+    margin: 0 auto;
+    color: rgb(255, 132, 0);
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.ui2-content-text {
+    width: 6rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ui2-text {
+    width: 100%;
+    height: auto;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.ui2-text a {
+    color: rgb(255,132,0);
+}
+
+.ui2icon {
+    width: 4.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.ui2icon a{
+    font-size: 0.5rem;
+    color: rgb(255, 232, 83);
+}
+
+.ui2icon .a2 {
+    font-size: 0.4rem !important;
+}
+
+.ui2icon1 {
+    background:url("../../../../images/pages/activity/coin/box4.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.ui2icon2 {
+    background:url("../../../../images/pages/activity/coin/box2.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.ui2icon3 {
+    background:url("../../../../images/pages/activity/coin/box3.png")0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.draw {
+    width: 100%;
+    height: 100%;
+}
+
+.draw table {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td {
+    position: relative;
+}
+
+table tr {
+   display: block;
+    height: 1.8rem;
+}
+
+.draw .item {
+    width: 2.62rem;
+    height: 1.9rem;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 0.05rem;
+}
+
+.draw .item.active {
+    background: url(../../../../images/pages/activity/coin/cd.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.draw .img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.draw .img img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%
+}
+
+.draw .name {
+    display: block;
+    margin-top: 10px;
+}
+
+.draw .draw-btn {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+}
+
+.draw .draw-btn img {
+    width: 100%;
+    height: 100%
+}
+
+.rules {
+    width: 8.3rem;
+    height: 10rem;
+    position: fixed;
+    top: 0;
+    right: -8.3rem;
+    z-index: 100002;
+}
+
+.rules-box {
+    width: 8.3rem;
+    height: 9rem;
+    background: url(../../../../images/pages/activity/coin/rules.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.closediv1 {
+    width: 7rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+
+.colserules {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    background: url(../../../../images/pages/activity/coin/close.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.rules-text {
+    width: 5.8rem;
+    height: auto;
+    float: left;
+    margin-left: 1.1rem;
+    margin-top: 0.3rem;
+}
+
+.rules-text .rules-text-title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #ffffff;
+    line-height: 0.8rem;
+    font-weight: bold;
+}
+
+.rules-text .rulestext {
+    width: 100%;
+    height: auto;
+    font-size: 0.3rem;
+    color: #ffffff;
+    line-height: 0.6rem;
+    margin-top: 0.3rem;
+}
+
+.activem {
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.activem a {
+    color: rgb(255, 115, 46);
+}
+
+.activemdiv {
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+.activemdivleft {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.activemdivlefticon {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(../../../../images/pages/activity/coin/v@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+.activemdivright {
+    width: 3rem;
+    height: 100%;
+    float: right;
+   line-height: 2rem;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(255, 132, 0);
+}

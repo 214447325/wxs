@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title>理财</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/regular3.0.css">
+</head>
+<body class="financing regular" data-target="money">
+	<!-- <div class="tab">
+		<a href="javascript:;" class="active">固收
+            <div class="underline"></div>
+        </a>
+		<a href="current.html" >周周涨</a>
+		<a href="float.html">浮动</a>
+	</div> -->
+	<div class="wrapper"><!-- wrapper外层 -->
+<!-- 		<div class="regular-title">
+			<span class="regularTitle">周周派息</span>
+			<span class="regulartitle-p">累计投资金额：3.000.000.15元</span>
+		</div> -->
+
+		<div class="regularList">
+<!-- 			<div class="regularItem">
+				<div class="itemLeft">
+					<span class="title-top">年化收益率</span>
+					<span class="title-p">9.50%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">4周</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">抢购</a>
+				</div>
+			</div>
+			<div class="regularItem">
+				<div class="itemLeft">
+					<span class="title-top">年化收益率</span>
+					<span class="title-p">9.50%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">4周</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">抢购</a>
+				</div>
+			</div>
+			<div class="regularItem">
+				<div class="itemLeft">
+					<span class="title-top">年化收益率</span>
+					<span class="title-p">9.50%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">4周</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">抢购</a>
+				</div>
+			</div>
+			<div class="regularItem">
+				<div class="itemLeft">
+					<span class="title-top">年化收益率</span>
+					<span class="title-p">9.50%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">4周</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">抢购</a>
+				</div>
+			</div> -->	
+		</div>	
+		<div style="text-align:center;color:#9B9B9B;font-size:0.32rem;line-height:0.6rem;margin-bottom:0.3rem;">
+		<!-- 	<div><img style="width:0.2666rem;height:0.32rem;margin-right:0.2133rem;vertical-align: middle; " src="../../images/pages/financing/regular3.0/safe-icon.png">交易资金全程由上海银行存管</div>	 -->
+			<div>市场有风险，投资需谨慎</div>
+		</div>
+		
+	</div>
+
+	<div class="ui-dialog ui-dialog-name backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未完成实名认证，请先完成实名认证</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+	       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="ui-dialog ui-dialog-trade backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未设置交易密码，请先设置交易密码</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+	       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+	     </div>
+	  </div>
+	</div>
+	
+	<div class="nav clearfix" id="navNew"></div>
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/common2.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/regular3.0.js?v=9.1.4"></script>
+	<script type="text/javascript">
+	(function() {
+		var el = document.querySelector('.regular');
+		var startPosition, endPosition, deltaX, deltaY, moveLength;
+
+		el.addEventListener('touchstart', function(e) {
+			var touch = e.touches[0];
+			startPosition = {
+				x: touch.pageX,
+				y: touch.pageY
+			}
+		});
+		
+		el.addEventListener('touchend', function(e) {
+			var touch = e.touches[0];
+			$(".test").css("left",0);
+		});
+
+		el.addEventListener('touchmove', function(e) {
+			var touch = e.touches[0];
+			endPosition = {
+				x: touch.pageX,
+				y: touch.pageY
+			}
+			deltaX = endPosition.x - startPosition.x;
+			deltaY = endPosition.y - startPosition.y;
+			moveLength = Math.sqrt(Math.pow(Math.abs(deltaX), 2) + Math.pow(Math.abs(deltaY), 2));
+			
+			$(".test").css("left",deltaX);
+			
+			// if(Math.abs(deltaX)>150){
+			// 	location.href="float.html";
+			// }else{
+				
+			// }
+			if(deltaX>100){
+				// location.href="regular.html";
+			}
+			if (deltaX< -100) {
+				// location.href="current.html";
+			}
+		});
+	})();
+	</script>
+	
+</body>
+</html>

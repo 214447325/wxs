@@ -1,0 +1,10 @@
+.login-form {
+    margin: 60px auto 0;
+    .submit-btn {
+        margin-top: 60px;
+    }
+    .icon-gray-question{
+      margin-left: 40px;vertical-align: 6px;
+    }
+    .forget-link{display: block;}
+}

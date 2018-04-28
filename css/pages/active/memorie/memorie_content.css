@@ -1,0 +1,114 @@
+
+.book_content1 {
+    background: url(../../../../images/pages/activity/memorie/book_left.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.book_content2 {
+    background: url(../../../../images/pages/activity/memorie/book_right.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.box_content_right {
+    width: 6.8rem;
+    height: 10.8rem;
+    position: absolute;
+    right: 10%;
+    top: 13.5%;
+    overflow: hidden;
+}
+
+.box_content_left {
+    width: 6.8rem;
+    height: 10.8rem;
+    position: absolute;
+    left: 10%;
+    top: 13.5%;
+    overflow: hidden;
+}
+
+.content_title {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+    color: #b20403;
+    font-weight: bold;
+}
+
+.box_content {
+    width: 100%;
+    height: 2rem;
+    font-size: 0.36rem;
+    color: #333331;
+    font-weight: bold;
+}
+
+.content_img {
+    width: 100%;
+    height: 2.5rem;
+    overflow: hidden;
+}
+
+.img {
+    height: 100%;
+    float: right;
+}
+
+.img1 {
+    width: 5rem;
+    background: url(../../../../images/pages/activity/memorie/img1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.img2 {
+    width: 2.6rem;
+    height: 1.6rem;
+    background: url(../../../../images/pages/activity/memorie/img2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.font {
+    font-size: 0.4rem;
+    color: #b20403;
+}
+
+.content_img1 {
+    height: 4.2rem;
+}
+
+.img3 {
+    width: 2.4rem;
+    height: 2.4rem;
+    float: left;
+    margin-top: 1.5rem;
+    background: url(../../../../images/pages/activity/memorie/img3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.img4 {
+    width: 3.5rem;
+    height: 2.4rem;
+    margin-right: 0.2rem;
+    float: right;
+    background: url(../../../../images/pages/activity/memorie/img4.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.piece {
+    width: 1.39rem;
+    height: 5rem;
+    position: absolute;
+    bottom: 2.2rem;
+    background: url(../../../../images/pages/activity/memorie/piece.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    right: 0rem;
+}
+
+.no_left {
+    margin-top: 0.3rem;
+}
+
+.no_right {
+    margin-top: 0.8rem;
+}

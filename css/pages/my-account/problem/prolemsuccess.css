@@ -1,0 +1,72 @@
+.psuccess-box {
+    width: 8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.psuccess-box > div:nth-child(1) {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.33rem;
+    color: #9B9B9B;
+}
+
+.psuccess-box > div:nth-child(2) {
+    width: 2rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    background: url(../../../../images/pages/my-account3.0/vimg/wen.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.psuccess-box > div:nth-child(3) {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #FF2B6FF9;
+    /*font-weight: bold;*/
+    /*font-size: 0.5rem;*/
+}
+
+.psuccess-box > div:nth-child(3) > h1 {
+    color: #0076FF !important;
+}
+
+.psuccess-box > div:nth-child(4) {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.35rem;
+    text-align: center;
+    color: #0076FF;
+}
+
+.ps-bottom {
+    width: 100%;
+    height: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    line-height: 1.1rem;
+    font-size: 0.36rem;
+    color: #ffffff;
+}
+
+.ps-bottom > a {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: #0076FF;
+    font-size: 0.36rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ps-bottom > a:first-child {
+    border-right: 1px solid #FFFFFF;
+}

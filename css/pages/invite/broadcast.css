@@ -1,0 +1,20 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+body{ background:none;}
+input,button,select,textarea{outline:none;}
+ul,li,dl,ol{list-style:none;}
+a{color:#666; text-decoration:none;}
+
+.box{height:4.5rem;width:12rem; margin:0 auto;color:#ff294d!important;}
+.bcon{ height:3rem;width:100%; border:1px solid #eee; color:#ff294d!important;}
+.list_lh{ height:3rem; overflow:hidden;font-size:12px;}
+.list_lh li{ padding-top:10px;padding-bottom:10px;}
+.list_lh li.lieven{ background:#F0F2F3;}
+.list_lh li p{ height:24px; line-height:24px;}
+.list_lh li p a{ float:left;}
+.list_lh li p em{ font:normal 12px/24px Arial;   color:black; }
+.list_lh li p span{ width:80px;color:#ff294d }
+.list_lh li p a.btn_lh{  height:17px; line-height:17px;   color:#ff294d;  padding:0 5px; margin-top:4px; display:inline-block; float:right;}
+.btn_lh:hover{ color:#ff294d!important;text-decoration:none;}
+
+.btm p{ font:normal 12px/24px 'Microsoft YaHei'; text-align:center;}

@@ -1,0 +1,85 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #e6e6e6;
+}
+
+.mouthtable {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mtable {
+    width: 100%;
+    height: 100%;
+}
+
+table tr {
+    width: 100%;
+    height: 8.3rem;
+    display: block;
+    background: #ffffff;
+    margin-top: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+table tr:first-child {
+    margin-top: 0;
+}
+
+table tr .td1{
+    width: 9rem;
+    height: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.1rem;
+}
+
+.tdlocal {
+    width: 35px;
+    height: 35px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    float: left;
+}
+
+.tdlocal img {
+    width: 100%;
+    height: 100%;
+}
+
+.tdtext {
+    width: 7.6rem;
+    height: 100%;
+    float: right;
+    text-align: left;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+
+.td2 {
+    width: 9rem;
+    height: auto;
+    line-height: 1.2rem;
+    margin: 0 auto;
+    font-size: 0.4rem;
+    font-weight: bold;
+    display: block;
+}
+
+.td3 {
+    width: 9rem;
+    height: 4rem;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.td3 img {
+    width: 100%;
+    height: 100%;
+}

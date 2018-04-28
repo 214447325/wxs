@@ -1,0 +1,363 @@
+<style type="text/css">
+  .page-pay .input-box{
+    height:1.15rem;
+      margin-left: 0.755rem;
+  }
+  .page-pay .input-box .box{
+    width:1.12rem;
+    height:1.12rem;
+  }
+  .page-pay .title{
+    font-size:0.4266rem;
+    padding:0.2rem 0;
+    text-align: center;
+    color:#4A4A4A ;
+  }
+  .red{
+    font-size:0.8rem;
+    padding:0.2rem 0;
+    text-align: center;
+    color:#4A4A4A !important;
+  }
+
+
+   .dialog-content{
+    border-radius: 0.1333rem;
+    min-height: inherit;
+  }
+
+  .topup_top_box{
+    padding:0.3733rem;
+    text-align:center;
+
+  }
+  .tc.btn-box1{
+    width:100%;
+    border-top: 0.0133rem solid #D2D3D5;
+    margin:0;
+  }
+  .btn{
+    font-size: 0.4rem;
+    font-weight:normal;
+  }
+  .btn.btn-link{
+    width:48% !important;
+    margin:0 !important;
+    box-sizing: border-box;
+    background: #fff;
+    color:#666;
+    border-right: 0.0133rem solid #D2D3D5;
+    padding:0.4266rem 0 ;
+    height: inherit;
+    line-height: inherit;
+  }
+  .btn.btn-default-two{
+    margin:0 !important;
+    width:50% !important;
+    background: #fff;
+    color:#6C6FFF;
+    padding:0.4266rem 0 ;
+    height: inherit;
+    line-height: inherit;
+  }
+  .dialog-content .close{
+  height:0.44rem;
+  width:100%;
+  position:static;
+}
+.dialog-content .close img{
+  display:block;
+  float:right;
+  width:0.44rem;
+  height:0.44rem;
+}
+.dialog-content .close{
+  background:transparent;
+}
+.topup_top_box{
+  font-size:0.48rem;
+}
+.dialog-content .dialog-article p{
+  text-align:center;
+  padding:0;
+  font-size:0.4533rem;
+  color:#666;
+  margin:0.6133rem 0;
+}
+.ui-dialogFail.backdrop{
+  background: rgba(0, 0, 0, .6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%
+}
+.dialog-title{
+  font-weight:bold;
+}
+.shouxufei{
+  color:#9B9B9B;
+  font-size:0.3733rem;
+  text-align: center;
+  line-height:0.8rem;
+}
+</style>
+<div id="pay2">
+  <div class="page-pay" style="position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99999;
+      width: 100%;
+      height: 100%;background: rgba(0, 0, 0, .6);">
+    <div class="dialog-content" style="top:50%;padding-bottom: 0.5rem;">
+        <div class="tips fz24 mt20 mb20 tc">请输入交易密码
+          <img class="close" src="../../images/pages/financing/payresult/close.png" style="width:0.3386rem;
+      height:0.3386rem;
+      position:absolute;
+      top:0.4rem;
+      left:0.5rem;"">
+        </div>
+
+        <div class="title">提现</div>
+        <div class="red money">￥0.00</div>
+        <div class="shouxufei">额外扣除¥2.00手续费</div>
+        <div class="input-box">
+          <span class="box"></span>
+          <span class="box"></span>
+          <span class="box"></span>
+          <span class="box"></span>
+          <span class="box"></span>
+          <span class="box"></span>
+
+          <input type="number" maxlength="6" class="input" value="">
+        </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+  $(function(){
+  $('input[type="number"]').val('');
+  var defText = '确认付款';
+  var payText = '支付中...';
+
+  var payInfo = sessionStorage.getItem('withdrawal-pay');
+  var userId = sessionStorage.getItem('uid');
+
+  var $inputBox = $('.input-box');
+  var $boxs = $('.box', $inputBox);
+  var pass = '';
+
+  if(!userId){
+    Common.toLogin();
+    return false;
+  }
+
+  if(!payInfo){
+    window.location.href = Setting.staticRoot + '/pages/my-account/myAccount.html';
+    return false;
+  }
+
+  payInfo = JSON.parse(payInfo);
+
+  var $pay = $('.page-pay');
+  var $money = $('.money');
+
+  // setData
+  $money.text(parseFloat(payInfo.amount).toFixed(2) + '元');
+
+function pay(){
+    var $this = $pay;
+    if($this.hasClass('disabled')){
+      return false;
+    }
+    var pwd = $('input', $inputBox).val();
+    if(pwd.length < 6){
+      alert('请输入完整的交易密码！');
+      return false;
+    }
+    // $this.addClass('disabled').text(payText);
+    payInfo.tradePassword = md5(pwd);
+    payInfo.userId = userId;
+    payInfo.loginToken=sessionStorage.getItem('loginToken');
+
+    $.ajax({
+      url:Setting.apiRoot1 + '/u/fy/withdraw.p2p',
+      type: 'post',
+      dataType: 'json',
+      data: payInfo
+    }).done(function(res){
+        $('#pay2').hide();
+       if(res.code == 1){
+            var formData = {};
+            formData.code = res.code;
+            formData.message = res.message;
+            sessionStorage.setItem('payInfo', JSON.stringify(formData));
+            window.location.href = Setting.staticRoot + '/pages/my-account/withdrawal-details.html';
+        }else if(res.code == -3){
+          alert('交易密码错误，请重试');
+            $('.ui-alert .dialog-content .btn-box2').css({
+              'margin':'0',
+            });
+            $('.dialog-title').css('display','none');
+            $('.btn-sm').css({
+              'width':'100%',
+              'height':'1rem',
+              'lineHeight':'1rem',
+              'background':'#fff',
+              'fontSize':'0.4533rem',
+              'color':'#0076FF',
+              'margin':'0',
+              'borderTopWidth':'0.0266rem',
+              'borderTopStyle':'solid',
+              'borderColor':'#D8D8D8',
+              'borderRadius':'0 0 0.325rem 0.325rem'
+              
+            })
+            $('.btn-sm').text('重试');
+            $('.btn-sm').click(function(){
+              $('#pay2').show();
+            })
+            $boxs.each(function(index, box){
+                $(this).removeClass('full');
+            });
+            return false;
+        }else if(res.code == -2){
+            alert('交易密码错误次数过多请点击“忘记密码”找回');
+            $('.ui-alert .dialog-content .btn-box2').css({
+              'margin':'0',
+            })
+            $('.dialog-content').css({
+              'width':'6.6rem',
+              'marginLeft':'-3.3rem'
+            })
+            $('.dialog-title').css('display','none');
+            $('.dialog-article').css({
+                  'padding':'0.25rem 0.7rem',
+
+            })
+            $('.btn-sm').css({
+              'width':'100%',
+              'height':'1rem',
+              'lineHeight':'1rem',
+              'background':'#fff',
+              'fontSize':'0.4533rem',
+              'color':'#0076FF',
+              'margin':'0',
+              'borderTopWidth':'0.0266rem',
+              'borderTopStyle':'solid',
+              'borderColor':'#D8D8D8',
+              'borderRadius':'0 0 0.325rem 0.325rem'
+            })
+            $('.btn-sm').text('忘记密码');
+            $('.btn-sm').click(function(){
+              window.location.href = '../../pages/my-account/setting/reset.html'
+            })
+            $('#pay2').remove();
+            return false;
+
+        }else if(res.code == -99){
+            window.location.href = "../account/login.html";
+            return false;
+        }else{
+            alert(res.message)
+            $('#pay2').remove();
+
+           // window.location.href = Setting.staticRoot + '/pages/my-account/withdrawal-details.html';
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+        // if(res.code == -3 || res.code == -8 || res.code == -9) {
+        //     alert(res.message);
+        //     $this.removeClass('disabled').text(defText);
+        //     return false;
+        // }else {
+        //     window.location.href = Setting.staticRoot + '/pages/my-account/withdrawal-details.html';
+        // }
+
+    // if(res.code == 1){
+    //     sessionStorage.removeItem('withdrawal-pay');
+    ////     window.location.href = Setting.staticRoot + '/pages/my-account/myAccount.html';
+       //}else{
+      //   alert(res.message);
+       //    $this.removeClass('disabled').text(defText);
+       //    return false;
+       //}
+     
+    }).fail(function(){
+      alert('支付失败，请重试！');
+      // $this.removeClass('disabled').text(defText);
+      return false;
+    });
+}
+ 
+  var flag = 0;
+  $inputBox.on('keydown input focus blur', 'input', function(e){
+    flag = flag + 1;
+    var $this = $(this);
+
+    if(e.type == 'keydown'){
+      var code = e.keyCode;
+      if(code != 8 && (code < 48 || code > 57)){
+        return false;
+      }
+    }
+    var val = $.trim( $this.val() );
+    pass = val;// parseInt(val); 转整出错
+
+    isNaN(pass) && ( pass = '' );
+
+    pass = pass + '';
+    if(pass.length > 6){
+      pass = pass.substring(0, 6);
+    }
+    if(pass.length < 6){
+        flag = 0;
+    }
+    $inputBox.find('input').val(pass);
+
+    if(e.type == 'focusout'){
+      $boxs.removeClass('focus');
+    }
+    var len = pass.length;
+    if(e.type == 'focusin'){
+      len == 0 ? (true) : (len = len - 1);
+    }
+    $boxs.eq(len).addClass('focus').siblings('.focus').removeClass('focus');
+    var passArr = pass.split('');
+    $boxs.each(function(index, box){
+      var $box = $(box);
+
+      if(!!passArr[index]){
+        $box.addClass('full');
+      }else{
+        $box.removeClass('full');
+      }
+    });
+    if(pass.length == 6 && flag == 1){//密码输入完毕
+        console.log(123)
+        pay();
+      }
+  });
+  $('.page-pay img').click(function(){
+    $('#pay2').remove();
+  });
+  if(payInfo.account > 0){
+      $('.shouxufei').css('display','none');
+  }
+});
+
+</script>

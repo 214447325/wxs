@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <title>重阳节活动</title>
+    <link rel="stylesheet" href="../../../css/pages/activity/doubleNinth/lean.css">
+    <link rel="stylesheet" href="../../../css/pages/activity/doubleNinth/doubleNinth.css">
+    <style>
+        .dialog-btn {
+            background: rgb(55,78,171);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- register -->
+<div class="receiveMoney register">
+    <header><img src="../../../images/pages/activity/doubleNinth/success.png" alt=""></header>
+    <h2>恭喜你成功通关！</h2>
+    <h3>
+        <p>送你一个<span>318元</span></p>
+        <p>重阳节红包</p>
+    </h3>
+    <h4>手机号：<span class="phoneNum hide"></span><span class="phoneNumSer"></span></h4>
+    <form>
+        <div class="form-list clearfix">
+            <div class="col-6"><input type="text" class="regCode" placeholder="请输入验证码"></div>
+            <div class="col-4"><button type="button" class="getCode">获取验证码</button></div>
+        </div>
+        <div class="form-list">
+            <input type="password" class="regPwd" placeholder="6-20位密码（数字、字母组合）" maxlength="20">
+            <i class="toggleEye closeEye"><img src="../../../images/pages/activity/doubleNinth/eye-close.png" alt=""></i>
+            <i class="toggleEye openEye hide"><img src="../../../images/pages/activity/doubleNinth/eye-open.png" alt=""></i>
+        </div>
+        <p><a href="javascript:void(0)" class="registerBtn">立即领取</a></p>
+    </form>
+</div>
+<!-- register -->
+
+<!-- dialog -->
+<div class="dialog hide">
+    <div class="dialog-content text-center">
+        <div class="dialog-title"></div>
+        <div class="dialog-desc"></div>
+        <div class="dialog-btn">确定</div>
+    </div>
+    <div class="dialog-bg"></div>
+</div>
+<!-- dialog -->
+<script src="../../../js/lib/jquery-2.1.3.min.js"></script>
+<script src="../../../js/pages/activity/doubleNinth/register.js"></script>
+<script src="../../../js/setting.js"></script>
+</body>
+</html>

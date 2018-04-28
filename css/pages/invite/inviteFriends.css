@@ -1,0 +1,153 @@
+.inviteTitle {
+    width: 10rem;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+}
+
+.inviteContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.invite-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.inviteHeader {
+    width: 10rem;
+    height: 35%;
+    background: url(../../../images/pages/invite/inviteBanner.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+}
+
+.inviteCenter {
+    width: 10rem;
+    height: 57%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.center {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.activeDetailed {
+    width: 2.4rem;
+    height: 0.8rem;
+    float: left;
+    background: url(../../../images/pages/invite/rules.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+    margin-top: 0.3rem;
+}
+
+.invite-count {
+    width: 100%;
+    height: 0.6rem;
+    float: left;
+    margin-top: 0.6rem;
+}
+
+.inviteCount {
+    width: 75%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+}
+
+.inviteCount {
+    letter-spacing:0.01rem;
+    color: rgb(153,153,153);
+}
+
+.span1 {
+    margin: 0 0.1rem;
+    color: rgb(255,121,99);
+}
+
+.lookDetail {
+    width: 25%;
+    height: 100%;
+    line-height: 0.6rem;
+    float: right;
+    text-align: center;
+    color: rgb(71,39,188);
+}
+
+.inviteFriend-detail {
+    width: 8rem;
+    height: 3.6rem;
+    float: left;
+    margin: 0.5rem 0.5rem;
+    background: url(../../../images/pages/invite/detail.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+}
+
+.invite-content {
+    width: 100%;
+    height: 1.8rem;
+    float: left;
+    color: rgb(153,153,153);
+}
+
+.inviteFooter {
+    width: 10rem;
+    height: 8%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    text-align: center;
+    color: rgb(255,215,0);
+    background: rgb(72,40,189);
+    font-size: 0.45rem;
+    letter-spacing:0.06rem;
+}
+
+.active-log {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.7;
+}
+
+.alertDiv {
+    width: 90%;
+    height: 90%;
+    background:url(../../../images/pages/invite/details.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.log-alert {
+    display: none;
+}

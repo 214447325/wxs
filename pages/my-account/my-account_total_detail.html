@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+
+  <script src="../../js/pages/my-account/echarts.min.js"></script>
+<title>我的累计总收益</title>
+<style type="text/css">
+body{
+	padding:0;
+	margin:0;
+	border: none;
+	font-size:0;
+}
+.grandtotal{
+	padding:0;
+	margin:0;
+	background: #ef5344 url() 0 0 no-repeat;
+	width:100%;
+	height:4rem;
+	text-align:center;
+	border:none;
+	font-size:1rem;
+	font-weight:bold;
+	color:#fff;
+	vertical-align:center;
+	line-height:3rem;
+	position: relative;
+}
+ p.leiji{
+	width:100%;
+	height:0.5rem;
+	line-height:0.5rem;
+	font-size:0.35rem;
+	text-align:center;
+	color:#fff;
+	position: absolute;
+	top:1.8rem;
+}
+.bg {
+	
+	height: 100%;
+	width: 100%;
+	background: transparent url() 0 0 no-repeat;
+	margin:0 auto;position: relative;
+} 
+/* .allIncome{
+	width:100%;
+
+height:1rem;
+background: red url() 0 0 no-repeat;
+position: absolute;
+left:3rem;
+top:50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);z-index:99;
+} */
+.analysis{
+	font-weight:bold;
+	font-size:0.6rem;
+	padding: 0 0.5rem;box-sizing: border-box; 
+}
+.incomeDetail{
+	width:100%;
+	height:0.5rem;
+	font-size:0.4rem;
+	line-height:0.5rem;
+	text-align:center;
+	position: relative;
+}
+.currentIncome .before,.regularIncome .before,.yinpiaoIncome .before{
+
+width:0.25rem;
+height:0.25rem;
+border-radius:50%;
+background: rgba(87,180,223,1); 
+position: absolute;
+left:3rem;
+top:50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.regularIncome .before{
+	background: rgba(231,153,44,1); 
+
+}
+.yinpiaoIncome .before{
+	background:rgba(255,0,0,1); 
+
+}
+</style>
+</head>
+<body>
+
+	<div id="totalIncome" class="grandtotal"></div><p class="leiji">累计总收益(元)</p>
+	<p class="analysis">收益分析</p>
+	<div class="bg"  id="my_container" style="width:100%;height:10rem;" >
+	<!-- <div class="allIncome">总收益<br>20000(元)</div> -->
+		</div>
+	<div id="currentIncome" class="incomeDetail currentIncome"><div class="before"></div>七天乐：2000元</div>
+	<div id="regularIncome" class="incomeDetail regularIncome"><div class="before"></div>定期：3000元</div>
+	<div id="yinpiaoIncome" class="incomeDetail yinpiaoIncome"><div class="before"></div>银票：8000元</div>	
+	<script type="text/javascript">
+	  var ding;
+	  var ying;
+	  var huo;
+	var myChart = echarts.init(document.getElementById('my_container'));
+
+
+	var visiturl = location.search; //获取url中"?"符后的字串
+	 var param = {};
+	 if (visiturl.indexOf("?") != -1) {
+	     var str = visiturl.substr(1);
+	     strs = str.split("&");
+	  for(var i = 0; i < strs.length; i ++) {
+	        param[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
+	     }
+	  }
+
+	
+	  function init() {
+	  
+	  var total = param.total==null?0:parseInt(param.total);
+	  var totalIncome = document.getElementById("totalIncome");
+/* totalIncome.innerHTML  =total+ '<br>' + '累计总收益(元)' ;*/
+
+ totalIncome.innerHTML  =total;
+	  
+	  ding = param.ding==null?0:parseInt(param.ding);
+	  ying = param.ying==null?0:parseInt(param.ying);
+	  huo = param.huo==null?0:parseInt(param.huo);
+
+
+
+	  if(huo!=undefined){
+		  
+	 	  var seriesData = [  
+	          {name:"定期", value:ding, color:"RGBA(87,180,223,1)"},  
+	          {name:"银票", value:ying, color:"rgba(231,153,44,1)"},
+	          {name:"7天乐", value:huo, color:"rgba(255,0,0,1)"}
+	          ];
+		/* draw(seriesData);*/
+		 
+	  }
+	}
+	
+	setTimeout(init(), 0); 
+
+	
+
+		option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'center',
+        y:'bottom',
+        show: false,
+        data:['银票','7天乐','定期']
+
+    },
+    series: [
+        {
+        	
+            name:'投资方式',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+
+                {value:ding, name:'定期'},
+                {value:ying, name:'银票'},
+                {value:huo, name:'7天乐'},
+          
+            ]
+        }
+    ]
+};
+
+
+	
+
+
+myChart.setOption(option);
+</script>	
+
+</body>
+</html>

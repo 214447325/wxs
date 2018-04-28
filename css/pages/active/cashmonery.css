@@ -1,0 +1,95 @@
+body {
+    background: #fee054;
+}
+
+.background {
+    width: 100%;
+    height: 9rem;
+    background: url(../../../images/pages/activity/cashmain.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.div_form {
+    width: 100%;
+    height: 5rem;
+    margin-top: -1.3rem;
+}
+
+.div_bottom {
+    width: 100%;
+    height: 40.5rem;
+    margin-top: 1.3rem;
+    background: url(../../../images/pages/activity/cashdown.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+.registernumber {
+    width: 3rem;
+    height: 1rem;
+    float: right;
+    background: #333;
+}
+.imgA img {
+	width: 3rem;
+	height: 1rem;
+}
+.div_form .divForm {
+    width: 8.6rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.div_form .divForm .divuser {
+    width: 100%;
+    height: 1rem;
+}
+
+ input {
+    width: 100%;
+    height: 100%;
+    padding-left: 0.5rem;
+    font-size: 0.35rem;
+     border: 1px solid #000201;
+}
+
+.div_form .divForm .divcode {
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.3rem;
+}
+
+.div_form .divForm .divcode .divinput {
+    width: 4.6rem;
+    height: 100%;
+    float: left;
+}
+
+.div_form .divForm .divcode .divbutton {
+    width: 3rem;
+    height: 100%;
+    float: right;
+    background: #ff8326;
+    color: #ffffff;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.4rem;
+    border: 1px solid #ff812f;
+}
+
+.div_form .divForm .divpass {
+    width: 100%;
+    height: 1rem;
+    margin-top: 0.3rem;
+}
+
+.div_form .divForm .buton {
+    width: 5rem;
+    height: 1rem;
+    background: #ff8326;
+    border: 1px solid #ff812f;
+    line-height: 1rem;
+    font-size: 0.45rem;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.3rem;
+}

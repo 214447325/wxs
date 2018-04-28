@@ -1,0 +1,422 @@
+
+.wrapper {
+    background: rgb(231,233,236);
+    /*height: 100%;*/
+}
+.current-account .wrapper .bgred .line{
+    width:1px;
+    height:80%;
+    background: url(../../../images/lib/Line.png) 0 0 no-repeat;
+    background-size:cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.currentTitle {
+    width: 100%;
+    height: 1.2rem;
+    background: rgb(255,255,255);
+}
+
+.currentContent {
+    width: 9rem;
+    height:0.6rem;
+    float: left;
+    line-height: 0.6rem;
+    margin: 0 0.476rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.server {
+    margin: 0 auto;
+    width: 3rem;
+}
+
+.returnImg {
+    float: left;
+    width: 0.6rem;
+}
+
+.world {
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    z-index: 100;
+}
+.world img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.25rem;    
+    margin-left: 0.5rem;
+}
+
+.header {
+    width: 100%;
+    height: 4.2rem;
+    background: rgb(55,78,171);
+}
+
+.serverBox {
+    width: 9rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+     margin: 0 auto;
+}
+
+.todayEarnings {
+    width: 9rem;
+    height: 1.6rem;
+    float: left;
+    margin-top: -0.3rem;
+    z-index: -1;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.todayData {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
+}
+
+.todayWord {
+     font-size: 0.325rem;
+     line-height: 0.6rem;
+     color: rgba(255,255,255,0.75);
+}
+
+.earnings {
+    width: 9rem;
+    height:1.2rem;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+.accumulated {
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+    border-right: 0.02rem solid rgb(255,255,255);
+}
+
+
+.principal {
+    width: 4.5rem;
+    height: 100%;
+    float: left;
+}
+
+.accumulatedContent {
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    color: rgba(255,255,255,0.75);
+}
+
+.accumulatedMoney {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: rgb(255,255,255);
+}
+
+.principalContent {
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    color: rgba(255,255,255,0.75);
+}
+
+.principalMoney {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: rgb(255,255,255);
+}
+
+.todayAnnual {
+    width: 100%;
+    height: 1.125rem;
+    background: rgb(255,255,255);
+}
+
+.annualContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0.375rem;
+}
+
+.annualworld {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 1.125rem;
+    float: left;
+    box-sizing: border-box;
+    text-align: left;
+    color: rgba(51,51,51, 1.0)
+}
+
+.annualData {
+    color: rgb(255,109,85);
+    margin-left: 0.2rem;
+}
+
+.todayMoney {
+    height: 1rem;
+    width: 9rem;
+    margin: 0 auto;
+}
+.todayMoney span{
+    height: 0.8rem;
+    float: left;
+    line-height: 0.8rem;
+    margin: 0.1rem auto;
+    text-align: left;
+    font-size: 0.375rem;
+    color: rgb(153,153,153);
+}
+
+.todayMoneycontent,.couponUselist,.line {
+        color: rgb(153,153,153);
+}
+
+.todayTable,.addrateTable {
+    width: 100%;
+    background: rgb(255,255,255);
+    overflow-y: auto;
+}
+
+.todayTableTitle {
+    width: 100%;
+    height: 1rem;
+    border-bottom: 0.02rem solid rgb(236,236,236);
+}
+
+.todayTableTh {
+    width: 9rem;
+    height: 100%;
+    color: rgb(153,153,153);
+    margin: 0 auto;
+}
+
+.todayTableTitle1 {
+    width: 3rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: left;
+    float: left;
+}
+
+.todayTableTitle2 {
+    width: 4rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: left;
+    float: left;
+}
+
+.todayTableTitle3 {
+    width: 2rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    text-align: right;
+}
+
+.todayTableContent,.couponContent {
+    width: 10rem;
+    height: 4rem;
+    overflow-y: scroll;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.contentTr {
+    width: 100%;
+    height: 1rem;
+}
+
+.contentTc1 {
+    width: 33.333%;
+    height: 100%;
+    line-height: 1rem;
+    text-align: left;
+    /*font-weight: bold;*/
+    float: left;
+}
+
+.contentTc2 {
+    width: 33.333%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: left;
+    float: left;
+    color: rgb(255,109,85);
+}
+
+.contentTc3 {
+    width: 33.333%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: right;
+    float: left;
+}
+
+.portfolio {
+    width: 100%;
+    height: 1.125rem;
+    margin: 0.1rem auto;
+    background: rgb(255,255,255);
+}
+
+.serverPortfolio {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 1.125rem;
+}
+
+.cortfolioContent {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.serverContent {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+}
+
+.serverWorld {
+    height: 1.125rem;
+    font-size: 0.4rem;
+    float: left;
+    color: rgb(51,51,51);
+}
+
+.underPageImg {
+    float: right;
+    width: 0.525rem;
+    margin-top: 0.3rem;
+}
+
+.footer {
+    width: 100%;
+    height: 1.2rem;
+    overflow: hidden;
+    background: rgb(255,255,255);
+}
+.mainbtn {
+     width:100%;
+     height:1.25rem;
+     background: #fff url() 0 0 no-repeat;
+     font-size: 0.4rem;
+     margin-top: 0.1rem;
+     overflow: hidden;
+}
+.mainbtn a {
+    display: inline-block;
+    width: 50%;
+    height:1.25rem;
+    text-align: center;
+    float: left;
+
+}
+.mainbtn a button {
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 0.75rem;
+            background: #fff;
+            border: none;
+            line-height: 0.75rem;
+            // margin-top: 0.25rem;
+            outline:none;
+            height:100%;
+}
+.mainbtn .redemption button{
+    color: rgba(62,80,179,0.7);
+            border-right: 1px solid rgba(199,199,199,0.75);
+            box-sizing: border-box;
+}
+.buy button{
+    color: rgba(62,80,179,1.0);
+}
+
+.null {
+    width: 4rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(153,153,153);
+    font-size: 0.35rem;
+}
+
+.nullImg {
+    width: 2rem;
+}
+
+.tables{
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.tables .todayTable{
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden;
+}
+.tables .addrateTable{
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.usecoupon{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    padding:0 0.5rem;
+    box-sizing: border-box;
+    background: #fff url() 0 0 no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 0.4rem;
+}
+.usecoupon img{
+    width: 0.6rem;
+    float: right;
+    margin-top: 0.2rem;
+}
+.active{
+    color: rgb(55,78,171);
+}
+#container{
+    background: #fff url() 0 0 no-repeat;
+    text-align: center;
+/*     line-height: 5rem; */
+}

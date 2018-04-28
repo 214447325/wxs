@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>V金融</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/platform/platform-four.css">
+</head>
+<body class="account-page">
+<div class="wrapper">
+    <div class="platform-title">
+        <div class="title-content">
+            <img src="../../images/pages/platform/returnpage.png" class="return-btn">
+            <div class="title">平台介绍</div>
+        </div>
+    </div>
+    <div class="header-title">安全保障</div>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-img1">
+                <img src="../../images/pages/platform/aq1.png" class="img1">
+            </div>
+            <div class="header-body1">
+                <div class="body-title">金融机构保证兑付</div>
+                <div class="body-content">
+                    V金融和大型正规金融机构合作（P2F模式），
+                    通过金融机构21层专业风控及自有的360度风控内审团队的审核，
+                    使资产达到了银行级别的安全。从合作金融机构的历史数据来看，
+                    兑付率接近100%。
+                </div>
+            </div>
+        </div>
+        <div class="header-content2">
+            <div class="header-img1">
+                <img src="../../images/pages/platform/aq2.png" class="img1">
+            </div>
+            <div class="header-body1">
+                <div class="body-title">风险备付金</div>
+                <div class="body-content">
+                    V金融在自有资金中划拨相应的起始资金存放于风险备付金账户中。
+                    平台每次募集资金，都提取0.1%的成交金额放入风险备付金账户。
+                </div>
+            </div>
+        </div>
+        <div class="header-content3">
+            <div class="header-img1">
+                <img src="../../images/pages/platform/aq3.png" class="img1">
+            </div>
+            <div class="header-body1">
+                <div class="body-title">银行级技术安全</div>
+                <div class="body-content">
+                    V金融采用银行级别的核心功能，
+                    分布式构架，全程加密，系统隔离，
+                    安全监测，低出错率，高安全性。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-btn">
+        <img src="../../images/pages/platform/btn1-icon.png" class="btn1">
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script>
+    $(function() {
+        var displayTitle= sessionStorage.getItem('displayTitle');//app端不显示顶部title
+        if (displayTitle==0) {
+            $('.platform-title').hide();
+        }
+        var $btn = $('.btn1');
+        $btn.click(function() {
+            window.location.href =  '../../pages/platform/platform-one.html';
+        });
+        var $returnBtn = $('.return-btn');
+        $returnBtn.click(function() {
+            window.location.href =  '../../pages/platform/platform-three.html';
+        });
+    });
+</script>
+</body>
+</html>

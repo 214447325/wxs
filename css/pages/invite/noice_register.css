@@ -1,0 +1,593 @@
+
+body {
+    background: rgb(40,45,100)
+}
+
+.banner {
+    width: 100%;
+    height: 5.5rem;
+    background: url(../../../images/pages/invite/iPhone7@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.bdiv {
+    width: 100%;
+    height: 0.5rem;
+    background: rgb(54,44,81);
+}
+
+.dialog {
+    width: 100%;
+    height: 2rem;
+    background: rgb(54,44,81);
+}
+
+.dtext {
+    width: 3.6rem;
+    height: 1.3rem;
+    float: left;
+    margin: 0.1rem;
+    /*background: red;*/
+}
+
+.diaimg {
+    width: 9rem;
+    height: 100%;
+    background: url(../../../images/pages/invite/dialog@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.head {
+    width: 100%;
+    height: 6.5rem;
+    background: rgb(54,44,81);
+}
+
+.title {
+    width: 6rem;
+    height: 0.5rem;
+    background: url(../../../images/pages/invite/haotitle.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.head .conte {
+    width: 9rem;
+    height: 2.6rem;
+    float: left;
+    margin: 0.5rem;
+}
+
+/*.c {*/
+    /*width: 2.7rem;*/
+    /*height: 2.6rem;*/
+    /*background: url(../../../images/pages/invite/1@3x.png) 0 0 no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*float: left;*/
+    /*border-radius: 0.2rem;*/
+    /*color: white;*/
+    /*font-size: 0.31rem;*/
+    /*text-align: center;*/
+/*}*/
+
+.p {
+    width: 2rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.d {
+    width: 100%;
+    height: 1.6rem;
+    float: left;
+    margin: 0.5rem auto;
+}
+
+.d1 {
+    line-height: 0.5rem;
+}
+
+.p1 {
+    font-size: 0.33rem;
+}
+
+.c2 {
+    margin-left: 0.45rem;
+}
+
+.c3 {
+    float: right;
+}
+
+.d2 {
+    font-size: 0.34rem;
+    line-height: 0.76rem;
+}
+
+.air div {
+    width: 8.5rem;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0.33rem;
+    color: rgb(40,45,100);
+}
+
+.default {
+    color: rgb(248,109,31);
+}
+
+.content {
+    width: 100%;
+    height: 1.5rem;
+    background: url(../../../images/pages/invite/iPhone7_2@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.content1 {
+    width: 100%;
+    height: 1.5rem;
+    background: url(../../../images/pages/invite/group@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.con {
+    width: 100%;
+    height: 13.8rem;
+    background: rgb(40,45,100);
+}
+
+.div1 {
+    width: 100%;
+    height: 1.6rem;
+}
+
+.div1 .d1 {
+    width: 5.5rem;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 1.6rem;
+    color: rgb(244,156,64);
+    text-align: center;
+    font-size: 0.45rem;
+    font-weight: bold;
+    border-bottom: 0.03rem dashed rgb(216,68,52);
+}
+
+.footer {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.div2 {
+    width: 100%;
+    height: 2.4rem;
+    background: url(../../../images/pages/invite/bigbox@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 0.8rem;
+    box-sizing: border-box;
+}
+
+.box1 {
+    width: 3rem;
+    height: 1.5rem;
+    float: left;
+    margin: 0.5rem auto;
+    margin-right: 0.5rem;
+    font-size: 0.41rem;
+    color: rgb(244,156,64);
+    line-height:0.7rem;
+    text-align: center;
+    font-weight: bold;
+    border-right: 0.04rem dashed rgb(244,156,64);
+}
+
+.box2 {
+    width: 4.5rem;
+    height: 1.5rem;
+    float: left;
+    margin: 0.5rem auto;
+    font-size: 0.3rem;
+    color: rgb(32,34,56);
+    line-height: 0.5rem;
+}
+
+.box3 {
+    line-height:1.5rem;
+}
+
+.box4 {
+    line-height: 0.7rem;
+}
+
+.rediste {
+    width: 100%;
+    height: 12rem;
+}
+
+.rediste .title1 {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.45rem;
+    font-weight: bold;
+    color: #3c5086;
+}
+
+.rediste .content2 {
+    width: 9rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    color: #3c5086;
+}
+
+.img {
+    width: 9rem;
+    height: 1rem;
+    margin: 0 auto;
+    font-size: 0.45rem;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: bold;
+    color: rgb(255,229,3);
+    overflow: hidden;
+}
+
+.img div {
+    width: 3.6rem;
+    height: 1rem;
+    margin: 0 auto;
+}
+
+.img1 {
+    float: left;
+    margin-top: 0.4rem;
+}
+
+.img2 {
+    float: right;
+    margin-top: 0.4rem;
+}
+
+.rbox {
+    width: 9rem;
+    height: 6rem;
+    margin:0 auto;
+}
+
+.div4 {
+    width: 9rem;
+    height: 1rem;
+    background: white;
+    border-radius: 0.1rem;
+    border: 1px solid #000000;
+}
+
+.text {
+    width: 1rem;
+    height: 0.8rem;
+    margin-top: 0.1rem;
+    float: left;
+    text-align: center;
+    line-height: 0.8rem;
+    border-right: 0.01rem solid rgb(213,215,220);
+}
+
+.div3 {
+    margin: 0.6rem auto;
+}
+
+.img3 {
+    width: 0.6rem;
+    margin-top: 0.1rem;
+}
+
+.idiv {
+    width: 5.6rem;
+    height: 0.8rem;
+    float: left;
+    margin: 0.1rem auto;
+    margin-left: 0.2rem;
+}
+
+.gdiv {
+    width: 1.9rem;
+    height: 0.8rem;
+    float: left;
+    margin: 0.1rem auto;
+    margin-left: 0.2rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: rgb(62,80,180);
+}
+
+.idiv input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #000000;
+}
+
+.download {
+    width: 5.3rem;
+    font-size: 0.4rem;
+    margin: 0 auto;
+    color: #3c5086;
+    margin-top: 0.6rem;
+    border-bottom: 1px solid #3c5086;
+}
+
+.bto {
+    width: 8rem;
+    height: 1.3rem;
+    background: url(../../../images/pages/invite/buttonweixin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
+}
+
+.bto1 {
+    width: 100%;
+    height: 1rem;
+    background: rgb(255,229,3);
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(54,44,81);
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+.ban1 {
+    width: 100%;
+    height: 31.2rem;
+}
+
+.g {
+    width: 0.8rem;
+    margin-left: 0.1rem;
+    margin-top: 0.05rem;
+    position: absolute;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+
+.wrapper {
+    background: #ffbd41;
+}
+
+.noice_background {
+    width: 100%;
+    height: 8.4rem;
+    background: url(../../../images/pages/invite/mainweixin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.noice_background .people {
+    width: 3rem;
+    height: 4rem;
+    position: absolute;
+    background: url(../../../images/pages/invite/astro.gif) 0 0 no-repeat;
+    background-size: 100% 100%;
+    right: 0.3rem;
+    top: 3rem;
+}
+
+.active {
+    width: 1.6rem;
+    height:3rem;
+    background: url(../../../images/pages/invite/flag.gif) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 22%;
+    left: 6%;
+}
+
+.noice_instructions {
+    width: 100%;
+    height: 7.2rem;
+    background: url(../../../images/pages/invite/w1weixin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: -0.6rem;
+    padding-top: 1.12rem;
+    overflow: hidden;
+}
+
+.noice_instructions .instruction {
+    width: 9rem;
+    height: 5.9rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+
+.noice_instructions .instruction .noice {
+    width: 2.7rem;
+    height: 2.6rem;
+    float: left;
+    margin-left: 0.2rem;
+}
+
+.shadow {
+    width: 1.5rem;
+    height: 0.6rem;
+    background: url(../../../images/pages/invite/shadow.gif) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 7.1rem;
+    right: 0.6rem;
+}
+
+.air {
+    width: 100%;
+    height: 2.6rem;
+    float: left;
+}
+
+.air1 {
+    background: url(../../../images/pages/invite/b1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1rem;
+}
+
+.air2 {
+    background: url(../../../images/pages/invite/b2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.7rem;
+    display: none;
+}
+
+.air3 {
+    background: url(../../../images/pages/invite/b3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.6rem;
+    display: none;
+    height: 2.8rem;
+
+}
+
+.air div {
+    color: #ffffff;
+}
+
+.regist {
+    width: 8rem;
+    height: 1.3rem;
+    margin: 0.8rem 1rem;
+    background: url(../../../images/pages/invite/buttonweixin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.noice_bottom {
+    width: 100%;
+    height: 13.6rem;
+    background: url(../../../images/pages/invite/window2winxin.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
+}
+
+.know {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.know1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #000000;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+.know2 {
+    width: 8rem;
+    height: 8rem;
+    background: url(../../../images/pages/invite/jwindow.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    margin: 50% 10%;
+    padding-top: 0.5rem;
+}
+
+.know2Content {
+    width: 6.8rem;
+    height: 5.4rem;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+}
+
+.button2 {
+    width: 6rem;
+    height: 0.96rem;
+    background: url(../../../images/pages/invite/button2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.box {
+    width: 4.3rem;
+    height: 1.8rem;
+    background: url(../../../images/pages/invite/kuang.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 3.3rem;
+    right: 3rem;
+}
+
+.wra {
+    overflow-y: hidden;
+}
+
+.imgCodeDiv {
+    margin: 0.6rem auto;
+}
+
+.img_code_div {
+    width: 2rem;
+    height: 100%;
+    float: right;
+}
+
+.img-sms-code {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.img-sms-code img{
+    width: 100%;
+    height: 100%;
+}

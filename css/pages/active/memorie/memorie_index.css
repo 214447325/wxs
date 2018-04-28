@@ -1,0 +1,27 @@
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    background-image: url(../../../../images/pages/activity/memorie/arrow.gif);
+    background-size: 120% 70%;
+    width: 45px;
+}
+
+.swiper-button-prev {
+    background-image: url(../../../../images/pages/activity/memorie/arrow.gif);
+    background-size: 120% 70%;
+    width: 45px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari and Chrome */
+    -o-transform: rotate(180deg); /* Opera */
+    -moz-transform: rotate(180deg); /* Firefox */
+}

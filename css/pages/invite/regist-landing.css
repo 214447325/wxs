@@ -1,0 +1,398 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 11:05:25
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 18:51:35
+*/
+.invitefriend{
+    position: relative;
+    /*overflow-y:scroll;*/
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:9rem;
+    background:  url(../../../images/pages/invite/main.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.inviteform{
+    width:100%;
+        padding: 0 0.5rem;
+    box-sizing:border-box;
+}
+
+p {
+    color: #db3732;
+    font-size: 0.4375rem;
+    font-weight:bold;
+    line-height:2;
+}
+
+div .c {
+    max-width: 100%;
+}
+
+.hrefImgsp {
+    width: 270px;
+}
+
+.splieFontSpan{
+    color:#000000;
+    font-size: 0.4375rem;
+    line-height:0.6rem;
+}
+
+.splieImg{
+    margin: 0.8rem auto 0.65rem;
+}
+
+.splieHref{
+    width:100%;
+    height:5.28125rem;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+overflow:hidden;
+    z-index:1;
+}
+
+.splieHref a.splieAHref1{
+    display:block;
+    float:left;
+    width:4.15rem;
+    height:4.225rem;
+    background:  url(../../../images/pages/invite/hongbao1.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.splieHref a.splieAHref2{
+    display:block;
+    float:right;
+        width:4.15rem;
+    height:4.225rem;
+    background:  url(../../../images/pages/invite/carnival.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.form-ui .phone:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/phone.png); margin-top: 6px; margin-left: -45px;
+}
+
+.form-ui .verification:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/verification1.png); margin-top: 6px;margin-left: 10px;
+}
+
+.form-ui .lock:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/pass.png); margin-top: 35px; margin-left: -45px;
+}
+
+.getVerification {
+   width: 160px;
+    position: absolute;
+   right: 30px;
+}
+
+.form-ui input {
+    font-size: 28px;
+}
+
+.ver-Img {
+ position: absolute;
+ right: 5px;
+}
+
+.password-Img {
+    position: absolute;
+    left: 560px;
+    top: 50px;
+}
+
+.register-Img {
+    width:100%;
+    height:2.87rem;
+    margin:0 auto;
+    background:  url(../../../images/pages/invite/redister.png) 0 0 no-repeat;
+    background-size:contain;
+    display: none;
+}
+
+.register-Div {
+    position: absolute;
+    top: 50px;
+}
+
+
+
+.splieAHref2 {
+    float: right;
+}
+  .ui-text-input {
+    border: none;
+}
+
+ .getmoneyInfo {
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 5px;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+ .getmoneyInfo input {
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 1em;
+}
+  li.getmoneyPassword{
+    overflow:hidden;
+    z-index:1;
+}
+.getmoneyInfo input.cipher{
+    width:80%;
+    height:100%;
+    
+    float: left;
+}
+ .getmoneyInfo .switchPassword{    
+    width:1.5rem;
+    height:0.9rem;
+    margin-top:0.3rem;
+    padding-left:0.2rem;
+    /* margin-right:0.2rem; */
+    border-left: 1px solid #efefef;
+    float: right;
+}
+ .getmoneyInfo  .sms-code {
+    width: 8.5rem;
+
+}
+
+ 
+
+.invitenum span {
+    color: #ee5e00;
+}
+
+  .invitenum {
+    background: transparent;
+    width: 90%;
+    height: .5rem;
+    font-size: .4rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.invitenum p {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.invitenum p span {
+    color: #ee5e00;
+}
+
+.inviteMoneybtn {
+    display: block;
+    width: 90%;
+    height: 1.35rem;
+    background: #ff0000;
+/*  background: #ff294d; */
+    /*background:url(../../../images/pages/invite/redister.png) no-repeat 0 center;*/
+    /*border-radius: 0.5rem;*/
+    /*background-size: cover;*/
+    line-height: 1.35rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 0.5rem;
+}
+.ui-text-input li {
+    width: 9rem;
+    height: 1.35rem;
+    margin:0 auto 0.25rem;
+    line-height: 1.35rem;
+    border-radius:5px;
+    background: #fff;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.form-ui .ui-text-input li .txt {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    line-height:1.05rem;
+    padding-left:0.6rem;
+    margin-top: 0;
+    background: transparent url() 0 0 no-repeat;
+    border: none;
+    font-size: .40625rem;
+    color: #757575;
+}
+.form-ui .ui-text-input li.short{
+    border: none;
+    background: transparent url() 0 0 no-repeat;
+}
+.form-ui .ui-text-input li.short .txt{
+    display:inline-block;
+    width:4.5rem;
+    border-radius:5px;
+    background: #fff url() 0 0 no-repeat;
+    border: 1px solid gray;
+    box-sizing:border-box;
+}
+.form-ui .ui-text-input li.short .btn-sm {
+    display:inline-block!important;
+    width:4rem;
+    height: 1.35rem;
+    margin-left:5rem;
+    font-size:0.40625rem;
+    line-height: 1.35rem;
+    border: 1px solid gray;
+    box-sizing:border-box;
+    border-radius: 5px;
+    background: #da9942;
+} 
+.form-ui .ui-text-input li{
+    position:relative;
+}
+.icon1{
+    display: block;
+    width:0.34375rem;
+    height:0.671875rem;
+    background:  url(../../../images/pages/invite/phone.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon2{
+    display: block;
+    width:0.484375rem;
+    height:0.484375rem;
+    background:  url(../../../images/pages/invite/verification1.png) 0 0 no-repeat;
+    background-size:contain;
+    z-index:200;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon3{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../images/pages/invite/pass.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon4{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../images/pages/invite/eye-close.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    right:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon5{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../images/pages/invite/eye-open.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    right:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.regist{
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    /*background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;*/
+    /*border-radius: 0.5rem;*/
+    background-size: cover;
+    margin: 0 auto;
+    position:fixed;
+    bottom:0;
+}
+
+.registered-img {
+    width: 100%;
+}
+
+a.download{
+    display: block;
+    color:#000000;
+    text-decoration:underline;
+    text-align:center;
+    margin: 0.5rem  0;
+
+    font-size:0.5rem;
+}
+
+.style-Div {
+    width: 100%;
+    height: 2rem;
+}
+
+.clearfix {
+    line-height: 1.35rem;
+    color: #ffffff;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: #ff0000;
+}
+
+.joinTile {
+    width: 9rem;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+
+.splieImgDiv {
+    width: 9rem;
+    margin: 0 auto;
+}
+
+.back {
+    width: 9rem;
+    margin: 0 auto;
+}

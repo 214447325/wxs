@@ -1,0 +1,251 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 16:34:38
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 18:16:26
+*/
+.invitefriend{
+    position: relative;
+    overflow-y:scroll;
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/invite/apphead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.inviteform{
+    width:100%;
+    height: auto;
+    overflow:hidden;
+
+}
+
+.act-Img {
+    position: absolute;
+    top: 640px;
+}
+
+.act-Span1 {
+    font-size: 42pt;
+    color: #000000;
+    position: absolute;
+    left: 10px;
+    top: 635px;
+}
+
+.cont .ul .title {
+    color: #FDFFF8;
+}
+
+.cont .ul {
+    color: #FDFFF8;
+}
+
+.cont .ul .act-li {
+    width:90%;
+    font-size:0.4375rem;
+    margin:0 auto;
+}
+
+.example1 {
+    margin-top: 32px;
+}
+
+.money-Act2 {
+    margin-top: 94px;
+}
+
+.act-Img2 {
+    position: absolute;
+    top: 1610px;
+}
+
+.act-Span2 {
+    font-size: 42pt;
+    color: #000000;
+    position: absolute;
+    left: 10px;
+    top: 1605px;
+}
+
+.actvontent ul {
+    width:100%;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+    color: #ffff00;
+    font-size: 0.4375rem;
+
+}
+
+.actvontent li {
+
+    font-size: 0.4375rem;
+    color: #FDFFF8;
+}
+
+.act-Redister {
+    margin-top: 50px;
+}
+.navn {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    bottom:0;
+    z-index: 1;
+}
+
+.inviteimg {
+    width: 4rem;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+
+.inviteDiv {
+    margin-top: -1rem;
+    margin-left: 2.5rem;
+    width: 20%;
+}
+
+.act-li {
+    padding-top: 0.3rem;
+}
+
+.navn a {
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #757575;
+    line-height: 140px;
+}
+.act-TitleContent span{
+    display: block;
+    width:90%;
+    box-sizing:border-box;
+    border-top:3px #333 solid;
+    margin:0 auto;
+    font-size:0.55rem;
+}
+.act-TitleContent span i{
+    display:inline-block;
+    color:#000;
+    font-size:0.45rem;
+    line-height:1.296875rem;
+    font-style:normal;
+    font-weight:bold;
+    text-align:center ;
+    width:2.421875rem;
+    height:1.296875rem;
+    background:  url(../../../images/pages/invite/active.png) 0 0 no-repeat;
+    background-size:contain;
+}
+.example1,.example2{
+    width:90%;
+    height:7.196875rem;
+    margin:0.5rem auto;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+    background:  url(../../../images/pages/invite/img1.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.act {
+    margin-top: 0.5rem;
+}
+
+.example2{
+    background:  url(../../../images/pages/invite/img2.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.example3 {
+    height:1.5rem;
+}
+
+.regist {
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    /* background: #ff294d; */
+    /*background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;*/
+
+    background-size: cover;
+    margin: 0 auto;
+    position: fixed;
+    bottom: -3.8rem;
+}
+
+.splieHref{
+    width:100%;
+    height:5.19125rem;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+    overflow:hidden;
+    z-index:1;
+    background-color: #000000;
+    margin-bottom: 0.3rem;
+}
+
+
+.splieHref a.splieAHref1{
+    float:left;
+    width:4.43rem;
+    height:4.225rem;
+    background-size:contain;
+}
+
+.splieHref a.splieAHref2{
+    float:right;
+    width:4.43rem;
+    height:4.225rem;
+    background-size:contain;
+}
+
+.inviteBottom {
+    margin-bottom: 2rem;
+    background-color: #721634;
+}
+
+.regist-img1 {
+    padding-top: 0.1rem;
+    margin-left: -0.5rem;
+    width: 4.9rem;
+}
+
+.regist-img2 {
+    padding-top: 0.1rem;
+    margin-left: 0rem;
+    width:4.9rem;
+}
+.login-invitation {
+    font-size: 0.54rem;
+    color: white;
+    margin: 0.8rem 0.5rem;
+}
+
+.login-p {
+    font-size: 0.48rem;
+    color: white;
+    margin: 0.8rem 0.5rem;
+}
+
+.login-href {
+    color: #ffff00;
+}
+
+.login-p1 {
+    font-size: 0.46rem;
+    color: white;
+    margin: 0.8rem 0.5rem;
+}
+
+.login-div1 {
+font-size: 0.28rem;
+}
+
+.login-span1 {
+    color: #ffff00;
+}

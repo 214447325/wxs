@@ -1,0 +1,94 @@
+body {
+    background: #7CEDFA;
+}
+
+.logo {
+    width: 100%;
+    height: 1.8rem;
+    background: url(../../../../images/pages/activity/cn/logo.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.center {
+    width: 100%;
+    height: 13rem;
+    background: url(../../../../images/pages/activity/cn/success-center.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.center .world {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    /*background: red;*/
+}
+
+.center .title {
+    width: 100%;
+    height: 1.5rem;
+    color: #ffffff;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.center .button {
+    width: 6rem;
+    height: 1.2rem;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 1.1rem;
+    text-align: center;
+    background: #FF5400;
+    margin-top: 0.8rem;
+    border: 0.07rem solid #ffffff;
+}
+
+.center .financial {
+    background: #003989;
+}
+
+.center .button h1 {
+    font-size: 0.6rem;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+

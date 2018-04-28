@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../js/lib/circle-progress.js?v=9.0.0"></script>
+<script src="../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+<script src="../js/setting.js?v=9.0.0"></script>
+<script src="../js/common3.0.js?v=9.0.1"></script>
+<!--<script src="../js/test.js"></script>-->
+<script>
+    $(function() {
+        $.post('http://127.0.0.1:8000/news/newsInfo',{name:'newsInfo'},function(res) {
+            console.log(JSON.stringify(res))
+        },'json')
+    })
+</script>
+</html>

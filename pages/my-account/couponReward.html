@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>加息券奖励</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/my-account/couponReward.css?v=9.0.0">
+    <link rel="stylesheet" href="../../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/my-account/rain.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/my-account/rate.css?v=9.0.0">
+</head>
+<body style="background: rgb(196,233,252)">
+
+<div class="wrapper">
+    <!--<div class="messageTitle">-->
+        <!--<div class="messageContent">-->
+            <!--<a href="../../pages/my-account/myAccount.html">-->
+                <!--<div class="returnPage">-->
+                    <!--<img src="../../images/pages/message/returnBack.png" class="returnImg">-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<div class="message-title">-->
+                <!--加息券奖励-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <div class="bg bg_1 div"></div>
+    <div class="titleImg"></div>
+    <div class="content">
+        <!--<div class="reward reward1">-->
+            <!--<div class="div1">-->
+                <!--<div class="rdiv1">-->
+                    <!--<div class="rdiv1Content">加息:<span class="add1">+1.5%</span></div>-->
+                    <!--<div class="rdiv1Content">使用的产品:<span class="pro">周周涨</span></div>-->
+                    <!--<div class="rdiv1Content">加息天数:<span class="day">2天</span></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="div1">-->
+                <!--<div class="rdiv1">-->
+                    <!--<div class="rdiv1Content">已领取:<span class="receive">20.32</span>元</div>-->
+                    <!--<div class="rdiv1Content">使用时间:<span class="time">2016-10-21</span></div>-->
+                    <!--<div class="rdiv1Content">奖励(元):<span class="money">1000</span></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="div2">-->
+                <!--<div class="icon icon1"></div>-->
+                <!--<div class="btn1 button1"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="reward reward2">-->
+            <!--<div class="div1">-->
+                <!--<div class="rdiv1">-->
+                    <!--<div class="rdiv1Content">加息:<span class="add1">+1.5%</span></div>-->
+                    <!--<div class="rdiv1Content">使用的产品:<span class="pro">周周涨</span></div>-->
+                    <!--<div class="rdiv1Content">加息天数:<span class="day">2天</span></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="div1">-->
+                <!--<div class="rdiv1">-->
+                    <!--<div class="rdiv1Content">已领取:<span class="receive">20.32</span>元</div>-->
+                    <!--<div class="rdiv1Content">使用时间:<span class="time">2016-10-21</span></div>-->
+                    <!--<div class="rdiv1Content">奖励(元):<span class="money">1000</span></div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="div2">-->
+                <!--<div class="icon icon1"></div>-->
+                <!--<div class="btn1 button2"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<!--<script src="../../js/pages/activityVersion/activityVersion.js?v=9.0.0"></script>-->
+<script src="../../js/pages/my-account/couponReward.js"></script>
+<script>
+    var a =0;
+    var Timerr = '';
+    var removepackage = function(){
+        for(var jj=0;jj<$('.div>div').size()/4;jj++){
+            $('.div>div').eq($('.div>div').size()-jj).remove();
+        }
+    };
+
+    function random() {
+        var rand = parseFloat((Math.random()).toFixed(2));
+//        if(rand == 0 || rand == 10) {
+//            rand = 3
+//        } else {
+//            var rand = parseInt(rand / 3);
+//            if(rand == 0) {
+//                rand = 3
+//            }
+//        }
+        return rand;
+    }
+
+    function aa(){
+        var isTrue = true;
+        var $div = $('.div');
+        for(var i=0;i<4;i++){
+            var m=parseInt(Math.random()*700+100);
+            var j2=parseInt(Math.random()*300+1200);
+            var j=parseInt(Math.random()*1600+000);
+            var j1=parseInt(Math.random()*300+300);
+            var n=parseInt(Math.random()*10+(-10));
+            $div.prepend('<div class="dd"></div>');
+            $div.children('div').eq(0).css({'left':j,'top':n});
+            var _width = random();
+            $div.children('div').eq(0).width(_width+ 'rem');
+            $div.children('div').eq(0).height(_width+ 'rem');
+            //'left':j-j1,
+            $div.children('div').eq(0).animate({'top':$(window).height()+20},3000);
+            if(isTrue) {
+                $div.children('div').eq(0).css( {'filter' : 'flipv','-moz-transform': 'matrix(1, 0, 0, -1, 0, 0)','-webkit-transform': 'matrix(1, 0, 0, -1, 0, 0)'} );
+                isTrue = false;
+            } else {
+                isTrue = true;
+            }
+        }
+    }
+    $(document).on('touchstart', function(){
+        $(this).css("background-position","0 -100px");
+        clearInterval(Timerr,20);
+        $(".div").removeClass("bg_1");
+        $('.bg').hide();
+    });
+
+</script>
+</body>
+</html>

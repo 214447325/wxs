@@ -1,0 +1,56 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 11:05:25
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 18:51:35
+*/
+.invitefriend{
+    position: relative;
+    /*overflow-y:scroll;*/
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:4rem;
+    background:  url(../../../images/pages/redPacket/redhead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.redPackegDiv {
+    width: 100%;
+}
+
+.redPackegImg {
+    width: 8rem;
+    margin: 0.5rem 1rem;
+}
+
+.redPackegImg2 {
+    width: 2rem;
+    position: absolute;
+    left: 4rem;
+    top: 5.7rem;
+}
+
+.inviteform{
+    width:100%;
+    padding: 0 0.5rem;
+    box-sizing:border-box;
+}
+
+p {
+    color: #db3732;
+    font-size: 0.4375rem;
+    font-weight:bold;
+    line-height:2;
+}
+
+
+.splieFontSpan{
+    color:white;
+    font-size: 0.4375rem;
+    line-height:0.6rem;
+}
+
+.rp-div
+

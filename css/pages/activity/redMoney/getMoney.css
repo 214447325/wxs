@@ -1,0 +1,192 @@
+@import url(dialog.css);
+body {
+  height: 2083px;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding-bottom: 7.5rem;
+  font-size: 1.4rem;
+  background-color: #f4fcff;
+  /*overflow: hidden;*/
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+.header img {
+  width: 100%;
+}
+
+.rewardDec {
+  margin: 2.4rem 0 3.5rem 0;
+  padding: 0 1rem 0 0;
+}
+.rewardDec a {
+  color: #8a49ca;
+}
+
+.friendInvent {
+  margin: 0 0 4.3rem 0;
+  color: #44319b;
+}
+.friendInvent span {
+  color: #ff7963;
+}
+
+.info {
+  padding: 0 1.5rem 3rem 1.5rem;
+  background: url("../images/info_bg.png") no-repeat bottom center;
+  background-size: 100%;
+}
+.info article {
+  margin: 0 0 4rem 0;
+  line-height: 1.8;
+  color: #907bd0;
+}
+.info article .col-4 {
+  padding: 0 1.2rem;
+}
+
+.radio {
+  padding: 0 0 11rem 0;
+  background: url("../images/radio_bg.png") no-repeat bottom center;
+  background-size: 100%;
+}
+.radio h3 {
+  margin: 5rem 0;
+  color: #44319b;
+}
+.radio section {
+  margin: 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid #44319b;
+}
+.radio section header {
+  height: 2.5rem;
+}
+.radio section header img {
+  max-height: 100%;
+}
+.radio section .quotation {
+  height: 9rem;
+  position: relative;
+  margin-top: 1.5rem;
+  padding: 0 0.7rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+  color: #9c8ed8;
+}
+.radio section .quotation p {
+  height: 3rem;
+  line-height: 3rem;
+}
+.radio section .quotation p span {
+  color: #ffab42;
+}
+
+.why h3 {
+  margin: 4.8rem 0 1.7rem 0;
+  color: #44319b;
+}
+.why h4 {
+  margin: 2.3rem 0 7rem 0;
+  color: #815eff;
+}
+.why article {
+  margin: 0 1.8rem;
+}
+.why article .col-3-3 {
+  padding: 0 1rem;
+}
+
+
+.why article .col-3-3 p {
+  margin: 3.2rem 0 1.4rem 0;
+  padding: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: #815eff;
+  border-bottom: 4px solid #815eff;
+}
+.why article .col-3-3 span {
+  font-size: 1.2rem;
+  color: #9c8ed8;
+  line-height: 1.5;
+}
+
+.join header {
+  margin-bottom: 4.7rem;
+}
+.join header h3 {
+  margin: 0 0 1.5rem 0;
+  color: #44319b;
+  text-align: center;
+}
+.join .register .form-list {
+  height: 5rem;
+  line-height: 5rem;
+  margin: 0 1.5rem 1rem 1.5rem;
+  border: 1px solid #e7e7e7;
+}
+.join .register .form-list .col-2 {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin-top: 1.7rem;
+  border-right: 1px solid #d5d7dc;
+  color: #333333;
+}
+.join .register .form-list .col-2 img {
+  width: 1.7rem;
+}
+.join .register .form-list input {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 1rem;
+  border: none;
+  background: none;
+  color: #333333;
+}
+.join .register .form-list .getVerCode button {
+  height: 100%;
+  background: none;
+  border: none;
+  color: #3e50b4;
+}
+.join .register .form-tips {
+  margin-top: 2rem;
+}
+.join .register .form-tips a {
+  color: #a092da;
+  text-decoration: underline;
+}
+ .fixed-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: rgb(138,73,202);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+ .register-button {
+     position: absolute;
+     width: 100%;
+     height: 5rem;
+     line-height: 5rem;
+     margin-top: 4rem;
+     background-color: rgb(138,73,202);
+     border: none;
+     color: white;
+     font-size: 1.8rem;
+     font-weight: bolder;
+     text-align: center;
+ }
+
+
+/*# sourceMappingURL=getMoney.css.map */

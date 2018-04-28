@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no" name="format-detection">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <title>周周涨资金记录</title>
+    <script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/account/current-account-detail3.0.css">
+
+
+    <script type="text/javascript">
+        (function (win, lib) { var doc = win.document; var docEl = doc.documentElement; var metaEl = doc.querySelector('meta[name="viewport"]'); var flexibleEl = doc.querySelector('meta[name="flexible"]'); var dpr = 0; var scale = 0; var tid; var flexible = lib.flexible || (lib.flexible = {}); if (metaEl) { console.warn("将根据已有的meta标签来设置缩放比例"); var match = metaEl.getAttribute("content").match(/initial\-scale=([\d\.]+)/); if (match) { scale = parseFloat(match[1]); dpr = parseInt(1 / scale) } } else { if (flexibleEl) { var content = flexibleEl.getAttribute("content"); if (content) { var initialDpr = content.match(/initial\-dpr=([\d\.]+)/); var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/); if (initialDpr) { dpr = parseFloat(initialDpr[1]); scale = parseFloat((1 / dpr).toFixed(2)) } if (maximumDpr) { dpr = parseFloat(maximumDpr[1]); scale = parseFloat((1 / dpr).toFixed(2)) } } } } if (!dpr && !scale) { var isAndroid = win.navigator.appVersion.match(/android/gi); var isIPhone = win.navigator.appVersion.match(/iphone/gi); var devicePixelRatio = win.devicePixelRatio; if (isIPhone) { if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) { dpr = 3 } else { if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) { dpr = 2 } else { dpr = 1 } } } else { dpr = 1 } scale = 1 / dpr } docEl.setAttribute("data-dpr", dpr); if (!metaEl) { metaEl = doc.createElement("meta"); metaEl.setAttribute("name", "viewport"); metaEl.setAttribute("content", "initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ", user-scalable=no"); if (docEl.firstElementChild) { docEl.firstElementChild.appendChild(metaEl) } else { var wrap = doc.createElement("div"); wrap.appendChild(metaEl); doc.write(wrap.innerHTML) } } function refreshRem() { var width = docEl.getBoundingClientRect().width; if (width / dpr > 540) { width = 540 * dpr } var rem = width / 10; docEl.style.fontSize = rem + "px"; flexible.rem = win.rem = rem } win.addEventListener("resize", function () { clearTimeout(tid); tid = setTimeout(refreshRem, 300) }, false); win.addEventListener("pageshow", function (e) { if (e.persisted) { clearTimeout(tid); tid = setTimeout(refreshRem, 300) } }, false); if (doc.readyState === "complete") { doc.body.style.fontSize = 14 * dpr + "px" } else { doc.addEventListener("DOMContentLoaded", function (e) { doc.body.style.fontSize = 14 * dpr + "px" }, false) } refreshRem(); flexible.dpr = win.dpr = dpr; flexible.refreshRem = refreshRem; flexible.rem2px = function (d) { var val = parseFloat(d) * this.rem; if (typeof d === "string" && d.match(/rem$/)) { val += "px" } return val }; flexible.px2rem = function (d) { var val = parseFloat(d) / this.rem; if (typeof d === "string" && d.match(/px$/)) { val += "rem" } return val } })(window, window["lib"] || (window["lib"] = {}));
+    </script>
+
+
+    <script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+
+<body class="earnings-detail bg">
+<div class="wrapper">
+<!--     <div class="currentTitle">
+        <div class="currentContent">
+            <img class="returnImg" src="../../../images/pages/my-account3.0/return3.0.png">
+            <span class="server">
+                周周涨资金记录
+            </span>
+        </div>
+    </div> -->
+    <div class="navMenu">
+        <ul>
+            <li namevalue="1">
+                <a href="javascript:" class="search">
+                    <div class="nmTitle">购买</div>
+                    <div class="nmIcon" ></div>
+                </a>
+            </li>
+            <li namevalue="2">
+                <a href="javascript:" class="search">
+                    <div class="nmTitle">一周内</div>
+                    <div class="nmIcon" ></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="navList">
+        <ul namevalue="1" style="display:none">
+            <li class="current">
+                <a href="javascript:" class="navListA">
+                    <div class="nlTitle" >购买</div>
+                    <div class="nlIconafter"></div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:" class="navListA">
+                    <div class="nlTitle">收益</div>
+                    <div class="nlIcon"></div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:" class="navListA">
+                    <div class="nlTitle">赎回</div>
+                    <div class="nlIcon"></div>
+                </a>
+            </li>
+        </ul>
+        <ul namevalue="2" style="display:none">
+            <li class="current">
+                <a href="javascript:" class="navListA">
+                    <div class="nlTitle">一周内</div>
+                    <div class="nlIconafter"></div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:" class="navListA">
+                    <div class="nlTitle">一月内</div>
+                    <div class="nlIcon"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="table-box mt20">
+        <div class="tc pt20">暂无记录</div>
+    </div>
+
+
+
+    <script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+    <script src="../../../js/setting.js?v=9.0.0"></script>
+    <script src="../../../js/common3.0.js?v=9.0.0"></script>
+    <script src="../../../js/lib/dropload.min.js?v=9.0.0"></script>
+    <script src="../../../js/pages/my-account/current-account-detail3.0.js?v=9.0.0"></script>
+
+</div>
+</body>
+</html>

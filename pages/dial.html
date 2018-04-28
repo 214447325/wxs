@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>幸运九宫格</title>
+  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../css/main.min3.0.css?v=9.0.0">
+</head>
+
+<style>
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .draw {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background-size: 100%;
+    }
+
+    .draw .item {
+        background: #FFD67D;
+        border-radius: 0.3rem;
+    }
+
+    .draw .item.active {
+        background-image: url(../images/pages/dial/select03.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .draw .img {
+        display: table-cell;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .draw .img img {
+        width: 2.3rem;
+        height: 2.3rem;
+        vertical-align: top;
+    }
+
+    .draw .gap {
+        width: 5px;
+    }
+
+    .draw .gap-2 {
+        height: 5px;
+    }
+
+    .draw .name {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .draw .draw-btn {
+        display: block;
+        width: 2.3rem;
+        height: 2.3rem;
+        line-height: 150px;
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration: none;
+        background-image: url(../images/pages/dial/start03.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+
+    .dial .wrapper{
+        width: 100%;
+        height: 100%;
+        background: url(../images/pages/dial/back03.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        padding-top: 5.5rem;
+    }
+    .dial-box {
+        width: 9rem;
+        height: 11.6rem;
+        margin: 0 auto;
+    }
+
+    .bg03 {
+        width: 8.3rem;
+        height: 9rem;
+        background: url(../images/pages/dial/bg03.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+    }
+
+    .dial-btn-box {
+        width: 100%;
+        height: 1.2rem;
+    }
+
+    .dial-btn-text {
+        width: 100%;
+        height: 0.6rem;
+        font-size: 0.3rem;
+        line-height: 0.6rem;
+        text-align: center;
+        margin-top: 0.2rem;
+        color: #C80008;
+    }
+    .dial-btn {
+        width: 4.5rem;
+        height: 100%;
+        float: left;
+        padding-top: 0.35rem;
+    }
+
+    .dialBtn01 {
+        width: 3.5rem;
+        height: 1rem;
+        background: url(../images/pages/dial/btn03.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8rem;
+        margin: 0 auto;
+        font-size: 0.33rem;
+        color: #D1252C;
+    }
+
+    .dialBtn02 {
+        width: 3.5rem;
+        height: 1rem;
+        background: url(../images/pages/dial/btn03.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 0.8rem;
+        margin: 0 auto;
+        font-size: 0.33rem;
+        color: #D1252C;
+    }
+    .bg03-title {
+        width: 100%;
+        height: 0.9rem;
+        font-size: 0.3rem;
+        text-align: center;
+        color: #FFD67D;
+        line-height: 0.9rem;
+    }
+
+    .bg03-box {
+        width: 7.5rem;
+        height: 7rem;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+    }
+
+    .instructions-box {
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+    }
+
+    .instructions-content {
+        width: 7.6rem;
+        height: 6.6rem;
+        margin: 0 auto;
+    }
+
+    .world {
+        width: 7rem;
+        height: 7.3rem;
+        margin: 0 auto;
+        margin-top: 0.2rem;
+        /*overflow: scroll;*/
+    }
+
+    .world-content {
+        width: 100%;
+        height: 100%;
+        line-height: 0.52rem;
+        margin: 0 auto;
+        /*float: left;*/
+        margin-top: 0.3rem;
+        font-size: 0.36rem;
+        color: #9B9B9B;
+    }
+
+    .instructions {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: 0;
+        background: #000000;
+        opacity: 0.7;
+    }
+
+    .instructions-content-title {
+        width: 100%;
+        height: 1.5rem;
+        font-size: 0.45rem;
+        text-align: center;
+        line-height: 1.5rem;
+        font-weight: bold;
+        color: #666666;
+    }
+
+    .in-alert {
+        display: none;
+    }
+
+    .dial .sharetxt {
+        width: 0.7rem;
+        height: 1rem;
+        right: .125rem;
+        background:url(../images/pages/dial/share1.png) center center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .dial .price .col {
+        font-weight: 100;
+    }
+
+</style>
+<body class="dial">
+<div class="wrapper">
+    <div class="dial-box">
+        <div class="bg03">
+            <div class="bg03-title">在投2万及以上用户，每天有1次机会</div>
+            <div class="bg03-box">
+                <div class="draw" id="lottery">
+                    <table>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-0">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img01.png" alt="">
+                                </div>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-1">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img02.png" alt="">
+                                </div>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-2">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img03.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gap-2" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-7">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img04.png" alt="">
+                                </div>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="">
+                                <a class="draw-btn" href="javascript:"></a>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-3">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img05.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="gap-2" colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td class="item lottery-unit lottery-unit-6">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img06.png" alt="">
+                                </div>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-5">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img07.png" alt="">
+                                </div>
+                            </td>
+                            <td class="gap"></td>
+                            <td class="item lottery-unit lottery-unit-4">
+                                <div class="img">
+                                    <img src="../images/pages/dial/img08.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="dial-btn-box">
+            <div class="dial-btn"><a href="my-account/rewardCenter.html" class="dialBtn01 bt1">我的奖品</a></div>
+            <div class="dial-btn"><a href="javascript:;" class="dialBtn02 bt2">活动说明</a></div>
+        </div>
+        <div class="dial-btn-text">本活动由V金融提供，与设备生产商Apple Inc.公司无关。</div>
+    </div>
+
+    <div class="in-alert">
+        <div class="instructions">  </div>
+        <div class="box">
+            <div class="instructions-box">
+                <div class="instructions-content">
+                    <div class="instructions-content-title">活动说明</div>
+                    <div class="world">
+                        <div class="world-content">
+                            <p>1. 账户在投总额>=20000元的用户，每天拥有一次抽奖机会；</p>
+                            <p>2. 所有用户当日投资任意定>=20000元（新手标除外）,可再获得一次抽奖机会；</p>
+                            <p>3. 现金奖励：直接发放至“我的-现金奖励”中；
+                            积分奖励：直接增加，可至“我的-我的积分”中查询；</p>
+                            <p>4. 如有任何问题，可致电客服热线：4000-521-388(工作9:00-18:00)；</p>
+                            <p>5. 本活动由V金融提供，与设备生产商Apple Inc.公司无关。</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    var _share_link = 'https://static.wdclc.cn/wx/pages/dial.html';
+</script>
+<script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../js/lib/TweenMax.min.js?v=9.0.0"></script>
+<script src="../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../js/setting.js?v=9.0.0"></script>
+<script src="../js/common3.0.js?v=9.0.0"></script>
+<script src="../js/pages/dial.js?v=9.0.4"></script>
+<!--<script type="text/javascript">-->
+    <!--var lottery = {-->
+        <!--index: -1, //当前转动到哪个位置，起点位置-->
+        <!--count: 0, //总共有多少个位置-->
+        <!--timer: 0, //setTimeout的ID，用clearTimeout清除-->
+        <!--speed: 20, //初始转动速度-->
+        <!--times: 0, //转动次数-->
+        <!--cycle: 50, //转动基本次数：即至少需要转动多少次再进入抽奖环节-->
+        <!--prize: -1, //中奖位置-->
+        <!--init: function(id) {-->
+            <!--if($('#' + id).find('.lottery-unit').length > 0) {-->
+                <!--$lottery = $('#' + id);-->
+                <!--$units = $lottery.find('.lottery-unit');-->
+                <!--this.obj = $lottery;-->
+                <!--this.count = $units.length;-->
+                <!--$lottery.find('.lottery-unit.lottery-unit-' + this.index).addClass('active');-->
+            <!--};-->
+        <!--},-->
+        <!--roll: function() {-->
+            <!--var index = this.index;-->
+            <!--var count = this.count;-->
+            <!--var lottery = this.obj;-->
+            <!--$(lottery).find('.lottery-unit.lottery-unit-' + index).removeClass('active');-->
+            <!--index += 1;-->
+            <!--if(index > count - 1) {-->
+                <!--index = 0;-->
+            <!--};-->
+            <!--$(lottery).find('.lottery-unit.lottery-unit-' + index).addClass('active');-->
+            <!--this.index = index;-->
+            <!--return false;-->
+        <!--},-->
+        <!--stop: function(index) {-->
+            <!--this.prize = index;-->
+            <!--return false;-->
+        <!--}-->
+    <!--};-->
+
+    <!--function roll() {-->
+        <!--lottery.times += 1;-->
+        <!--lottery.roll(); //转动过程调用的是lottery的roll方法，这里是第一次调用初始化-->
+
+        <!--if(lottery.times > lottery.cycle + 10 && lottery.prize == lottery.index) {-->
+            <!--clearTimeout(lottery.timer);-->
+            <!--lottery.prize = -1;-->
+            <!--lottery.times = 0;-->
+            <!--click = false;-->
+        <!--} else {-->
+            <!--if(lottery.times < lottery.cycle) {-->
+                <!--lottery.speed -= 10;-->
+            <!--} else if(lottery.times == lottery.cycle) {-->
+<!--//                var index = Math.random() * (lottery.count) | 0; //静态演示，随机产生一个奖品序号，实际需请求接口产生-->
+                <!--lottery.prize = 4;-->
+            <!--} else {-->
+                <!--if(lottery.times > lottery.cycle + 10 && ((lottery.prize == 0 && lottery.index == 7) || lottery.prize == lottery.index + 1)) {-->
+                    <!--lottery.speed += 110;-->
+                <!--} else {-->
+                    <!--lottery.speed += 20;-->
+                <!--}-->
+            <!--}-->
+            <!--if(lottery.speed < 40) {-->
+                <!--lottery.speed = 40;-->
+            <!--}-->
+            <!--lottery.timer = setTimeout(roll, lottery.speed); //循环调用-->
+        <!--}-->
+        <!--return false;-->
+    <!--}-->
+
+    <!--var click = false;-->
+
+    <!--window.onload = function() {-->
+        <!--lottery.init('lottery');-->
+        <!--$('.draw-btn').click(function() {-->
+            <!--if(click) { //click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应-->
+                <!--return false;-->
+
+            <!--} else {-->
+                <!--lottery.speed = 100;-->
+                <!--roll(); //转圈过程不响应click事件，会将click置为false-->
+                <!--click = true; //一次抽奖完成后，设置click为true，可继续抽奖-->
+                <!--return false;-->
+            <!--}-->
+        <!--});-->
+    <!--};-->
+<!--</script>-->
+</body>
+</html>

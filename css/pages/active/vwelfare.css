@@ -1,0 +1,343 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #6c236f;
+}
+
+.welfare {
+    width: 100%;
+    /*height: 100%;*/
+    /*background: red;*/
+}
+
+.wrapper .welfare .v-bg {
+    width: 100%;
+    height: 16.6rem;
+    background: url(../../../images/pages/activity/v-bg.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1rem;
+}
+
+.wrapper .welfare .v-bg .main {
+    width: 9rem;
+    height: 4.6rem;
+    background: url(../../../images/pages/activity/v-main.gif) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.wrapper .welfare .v-bg .sec1 {
+    width: 7.2rem;
+    height: 13rem;
+    background: url(../../../images/pages/activity/v-sec1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-left: 0.5rem;
+    padding-top: 1.3rem;
+    margin-top: 0.6rem;
+}
+
+.wrapper .welfare .v-bg .sec1 .sec1-bg {
+    width: 6.3rem;
+    height: 11rem;
+    margin: 0 auto;
+}
+
+.wrapper .welfare .v-bg .sec1 .sec1-bg ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.wrapper .welfare .v-bg .sec1 .sec1-bg ul li {
+    width: 100%;
+    height: 1.9rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.li5 {
+    background:url(../../../images/pages/activity/v-card5.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.li4 {
+    background:url(../../../images/pages/activity/v-card4.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.li3 {
+    background:url(../../../images/pages/activity/v-card3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.li2 {
+    background:url(../../../images/pages/activity/v-card2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.li1 {
+    background:url(../../../images/pages/activity/v-card1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.li-click {
+    width: 1.3rem;
+    height: 100%;
+    float: right;
+}
+
+.wrapper .welfare .ul {
+    width: 7.2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+    margin-top: 3rem;
+}
+
+.wrapper .welfare .ul li {
+    margin-top: 0.6rem;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.wrapper .welfare .ul li a {
+    color: #ff4500 ;
+}
+
+.ul-li2 {
+    height: 9.5rem;
+    background:url(../../../images/pages/activity/v-sec2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ul-li3 {
+    height: 9.5rem;
+    background:url(../../../images/pages/activity/v-sec3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ul-li4 {
+    height: 9.5rem;
+    background:url(../../../images/pages/activity/v-sec4.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ul-li5 {
+    height: 9.5rem;
+    background:url(../../../images/pages/activity/v-sec5.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ul-li6 {
+    height: 9.5rem;
+    background:url(../../../images/pages/activity/v-sec6.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.ul-li2 .ul-li2-box {
+    width: 100%;
+    height: 2.4rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.ul-li2 .ul-li2-box .ul-li2-div {
+    width: 5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ul-li2-click {
+    width: 100%;
+    height: 1rem;
+    background:url(../../../images/pages/activity/v-button1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.ul-li3 .ul-li3-box {
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.ul-li3 .ul-li3-box .ul-li3-div {
+    width: 5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ul-li4 .ul-li4-box {
+    width: 100%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.ul-li4 .ul-li4-box .ul-li4-div {
+    width: 5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ul-li4 .ul-li4-box .ul-li4-div .ul-li2-click {
+    width: 100%;
+    height: 1rem;
+    color: #ffffff;
+    background:url(../../../images/pages/activity/v-button2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.ul-li5 .ul-li5-box {
+    width: 100%;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.ul-li5 .ul-li5-box .ul-li5-div {
+    width: 5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ul-li6 .ul-li6-box {
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.ul-li6 .ul-li6-box .ul-li6-div {
+    width: 5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*侧边栏*/
+.vside-box {
+    width: 1.8rem;
+    height: 11rem;
+    position: fixed;
+    top: 18%;
+    right: 0;
+}
+
+.vside-box .vside-ul {
+    width: 100%;
+    height: 100%;
+}
+
+.vside-box .vside-ul li {
+    width: 100%;
+    height: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+.vside-ul-li0 {
+    height: 0.7rem !important;
+    background: url(../../../images/pages/activity/v-sidetitle.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li1 {
+    background: url(../../../images/pages/activity/v-a1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li2 {
+    background: url(../../../images/pages/activity/v-a2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li3 {
+    background: url(../../../images/pages/activity/v-a3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li4 {
+    background: url(../../../images/pages/activity/v-a4.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li5 {
+    background: url(../../../images/pages/activity/v-a5.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li6 {
+    background: url(../../../images/pages/activity/v-a6.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vside-ul-li7 {
+    background: url(../../../images/pages/activity/v-a7.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.liclick img {
+    width: 1.9rem;
+    height: 0.9rem;
+}
+
+/*弹框*/
+.valert-box {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.valert-box .valert-box-bg {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+}
+
+.valert-box .valert-div {
+    width: 9rem;
+    height: 10.6rem;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+}
+
+.valert-box .valert-div .close {
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../../../images/pages/activity/v-cancel.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+.valert-box .valert-div .valert-box-content {
+    width: 100%;
+    height: 9.5rem;
+    background: url(../../../images/pages/activity/v-windowbg.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-top: 0.4rem;
+    padding-top: 2rem;
+}
+
+.valert-box .valert-div .valert-box-content .valert-box-center {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 auto;
+}
+
+.valert-box .valert-div .valert-box-content .valert-box-center .valert-box-center-ul {
+    width: 100%;
+    height: 100%;
+    font-size: 0.35rem;
+    line-height: 0.53rem;
+    color: #000000;
+}

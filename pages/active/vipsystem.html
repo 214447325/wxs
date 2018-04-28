@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/active/vipsystem.css?v=9.0.0">
+    <title>会员系统</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="vipbutton">
+        <div class="vipbutton1"></div>
+    </div>
+    <div class="dvip">
+        <div class="vip"></div>
+    </div>
+    <div class="dvip1">
+        <div class="vip1">
+            <div class="vipleft1"></div>
+            <div class="vipright1 banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide v0"></div>
+                        <div class="swiper-slide v1"></div>
+                        <div class="swiper-slide v2"></div>
+                        <div class="swiper-slide v3"></div>
+                        <div class="swiper-slide v4"></div>
+                        <div class="swiper-slide v5"></div>
+                        <div class="swiper-slide v6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--温馨提示-->
+    <div class="prompt">
+        <div class="promptile"></div>
+        <div class="promptcontent">
+            1. 周周涨在投总额按会员等级划分，不包含新手（新手注册30天内周周涨在投不限额度）<br>
+            2. 每月免费提现次数超出相应会员等级次数，每笔收取2元手续费；<br>
+            3. 玩赚V星球（每日抽奖）奖励随会员等级越高，所获得的奖励就越大；<br>
+            4. VIP特权奖励每月1日更新，仅当月有效，请及时至会员中心领取；<br>
+            5.天数加息券可用于所有定期产品（除浮动收益和新手标），全程加息券可用于8周及以上定期产品（除浮动收益），两者均可在投前投后使用；<br>
+            6.现金红包金额随机，最高为88元，V1及以上会员等级的用户每月可领*1次；<br>
+            7.体验金可用于8周及以上定期产品（除浮动收益），计息7天，可在投资时勾选使用；<br>
+            8.投资红包可用于12周及以上定期产品（除浮动收益），可在投资时勾选使用；<br>
+            9.当月会员等级升级的用户，可再领取一次当前等级特权福利；<br>
+            10.好友特权：V3及以上的VIP邀请好友，被邀请好友注册成功后将获得全程加息券*1张；<br>
+            11.所有会员福利（除邀请好友奖励）使用成功后均可在【账户-现金奖励】中查看，可提取至余额，若2日未提取将自动释放至【可用余额】。<a href="javascript:;" class="look">点击查看各项福利发放详情</a>
+        </div>
+    </div>
+    <!--威武值介绍-->
+    <div class="mighty">
+        <div class="mightytitle"></div>
+        <div class="mightycontent">威武值为近3个月投资年化</div>
+        <div class="mightyimg"></div>
+    </div>
+    <!--会员降级体系-->
+    <div class="demotion">
+        <div class="demotiontitle"></div>
+        <div class="demtent">如威武值低于当前等级，三个月后威武等级将会自动降级。</div>
+    </div>
+</div>
+
+<div class="dalert">
+    <div class="falert"></div>
+    <div class="balert">
+        <div class="aconter">
+            <p class="atitle">天数加息券:</p>
+            <p class="dconter">相应加息天数到期后，奖励发放至【账户-现金奖励】；</p>
+            <p class="atitle">全程加息券:</p>
+            <p class="dconter">每7天发放一次奖励，最后一笔奖励不足7天时，按产品投资回款派息的时间发放【账户-现金奖励】；</p>
+            <p class="atitle">现金红包:</p>
+            <p class="dconter">点击“拆”字显示随机金额，并将奖励发放至【账户-现金奖励】；</p>
+            <p class="atitle">体验金:</p>
+            <p class="dconter">7天到期后，奖励发放至【账户-现金奖励】；</p>
+            <p class="atitle">投资红包:</p>
+            <p class="dconter">投资成功后，奖励发放至【账户-现金奖励】。</p>
+        </div>
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/pages/activityVersion/activityVersion.js?v=9.0.0"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+<script src="../../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+<script>
+    $(function(){
+        var $button = $('.vipbutton1');//点击进入会员中心
+        $button.click(function() {
+            window.location.href = '../../pages/my-account/myPrivilege.html';
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+            autoplayDisableOnInteraction : false,
+            grabCursor : true,
+            slidesPerView: 3,
+            slidesPerGroup : 1,
+            history: 'love',
+            paginationClickable: true,
+            mousewheelControl: false
+        });
+
+        $('.look').click(function() {
+            $('.dalert').show();
+        });
+
+        $('.dalert').click(function() {
+            $('.dalert').hide();
+        });
+    });
+</script>
+</body>
+</html>

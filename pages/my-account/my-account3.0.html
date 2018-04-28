@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的账户-3.0</title>
+	<script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+	<script src="../../js/pages/my-account/echarts.common.min.js"></script>
+	<link rel="stylesheet" href="../../css/main.min3.0.css">
+	<link rel="stylesheet" href="../../css/pages/account/my-account3.0.css?v=9.0.0">
+</head>
+<style>/* 该处CSS设置三张echarts图表的z-index层级 */
+	.charts{
+		width: 100%;
+		height: 4.75rem;
+		position: relative;
+
+	}
+	.charts #floatChart{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 999;
+	}
+	.charts #currentChart{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 888;
+	}
+	.charts #regularChart{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 777;
+	}
+	.mainbtn{
+		z-index: 500;
+	}
+</style>
+
+<body class="current-account myAccount" data-target="account">
+	<div class="wrapper">
+		<div class="top-icon">
+			<div class="top-left">
+			<img src="../../images/pages/my-account3.0/ren.png"  class="icon-left accountinfo" >
+			</div>
+			<div class="top-right">
+			<img src="../../images/pages/my-account3.0/icon3.0.png" class="icon-right">
+			</div>
+		</div>
+		<div id="main" style="width: 100%;height:5.5rem;"></div>
+		<div class="total">
+			<span class="investment">700,000,00.23</span>
+			<span class="investment-p">在投总额(元)</span>
+		</div>
+		
+
+		<div class="maindata">
+			<div class="data-left">
+				<span class="span1 totalIncome">2535352</span>
+				<span class="span2">累计收益（元）></span>
+			</div>
+			
+			<div class="data-right">
+				<span class="span1 accountAmt">1000.11</span>
+				<span class="span2">可用余额（元）</span>
+			</div>
+		</div>
+		<div class="null"></div>
+		<a href="../../pages/financing/my-float.html" class="check"><span>浮动收益</span><img src="../../images/pages/my-account3.0/back.png" class="backimg"></a>
+
+		<div class="charts">
+			<div id="floatChart" style="width: 100%;height:100%;padding:0.2rem 0 0 0.35rem"></div>
+			<div id="currentChart" style="width: 100%;height:100%;padding:0.2rem 0 0 0.35rem " ></div>
+			<div id="regularChart" style="width: 100%;height:100%;padding:0.2rem 0 0 0.35rem "></div>
+		</div>
+
+		<div class="mainbtn">
+		       <a href="javascript:;" class="withdraw-btn"><button>提现</button></a>
+		       <a href="javascript:;" class="topup-btn"><button>充值</button></a>
+		      
+		</div>
+		
+
+	</div>  
+
+  	<div class="nav clearfix"></div>
+
+
+
+
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/pages/my-account/my-account3.0.js"></script>
+</body>
+</html>

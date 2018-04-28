@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="keywords" content=""><meta name="description" content=""><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0"><meta name="format-detection" content="telephone=no"><title>专属特权</title><script src="../../js/lib/flexible.debug.js?v=3.6.6"></script><script src="../../js/pages/my-account/echarts.common.min.js?v=3.6.6"></script><link rel="stylesheet" href="../../css/main.min3.0.css?v=3.6.6"><link rel="stylesheet" href="../../js/lib/swiper/css/swiper.min.css?v=3.6.6"><link rel="stylesheet" href="../../css/pages/my-account/myPrivilegeOld.css?v=3.6.6"><style>/*账户等级*/
+	.swiper-container {
+		width:9.44rem;
+		height:6.0533rem;
+		overflow: visible;
+	} 
+	.swiper-slide{
+		background: #fff;
+	}
+	.swiper-slide{
+		background:url(../../images/pages/my-account3.0/exclusive/vfinish.png);
+		background-size:cover;
+		background-position:center;
+		color:#B59E6D;
+		font-size:0.32rem;
+		/*padding:0.4rem;*/
+	}
+	.swiper-slideFinsh{
+		background:url(../../images/pages/my-account3.0/exclusive/vnow.png);
+		background-size:cover;
+		background-position:center;
+	}
+	.vipMightyText{
+		position:absolute;
+		left:0;
+		top:0;
+		text-align:center;
+		padding-top:1.2rem;
+		font-size:0.3733rem;
+		color:#82702E;
+	}
+	.vipMightyTextFinish{
+		color:#fff;
+	}
+	.upgradeFather{
+		margin-left: -0.5rem;margin-left: -0.5rem;width: 6rem;margin-top:0.1rem;
+	}
+	.upgradeLeft{
+		width: 1.58rem;display: block;float: left;line-height: 2rem;text-align:right;
+	}
+	.upgradeRight{
+		width: 1.13rem;display: block;float: left;line-height: 2rem;text-align:left;
+	}
+	.upgrade{
+		background:url(../../images/pages/my-account3.0/exclusive/btn.png);
+		background-size:contain;
+		/*background-position:center;*/
+		background-repeat: no-repeat;
+	    width: 2.866rem;
+	    height: 1.2rem;
+	    line-height: 1.2rem;
+	    margin-top: 0.3rem;
+	    display:block;
+	    float:left;
+	}
+
+	.upgradeFinish{
+		background:url(../../images/pages/my-account3.0/exclusive/btnfinish.png);
+		background-size:contain;
+		/*background-position:center;*/
+		background-repeat: no-repeat;
+		color:#989CA7;
+	}
+	.vipLeft{
+		float:left;width:3.1rem;margin-left:0.7866rem;height:4.8266rem;
+	}
+	.vfinsh{
+		background:url(../../images/pages/my-account3.0/exclusive/vfinish2.png);
+		background-size: contain;
+    	background-repeat: no-repeat;
+    	margin-top: 0.25rem;
+	}
+	.vbefore{
+		background:url(../../images/pages/my-account3.0/exclusive/vbefore2.png);
+		background-size: contain;
+    	background-repeat: no-repeat;
+    	margin-top: 0.25rem;
+	}
+
+	.vipLeftText{
+		margin-top:1.0133rem;height:0.3066rem;
+	}
+	.canvasFather{
+		float:left;width:5rem;height:4.88rem;position:relative;
+	}
+	.vipLeftImg{
+		width:2.453rem;height: 1.84rem;margin-top:0.65rem;
+	}
+	.vipMightySon{
+		margin-bottom: 0.3rem;
+	}
+	.vipMightyValue{
+		font-size:0.8rem;
+		font-weight:bold;
+	}
+	.finghingValue{
+		float:left;width:100%;text-align:center;
+	}
+	.reg{
+		color:red;
+	}
+	.white{
+		color:white;
+	}
+	.finghingValue span{
+		color:#997C13;
+	}</style></head><body><div class="wrapper"><div style="overflow: hidden;margin-top: 0.25rem"><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide swiper-slide-active"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div><div class="swiper-slide"></div></div></div></div><div class="container"><div class="top">会员专享权益 <img src="../../images/pages/my-account3.0/nextPage3.0.png"></div></div><div class="rightsAndInterest"><span>我的权益</span> <span class="myreward">超值礼券</span></div><div class="couponList"></div></div><div class="ui-dialog backdrop hide"><div class="dialog-content"><h3 class="dialog-title red">温馨提示</h3><div class="dialog-article"><p>近两个月投资年化，计算方式为：每笔投资金额*投资期限/365天每天计算。<br>投资越多威武值越高</p></div><div class="tc btn-box1"><a href="javascript:;" class="btn btn-default btn-sm">我知道了</a></div></div></div><div class="red-layer"><div class="red"><div class="redinfo"><span class="cashredAmt">￥</span> <span>恭喜您得到红包奖励</span></div><div class="redbtn">前往领取</div><div class="redfalse"><img src="../../images/pages/my-account3.0/false.png"></div></div></div><div class="alert-layer"><div class="resalert"><div>温馨提示</div><div class="resmes"><div id="resmes"></div></div><div id="reloadbtn">确定</div></div></div><script src="../../js/lib/jquery-2.1.3.min.js?v=3.6.6"></script><script src="../../js/lib/doT.min.js?v=3.6.6"></script><script src="../../js/lib/swiper/js/swiper.jquery.min.js?v=3.6.6"></script><script src="../../js/setting.js?v=3.6.6"></script><script src="../../js/common3.0.js?v=3.6.6"></script><script src="../../js/pages/my-account/myPrivilegeOld.js?v=3.6.6"></script></body></html>

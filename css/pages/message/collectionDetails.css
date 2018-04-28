@@ -1,0 +1,378 @@
+body {
+	background: rgb(231,233,236);
+}
+.mui-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 998;
+	background-color: rgba(0,0,0,.3);
+	background-position:45% 50% ;
+	background-repeat: no-repeat;
+}
+.mui-icon-left{
+	color:rgb(230,149,84) ;
+}
+
+.mineLeft{
+	font-size: medium;
+	color: #787878;
+}
+
+.mineFont{
+	font-size: medium;
+	color: #8f8f94;
+}
+
+.mui-icon-right{
+	color: #8f8f94;
+}
+
+.mui-pull-right{
+	padding: 10px 0px;
+}
+
+#footer .mui-active{
+	color: #ec7710;
+}
+
+.item-user-time1 {
+	position: relative;
+	top: -2px;
+	margin-left: 12px;
+	font-size: 12px;
+	color: rgb(255, 109, 85);
+    border: 1px solid rgb(255, 152, 51);
+    border-radius: 0.1rem;
+}
+
+#eyes {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: 0px;
+	background-size: 100%;
+}
+
+.detail-top .item-user-text {
+	margin-top: -36px;
+	margin-left: 48px;
+	line-height: 20px;
+	height: 20px;
+	display: -webkit-flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	font-size: 16px;
+}
+
+.item-user-name {
+	display: inline-block;
+	overflow: hidden;
+	max-width: 55%;
+	line-height: 18px;
+	padding: 1px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #333;
+	margin-right: 4px;
+}
+
+.detail-top .item-user-time {
+	position: relative;
+	top: -2px;
+	margin-left: 46px;
+	font-size: 12px;
+	color: #777;
+}
+
+.detail-top .read-icon-v3 {
+	position: absolute!important;
+	right: 0;
+	top: 2px;
+}
+
+.read-icon {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	vertical-align: -4px;
+	background-size: 100%;
+}
+
+.detail-top .readnum {
+	color: #8b8b8b;
+	font-size: 12px;
+	margin-left: 3px;
+}
+
+.PostList .post-list>li .detail-bottom {
+	padding: 0 10px 5px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+}
+
+.report-content {
+	overflow: hidden;
+	max-height: none;
+	margin-bottom: 10px;
+	padding: 0px 10px 12px;
+}
+
+.report-content .grouptitle {
+	color: #000;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.PostList .post-list>li .feed-two-line, .barIndex-ad .brief p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.PostList .post-list>li .feed-two-line {
+	display: -webkit-box;
+}
+.report-content .groupbrief {
+	font-size: 14px;
+	line-height: 18px;
+	padding-left: 1px;
+	color: #777;
+}
+
+.report-content .grouptitle+.groupbrief {
+	padding-top: 5px;
+}
+
+footer.m-ctrl-box {
+	border-top-width: 1px;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-color: #e6e6e6;
+	border-style: solid;
+	height: 2.125rem;
+}
+
+.m-ctrl-box .m-diy-btn {
+	color: #939393;
+	height: 100%;
+}
+
+.itemTitle{
+	background: #fff;
+	line-height: 1rem;
+	font-size: 0.35rem;
+	overflow: hidden;
+	z-index: 1;
+	border-bottom: 1px solid rgb(245,240,240);
+    padding-left: 12px;
+    color: rgb(170,170,170);
+}
+
+.div_content .bottom {
+	width: 100%;
+	height: 0.9rem;
+	margin-top: 0.3rem;
+}
+
+.comments1 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.praises1 {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.img1 {
+	width: 0.4rem !important;
+	height: 0.4rem;
+	float: left;
+	margin-top: 0.2rem;
+}
+.img2 {
+	width: 0.6rem !important;
+	height: 0.6rem;
+	float: left;
+}
+
+.comments1 {
+	text-align: center;
+	margin-top: 0.1rem;
+}
+
+.praises1{
+	text-align: center;
+	margin-top: 0.1rem;
+}
+
+.collection1{
+	width: 33%;
+	height: 100%;
+	float: right;
+	margin-top: 0px;
+}
+
+.div01 {
+	width: 1.3rem;
+	height: 0.9rem;
+	margin: 0 auto;
+}
+
+.praiseImg {
+	width: 0.4rem !important;
+	height: 0.4rem;
+	float: left;
+	margin-top: 0.1rem;
+}
+
+#item3mobile03 {
+	background: #e8e2e2 !important;
+}
+
+.comment {
+	font-size: 12px;
+	float: left;
+	margin-top: 0.06rem;
+	margin-left: 0.1rem;
+}
+
+.praise {
+	font-size: 12px;
+	float: left;
+	margin-top: 0.05rem;
+	margin-left: 0.1rem;
+}
+
+li {
+background: white;
+margin-bottom: 0.1rem;
+}
+
+.feed-img img{
+	width: 100%;
+	height: 150px;
+	// margin-top: 0.2rem;
+	float: left;
+}
+
+.commentsBox {
+	width: 100%;
+	height: 5rem;
+	background: #d5dade;
+	position: fixed;
+	bottom: 0rem;
+	z-index: 10;
+}
+
+.commentsBox .comment_box {
+	width: 9rem;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.commentsBox .comment_box .comment_title {
+	width: 100%;
+	height: 0.9rem;
+	font-size: 0.4rem;
+	font-weight: bold;
+	line-height: 1rem;
+}
+
+.commentsBox .comment_box .comment_content {
+	width: 100%;
+	height: 2.6rem;
+	margin-top: 0.2rem;
+	border-radius: 0.2rem;
+	border: 2px solid #c0c1c3;
+}
+
+.commentsBox .comment_box .comment_content .text {
+	width: 100%;
+	height: 100%;
+	border-radius: 0.2rem;
+	border: 2px solid #c0c1c3;
+}
+
+.commentsBox .comment_box .comment_button {
+	width: 100%;
+	height: 1rem;
+	margin-top: 0.2rem;
+	color: #ffffff;
+	font-size: 0.5rem;
+	text-align: center;
+	line-height: 1rem;
+}
+
+.commentsBox .comment_box .comment_button .cancel {
+	width: 4.4rem;
+	height: 100%;
+	float: left;
+	background: #969696;
+	border-radius: 0.2rem;
+}
+
+.commentsBox .comment_box .comment_button .sub {
+	width: 4.4rem;
+	height: 100%;
+	float: right;
+	background: #1082fe;
+	border-radius: 0.2rem;
+}
+
+.item3mobileLi1 {
+	background: #333333;
+}                 
+.likeTotal {
+	color: rgb( 255,131,86);
+}
+
+.bumpTotal {
+    color: rgb(170,170,170);
+}
+
+.bumpTotala {
+    color: rgb(170,170,170);
+    margin-left: 0.2rem;
+}
+
+
+.endli {
+    position: relative;
+}
+
+.endAct {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.endActicon {
+    width: 1.2rem;
+    height: 1.7rem;
+    background: url(../../images/pages/activityOver/Rectangle33@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 0.45rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    line-height: 0.6rem;
+    right: 0.5rem;
+}
+.groupbrief{
+	margin-bottom:0;
+}

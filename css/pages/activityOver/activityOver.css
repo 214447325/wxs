@@ -1,0 +1,117 @@
+@import "activityOver.css";
+.wrapper {
+    /*width: 100%;*/
+    background: url(../../../images/pages/activityOver/background.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.background-header {
+    margin-top: 1.3rem;
+    width: 100%;
+    height: 1.6rem;
+    /*background: #ff0000;*/
+}
+
+.background-title {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.5rem;
+    /*background:red;*/
+}
+
+.center {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.center1 {
+    width: 100%;
+    height: 0.6rem;
+    color: #ffffff;
+    line-height: 0.6rem;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.center2 {
+    width: 100%;
+    height: 0.6rem;
+    color: #ffffff;
+    line-height: 0.6rem;
+    font-size: 0.35rem;
+    text-align: center;
+}
+
+.twoCode {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.2rem auto;
+    /*background: url(../../../images/pages/activityOver/twoCode.png) 0 0 no-repeat;*/
+    /*background-size: 100% 100%;*/
+}
+
+.footer {
+    width: 2.6rem;
+    height: 4rem;
+    background: url(../../../images/pages/activityOver/logo.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+}
+
+.background-title h2 {
+    font-size: 0.6rem;
+}
+
+.img1 {
+    height: 100%;
+    width: 100%;
+}
+
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.footer1 {
+    width: 100%;
+    height: 1rem;
+}

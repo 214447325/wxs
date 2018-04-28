@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>限额说明</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+  <style> 
+  .box{
+    font-size:0.4rem!important;
+    text-indent:0.2rem;
+     line-height: 0.8rem;
+    padding:0.28rem 0;
+    border-bottom:0.0133rem solid #DEDEDE;
+    background:#fff;
+    color:#9B9B9B;
+  }
+   .box:before{
+    display:block;
+    content:"";
+    clear: both;
+  }
+  .box:after{
+    display:block;
+    content:"";
+    clear: both;
+  }
+  .limit p.beizhu{
+    font-size:0.32rem;
+    padding: 0  0.5rem;
+    color:#9B9B9B;
+    /*box-sizing:border-box;*/
+    line-height:0.6rem;
+  }
+   .beizhu:nth-child(1){
+    padding-top:0.25rem;
+  }
+  .floatLeft{
+    float:left;
+  }
+  .title{
+    font-size: .4rem;
+    background:#fff;
+    color: #9B9B9B;
+    text-align: center;
+    height: 1.12rem;
+    line-height:1.12rem;
+    margin-bottom:0.25rem;
+  }
+  .tab{
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+  .active{
+    color:#2B6FF9;
+  }
+  .underline {
+    width: .56rem;
+    height: .0466rem;
+    background: #2B6FF9;
+    border-radius: 5px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: none;
+}
+.active .underline{
+  display:block;
+}
+#llpay{
+  display:none;
+}
+</style>
+</head>
+
+<body class="limit bg">
+  <div class="wrapper">
+    <div class="title">
+      <div class='tab active'>
+          富友支付
+          <div class='underline'></div>
+      </div>
+      <div class='tab'>
+          连连支付
+          <div class='underline'></div>
+      </div>
+    </div>
+    <div class="limit-table" id="fypay"></div>
+    <div class="limit-table" id="llpay"></div>
+
+    <table width="100%" cellpadding="0" class="limit-table" id="fypay"></table>
+    <table width="100%" cellpadding="0" class="limit-table" id="llpay"></table>
+      <p  class="beizhu">备注：</p><p  class="beizhu">1.建议用户开通手机银行。</p><p  class="beizhu">2.当期支付渠道只能绑定同一张银行卡。</p><p  class="beizhu">3.商户限额、用户银行卡本身限额、认证支付标准限额，三者取最低限额。限额表仅供参考，实际以支付界面提示为准。</p>
+  </div>
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/common2.js?v=9.0.0"></script>
+  <script type="text/javascript">
+    $(function(){
+      _htmlFY = doT.template([
+         '{{~it :item:index}}',
+              '<div class="box">',
+                '<div class="floatLeft" style="width:3rem;">',
+                  '<img src={{=item.icon}} style="width:0.48rem;margin-right:0.25rem;"/>',
+                  '<span style="color:#4A4A4A;font-size:0.3733rem">{{=item.bankName}}</span>',
+                '</div>',   
+                '<div class="floatLeft" style="width:6.5rem;text-align:right;font-size:0.32rem;">单日限额{{=item.fyLimitDay/10000}}万，单笔限额{{=item.fyLimitOnce/10000}}万',
+                '{{?item.fyLimitTimes != 0 && item.fyLimitTimes != undefined }}',
+                // '(单日限{{=item.fyLimitTimes}}笔成功交易)',
+                '{{?}}',
+                '</div>',
+              '</div>',
+          '{{~}}'
+      ].join(''));
+
+       _htmlll = doT.template([
+          '{{~it :item:index}}',
+              '<div class="box">',
+                '<div class="floatLeft" style="width:3rem;">',
+                  '<img src={{=item.icon}} style="width:0.48rem;margin-right:0.25rem;"/>',
+                  '<span style="color:#4A4A4A;font-size:0.3733rem">{{=item.bankName}}</span>',
+                '</div>',   
+                '<div class="floatLeft" style="width:6.5rem;text-align:right;font-size:0.32rem;">单日限额{{=item.LimitDay/10000}}万，单笔限额{{=item.LimitOnce/10000}}万',
+                '{{?item.LimitTimes != 0 && item.LimitTimes != undefined }}',
+                // '(单日限{{=item.fyLimitTimes}}笔成功交易)',
+                '{{?}}',
+                '</div>',
+              '</div>',
+          '{{~}}'
+      ].join(''));
+
+      $.ajax({
+        url:Setting.apiRoot1 + '/pay/channelInfo.p2p',
+        dataType:'json',
+        type:'POST'
+      }).done(function(res){
+        if(res.code == 1){
+          console.log(JSON.parse(res.data))
+          $('#fypay').html(_htmlFY(JSON.parse(res.data)))
+          $('#llpay').html(_htmlFY(JSON.parse(res.data)))
+        }else{
+          Common2.toast('网络异常',Setting.staticRoot+'/images/pages/ui/wifi.png');
+        }
+      }).fail(function(res){
+          Common2.toast('网络异常',Setting.staticRoot+'/images/pages/ui/wifi.png');
+
+      });
+      $('.tab').on('click',function(){
+        var index = $(this).index();
+        $('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('.limit-table').css('display','none');
+        $('.limit-table').eq(index).css('display','block');
+      })
+    });
+  </script>
+</body>
+</html>

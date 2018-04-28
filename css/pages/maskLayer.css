@@ -1,0 +1,81 @@
+/*
+* @Author: User
+* @Date:   2016-07-18 10:26:11
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-18 14:47:08
+*/
+.page-buy .title {
+	font-size: .40625rem;
+	padding: .46875rem;
+}
+
+.page-buy .input-box {
+	border: 1px solid #bcbcbc;
+	margin-left: .546875rem;
+	display: inline-block;
+	border-bottom: none;
+	border-right: none;
+	height: 1.5rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.page-buy .input-box .box {
+	border-bottom: 1px solid #bcbcbc;
+	font-size: .9375rem;
+	border-radius: 0;
+	text-align: center;
+	border-right: 1px solid #bcbcbc;
+	float: left;
+	width: 1.484375rem;
+	height: 1.484375rem;
+	background-color: #FFF;
+	position: relative;
+}
+
+.page-buy .input-box .box.full:before {
+	content: '';
+	width: .3125rem;
+	height: .3125rem;
+	border-radius: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.page-buy .input-box .box.focus:after {
+	content: '';
+	width: .03125rem;
+	height: 50%;
+	background-color: #999;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-animation: cursor .7s ease-in infinite;
+	animation: cursor .7s ease-in infinite;
+}
+
+.page-buy .input-box .box.full.focus:after {
+	left: 70%;
+}
+
+.page-buy .input-box input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300%;
+	height: 100%;
+	border: none;
+	background: transparent;
+	font-size: 1px;
+	color: #FFF;
+	line-height: 0;
+	opacity: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}

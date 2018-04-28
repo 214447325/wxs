@@ -1,0 +1,313 @@
+.account-page .form-ui{
+    margin-top:0;
+}
+
+.wrapper{
+    position: absolute;
+}
+
+input {
+    width: 6.5rem;
+}
+
+.registered-title {
+    width: 100%;
+    height: 0.6rem;
+    float: left;
+    margin: 0.3rem auto;
+}
+
+.img-header {
+    width: 0.3rem;
+    float: left;
+    margin-left: 0.36rem;
+    margin-top: 0.5rem;
+}
+
+.default {
+    color: rgb(62,80,180);
+}
+
+.login-registered {
+    width: 8.6rem;
+    font-size: 0.45rem;
+    /*background: green;*/
+    float: left;
+    margin-top: 0.5rem;
+}
+
+.login {
+    font-size: 0.4rem;
+    float: right;
+    margin-right: 1rem;
+}
+
+.content-div {
+    width: 100%;
+    // height:6.5rem;
+    // margin-top: 1.43rem;
+    /*background: red;*/
+}
+
+.icon-phone {
+    width: 9rem;
+    height: 1rem;
+    font-size: 0.4rem;
+    margin: 0 auto;
+    border-bottom: 0.02rem solid rgb(213,215,220);
+}
+
+.phone {
+    float: left;
+}
+
+.icon-fg {
+    color: rgb(213,215,220);
+    margin: 0 0.2rem;
+}
+
+.tel-phone {
+    // background: #fff;
+    border: none;
+    width: 6.9rem;
+    color:#6271C7;
+}
+
+.icon-msgcode {
+    width: 9rem;
+    height: 1rem;
+    font-size: 0.4rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border-bottom: 0.02rem solid rgb(213,215,220);
+}
+
+.icon-password {
+    width: 9rem;
+    height: 1rem;
+    font-size: 0.4rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border-bottom: 0.02rem solid rgb(213,215,220);
+}
+
+.lock {
+    width:100%;
+    float: left;
+}
+
+.registered-img {
+    width: 0.5rem;
+    margin-left: 0.3rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.text {
+    background: #fff;
+    border: none;
+}
+
+.registernumber {
+    width: 1rem;
+    height: 0.5rem;
+    background: red;
+    float: right;
+}
+
+.next-btn {
+    width: 9rem;
+    height: 1.15rem;
+    line-height: 1.15rem;
+    background: #2B6FF9;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.msgcode {
+    background: #fff;
+    font-size: .4266rem;
+    float: left;
+    margin-top: 0.1rem;
+    border: none;
+    margin-left: 0.2rem;
+
+    /*background: red;*/
+}
+
+.btn-msgcode {
+    width:2rem;
+    text-align: center;
+    color: #2B6FF9;
+    font-size: .3733rem;
+    float: right;
+    margin-top: 0.1rem;
+    border-left:0.0133rem solid #CDCDCD;
+    
+    /*margin-left: 1.3rem;*/
+}
+
+.btn-msgcode strong{
+    color:#9B9B9B ;
+}
+
+
+
+.icon-fg {
+    width: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+.password {
+    background: #fff;
+    font-size: .4266rem;
+    float: left;
+    border: none;
+    margin-top: 0.1rem;
+    /*background: red;*/
+    width: 7.7rem;
+    margin-left: 0.2rem;
+}
+
+.f1 {
+    float: left;
+    margin-top: 0.06rem;
+    margin-left: 0.18rem;
+}
+
+.show-img {
+    background: #fff;
+    border: none;
+    float: right;
+    /*margin-left: 2.3rem;*/
+    margin-top: 0.2rem;
+    width: 0.58rem;
+    text-align: right;
+}
+
+.lock-img {
+    width: 0.5rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+.icon-invitation {
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.4rem;
+    margin: 0 auto;
+}
+
+.invitation-friends {
+    width: 100%;
+    height: 1rem;
+    font-size: .4266rem;
+    margin-top: 0.5rem;
+}
+
+.friends-span {
+    float: left;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+}
+
+.unknown {
+    width: 0.5rem;
+    float: right;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.friends-number {
+    margin-top: 0.5rem;
+    display: none;
+    width: 100%;
+    height: 1rem;
+    font-size: .4266rem;
+    border-bottom: 0.02rem solid rgb(213,215,220);
+    /*background: red;*/
+}
+
+.passNumber {
+    width: 0.66rem;
+    float: left;
+    margin-left: 0.3rem;
+    /*margin-top: 0.16rem;*/
+}
+
+.icon-friend {
+    color: rgb(213,215,220);
+    float: left;
+    margin-top: 0.46rem;
+    margin-left: 0.3rem;
+}
+
+.friendNumber {
+    background: #fff;
+    font-size: .4266rem;
+    float: left;
+    border: none;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    /*background: red;*/
+    width: 6.8rem;
+}
+
+.isAccept {
+    width: 9rem;
+    /*background: red;*/
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(153,153,153);
+    font-size:0.32rem;
+}
+
+.isChecked-img {
+    width:100%;
+    /*width:6rem;*/
+    // height: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.isChecked {
+    width: 0.4rem;
+    // float: left;
+    // margin-top: 0.26rem;
+    vertical-align:middle;
+    margin-top:-0.06rem;
+    // margin-left: 1rem;
+}
+
+.isChecked-span {
+    color: rgb(153,153,153);
+    float: left;
+    margin-left: 0.1rem;
+}
+
+a {
+    color:rgb(55,78,171);
+}
+
+strong {
+    margin-left: 1rem;
+}
+
+.phoneNumber {
+    width: 1.2rem;
+    float: left;
+    text-align: center;
+    border-right: 0.02rem solid rgb(213,215,220);
+    margin-right: 0.08rem;
+}
+
+.img {
+    float: left;
+    margin-top: 0.1rem;
+}

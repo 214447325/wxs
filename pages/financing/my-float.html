@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>我的浮动收益</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/financing/my-float3.0.css?v=9.0.0">
+</head>
+<style>
+    .current-account .wrapper .bgred .line{
+        width:1px;
+        height:80%;
+        background: url(../../images/lib/Line.png) 0 0 no-repeat;
+        background-size:cover;
+        position: absolute;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .alert-content {
+        width: 8.21875rem;
+        height: 4.85rem;
+        background: #fff;
+        border-radius: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -4.109375rem;
+        min-height: 4.6875rem;
+        margin-top: -2.34375rem;
+    }
+
+    .alert-content .dialog-article p {
+        font-size: .40625rem;
+        padding: .696625rem .78125rem;
+        /*text-align: left;*/
+        color: #757575;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .alert-content h3.dialog-title {
+        height: 0.55rem;
+        line-height: 1.25rem;
+        text-align: center;
+        font-weight: 400;
+        font-size: .4375rem;
+    }
+
+    .alert-content .close {
+        width: .296875rem;
+        height: .296875rem;
+        background: url(../../images/ui/close.png) no-repeat;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        background-size: 100% 100%;
+    }
+
+    .btn-box1 {
+        width: 100%;
+        height: 1.12rem;
+        line-height: 1.12rem;
+        background: rgb(55,78,171);
+        color: rgb(255,255,255);
+        font-size: 0.4rem;
+    }
+</style>
+<body class="current-account bg">
+<div class="wrapper">
+<!--     <div class="currentTitle">
+        <div class="currentContent">
+            <img class="returnImg" src="../../images/pages/my-account3.0/return3.0.png">
+            <span class="server">
+                我的浮动收益
+            </span>
+        </div>
+    </div> -->
+    <div class="header">
+        <div class="serverBox">
+            <div class="todayEarnings">
+                <div class="solidMoney">
+                    0.00
+                </div>
+                <div class="solidWord">
+                    浮动收益在投本金 (元)
+                </div>
+            </div>
+        </div>
+        <div class="earnings">
+            <div class="accumulated">
+                <div class="accumulatedContent">
+                    当前盈利(元)
+                </div>
+                <div class="accumulatedMoney">
+                    0.00
+                </div>
+            </div>
+            <!--<div class="fg"><img src="../../images/pages/invite3.0/fg.png" class="img1"></div>-->
+            <div class="principal">
+                <div class="principalContent">
+                  <div class="lj">
+                    累计收益 (元)
+                  </div>
+                  <div class="img">
+                      <img src="../../images/pages/financing/float3.0/why3.0.png" class="img1">
+
+                  </div>
+
+                </div>
+                <div class="principalMoney">
+                    0.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headerContent spacing">
+
+
+        <!--<div class="choosing">-->
+            <!--<div class="choosingContent">-->
+                <!--<div class="choosingworld">择时稳赢三期</div>-->
+                <!--<div class="portfolio">资产组合</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="choosingData">-->
+
+            <!--<div class="choosingDataRow1">-->
+                <!--<div class="choosingDataCol">最新年化收益率:</div>-->
+                <!--<div class="choosingDataCol">投资金额(元):</div>-->
+            <!--</div>-->
+            <!--<div class="choosingDataRow1">-->
+                <!--<div class="choosingDataCol floatData">23%</div>-->
+                <!--<div class="choosingDataCol floatData">100</div>-->
+            <!--</div>-->
+            <!--<div class="choosingDataRow1">-->
+                <!--<div class="choosingDataCol">认购净值(元):<span class="floatData floatSpan">1.00</span></div>-->
+                <!--<div class="choosingDataCol">最新净值(元):<span class="floatData floatSpan">1.00</span></div>-->
+            <!--</div>-->
+            <!--<div class="choosingDataRow1">-->
+                <!--<div class="choosingDataCol date">2016-06-28购买</div>-->
+                <!--<div class="choosingDataCol date">2016-06-28到期</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    </div>
+</div>
+<div class="ui-dialog backdrop hide">
+    <div class="alert-content">
+        <a href="javascript:;" class="close"></a>
+        <h3 class="dialog-title red"></h3> <!-- 标题 -->
+        <div class="dialog-article"> <!-- 内容 -->
+            <p>浮动收益产品累计收益指您的浮动收益产品产生的历史收益之和，
+                不包含浮动收益产品未到账的收益  </p>
+        </div>
+
+        <div class="tc btn-box1  "><!-- 按钮 -->
+            我知道了
+            <!--<a href="javascript:;" class="btn btn-link btn-sm" >继续购买</a>-->
+            <!--<a href="javascript:;" class="btn btn-default btn-sm">查看账户</a>-->
+        </div>
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/pages/financing/my-float3.0.js?v=9.0.0"></script>
+
+</body>
+</html>

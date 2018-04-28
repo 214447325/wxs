@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title>理财</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/current3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/financing/prodDetail.css" />
+    <style>
+        .wrapper {
+            /*margin-top: 6.5px;*/
+        }
+
+        .financing .tab {
+            height: 1.23375rem;
+        }
+
+        .financing .tab a.active:after {
+            border: none;
+        }
+
+        .underline {
+            width: 0.56rem;
+	        height: 0.066666rem;
+	        display: block;
+	        background: #6C6FFF;
+	        border-radius: 5px ;
+	        z-index: 10;
+	        position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 0.92rem;
+		    bottom: 0;
+		    margin: 0 auto;
+        }
+        
+        #navNew  a{
+        	font-size: .28rem;
+        }
+        .p3text{
+        	width:33%;
+        	float:left;
+
+        }
+    </style>
+</head>
+<body class="financing current" data-target="money">
+	<div class="tab">
+		<a href="regular.html" >固收</a>
+		<a href="javascript:;" class="active">周周涨
+            <div class="underline"></div>
+        </a>
+		<a href="float.html">浮动</a>
+	</div>
+	<div class="wrapper"><!-- wrapper外层 -->
+		<div class="current-bg">
+			<div class="p1">历史年化收益率(%)</div>
+			<div class="p2">8.88~12.08
+				<!--<span class="btn-detail" >详情</span>-->
+			</div>
+			
+			<div class="p3">
+			    <div class="p3text">分散投资</div>
+			    <div class="p3text">灵活赎回</div>
+			    <div class="p3text">当日计息</div>
+		    </div>
+			<!-- <div class="p4 canBuyAmt"></div> -->
+            <div class="p3 p6">可投金额: <a class="current_amount"></a></div>
+		</div>
+		<div class="currentBar">
+			<div class="barword">
+					<span class="time1 word1">今日投资</span><span class="time2 word2">当日计息</span><span class="time3 word3">到期</span><p>时间越长 收益越高</p>
+			</div>
+			<div class="barimg">
+				<!-- <div class="time1 circle"><span class="node1"></span></div>
+				<div class="time2 circle"><span class="node2"></span></div>
+				<div class="time3 circle"><span class="node3"></span></div> -->
+				<img src="../../images/pages/financing/current3.0/rectangle6@3x.png" class="barBg">				
+			</div>
+			
+			<div class="bartime">
+					<span class="time1 day1"></span><span class="time2 day2"></span><span class="time3 day3"></span>
+			</div>
+		</div>
+		<div class="chartwrp">
+		    <div class="chartwrpTitle">预期年化收益率(%)</div>
+			<img src="../../images/pages/financing/current3.0/current-chart.png" class="current-chart">
+		    <div class="current-chart-lable">
+		        <div class="current-chart-circle"><span></span></div>
+		        <div style="margin-right:0.853333rem;">周周涨</div>
+		        <div class="current-chart-circle"><span style="background:#FFE5D4;"></span></div>
+		        <div>宝宝类</div>
+		    </div>
+		</div>
+
+		<!-- <div class="zczh">资产组合</div> -->
+		<!-- <div id="portfolioChart" style="height: 5.12rem;"></div> -->
+		<!-- <div class="look currentlook">查看资产组合详情<img src="../../images/pages/my-account3.0/nextPage3.0.png"></div> -->
+		<div class="look currentlook">资产组合<img src="../../images/pages/my-account3.0/nextPage3.0.png"></div>
+
+		<div class="zczh">产品详情</div>
+		<section class="detailtips">
+		<div class="singel">
+			<div class="sg-top">产品说明</div>	
+		             <p>V金融周周涨产品灵活赎回，每日结息。投资标的分散在具有高保障系数的小额信贷、消费信贷等多种优质资产。单比借款金额平均在1万元左右。资产组合高度分散，并且基于线上和线下的多级风控体系，历史坏账率极低。</p>
+	             </div>
+		<div class="singel">
+			<div class="sg-top">产品收益</div>	
+		            <p>阶梯利率，投资越久，收益越高。基础年化利率为8.88%。每7天增加一个梯度，第一个梯度加0.1%，后面每个梯度再加20%。即0.1%*（1+0.2）。每笔投资都根据上述规则单独计算利息。</p>
+	             </div>
+		<!--<div class="singel">-->
+			<!--<div class="sg-top">计息方式</div>	-->
+		            <!--<p>(到期净值-买入净值)*购买份数</p>-->
+	             <!--</div>-->
+		<div class="singel">
+			<div class="sg-top">产品期限</div>	
+		             <!--<p><span id="investCycle"></span>天</p>-->
+            <p>随时赎回，提现最快1分钟到账。</p>
+	             </div>
+		<!--<div class="singel">-->
+			<!--<div class="sg-top">赎回方式</div>	-->
+		             <!--<p>到期日前无法赎回，到期后一次返还本金和收益</p>-->
+	             <!--</div>-->
+		<!--<div class="singel">-->
+			<!--<div class="sg-top">资产组合</div>	-->
+		             <!--<p>固定收益为个人借贷，保障投资者基础收益；浮动收益为各类金融资产，提供超额收益。</p>-->
+	             <!--</div>-->
+	             </section>
+		
+	</div>
+	<a href="javascript:;" class="buy_btn">立即抢购</a>
+
+	<div class="ui-dialog ui-dialog-name backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未完成实名认证，请先完成实名认证</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+	       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="ui-dialog ui-dialog-trade backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未设置交易密码，请先设置交易密码</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+	       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+	     </div>
+	  </div>
+	</div>
+	
+	<div class="nav clearfix" id="navNew"></div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/highcharts.js"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/pages/financing/current3.0.js?v=9.0.4"></script>
+<script type="text/javascript">
+(function() {
+	var el = document.querySelector('.current');
+	var startPosition, endPosition, deltaX, deltaY, moveLength;
+
+	el.addEventListener('touchstart', function(e) {
+		var touch = e.touches[0];
+		startPosition = {
+			x: touch.pageX,
+			y: touch.pageY
+		}
+	});
+	
+	el.addEventListener('touchend', function(e) {
+		var touch = e.touches[0];
+		$(".test").css("left",0);
+	});
+
+	el.addEventListener('touchmove', function(e) {
+		var touch = e.touches[0];
+		endPosition = {
+			x: touch.pageX,
+			y: touch.pageY
+		}
+		deltaX = endPosition.x - startPosition.x;
+		deltaY = endPosition.y - startPosition.y;
+		moveLength = Math.sqrt(Math.pow(Math.abs(deltaX), 2) + Math.pow(Math.abs(deltaY), 2));
+		
+		$(".test").css("left",deltaX);
+		
+		// if(Math.abs(deltaX)>150){
+		// 	location.href="float.html";
+		// }else{
+			
+		// }
+		if(deltaX>100){
+			location.href="regular.html";
+		}
+		// if (deltaX< -100) {
+		// 	location.href="float.html";
+		// }
+	});
+})();
+</script>
+	
+</body>
+</html>

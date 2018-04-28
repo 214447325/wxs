@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>V金融APP下载</title>
+<style>
+body {
+	font-family: "微软雅黑";
+	overflow-x: hidden;
+	font-size: 12px;
+	color: #fff;
+}
+
+@charset "utf-8";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
+	form, fieldset, legend, input, textarea, p, blockquote, th, td, header,
+	hgroup, nav, section, article, aside, footer, figure, figcaption, menu,
+	button {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, a, b, p, li, img, div {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.shell {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.wrap {
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+	width: 320px;
+	margin-left: -160px;
+}
+
+.act {
+	position: relative;
+}
+
+.act>img {
+	width: 320px;
+	display: block;
+	z-index: -1;
+}
+
+.act>a img {
+	width: 320px;
+	display: block;
+	z-index: -1;
+}
+.act .download{
+	width:17.5rem;
+	height: 6.5rem;
+	background: #fff url() 0 0 no-repeat;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	top: 14rem;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	padding: 0.5rem;
+	box-sizing: border-box;
+	display: flex;
+           justify-content: space-around;
+           align-items: center;
+           box-shadow: 0 2px 30px #333;
+}
+.download .btn{
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	background:  url(../images/pages/appdownload/ios-load.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.download .btn2{
+	display: inline-block;
+	width: 5rem;
+	height:5rem;
+	background:  url(../images/pages/appdownload/android-load.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.download img.btn3{
+	display: inline-block;
+	width: 5rem;
+	height:5rem;
+	background-size: cover;
+}
+.act .logo{
+	display: block;
+	width: 4.7rem;
+	height: 1.85rem;
+	position: absolute;
+	left: 1rem;
+	top: 0.7rem;
+}
+.act .logo img{
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+
+<body>
+	<div class="sheel">
+		<div class="wrap">
+			<div class="act">
+			
+				<img src="../images/pages/appdownload/logo-bg-3.jpg">
+				<div class="logo"><img src="../images/pages/appdownload/logo.png" alt=""></div>
+				<div class="download">
+					<a href="http://a.app.qq.com/o/simple.jsp?pkgname=zy.yunhoo.com.zhongyin" class="btn"></a> 
+					<a href="http://a.app.qq.com/o/simple.jsp?pkgname=zy.yunhoo.com.zhongyin" class="btn2"></a>	
+					<!-- <a href="javascript:;" class="btn3"></a> -->
+					<img src="../images/pages/appdownload/vjr.png"  class="btn3">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+	<script src="../js/setting.js"></script>
+	<script type="text/javascript">
+		(function() {
+			var autoScale = function() {
+				setTimeout(
+						function() {
+							var winW = document.documentElement.clientWidth ? document.documentElement.clientWidth
+									: 320;
+							var scale = (winW / 320).toString().substring(0, 6);
+							var cssText = '-webkit-transform: scale(' + scale
+									+ ');-webkit-transform-origin: top;';
+							$('.wrap').attr('style', cssText);
+						}, 0);
+			};
+			if ($(window).width() > 320) {
+				autoScale();
+			}
+			window.addEventListener(
+					"onorientationchange" in window ? "orientationchange"
+							: "resize", autoScale, false); //切换横竖屏
+		})();
+	</script>
+	
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://"
+			: " http://");
+	document
+			.write(unescape("%3Cspan id='cnzz_stat_icon_1259901225'%3E%3C/span%3E%3Cscript src='"
+					+ cnzz_protocol
+					+ "s4.cnzz.com/z_stat.php%3Fid%3D1259901225' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

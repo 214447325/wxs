@@ -1,0 +1,172 @@
+
+.wrapper {
+    background: #000000;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.poster0 {
+    background: url(../../../../images/pages/activity/memorie/poster0.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.poster1 {
+    background: url(../../../../images/pages/activity/memorie/poster1.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.poster2 {
+    background: url(../../../../images/pages/activity/memorie/poster2.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.poster3 {
+    background: url(../../../../images/pages/activity/memorie/poster3.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-container {
+    height: 15rem;
+}
+
+.poster {
+    width: 3.5rem;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/memorie/preview.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.poster_box {
+    width: 100%;
+    height: 3.68rem;
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.poster_div {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.poster_content {
+    width: 6.6rem;
+    height: 100%;
+    float: left;
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.code {
+    width: 2rem;
+    height: 100%;
+    float: left;
+}
+
+.font {
+    color: #b20403;
+}
+
+.img {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    margin-left: 0.1rem;
+    margin-top: 0.15rem;
+}
+
+.number {
+    width: 2rem;
+    height: 0.6rem;
+    border: none;
+    color: #b20403;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.code_img {
+    width: 100%;
+    height: 2rem;
+    background: #ffffff;
+}
+
+.codeImg {
+    width: 100%;
+    height: 100%;
+}
+
+.code_img_text {
+    position: absolute;
+    font-size: 0.3rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+    right: 7%;
+}
+
+.poster_alert {
+    display: none;
+}
+
+.poster_back {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+.poster_back_box {
+    width: 7rem;
+    height: 4rem;
+    background: #ffffff;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 11;
+    border-radius: 0.4rem;
+}
+
+.div_input {
+    width: 6rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    padding-top: 0.8rem;
+}
+
+.rich {
+    border: none;
+    width: 100%;
+    height: 1.3rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.div_button {
+    width: 100%;
+    height: 1rem;
+}
+
+.divbtn {
+    width: 2rem;
+    height: 100%;
+    background: rgb(55,78,171);
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.4rem;
+    margin: 0 auto;
+    color: #fff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: .0625rem;
+}

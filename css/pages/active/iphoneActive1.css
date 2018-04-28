@@ -1,0 +1,88 @@
+/*
+* @Author: User
+* @Date:   2016-08-26 17:46:58
+* @Last Modified by:   User
+* @Last Modified time: 2016-08-26 18:55:05
+*/
+.iphoneActive{
+    position: relative;
+    overflow-y:scroll;
+    background: #000000;
+}
+.iphoneActive .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/activity/header01.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: 100% 100%;
+}
+.active-p{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    padding-bottom: 1.8rem;
+}
+.active-p .p1{
+    font-size: 0.525rem;
+    color: #00F2FF;
+    font-weight: bold;
+    line-height: 1.125rem;
+    margin-top: 0.3rem;
+}
+.active-p .p2{
+    font-size: 0.35rem;
+    line-height: 0.7rem;
+    color: white;
+}
+.active-p img{
+    width: 100%;
+    height: auto;
+}
+.btns{
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+}
+/*.btns a{*/
+    /*display: block;*/
+    /*width: 50%;*/
+    /*float: left;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-size: 0;*/
+    /*border: 0;*/
+/*}*/
+.btns a img{
+    width: 100%;
+    height: auto;
+}
+
+.tableImg {
+    margin: 0.2rem auto;
+}
+
+.regist-img1 {
+    width: 49.5%;
+    height: 1.5rem;
+    float: left;
+    background: url(../../../images/pages/activity/btn2.png) no-repeat center 0 ;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+}
+
+.regist-img2 {
+    width: 49.5%;
+    height: 1.5rem;
+    float: left;
+    background:url(../../../images/pages/activity/btn2.png) no-repeat center 0 ;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+    margin-left: 1%;
+}

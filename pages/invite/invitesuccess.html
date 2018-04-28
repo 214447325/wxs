@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   <!--  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script> -->
+     <link rel="stylesheet" type="text/css" href="../../css/main.min.css">
+    <link rel="stylesheet" href="../../css/pages/invite/invitesuccess.css">
+
+    <title>邀请成功</title>
+    </head>
+    <body class="invitesuccess">
+    <div class="inviteBanner"></div>
+    <div class="word"><h1>你离现金奖励只有一步之遥啦！<br>赶快投资，与壕友一起瓜分现金吧！</h1>
+            <p>你可以通过扫描下方二维码<!-- <span class="invitephone"></span> --><br>
+              关注微信理财平台进行投资理财</p><br>
+   </div>
+  
+     <a href="http://a.app.qq.com/o/simple.jsp?pkgname=zy.yunhoo.com.zhongyin"  class="inviteMoneybtn  use">前往下载APP</a>
+           
+        <!--    <a href="../../pages/index.html"  class="inviteMoneybtn">马上邀请好友白拿现金</a> -->
+	<!-- <div class="Bonusrules clearfix">
+	<span class="left"></span>
+	<p class="right">奖励细则</p>
+	</div> -->
+	<!-- <div class="maskLayer" id="maskLayer">
+         
+       <div class="verification clearfix" id="verification">
+   <div class="juzhong">
+          <div class="bunus" id="bunus">
+         <h1>奖励细则</h1>
+         <div class="close"></div>
+         <p>1 邀请好友成功注册，好友在30天内至少投资1000元及以上，或累计满足以下投资金额，邀请人和好友就能分别获得相应现金奖励。</p>
+        <p>2 <span>邀请人奖励：</span><br>
+                                 每成功邀请一位用户投资1000元及以上,邀请人即可获得相应现金红包奖励：<br>
+                                 投资1,000元-4,999元，邀请人可获得10元奖励；<br>
+                                 投资5,000元-9,999元，邀请人可获得20元奖励；<br>
+                                 投资10,000元-29,999元，邀请人可获得30元奖励；<br>
+                                 投资30,000元-49,999元，邀请人可获得50元奖励；<br>
+                                 投资50,000元以上，邀请人可获得100元奖励；<br>
+                                 <span>被邀请人奖励：</span><br>
+                                 通过邀请人邀请成功投资，被邀请人即可获得相应现金红包奖励：<br>
+                                 投资1,000元-4,999元，被邀请人可获得10元奖励；（等于帮他增加了381元本金）<br>
+                                 
+                                 投资5,000元-9,999元，被邀请人可获得20元奖励；（等于帮他增加了763元本金）<br>
+                                 
+                                 投资10,000元-29,999元，被邀请人可获得50元奖励；（等于帮他增加了1906元本金）<br>
+                                 
+                                 投资30,000元-49,999元，被邀请人可获得100元奖励；（等于帮他增加了3811元本金）<br>
+                                
+                                 投资50,000元以上，被邀请人可获得200元奖励；（等于帮他增加了7620元本金）<br> </p>
+                      <p>3 参加邀请活动需投资的理财产品：3月期10.5%年化收益率。 </p>
+                      <p>4 V金融享有本次活动的最终解释权。</p>
+          </div>
+          <div class="redpackets">
+            <div class="center" id="center"></div>
+  
+          </div>
+  
+  
+           </div>
+             </div> -->
+	<div class="download">
+<!-- 	<p>下载“V金融”APP</p> -->
+	            <div class="qrcode">
+	            	<img style="" src="../../images/pages/invite/qrcode.png" alt="扫描二维码"/>
+	            </div>
+		
+	</div>
+	
+ 
+
+ 
+    
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>  
+  <script src="../../js/pages/invite/invitesuccess.js?v=9.0.0"></script>
+  
+    </body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		var ohtml = document.documentElement;
+		getSize();
+
+		window.onresize = function(){
+			getSize();
+		}
+		function getSize(){
+
+			var screenWidth = ohtml.clientWidth;
+			if(screenWidth <= 320){
+				ohtml.style.fontSize = '23.7037px';
+			}else if(screenWidth >= 640){
+				ohtml.style.fontSize = '47.4074px';
+			}else{
+				ohtml.style.fontSize = screenWidth/(540/40)+'px';
+			}
+			
+		}
+	}
+</script>

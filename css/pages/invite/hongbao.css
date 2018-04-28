@@ -1,0 +1,79 @@
+/*
+* @Author: User
+* @Date:   2016-03-21 14:05:19
+* @Last Modified by:   User
+* @Last Modified time: 2016-03-31 13:09:47
+*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    position: relative;
+
+}
+.invitefriend{
+    position: relative;
+    overflow-y:scroll;
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/invite/moneyAppend.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 21px;
+}
+
+.money-active {
+ margin-top: 98px;
+ font-family: bold;
+
+}
+
+.money-active ul {
+    color: #fff200;
+    font-size: 28pt;
+}
+
+.money-active li {
+    font-size: 28pt;
+    color: #FDFFF8;
+}
+
+.navn {  position: fixed; width: 540px; height: 95px;left: 50%; transform: translateX(-59%) translateZ(0); bottom: 0; z-index: 9999; margin-bottom: 100px}
+.navn a { float: left; width: 33.333333%; text-align: center; font-size: 18px; color: #757575; line-height: 140px; background-position: center 18px; background-repeat: no-repeat; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

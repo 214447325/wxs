@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+  <title>加入</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/financing/buy3.0.css">
+</head>
+<style type="text/css">
+  .dialog-content{
+    border:0.325rem;
+  }
+  .couponLeftImg{
+    display:none;
+  }
+  .visible{
+    display:block;
+  }
+</style>
+
+<body class="page-buy bg  my-product">
+  <div class="wrapper">
+
+     <div class="row row-invest">
+        <input type="number" placeholder="请输入100的整数倍"   class="input">
+        <div style="width:9.15rem;height:0.0266rem;background:#EEEEEE;margin-top:1.3rem;"></div>
+      </div>
+      <div class="row margin" >
+        可用余额<span class="balanceAccount">0.00</span>元
+        <a style="float:right;color:#2B6FF9;" class="full">全投</a>
+        <a href="" class="fullLine" style="float:right;color:#DEDEDE;padding:0">|</a>
+        <a style="float:right;color:#2B6FF9;" href="../my-account/topup-cash.html">充值</a>
+
+
+      </div>
+
+      <div class="row last top-row">剩余金额<span class="amount">0.0</span>元
+        <!-- ，加入上限 <span class="amountLimit">0</span> 元 -->
+      </div>
+
+      <div class="row addcoupon rowac" type="jx">我的优惠券
+          <a class="usecoupon">
+              <!-- <p class="showSize"></p>//显示有多少张可用的优惠券 -->
+              <span id="addcoupon">无可用优惠券</span>
+                                        <img src="../../images/pages/my-account3.0/nextPage3.0.png" class="couponLeftImg">
+          </a>
+      </div>
+      <div class='addcoupon2'>我的优惠券
+          <a>
+              <span class="coupontext">无可用优惠券</span>
+           <!--    <img src="../../images/pages/my-account3.0/nextPage3.0.png"> -->
+          </a>
+      </div>
+      <div class="jxdata ret" >礼券收益（元）：
+          <div class="indata">
+              <span id="jxspan"></span>
+          </div>
+      </div>
+
+      <div>
+         <div class="row last top-row" style="height:auto;">历史年化收益<span class="annual" id="annual" style="color: rgb(255,114,90);">0%</span>
+          <!-- 尊享加息标 -->
+          <span class="812redrate" style="color: rgb(255,114,90);"></span>
+          <!-- 全场达标红利 -->
+          <span class="redrate" style="color: rgb(255,114,90);"></span>
+          <!-- 开年红包 -->
+          <span class="startrate" style="color: rgb(255,114,90);"></span>
+
+         <!--  &nbsp;&nbsp;&nbsp;目标收益<span class="expectmoney">0.00</span><span class="jxspan"></span>元 -->
+        </div>
+
+           <div class="row last top-row" style="height:auto;">目标收益<span class="expectmoney">0.00</span><span class="jxspan"></span>元</div>
+
+
+        
+       
+        <!-- <div class="row margin expectrow"></div> -->
+      </div>
+     
+       <div class="btn-box tc">
+
+
+        <a href="javascript:;" class="btn btn-default pay-money">确认</a>
+        <div class="isAccept">
+            <div class="isChecked-img">
+                 <img src="../../images/pages/account/isChecked.png" class="isChecked">
+                 <!-- <img src="../../images/pages/account/ischecked-true.png" class="isChecked"> -->
+                <!-- <img src="../../images/pages/account/checkbox.png" style="width:0.35rem;height:0.35rem;vertical-align: middle; "> -->
+
+                 <a class="agreement"   href="javascript:;">同意<i class="agreements">《定期产品投资协议》</i>，已确认<i class="risk">《风险提示》</i></a> 
+            </div>
+        </div>
+
+
+
+        
+      </div>
+
+      <div style="margin-top:4.5rem;color:#9B9B9B;font-size:0.32rem;text-align:center;">市场有风险，投资需谨慎</div>
+
+<!--         <input type="text" id="example" />
+<p id="example-output">Nothing yet</p> -->
+      <img src="../../images/pages/action/addRateImage@2x.png" class="addimg hide">
+  </div>
+  
+  
+
+<div class="maskLayer" id="maskLayer">
+      
+   <div class="juzhong">
+          <div class="bunus" id="bunus">
+              <img src="../../images/pages/invite/cha.png" class="content-Img0">
+              <img src="../../images/pages/invite/jianglixq.png" class="content-Img">
+        </div>
+        <div class="redpackets">
+          <div class="center" id="center"></div>
+
+        </div>
+        </div>
+  </div>
+
+<div class="ui-dialog backdrop hide">
+      <div class="dialog-content">
+            <a href="javascript:;" class="close dialog-close"></a>
+            <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+            <div class="dialog-article"> <!-- 内容 -->
+                  <p>余额不足请前往充值</p>
+            </div>
+            <div class="tc btn-box1  "><!-- 按钮 -->
+                  <a href="javascript:;" class="btn btn-link btn-sm " >确认</a>
+                  <a href="javascript:;" class="btn btn-default btn-sm ">取消</a>
+            </div>
+      </div>
+</div> 
+
+<div class="alert-layer">
+    <div class="resalert">
+      <div>温馨提示</div>
+      <div class="resmes"><div id="resmes">金额改变请重新选择</div></div>
+      <div id="reloadbtn">确定</div>
+    </div>
+</div>  
+
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/moment.js"></script>
+  <script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/common2.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/buy3.0.js?v=9.0.2"></script>  
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* 转盘 */
+.dial{
+  overflow-y: auto;
+  background-color: #FAAB34;
+  .wrapper{
+    height: 1025px;
+    background: url(../images/pages/dial/bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  .container{
+    position: absolute;
+    height: 950px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .title{
+    background: url(../images/pages/dial/title.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 560px;
+    height: 166px;
+  }
+  .rule-btn{
+    background: url(../images/pages/dial/rule-btn.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 5px;
+    top: 157px;
+    width: 149px;
+    height: 95px;
+  }
+  .stage{
+    background: url(../images/pages/dial/stage.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 597px;
+    height: 665px;
+  }
+  .myprice{
+    background: url(../images/pages/dial/myprice.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 508px;
+    height: 76px;
+  }
+  .light{
+    background: url(../images/pages/dial/den.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 13px;
+    left: 55px;
+    width: 480px;
+    height: 483px;
+  }
+  .price{
+    background: url(../images/pages/dial/pan.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 42px;
+    left: 85px;
+    width: 423px;
+    height: 423px;
+  }
+  .price .col {
+    display: block;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 160px;
+    margin-left: -80px;
+    text-align: center;
+    font-size: 22px;
+    color: #f64a43;
+    padding-top: 15px;
+    font-weight: bold;
+  }
+  .price .col >img{
+    width: 40%;
+  }
+  .price .col:nth-child(1) {
+    transform: rotate(0deg);
+  }
+  .price .col:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .price .col:nth-child(3) {
+    transform: rotate(90deg);
+  }
+  .price .col:nth-child(4) {
+    transform: rotate(135deg);
+  }
+  .price .col:nth-child(5) {
+    transform: rotate(180deg);
+  }
+  .price .col:nth-child(6) {
+    transform: rotate(225deg);
+  }
+  .price .col:nth-child(7) {
+    transform: rotate(270deg);
+  }
+  .price .col:nth-child(8) {
+    transform: rotate(315deg);
+  }
+
+  .start{
+    background: url(../images/pages/dial/start.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 134px;
+    left: 205px;
+    width: 184px;
+    height: 217px;
+  }
+  .rule-dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(117, 117, 117, 0.5);
+    display: none;
+  }
+  .box{
+    position: absolute;
+    background-color: #FFF;
+    width: 522px;
+    min-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+  }
+  .box .t{
+    height: 72px;
+    background-color: #ef5344;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    line-height: 72px;
+  }
+  .box .c{
+    padding: 35px;
+    font-size: 26px;
+    color: #ef5344;
+    text-align: center;
+  }
+  .box .c p:first-child{
+    min-height: 177px;
+  }
+  .box .c .btn{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .sharetxt{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size:24px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-height: 1075px){
+  .dial .wrapper{ height: 100%; }
+}

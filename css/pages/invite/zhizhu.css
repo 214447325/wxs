@@ -1,0 +1,141 @@
+/*
+* @Author: User
+* @Date:   2016-03-21 14:05:19
+* @Last Modified by:   User
+* @Last Modified time: 2016-03-31 13:09:47
+*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    position: relative;
+
+}
+.invitefriend{
+    position: relative;
+    overflow-y:scroll;
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/invite/spiderhead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.inviteform{
+    width:100%;
+    height:100%;
+    background-size:contain;
+    margin-top:72px;
+    overflow:hidden;
+
+}
+
+p {
+    color: #db3732;
+    font-size: 28pt;
+}
+
+div .c {
+    max-width: 100%;
+}
+
+.hrefImgsp {
+    width: 270px
+}
+
+.splieFontSpan{
+    color:#000000;
+    font-size: 28pt;
+}
+
+.splieImg{
+    margin-top: 48px;
+}
+
+.splieHref{
+    margin-top: 72px;
+}
+
+.splieHref table .splieTr1{
+    float:left;
+}
+
+.splieHref table .splieTr2{
+    float:left;
+}
+
+.form-ui .phone:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/phone.png); margin-top: 6px; margin-left: -45px;
+}
+
+.form-ui .verification:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/verification1.png); margin-top: 6px;margin-left: 10px;
+}
+
+.form-ui .lock:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/pass.png); margin-top: 35px; margin-left: -45px;
+}
+
+.getVerification {
+   width: 160px;
+    position: absolute;
+   right: 30px;
+}
+
+.form-ui input {
+    font-size: 28px;
+}
+
+.ver-Img {
+ position: absolute;
+ right: 5px;
+}
+
+.password-Img {
+    position: absolute;
+    left: 560px;
+    top: 50px;
+}
+
+.register-Img {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.register-Div {
+    position: absolute;
+    top: 50px;
+}
+
+.navn {  position: fixed; width: 540px; height: 95px;left: 50%; transform: translateX(-59%) translateZ(0); bottom: 0; z-index: 0; margin-bottom: 100px}
+.navn a { float: left; width: 33.333333%; text-align: center; font-size: 18px; color: #757575; line-height: 140px; background-position: center 18px; background-repeat: no-repeat; }
+
+.splieAHref2 {
+    float: right;
+}
+
+.wrapper {
+    margin-top: 55px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

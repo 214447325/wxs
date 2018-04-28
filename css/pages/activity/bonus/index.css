@@ -1,0 +1,254 @@
+ html,body{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        list-style:none;
+        overflow: auto;
+    }
+    .wrapper ::-webkit-scrollbar {
+      width: 0.133rem;
+      height: 12px;
+    }
+     
+    .wrapper ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal {
+      border-radius: 0.066rem;
+      background: #A7A7A7;
+    }
+     
+    .wrapper ::-webkit-scrollbar-button {
+      display: none;
+    }
+     
+    .wrapper ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+      background: -webkit-gradient(linear,left);
+    }
+     
+    .wrapper ::-webkit-scrollbar-track-piece {
+      background: #3E3E3E;
+      border-radius: 0.066rem;
+    }
+    .slidef{
+        overflow: hidden;
+        position: relative;
+    }
+
+     .slidef::-webkit-scrollbar {
+      width: 0rem;
+      height: 0;
+    }
+     
+    .slidef::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal {
+      border-radius: 0.066rem;
+      background: #A7A7A7;
+    }
+     
+    .slidef::-webkit-scrollbar-button {
+      display: none;
+    }
+     
+    .slidef::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+      background: -webkit-gradient(linear,left);
+    }
+     
+    .slidef::-webkit-scrollbar-track-piece {
+      background: #3E3E3E;
+      border-radius: 0.066rem;
+    }
+    img{
+        width:100%;
+        display:block;
+        list-style:none;
+        border:0;
+        margin:0;
+        padding:0;
+    }
+    .wrapper{
+        /*width:100%;*/
+        /*height:100%;*/
+        background:red;
+    }
+    .fulid:before{
+      display:block;
+      content:"";
+      clear:both;
+    }
+    .fulid:after{
+      display:block;
+      content:"";
+      clear:both;
+    }
+    .top{
+      padding:0.533rem;
+      background:url('../../../../images/pages/activity/bonus/background-top.png') no-repeat;
+      background-size:100% auto;
+    }
+    .list{
+      position:relative;
+    }
+    .listimg{
+      width:0.7466rem;
+      position:absolute;
+      top: 0.945rem;
+      right: -0.15rem;
+
+    }
+    .center{
+      height:14rem;
+      padding:0.533rem;
+      background:url('../../../../images/pages/activity/bonus/background-center.png') no-repeat;
+      background-size:100% 100%;
+      margin-top:-3.56rem;
+
+    }
+    .bottom{
+      height:6.0rem;
+      padding:0.533rem;
+      background:url('../../../../images/pages/activity/bonus/background-bottom.png') no-repeat;
+      background-size:100% 100%;
+      position:relative;
+
+    }
+    .one{
+      height:8.48rem;
+      padding:2.25rem .6rem 0 .6rem;
+      margin-top:8.8rem;
+      background:url('../../../../images/pages/activity/bonus/raiseInterestRates.png');
+      background-size:100% 100%;
+    }
+    .two{
+      height:8.48rem;
+      padding:2.25rem .6rem 0 .6rem;
+      margin-top:2.8rem;
+      background:url('../../../../images/pages/activity/bonus/redbouns.png');
+      background-size:100% 100%;
+
+    }
+    .there{
+      height:5.8133rem;
+      padding:1.8rem .7rem 0 .7rem;
+      margin-top:-2.6rem;
+      background:url('../../../../images/pages/activity/bonus/redpacket.png');
+      background-size:100% 100%;
+    }
+    .zhuanxiang{
+      display:block;
+      width:3.7066rem;
+      width:50%;
+      // width:3.7346rem;
+      float:left;
+    }
+    .more{
+      display:block;
+      font-size: 0.4266rem;
+      color: #FDFBD4;
+      letter-spacing: 0;
+      text-align:center;
+      line-height:1.3rem;
+
+    }
+    .addrate{
+      height:2.9rem;
+    }
+    .Slide{
+      width:29.88rem;
+      position: relative;
+      top:0px;
+    }
+    .Slide div{
+      width:2.49rem;
+      height:0.6rem;
+      font-size:0.48rem;
+      color: #FFE6D2;
+      letter-spacing: -0.08px;
+      text-align:center;
+      float:left;
+    }
+    .botton{
+      display:block;
+    }
+    .botton-img{
+      width:3.33rem;
+      height:0.96rem;
+      margin-top:0.25rem;
+    }
+    .bottom-left-img{
+      width:2.8266rem;
+      float:left;
+    }
+    .bottom-text{
+      width:4.44rem;
+      margin-top:0.2rem;
+      float:right;
+      font-size:0.32rem;
+      color: #FBBA6C;
+      letter-spacing: -0.03px;
+      line-height: 0.56rem;
+    }
+    .dialog-content{
+      // height:8.48rem;
+      //
+      margin-top: -4.74rem;
+      padding-bottom:0.5rem;
+    }
+    .dialog-content .close{
+      width:0.48rem;
+      height:0.48rem;
+      top: -.86875rem;
+      right: 0.2rem;
+      background: url(../../../../images/pages/activity/bonus/close.png) no-repeat;
+      background-size:100% 100%;
+    }
+    .dialog-content .dialog-article p{
+      // font-family: PingFangSC-Regular;
+      font-size: 0.3733rem;
+      color: #8B8B8B;
+      letter-spacing: .001866rem;
+      line-height: .5866rem;
+      text-align:left !important;
+       text-align:justify !important;
+    }
+    .dialog-content .dialog-article p{
+      padding: .1rem .58rem;
+    }
+    .addrate{
+      position: relative;
+    }
+    .addrate>img{
+      width:2.7rem;
+      margin-left:2.5rem;
+    }
+    .ratetext{
+      width: 2rem;
+      text-align: center;
+      color: #B10006;
+      font-size: 0.42rem;
+      position: absolute;
+      top: 0.3rem;
+      left: 2.85rem;
+      line-height: 0.7rem;
+    }
+    .rate{
+      font-size:0.533rem;
+      font-weight:bold;
+    }
+
+    .out{
+        width: 100%;
+        height:0px;
+        position: absolute;
+        bottom:0px;
+        left:0px;
+
+    }
+    .in{
+        height: 0px;
+        position: absolute;
+        left:6px;
+        bottom:2px;
+    }
+    .dialog-content h3.dialog-title{
+      color:#4D4D4D;
+      font-size:0.48rem;
+    }
+    

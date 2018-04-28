@@ -1,0 +1,152 @@
+
+.div {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+}
+
+
+.titleImg {
+    width: 100%;
+    height: 0.5rem;
+    background: url(../../../images/pages/my-account/reward-title.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.content {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    /*background: #ff0000;*/
+}
+
+.reward {
+    width: 100%;
+    height: 3.8rem;
+    float: left;
+
+    margin-top: 0.2rem;
+    color: rgb(59,92,169);
+    font-size: 0.3rem;
+}
+
+.reward1 {
+    background: url(../../../images/pages/my-account/reward-backTrue.png) 0 0 repeat;
+    background-size: 100% 100%;
+}
+
+.reward2 {
+    color: rgb( 174,173,176);
+    background: url(../../../images/pages/my-account/reward-backFalse.png) 0 0 repeat;
+    background-size: 100% 100%;
+}
+
+.div1 {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+.rdiv1 {
+    width: 100%;
+    height: 2.1rem;
+    float: left;
+    margin: 0.85rem auto;
+}
+
+.rdiv1Content {
+    width: 100%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+}
+
+.div2 {
+    width: 2.3rem;
+    height: 100%;
+    float: right;
+}
+
+.icon {
+    width: 100%;
+    height: 2rem;
+    float: left;
+    margin-top: 0.2rem;
+
+}
+
+.reward1 .div2 .icon1 {
+    background-image: url(../../../images/pages/my-account/icon1.png);
+    background-size: 100% 100%;
+}
+
+.reward2 .div2 .icon1 {
+    background-image: url(../../../images/pages/my-account/icon2.png);
+    background-size: 100% 100%;
+}
+
+.btn1 {
+    width: 100%;
+    height: 0.8rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.reward1 .div2 .button1 {
+    background-image: url(../../../images/pages/my-account/btn1.png);
+    background-size: 100% 100%;
+}
+
+.button2 {
+    background-image: url(../../../images/pages/my-account/btn2.png);
+    background-size: 100% 100%;
+}
+
+.reward2 .div2 .button1 {
+    background-image: url(../../../images/pages/my-account/btn3.png);
+    background-size: 100% 100%;
+}
+
+.dd {
+    background-size: 100% 100%;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}

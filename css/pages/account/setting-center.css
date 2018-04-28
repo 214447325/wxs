@@ -1,0 +1,292 @@
+/*
+* @Author: User
+* @Date:   2016-09-13 16:56:37
+* @Last Modified by:   User
+* @Last Modified time: 2016-11-09 16:50:01
+*/
+.setting-center .caption {
+    height: 1.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.475rem;
+    line-height: 1.25rem;
+    position: relative;
+    /*border-bottom: 1px solid #dfdfdf;*/
+/*     margin-bottom: 0.2rem; */
+    color: rgb(55,78,171);
+    background: #fff url() 0 0 no-repeat;
+}
+.setting-center .caption a.back {
+    display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0.4140625rem;
+    top: .359375rem;
+}
+.setting-center .mt20{
+	margin-top: 0!important;
+}
+.ui-list li .inviteCode:after {
+    content: '';
+    background-size: 100% 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    width: .21875rem;
+    margin-left: .15625rem;
+    height: .421875rem;
+    margin-top: -.21875rem;
+    background-image: url(../images/lib/icon_dot.png);
+    display: none;
+}
+.usercontain{
+    width: 100%;
+    height: 3.25rem;
+    color: #fff;
+    background: -moz-linear-gradient(left,rgb(21,46,148),rgb(75,113,218));
+    background:-webkit-linear-gradient(left,rgb(21,46,148),rgb(75,113,218));
+    background:-o-linear-gradient(left,rgb(21,46,148),rgb(75,113,218));
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+.user{
+    width: 2rem;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    float: left;
+    margin-top: 0.15rem;
+}
+.hy{
+    display: inline-block;
+    width: 5rem;
+    height: 100%;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    float: left;
+}
+.hy p{
+    width: 100%;
+    height: 0.625rem;
+    line-height: 0.625rem;
+    font-size: 0.35rem;
+}
+.vip1{
+        float: right;
+}
+.vip{
+    display: inline-block;
+    width: 1.65rem;
+    height: 0.45rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 1.4rem;
+}
+.section{
+    width: 100%;
+    height: 2.2rem;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    background: #fff url() 0 0 no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 0.1rem;
+}
+.section img{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+.section .info{
+    width: 3rem;
+    height: 1rem;
+    float: left;
+     margin-top: 0.3rem;
+}
+.section .left{
+   width: 50%;
+   height: 1.6rem;
+   float: left;
+   overflow: hidden;
+   z-index: 1;
+   border-right: 1px solid #ddd;
+}
+.section .right{
+    width: 50%;
+    height: 1.6rem;
+    float: left;
+   overflow: hidden;
+   z-index: 1;
+}
+
+.section .info span{
+    display: block;
+    width: 3rem;
+    line-height: 0.5rem;
+    text-indent: 0.2rem;
+}
+
+.info span:nth-child(1){
+    font-size: 0.35rem;
+    color: rgb(51,51,51);
+}
+.info span:nth-child(2){
+    font-size: 0.3rem;
+    color: rgb(255,109,85);
+}
+
+.inviteNumber,.couponCount{
+font-style: normal;
+}
+
+.setting-center .btn-box {
+    margin-top: 0.5rem;
+}
+
+.user {
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+}
+
+.user_box {
+    width: 6.6rem;
+    height: 100%;
+    float: left;
+}
+
+.user_box .user_div_img {
+    width: 1rem;
+    height: 100%;
+    float: left;
+    border-radius: 0.5rem;
+    padding-top: 0.125rem;
+}
+
+.user_img {
+    width: 100%;
+    height: 1rem;
+    border-radius: 0.5rem;
+}
+
+.user_div_infor {
+    width: 5rem;
+    height: 100%;
+    float: left;
+    margin-left: 0.3rem;
+    padding-top: 0.2rem;
+}
+
+.userName {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.35rem;
+    color: #000000;
+}
+
+.userPhone {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.34rem;
+    color: #4A4A4A;
+}
+
+.setting-center .ui-list li i {
+    font-size: 0.34rem;
+    color: #4A4A4A;
+}
+
+.ui-list li a {
+    width: 9rem;
+    margin: 0 auto;
+    padding-left: 0;
+    position: relative;
+}
+
+.setting-center .ui-list li span {
+    padding-right: 0;
+}
+
+.ui-list li {
+    height: auto;
+    margin-top: 1px;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.user_infor {
+    width: 9rem;
+    height: 1.25rem;
+    position: absolute;
+    /*background: #ff0000;*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0.1rem;
+}
+
+.userImg {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: .625rem;
+    top: 0.125rem;
+}
+
+.uphone {
+    width: auto;
+    height: auto;
+    font-size: 0.34rem;
+    float: left;
+    line-height: 1.25rem;
+    color: #4A4A4A;
+}
+
+.uname {
+    width: auto;
+    height: auto;
+    line-height: 0.6rem;
+    font-size: 0.34rem;
+    color: #4A4A4A;
+}
+
+.li-btn {
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 0.8rem !important;
+    background: none !important;
+}
+
+.alibtn {
+    width: 9rem;
+    height: 100%;
+    line-height: 1.25rem;
+    background: #2B6FF9;
+    color: #ffffff;
+    font-size: 0.4267rem;
+    text-align: center;
+    border-radius: 0.1rem;
+}
+
+.userInput {
+    width: 100%;
+    height: 100%;
+    margin-top: -0.2rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    opacity: 0;
+}

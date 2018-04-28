@@ -1,0 +1,74 @@
+/*
+* @Author: User
+* @Date:   2016-05-12 16:06:25
+* @Last Modified by:   User
+* @Last Modified time: 2016-05-12 16:17:34
+*/
+
+.currentTitle {
+    width: 10rem;
+    height: 7%;
+    background: rgb(255,255,255);
+    margin: 0 auto;
+}
+
+.currentContent {
+    width: 9rem;
+    height:0.6rem;
+    float: left;
+    line-height: 0.6rem;
+    margin: 0 0.476rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.returnImg {
+    float: left;
+    width: 0.6rem;
+}
+
+.server {
+    margin: 0 auto;
+    width: 3rem;
+}
+
+.myinvite-rankinglist .rankinglist div{
+	font-size: 0.4rem;
+	display:inline-block;
+	width:33%;
+	text-align:center;
+}
+.myinvite-rankinglist .rankinglist .ranking{
+	width:0.6rem;
+	height:0.6rem;
+	background: #ccc url() 0 0 no-repeat;
+	border-radius:50%;
+	line-height:0.6rem;
+}
+
+
+.myinvite-rankinglist .rankinglist .ranking1{
+	width:0.6rem;
+	height:0.6rem;
+	background: #ffff00 url() 0 0 no-repeat;
+	border-radius:50%;
+	line-height:0.6rem;
+}
+
+.myinvite-rankinglist .rankinglist .ranking2{
+	width:0.6rem;
+	height:0.6rem;
+	background: #eae7df url() 0 0 no-repeat;
+	border-radius:50%;
+	line-height:0.6rem;
+}
+
+.myinvite-rankinglist .rankinglist .ranking3{
+	width:0.6rem;
+	height:0.6rem;
+	background: #9C9C6B url() 0 0 no-repeat;
+	border-radius:50%;
+	line-height:0.6rem;
+}

@@ -1,0 +1,866 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: rgb(54,32,71);
+}
+
+.banner {
+    width: 100%;
+    height: 10.2537rem;
+    background: url(../../../../images/pages/activity/celebration/main.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.banner a:nth-child(1) {
+    width: 2.187rem;
+    height: 1.147rem;
+    background: url(../../../../images/pages/activity/celebration/share.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: -0.1rem;
+}
+
+.banner a:nth-child(2) {
+    width: 2.187rem;
+    height: 1.147rem;
+    background: url(../../../../images/pages/activity/celebration/rule.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-right: -0.15rem;
+}
+
+.yb-banner1 {
+    width: 9.707rem;
+    height: 8.33rem;
+    background: url(../../../../images/pages/activity/celebration/back1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -1.7rem;
+}
+
+.yb-banner1 > div {
+    width: 8rem;
+    height: 6.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.yb-banner1 > div > div:nth-child(1) {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: rgb(255, 84, 0);
+}
+
+.yb-banner1 > div > div:nth-child(2) {
+    width: 4.6rem;
+    height: 2.3rem;
+    background: url(../../../../images/pages/activity/celebration/1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: -0.3rem;
+    padding-top: 0.6rem;
+}
+
+.yb-banner1 > div > div:nth-child(2) > div:nth-child(1) {
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner1 > div > div:nth-child(2) > div:nth-child(2) {
+    text-align: center;
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    color: rgb(255, 84, 0);
+    font-weight:bold;
+}
+
+.yb-banner1 > div > div:nth-child(3) {
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: -0.2rem;
+    position: absolute;
+    overflow-y: hidden;
+}
+
+.yb-banner1 > div > div:nth-child(3) > div {
+    width: 20rem;
+    height: 3rem;
+    overflow: auto;
+    padding-top: 0.2rem;
+    overflow-y: hidden;
+}
+
+.yb-banner1 > div > div:nth-child(3) > div > div:nth-child(1) {
+    width: 600px;
+    height: 0.4rem;
+    border-radius: 0.3rem;
+    background: rgb(255, 255, 255);
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.yb-banner1 > div > div:nth-child(3) > div > div:nth-child(2) {
+    width: 600px;
+    height: 0.4rem;
+    margin-top: 0.1rem;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner1 > div > div:nth-child(3) > div > div:nth-child(2) > a {
+    width: 0.6rem;
+    height: auto;
+    display: block;
+    text-align: center;
+    position: absolute;
+}
+
+.yb-banner1 > div > div:nth-child(3) > div > div:nth-child(2) > a > img {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -0.56rem;
+}
+
+.yb-banner1 > div > div:nth-child(4) {
+    width: 4.6rem;
+    height: 2.3rem;
+    background: url(../../../../images/pages/activity/celebration/2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.7rem;
+    padding-top: 0.8rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgb(124, 106, 83);
+    line-height: 0.5rem;
+}
+
+.yb-banner1 > div > div:nth-child(4) > div > span {
+    color: rgb(255, 84, 0);
+}
+
+.yb-banner1 > div > div:nth-child(5) {
+    width: 100%;
+    height: 0.4rem;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(124, 106, 83);
+    position: absolute;
+    bottom: 0.23rem;
+}
+
+.yb-banner1 > div > div:nth-child(3) > div > div:nth-child(2) > a > div {
+    width: 4.6rem;
+    height: 2.3rem;
+    background: url(../../../../images/pages/activity/celebration/2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -2.05rem;
+    right: 0;
+    bottom: -2rem;
+    padding-top: -0.3rem;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {/*隐藏滚轮*/
+    display: none;
+}
+
+.yb-banner2 {
+    width: 8.43rem;
+    height: 8.5rem;
+    background: url(../../../../images/pages/activity/celebration/back2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.yb-banner2 > div:nth-child(1) {
+    width: 100%;
+    height: 1.2rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5rem;
+    color: rgb(255, 84, 0);
+}
+
+.yb-banner2 .div-input {
+    width: 7rem;
+    height: 1rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.yb-banner2 .div-input:first-child {
+    margin-top: 0;
+}
+
+.yb-banner2 .div-input > div:nth-child(1) {
+    width: 2.6rem;
+    height: 100%;
+    line-height: 1rem;
+    font-size: 0.3rem;
+    text-align: right;
+    color: rgb(124, 106, 83);
+    float: left;
+}
+
+.yb-banner2 .div-input > div:nth-child(2) {
+    width: 3rem;
+    height: 100%;
+    line-height: 1rem;
+    background: #ffffff;
+    margin-left: 0.1rem;
+    float: left;
+    border-radius: 0.1rem;
+    text-align: center;
+    color: rgb(255, 84, 0);
+}
+
+.yb-banner2 .div-input > div:nth-child(3) {
+    width: 1rem;
+    height: 100%;
+    line-height: 1rem;
+    float: right;
+    border-radius: 0.1rem;
+    text-align: left;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner2 .div-input > div:nth-child(2) > a {
+    color: rgb(36, 91, 216);
+}
+
+.ybtn {
+    width: 3.147rem;
+    height: 0.9337rem;
+    display: block;
+    background: url(../../../../images/pages/activity/celebration/btn1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0.3rem auto;
+}
+
+.yb-banner2 > .y-text {
+    width: 100%;
+    height: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.3rem;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner2 > .y-text > div {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+
+.yb-btn {
+    width: 8.4rem;
+    height: 1.12rem;
+    display: block;
+    background: url(../../../../images/pages/activity/celebration/btn2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0.5rem auto;
+}
+
+.yb-banner3 {
+    width: 9.707rem;
+    height: 9.3rem;
+    background: url(../../../../images/pages/activity/celebration/back3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    position: relative;
+}
+
+.yb-banner3 > div:nth-child(1) {
+    width: 8rem;
+    height:7.8rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.yb-banner3 > div > div:nth-child(1) {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: rgb(255, 84, 0);
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.yb-banner3 > div > div:nth-child(2) {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner3 > div > div:nth-child(2) > div:nth-child(1) {
+    width: auto;
+    height:100%;
+    line-height: 1rem;
+    float: left;
+}
+
+.yb-banner3 > div > div:nth-child(2) > div:nth-child(2) {
+    width: 2.3rem;
+    height:1rem;
+    line-height: 1rem;
+    float: left;
+    margin-left: 0.1rem;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 0.1rem;
+    color: rgb(255, 84, 0);
+}
+
+.yb-banner3 > div > div:nth-child(2) > div:nth-child(2) > a {
+    color: rgb(36, 91, 216);
+}
+
+.yb-banner3 > div > div:nth-child(2) > div:nth-child(3) {
+    width: 0.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    text-align: center;
+}
+
+.yb-banner3 > div > div:nth-child(3) {
+    width: 100%;
+    height: 4.6rem;
+    background: url(../../../../images/pages/activity/celebration/back4.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.2rem;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(1) {
+    width: 100%;
+    height: 0.6rem;
+    color: #ffffff;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+    width: 1rem;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+    width: 2rem;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+    width: 2.6rem;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(4) {
+    width: 2.3rem;
+    height: 100%;
+    line-height: 0.6rem;
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.yb-banner3 > div > div:nth-child(3) > div:nth-child(2) {
+    width: 100%;
+    height: 4rem;
+    overflow-y: scroll;
+}
+
+tr {
+    width: 100%;
+    height: 0.6rem;
+    display: block;
+}
+
+.y-table tr {
+    height: 0.4rem;
+}
+
+td:nth-child(1) {
+    width: 1rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    text-align: center;
+    display: block;
+    float: left;
+    color: rgb(124, 106, 83);
+    overflow: hidden;
+}
+
+td:nth-child(2) {
+    width: 2rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    text-align: center;
+    display: block;
+    float: left;
+    color: rgb(124, 106, 83);
+    overflow: hidden;
+}
+
+td:nth-child(3) {
+    width: 2.6rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    text-align: center;
+    display: block;
+    float: left;
+    color: rgb(124, 106, 83);
+    overflow: hidden;
+}
+
+td:nth-child(4) {
+    width: 2.3rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    text-align: center;
+    display: block;
+    float: left;
+    color: rgb(124, 106, 83);
+    overflow: hidden;
+}
+
+.yb-banner3 > div > div:nth-child(4) {
+    width: 100%;
+    height: auto;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    margin-top: 0.1rem;
+    color: rgb(124, 106, 83);
+}
+
+.yb-banner4 {
+    width: 9.707rem;
+    height: 6.347rem;
+    background: url(../../../../images/pages/activity/celebration/back5.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.p-rules {
+    display: none;
+}
+
+.p-rules > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.p-rules > div:nth-child(2) {
+    width: 8.43rem;
+    height: 13.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.p-rules-window > div:nth-child(1) {
+    width: 100%;
+    height: 11.76rem;
+    background: url(../../../../images/pages/activity/celebration/back6.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.3rem;
+}
+
+.yclose {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    background: url(../../../../images/pages/activity/celebration/back7.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+
+.p-rules-window > div:nth-child(1) > div {
+    width: 6.6rem;
+    height: 11rem;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+.p-rules-window > div:nth-child(1) > div > div:nth-child(1) {
+    width: 100%;
+    height: 1rem;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: center;
+    color: rgb(255, 84, 0);
+}
+
+.p-rules-window > div:nth-child(1) > div > .y-rule-text {
+    width: 100%;
+    height: auto;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: rgb(124, 106, 83);
+    margin-top: 0.3rem;
+}
+
+.y-rule-table {
+    width: 6rem;
+    height: auto;
+    margin-top: 0.5rem;
+    overflow-y: scroll;
+    font-size: 0.3rem;
+    color: rgb(124, 106, 83);
+}
+
+.y-rule-table table {
+    width: 6rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.y-rule-table table tr {
+    width: 100%;
+    display: block;
+
+}
+
+.y-rule-table table td {
+    width: 2rem;
+    height: 0.6rem;
+    display: block;
+    float: left;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+}
+
+.y-rule-table table th {
+    width: 2rem;
+    height: 1rem;
+    display: block;
+    float: left;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+}
+
+.y-rule-table table tr:first-child {
+    height: 1rem;
+}
+
+.y-rule-table table th:nth-child(3) {
+    line-height: 1rem;
+}
+
+.y-rule-table table tr td,.y-rule-table table tr th {
+    border: 1px solid rgb(124, 106, 83);
+}
+
+.y-rule-table table th:nth-child(2) {
+    line-height: 1rem;
+    border: none;
+    border-top:1px solid rgb(124, 106, 83);
+}
+
+.y-rule-table table th:first-child {
+    border-bottom: none;
+}
+
+.y-rule-table table th:last-child {
+    border-bottom: none;
+}
+
+.y-rule-table table td:nth-child(2) {
+    border: none;
+    border-top:1px solid rgb(124, 106, 83);
+}
+
+.y-rule-table table td:first-child {
+    border-bottom: none;
+}
+
+.y-rule-table table td:last-child {
+    border-bottom: none;
+}
+
+.y-rule-table table tr:last-child {
+    border-bottom:1px solid rgb(124, 106, 83);
+}
+
+.y-rule-table2 {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem auto;
+}
+
+.y-rule-table2 table {
+    width: 100%;
+    height: auto;
+}
+
+.y-rule-table2 table tr {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    color: rgb(124, 106, 83);
+    text-align: center;
+}
+
+.y-rule-table2 table tr th {
+    width: 3rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border: 1px solid rgb(124, 106, 83);
+    display: block;
+    float: left;
+    border-bottom: none;
+}
+
+.y-rule-table2 table tr th:first-child {
+    border-right: none;
+}
+
+.y-rule-table2 table tr td {
+    width: 3rem;
+    height: 1rem;
+    line-height: 0.5rem;
+    border: 1px solid rgb(124, 106, 83);
+    display: block;
+    float: left;
+    border-bottom: none;
+}
+
+.y-rule-table2 table tr td:last-child {
+    line-height: 1rem;
+}
+
+.y-rule-table2 table tr td:first-child {
+    border-right: none;
+}
+
+.y-rule-table2 table tr:last-child td {
+    border-bottom: 1px solid rgb(124, 106, 83);
+    line-height: 1rem;
+}
+
+.y-rule-content p {
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: rgb(124, 106, 83);
+    margin-top: 0.3rem;
+}
+
+.p-list {
+    display: none;
+}
+
+.p-list > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+}
+
+.p-list > div:nth-child(2) {
+    width: 8.43rem;
+    height: 13.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.p-list .p-rules-window > div > div:nth-child(1) {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+    color: rgb(255, 84, 0);
+}
+
+.p-list .p-rules-window > div > div:nth-child(2) {
+    width: 100%;
+    height: 9rem;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.lists-back {
+    width: 7.44rem !important;
+    height: 4.96rem !important;
+    background: url(../../../../images/pages/activity/celebration/back9.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.lists-back > div {
+    width: 6.6rem;
+    height: 4rem;
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    right: 0;
+   bottom: 0;
+    margin: 0 auto;
+}
+
+.lists-back > div > div {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: rgb(124, 106, 83);
+}
+
+.nodata {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 0.4rem;
+    text-align: center;
+    color: rgb(124, 106, 83);
+}
+
+.yanodata {
+    width: 100%;
+    height: 9rem !important;
+    line-height: 9rem !important;
+    font-size: 0.4rem !important;
+    text-align: center !important;
+    color: rgb(124, 106, 83) !important;
+}
+
+.dropload-down {
+    display: none;
+}
+
+.move-div {
+    padding-top: 0.8rem;
+    font-size: 0.3rem;
+    color: rgb(124, 106, 83);
+}
+
+.move-div div span {
+    color: rgb(255, 84, 0);
+}
+
+.yshow {
+    width: 0;
+    height: 100%;
+    background: rgb(255, 156, 0);
+    border-radius: 0.3rem;
+}
+
+.yb-banner4 > div {
+    width: 7rem;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    /*background: #ff0000;*/
+}
+
+.yb-banner4 > div > div:nth-child(1) {
+    width: 100%;
+    height: 1.5rem;
+}
+
+.yb-banner4 > div > div:nth-child(2) {
+    width: 100%;
+    height: auto;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.yb-banner4 > div > div:nth-child(1) > div {
+    width: 4rem;
+    height: 100%;
+    background: url(../../../../images/pages/activity/celebration/16@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.ninebtn {
+    width: 3rem;
+    height: 100%;
+    background: url(../../../../images/pages/activity/celebration/1@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    display: block;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.5rem;
+}
+
+.ninerules {
+    width: 100%;
+    height: auto;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: rgb(124, 106, 83);
+}

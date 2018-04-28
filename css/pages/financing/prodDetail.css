@@ -1,0 +1,97 @@
+/*
+* @Author: User
+* @Date:   2016-10-21 10:31:40
+* @Last Modified by:   User
+* @Last Modified time: 2017-03-03 11:33:30
+*/
+.current-portfolio .title{
+  display: block;
+  width: 100%;
+  height: 1.32rem;
+  line-height: 1.32rem;
+  color:#333;
+  overflow:hidden;
+     border-top: none;
+  font-size:0.4rem;
+  padding: 0 0.4133rem; 
+  box-sizing:border-box;
+  border-bottom: 1px solid #dfdfdf;
+}
+.current-portfolio .title i{
+  font-style:normal;
+  
+}
+.current-portfolio .title i.percent{
+  float: right;
+  color:#888;
+    font-size:0.32rem;
+    margin-right: 0.2133rem;
+}
+.current-portfolio .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.4rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+.current-portfolio .caption a.back{
+  display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../images/lib/icon_dot.png) no-repeat;
+    background-size: contain;
+    transform:rotate(180deg);
+-ms-transform:rotate(180deg);   /* IE 9 */
+-moz-transform:rotate(180deg);  /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg);  /* Opera */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+}
+.singel{
+	width: 100%;
+	padding:0.2rem 0.413rem;
+	box-sizing: border-box;
+	background: #fff url() 0 0 no-repeat;
+	overflow: hidden;
+	z-index: 1;
+	
+}
+.singel .sg-top{
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	font-size: 0.373333rem;
+	color: #333;
+	font-family: '微软雅黑';
+}
+.singel .sg-top img{
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	float: left;
+	margin-top: 0.2rem;
+	margin-right: 0.4rem;
+}
+.singel p{
+	font-size: 0.373333rem;
+	line-height: 0.72rem;
+	color: #666;
+	font-weight: normal;
+  text-align: justify !important;
+}
+
+/*---------------改版ly-----------------*/
+.item:before{
+  display: block;
+  content: '';
+  clear:both;
+}
+.item:after{
+  display: block;
+  content: '';
+  clear:both;
+}

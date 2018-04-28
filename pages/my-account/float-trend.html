@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+<title>净值趋势</title>
+<style type="text/css">
+${demo.css}
+text{
+	font-size:0.285rem!important;
+}
+g.highcharts-button{
+	display:none;
+}
+.highcharts-series-1{
+	color:red;
+}
+.container{
+	padding-top:1rem!important;
+}
+.line1,.line2{
+	width:47.5%;
+	height:0.5rem;
+	display:inline-block;
+	font-size:0.4rem;
+} 
+.line1{
+	text-align:right;
+	margin-right:3%;
+	position:relative;
+}
+.line1 i{
+	display: inline-block;
+	width:1rem;
+	height:1px;
+	background: #fff url(../../images/pages/line1.png) 0 center no-repeat;
+	background-size:contain;
+	position:absolute;
+	right:1.35rem;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.line2{
+	position:relative;
+	text-indent:1.5em;
+}
+.line2 i{
+	display: inline-block;
+	width:1rem;
+	height:1px;
+	background: #fff url(../../images/pages/line2.png)  0 center no-repeat;
+	background-size:contain;
+	position:absolute;
+	left: 0;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.my-product .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.4rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+.my-product .caption a.back{
+  display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../images/lib/icon_dot.png) no-repeat;
+    background-size: contain;
+    transform:rotate(180deg);
+-ms-transform:rotate(180deg);   /* IE 9 */
+-moz-transform:rotate(180deg);  /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg);  /* Opera */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+.my-product .caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+</style>	
+</head>
+
+<body>
+ <div class="wrapper my-product">
+ <div class="caption">
+ <a href="../../pages/my-account/my-float.html" class="back"></a>
+  <span class="lineTitle">净值走势</span>
+ </div>
+	<div id="container" style="min-width: 310px; height: 13.5rem; margin: 0 auto"  class="container"></div>
+
+	<div class="line1"><i></i>择时稳赢</div><div class="line2"><i></i>上证指数</div>
+</div>
+<script type="text/javascript" src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+ <script src="../../js/highcharts.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common.js?v=9.0.0"></script>
+<script src="../../js/pages/my-account/float-trend.js?v=9.0.0">
+
+</script>
+</body>
+</html>

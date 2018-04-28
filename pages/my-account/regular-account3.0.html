@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <script src="../../js/pages/my-account/echarts.common.min.js"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css">
+  <link rel="stylesheet" href="../../css/pages/account/my-account3.0.css">
+</head>
+<style>
+.mainbtn {
+padding-top: 0.5rem;
+}
+</style>
+
+
+<body class="current-account">
+	<div class="wrapper">
+		<div class="top-icon">
+			<img src="../../images/pages/my-account3.0/icon_2.png"  class="icon-left" >
+			<img src="../../images/pages/my-account3.0/icon.png" class="icon-right">
+		</div>
+		<div id="main" style="width: 100%;height:5rem;"></div>
+		<div class="total">
+			<span class="investment">700,000,00.23</span>
+			<span>在投总额(元)</span>
+		</div>
+		<script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('main'));
+
+			var demodata = [{
+				value: 115.00,
+				name: '七天乐'
+			}, {
+				value: 310.00,
+				name: '浮动收益'
+			}, {
+				value: 634.00,
+				name: '固定收益'
+			}];
+
+			var option = {
+				tooltip: {
+					trigger: 'item',
+					formatter: "{a} <br/>{b}: {c} ({d}%)",
+					triggerOn: 'click'
+				},
+				series: [{
+					name: '收益',
+					type: 'pie',
+					radius: ['73%', '78%'],
+					hoverAnimation: false,
+					selectedMode: "single",
+					label: {
+						normal: {
+							formatter: '{c} \n{b}'
+						}
+					},
+					data: demodata
+				}],
+		                    color:['#3fd6eb','#ff6d55','#435ef3'],
+		                    backgroundColor:'#fff',
+		                    animationDuration:3000
+			};
+
+			myChart.setOption(option);
+
+			myChart.on('click', function(params) {
+				//$(".demotext").text("你点了："+params.name);
+			});
+		</script>
+
+		<div class="maindata">
+			<div class="data-left">
+				<span>2535352</span>
+				<span>累积收益(元)</span>
+			</div>
+			
+			<div class="data-right">
+				<span>1000</span>
+				<span>可用余额(元)</span>
+			</div>
+		</div>
+		<a href="javascript:;" class="check">固定收益<img src="" alt=""></a>
+
+		<div id="regularChart" style="width: 100%;height:6rem;padding:0.2rem 0 0 0.35rem "></div>
+		<script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('regularChart'));
+
+			
+
+			option = {
+			    color: ['#3398DB'],
+			    title: {
+			        left: 'left',
+			        text: '收益详情',
+			        textStyle:{
+			        	color:'#bababa',
+			        	fontWeight:'normal',
+			        	fontFamily:'sans-serif',
+			        	fontSize:'0.4rem'
+			        }
+			    },
+			    grid: {
+			        top:'20%',
+			        left: '3%',
+			        right: '4%',
+			        // bottom: '3%',
+			        containLabel: true
+			    },
+			    xAxis : [{
+			            type : 'category',
+			       	 axisLine:{
+			        		show:false
+			       	 },
+			        	axisTick:{
+			        		show:false,
+			        		alignWithLabel: true
+			       	 },	
+			          boundaryGap: false,
+			          axisLabel : {
+			          		interval:1,
+			        		textStyle:{
+			       			color:"#bababa"
+			        		}
+			          },
+			         splitLine:{
+			        		show:false
+			          },
+			          data : ['08/01','08/03','08/05','08/07','08/11','08/13','08/15','08/17'],
+			        }
+			    ],
+			    yAxis : [
+			        {
+			            type : 'value',
+			        offset :8,
+			            axisLine:{
+			            	show:false
+			            },
+			            axisTick:{
+			            	show:false
+			            },	
+			            boundaryGap: false,
+			            axisLabel : {
+			            textStyle:{
+			            color:"#bababa"
+			            }
+			            },
+			        splitLine:{
+			        	show:false
+			        },
+			        }
+			    ],
+			    series : [
+			        {
+			            name:'直接访问',
+			            type:'bar',
+			            barWidth: '15%',
+			            symbol: 'none',
+			            itemStyle:{
+			            	normal:{
+			            		color: new echarts.graphic.LinearGradient(0,0,0,1,[{
+			            			offset:0,
+			            			color:'#9ab0fe'
+			            		},{
+			            			offset:1,
+			            			color:'#ff92ba'
+			            		}])
+			            	}
+
+			            },
+			            label: {
+			                normal: {
+			                    show: true,
+			                    position: 'top'
+			                }
+			            },
+			            data:[0.66, 0.57, 0.7,1.80, 0.62, 0.62,0.62, 0.88]
+			        }
+			    ],
+			    backgroundColor:'#fff',
+			    animationDuration:3000
+			};
+
+			myChart.setOption(option);
+
+		</script>
+
+			<div class="mainbtn">
+			       <a href="javascript:;" class="topup-btn"><button>充值</button></a>
+			       <a href="javascript:;" class="withdraw-btn"><button>提现</button></a>
+			</div>
+		
+
+	</div>  
+
+  	<div class="nav clearfix"></div>
+
+
+
+
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>V金融投资</title>
+</head>
+<script src= "/wx/js/lib/jquery-2.1.3.min.js"></script>
+<script src="/wx/js/setting.js"></script>
+  <script src="/wx/js/lib/doT.min.js?v=9.0.0"></script>
+<script src="/wx/js/common.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var param = Common.getParam();
+		
+		var userId = sessionStorage.getItem('uid');
+		var loginToken = sessionStorage.getItem('loginToken');
+		if(userId){
+			if(loginToken){
+				var dialLogin = sessionStorage.getItem('dialLogin');
+				if(dialLogin=='1'){
+					window.location.href = 'pages/index.html';
+				}
+			}
+		}
+		
+		var type = param.type;
+		if(!type){
+			type = 1;
+		}
+		$.post(
+				Setting.apiRoot1 + '/wx/index.p2p?type=' + type,
+				{},
+				function(str){
+					//var str = $.parseJSON(result);
+					if(str.url){
+						location.href = str.url;
+					}
+		  		}
+			);
+	});
+
+</script>
+<body>
+
+</body>
+</html>

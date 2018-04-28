@@ -1,0 +1,85 @@
+/*
+* @Author: User
+* @Date:   2016-10-27 14:27:12
+* @Last Modified by:   User
+* @Last Modified time: 2016-10-27 15:25:03
+*/
+body{
+	background: #fff url() 0 0 no-repeat;
+}
+.rightsDetail .head{
+	width: 100%;
+	height: 3rem;
+	background: #fff url() 0 0 no-repeat;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.headcontain img{
+	display: block;
+	width: 1.25rem;
+	height: 1.25rem;
+	margin: 0 auto;
+}
+.headcontain span{
+	display: block;
+	font-size: 0.35rem;
+	color: rgb(51,51,51);
+	line-height: 0.7rem;
+	margin: 0 auto;
+}
+.rightsdetail{
+	background: rgb(231,233,236) url() 0 0 no-repeat;
+	width: 100%;
+	height: 1rem;
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+	line-height: 1rem;
+	font-size: 0.35rem;
+}
+.detailList{
+	background: #fff url() 0 0 no-repeat;
+}
+.detailList li{ 
+	margin-bottom: 0.2rem;
+}
+.detailList .title{
+	display: block;
+	width: 100%;
+	height: 1rem; 
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+	font-size: 0.35rem;
+	line-height: 1rem;
+	color: rgb(50,50,50);
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+.detailList .title img{
+	width: 0.05rem;
+	height: 0.375rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+.ivtchart{
+	width: 100%;
+	height: auto;
+}
+.detailList p{
+	width: 100%;
+	padding: 0 0.3rem;
+	box-sizing: border-box;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+}
+.start{ 
+	width: 8.625rem;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+}
+.start img{
+	width: 8.625rem;
+	height: 1rem;
+}

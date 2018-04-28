@@ -1,0 +1,263 @@
+@import url(dialog.css);
+body, html {
+  min-height: 100%;
+}
+
+body {
+  max-width: 100rem;
+  min-height: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  background-color: #f4fcff;
+  background: -webkit-radial-gradient(#eee, #fff);
+  background: -o-radial-gradient(#eee, #fff);
+  background: -moz-radial-gradient(#eee, #fff);
+  background: radial-gradient(#eee, #fff);
+}
+
+header img {
+  width: 100%;
+}
+
+.index header {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.index .go a {
+  display: block;
+}
+.index .go a.btn {
+  height: 5rem;
+  line-height: 5rem;
+  margin: 2.7rem 15% 2rem 15%;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  font-size: 2.3rem;
+}
+.index .go a.rule {
+  margin-bottom: 3rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.index .dialog {
+  width: 100%;
+}
+.index .dialog .dialog-content {
+  width: 90%;
+  margin-left: -45%;
+  top: 15%;
+  background: none;
+}
+.index .dialog .dialog-close {
+  position: absolute;
+  padding: 1rem;
+  top: 5rem;
+  right: 2.4rem;
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.chooseV header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.chooseV header ul {
+  position: relative;
+}
+.chooseV header ul .border {
+  border: 5px solid #f00;
+}
+.chooseV header ul li {
+  position: absolute;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.chooseV header ul li.choose1 {
+  left: 55%;
+  padding: 7% 17%;
+}
+.chooseV header ul li.choose2 {
+  left: 46%;
+  margin-top: 30%;
+  padding: 3% 4%;
+}
+.chooseV header ul li.choose3 {
+  left: 1%;
+  margin-top: 39%;
+  padding: 8% 17%;
+}
+.chooseV header ul li.choose4 {
+  left: 49%;
+  margin-top: 66%;
+  padding: 4% 5%;
+}
+.chooseV header ul li.choose5 {
+  left: 0%;
+  margin-top: 60%;
+  padding: 18% 9%;
+}
+.chooseV header ul li.choose6 {
+  left: 30%;
+  margin-top: 124%;
+  padding: 8% 10%;
+}
+.chooseV header .success {
+  position: fixed;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  margin: -2rem 0 0 -35%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  border: 3px solid #e6ecf5;
+  box-sizing: content-box;
+}
+.chooseV footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.2rem;
+  line-height: 5.2rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.receiveMoney h3 {
+  margin-bottom: 5.8rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+.receiveMoney h3 p {
+  height: 3.2rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.1rem;
+}
+.receiveMoney h3 p span {
+  font-size: 3.6rem;
+  color: #ff6f00;
+  font-weight: bolder;
+}
+.receiveMoney form {
+  padding: 0 10%;
+}
+.receiveMoney form input {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  border: 1px solid #000;
+}
+.receiveMoney form .btn {
+  display: block;
+  width: 80%;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 3.7rem auto;
+}
+
+.register h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 2.2rem;
+  font-weight: bolder;
+}
+.register h4 {
+  margin-bottom: 2.2rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.register h4 span {
+  color: #ff6f00;
+}
+.register .form-list {
+  position: relative;
+  margin-top: 2.2rem;
+}
+.register .form-list .col-6 {
+  padding-right: 1.5rem;
+}
+.register .form-list .col-4 button {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+.register .form-list .toggleEye {
+  height: 2.2rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0.9rem;
+  border-left: 1px solid #acacac;
+  text-align: center;
+}
+.register .form-list .toggleEye img {
+  width: 70%;
+}
+.register .form-list .pwd {
+  padding-right: 5rem;
+}
+.register p a {
+  display: block;
+  margin: 3.2rem 0;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+    text-decoration:none;
+}
+
+.useMoney h3 {
+  margin-bottom: 0;
+}
+.useMoney h4 {
+  margin: 2rem 0 1rem 0;
+}
+.useMoney h4 span {
+  color: #ff6f00;
+}
+.useMoney .list {
+  padding: 0 3rem;
+  margin-bottom: 3rem;
+}
+.useMoney .list article {
+  margin-top: 2.3rem;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+.useMoney .list article .col-3 {
+  padding: 0 0 0 1.5rem;
+  text-align: center;
+}
+.useMoney .list article .col-3 img {
+  width: 70%;
+}
+.useMoney .list article .col-7 h2 {
+  margin-bottom: 1rem;
+  color: #ff6f00;
+  font-weight: bolder;
+}
+.useMoney .list article .col-7 p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/*# sourceMappingURL=doubleNinth.css.map */

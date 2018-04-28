@@ -1,0 +1,208 @@
+html,body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+.wrapper{
+	width:10rem;
+	height:100%;
+	margin:auto;
+	background:url('../../../../images/pages/activity/redPacket/bottom.png');
+	background-repeat:repeat;
+	overflow-x: hidden;
+	overflow-y:auto;
+}
+/* 
+*top
+*  */
+.top-warpper{
+	width: 100%;
+	height: 12.8266rem;
+	background:url('../../../../images/pages/activity/redPacket/top.png');
+	background-size:100% 100%;
+}
+.top-botton{
+	width:100%;
+	padding-top:.44rem;
+	font-size:.3733rem;
+	line-height:.6133rem;
+}
+#share{
+	width:2.1733rem;
+	// height:.6133rem;
+	padding:0.008rem 0 0.008rem 0.4rem;
+	float:left;
+	background:url('../../../../images/pages/activity/redPacket/share.png');
+	background-size:100% 100%;
+	color:#ffffb9;
+}
+.rule{
+	width:2.1733rem;
+	// height:.6133rem;
+	padding:0.008rem 0.4rem 0.008rem 0;
+	text-align:right;
+	float:right;
+	background:url('../../../../images/pages/activity/redPacket/rule.png');
+	background-size:100% 100%;
+	color:#fff;
+}
+/* 
+*centter
+* 
+ */
+.centter{
+	width:100%;
+	padding:0 .4rem;
+	color:#fff;
+	margin-top:-1rem;
+	margin-bottom:.7333rem;
+}
+.centter-box{
+	padding:.6rem .48rem 1.05rem .48rem;
+	font-size:.3733rem;
+	background:url('../../../../images/pages/activity/redPacket/box.png');
+	background-size:100% 100%;
+}
+.dataMoney{
+	height:.7866rem;
+	margin-top:.3866rem;
+	margin-bottom:.7866rem;
+	line-height:.7866rem;
+	text-align:center;
+	clear:both;
+}
+.dataMoney div{
+	float:left;
+	width:0.5rem;
+	height:.7866rem;
+}
+.dataMoney .money{
+	width:2.3rem;
+	height:.7866rem;
+	padding:0.05rem 0 0 0;
+	background-color:#fff;
+	color:#000;
+}
+.red{
+	color:#f33238;
+}
+.boxImg{
+	display:block;
+	width:100%;
+	height:.4666rem;
+}
+.box-rule div{
+	font-size:.32rem;
+	margin-top:0.5rem;
+	text-align:justify;
+}
+/* 
+*redPacket
+*  */
+.redPacket{
+	width:8.4933rem;
+	height:5.1333rem;
+	margin:auto;
+	background:url('../../../../images/pages/activity/redPacket/redPacket.png');
+	background-size:100% 100%;
+	text-align:center;
+	color:#ffd64f;
+	overflow: hidden;
+}
+.noMoney{
+	font-size:1.2533rem;
+	font-size:.48rem;
+	margin:2.4133rem 0 .64rem 0;
+}
+.redMoney{
+	font-weight:bold;
+	color:#ffd64f;
+	font-size:1.2533rem;
+	margin:2.0933rem 0 .5066rem 0;
+	display:none;
+}
+.redMoney div{
+	display:inline-block;
+	font-size:.4rem;
+}
+.title{
+	color:#fff;
+	font-size:.4rem;
+}
+
+.button{
+	display:block;
+	width:6.5866rem;
+	height:1.3466rem;
+	line-height:1.3466rem;
+	margin:auto;
+	margin-top:1.28rem;
+	margin-bottom:.9466rem;
+	color:#fff;
+	font-size:.5333rem;
+	font-weight:bold;
+	font-family: 'PingFangSC';
+	text-align:center;
+	text-decoration:none;
+	outline: 0;
+	background:url('../../../../images/pages/activity/redPacket/button.png');
+	background-size:100% 100%;
+}
+
+/* 
+*
+* alert
+*   */
+.guize{
+  display:none;
+}
+.closeguize{
+  width:0.52rem;
+  height:0.52rem;
+  position:absolute;
+  right:0;
+  top:-0.8rem;
+  background:url('../../../../images/pages/activity/redPacket/close.png');
+  background-size:100% 100%;
+}
+.bkgguize{
+  width:9rem;
+  height:70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  background:url(../../../../images/pages/activity/redPacket/alert.png);
+  background-size:100% 100%;
+  font-size: .32rem;
+  color:#fff;
+}
+.content{
+  height:100%;
+  overflow: hidden;
+  // text-align:justify;
+  padding: .6rem 0;
+}
+.content-text{
+  height:78%;
+  width:100%;
+  word-break:break-all;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+
+}
+.alert-title{
+	width:100%;
+	padding:.4rem;
+}
+.alert-gongshi{
+	width:100%;
+	padding:.4rem;
+}
+.content-text div{
+  padding:0.15rem 0.4rem;
+}

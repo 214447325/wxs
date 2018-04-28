@@ -1,0 +1,161 @@
+.p-box {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    background: #ffffff;
+}
+
+.p-box > ul {
+    width: 100%;
+    height: auto;
+    padding-top: 0.6rem;
+}
+
+.p-box > ul > li {
+    width: 100%;
+    height: auto;
+    line-height: 1.2rem;
+    font-size: 0.38rem;
+    padding-left: 0.4rem;
+    color:  #9B9B9B;
+}
+
+.p-box > ul > li:first-child {
+    width: 100%;
+    height: auto;
+    line-height: 0.75rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #4B4B4B;
+    margin-bottom: 0.3rem;
+}
+
+.pselected {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #ADB3C2;
+    float: right;
+    margin-right: 0.4rem;
+    border-radius: 0.5rem;
+    margin-top: 0.35rem;
+    overflow: hidden;
+}
+
+.selected {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../../../../images/pages/my-account3.0/vimg/selected.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.pcount {
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 0.35rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.38rem;
+    color: #9B9B9B;
+    position: relative;
+}
+
+.pup {
+    width: auto;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.38rem;
+    margin-left: 0.4rem;
+    color: #FF8424;
+    display: block;
+    position: absolute;
+}
+
+.psubmit {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background: #2B6FF9;
+    font-size: 0.39rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+}
+
+.pa-box > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.pa-box > div:nth-child(2) {
+    width: 7rem;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.pa-box > div:nth-child(2) > div:nth-child(1) {
+    width: 6rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+.pa-box > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+    width: 100%;
+    height: auto;
+    line-height: 1rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.pa-box > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span {
+    color:#e28210;
+    margin-left: 0.3rem;
+}
+
+.pa-box > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    font-size: 0.34rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #4A4A4A;
+    margin-top: 0.3rem;
+}
+
+.pacontent > div:nth-child(2) {
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid #D8D8D8;
+    text-align: center;
+    line-height: 1.2rem;
+    color:#0076FF;
+    font-size: 0.4rem;
+}
+
+.pacontent > div:nth-child(2) > a {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: block;
+    color:#0076FF;
+}
+
+.pacontent > div:nth-child(2) > a:first-child {
+    border-right: 1px solid #D8D8D8;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>定期产品详情</title>
+  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../css/main.min.css?v=9.0.0">
+</head>
+<style>
+  .product-info{
+  background: #efefef url() 0 0 no-repeat;
+}
+.product-info  .title{
+  width:100%;
+  height:1rem;
+  line-height:1rem;
+  padding: 0 0.5rem;
+  box-sizing:border-box;
+  color:red;
+  font-size:0.4rem;
+  font-weight:600;
+  background: #fff url() 0 0 no-repeat;
+  overflow:hidden;
+  z-index:1;
+  margin-top: 0.3rem;
+  margin-bottom:0;
+ border-bottom: 1px solid  #efefef;
+  text-align:left;
+}
+.product-info  .titlebg1{
+  height:3rem;
+    background: #fff url(../images/pages/financing/chan-4-bg.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+
+.product-info  .titlebg2{
+  height:3.5rem;
+    background: #fff url(../images/pages/financing/chan-5-bg.png) right 0 no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.product-info  .titlebg3{
+  height:3rem;
+    background: #fff url(../images/pages/financing/bg-xin.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info .titlebg1 .deadlineWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info  .titlebg2  .doorsillWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+     background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+    left:1.325rem;
+}
+.product-info  .titlebg3  .wayWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+     background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+}
+.product-info .titlebg1 .line,.product-info .titlebg2 .line,.product-info .titlebg3 .line{
+   width:60%;
+   height:1px;
+    border-bottom: 1px solid #efefef;
+   position: absolute;
+   top:1rem;
+   left:0;
+ }
+.product-info  .illustrate{
+  color:#fab13b;
+}
+.product-info  .income{
+  color:#fe7a78;
+}
+.product-info  .how{
+  color:#ef753f;
+}
+.product-info  .deadline{
+  color:#8bbc5b;
+}
+.product-info  .doorsill{
+  color:#35c4c7;
+}
+.product-info  .way{
+  color:#3a70af;
+}
+.product-info  .fee{
+color:#35c4c7;
+}
+.illustrate i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:  url(../images/pages/financing/chan-1.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.income i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-2.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.how i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-3.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.deadline i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/chan-4.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.doorsill i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-5.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.way i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/an-6.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.fee i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/an-5.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.an1 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-1.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an2 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-2.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an3 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-3.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an4 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-4.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+
+.feeWord,.wayWord,.doorsillWord,.deadlineWord,.howWord,.incomeWord,.illustrateWord{
+  width:100%;
+
+  padding: 0.3rem 0.5rem;
+  box-sizing:border-box;
+  background: #FFF url() 0 0 no-repeat;
+  font-size:0.35rem;
+  line-height:0.5rem;
+  color:#666;
+}
+.time .special{
+  display: inline-block;
+  font-size:0.35rem;
+  line-height:2;
+  font-style:normal;
+font-weight:bold;
+color:#333;
+}
+</style>
+<body class="financing product-info">
+  <div class="wrapper">
+    <div class="tab-info"> 
+      <a href="javascript:;" class="active" data-target="info">产品介绍</a>
+      <a href="javascript:;" data-target="safemode">安全保障</a>
+    </div>
+
+  <div class="tab-container">
+ 
+        <div class="block-items info  ">
+        
+        <div class="title illustrate"><i></i>产品说明</div>
+ <div class="illustrateWord">
+  <p>V金融定期计划资产组合，
+      资产标的主要分散在具有高度保障系数的小额信贷，
+      消费信贷等多种优质资产，每笔借贷金额平均在4500元左右，
+      借贷人信用良好，分散在不同地域、不同行业，
+      不同收入水平，且为工作稳定的蓝领、
+      白领和自营业主等群体。该组合高度分散，
+      并且基于线上和线下的多级风控体系，历史坏账率极低。</p>
+ </div>
+
+ <div class="title income"><i></i>产品收益</div>
+ <div class="incomeWord">
+  <p>“周周派息”收益方式为每周派息，
+      投资后每7天派息一次（利息可提现，
+      也可复投享受复利收益），
+      产品到期一次还本。定期产品类似于银行定期，
+      具有一定的期限锁定。根据锁定时间不同，
+      分为4周、12周，
+      收益分别为年化9.5%、10.5%。</p>
+ </div>
+
+ <div class="title how"><i></i>产品期限</div>
+ <div class="howWord">
+  <p>4周、12周</p>
+   </div>
+
+    <div class="title deadline titlebg titlebg1"><i></i>投资门槛
+    <div class="line"></div>
+   <div class="deadlineWord">
+  <p>100起投，投资额暂不设上限。</p>
+   </div>
+   </div>
+  
+
+   <div class="title doorsill titlebg  titlebg2"><i></i>赎回方式
+      <div class="line"></div>
+    <div class="doorsillWord">
+  <p>购买后至到期日之间无法赎回，<br>到期后隔日本金将自动赎回<br>到您的可用余额内。</p>
+   </div>
+   </div>
+  
+ 
+
+<!--   <div class="title way  titlebg titlebg3"><i></i>费用
+     <div class="line"></div>
+  <div class="wayWord">
+  <p>目前平台的提现费用费用全免<br>最大程度让利客户</p>
+   </div>
+   </div> -->
+  
+
+ <!--          <div class="title fee"><i></i>7天乐如何能收到12.08%的高收益</div>
+ <div class="feeWord">
+  <p>V金融风控内审团队，由数位多年金融行业精英组成，<br>该团队成员来自银行、券商</p>
+   </div> -->
+  </div>
+      
+
+
+            <div class="block-items safemode hide">
+              <div class="title illustrate  an1"><i></i>我的资金投向哪里？</div>
+ <div class="illustrateWord">
+  <p>1、 小额信贷
+专注于小额分散微金融模式，拥有严格的投行计量模型和严谨的风控系统，多重筛选借款项目。<br>
+2、  采用P2F模式，投资大型金融机构产品
+我们选择正规银行、证券、保险等大型金融机构的金融产品，利用金融机构自身强大的抗风险能力及成熟的风控体系，产品历史兑付率接近100%。
+</p>
+ </div>
+
+ <div class="title income an2"><i></i>项目资产如何挑选？</div>
+ <div class="incomeWord">
+  <p>我们利用品牌渠道从海量的金融产品中进行组合、筛选，凭借专业优势进行时机的把握，为投资人提供专业定制级理财产品投资服务。<br>
+信托：银监会监管，银行级风控标准，兑付有保障，历史违约率接近为零，收益稳定。<br>
+基金：证监会监管，协会备案，资金由银行托管，专选中间级份额，高收益低风险。<br>
+证券：证监会监管，协会备案，资金由银行托管，挑选固定收益和优先级份额产品，收益稳风险低。
+</p>
+ </div>
+
+ <div class="title how an3"><i></i>产品如何审核？</div>
+ <div class="howWord">
+  <p>V金融风控内审团队，由数位多年金融行业精英组成，该团队成员来自银行、券商、基金公司等多家金融机构。审核项目资产的所有资料，保证合作机构提供资料的真实可信，并对投资时机进行把握，帮助投资人实现收益最大化。</p>
+   </div>
+
+    <div class="title deadline an4"><i></i>智能分散投资</div>
+ <div class="deadlineWord">
+  <p>传统方式购买金融机构的理财产品，只能逐次购买，很难分散。但在V金融购买投资产品，您的每一笔资金，我们帮您做了智能分散投资，为您最大化规避风险。</p>
+   </div>
+
+   <div class="title doorsill"><i></i>收益如何保障？</div>
+ <div class="doorsillWord">
+  <p>1、 金融机构保证兑付
+V金融和大型正规金融机构合作（P2F模式），通过金融机构21层专业风控及自有的360度风控内审团队的审核，使资产达到了银行级别的安全。从合作金融机构的历史数据来看，兑付率接近100%。<br>
+2、  风险备付金
+V金融在自有资金中划拨相应的起始资金存放于风险备付金账户中。平台每次募集资金，都提取0.1%的成交金额放入风险备付金账户。
+  </div>
+
+      <div class="title way"><i></i>资金保证如何安全？</div>
+ <div class="wayWord">
+  <p>1、 银行级技术安全V金融采用银行级别的核心功能，分布式构架，全程加密，系统隔离，安全监测，低出错率，高安全性。</p>
+   </div>
+
+          
+    </div>
+    </div>  
+  <script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../js/setting.js?v=9.0.0"></script>
+  <script src="../js/common.js?v=9.0.0"></script>
+  <script src="../js/pages/financing/product-info2.js?v=9.0.0"></script>
+</body>
+</html>
+
+  

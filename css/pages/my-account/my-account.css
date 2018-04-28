@@ -1,0 +1,86 @@
+/*
+* @Author: User
+* @Date:   2016-07-28 18:58:36
+* @Last Modified by:   User
+* @Last Modified time: 2016-09-16 13:23:10
+*/
+/* 充值成功后的浮层 */
+.maskLayer{
+	width:100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top:0;
+	left: 0;
+           z-index:1000000;
+           display: none;
+}
+.verification{
+	width:6rem;
+	height:4.5rem;
+	background-color:#ffffff;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	z-index: 1;
+	box-sizing:border-box;  
+	-moz-box-sizing:border-box; /* Firefox */  
+	-webkit-box-sizing:border-box; /* Safari */  
+
+}
+.success{
+	display: block;
+	width:1.6rem;
+	height:1.6rem;
+	background:  url(../../../images/pages/topup-cash/success.png) 0 0 no-repeat;
+	background-size:contain;
+	margin-left:2.2rem;
+	margin-top:0.5rem;
+	
+}
+.topupSuc{
+	display: block;
+	font-size:0.5rem;
+	width:100%;
+	margin: 0.25rem auto; 
+	font-weight:bold;
+	text-align:center;
+}
+.ver-sub{
+	display:inline-block;
+	float:left;
+	width:2.4125rem;
+	height:0.875rem;
+	background: #fff url(../../../images/pages/topup-cash/btn1.png) 0 0 no-repeat;
+	background-size:contain;
+	line-height:0.4rem;
+	border: none;
+	font-size:0.45rem;
+	font-family:微软雅黑；;
+	font-style: normal;
+	color:white;
+	margin-left:0.29375rem;
+	text-indent: -0.25em;
+}
+
+.ver-cancel{
+	display:inline-block;
+	float:right;
+	width:2.4125rem;
+	height:0.875rem;
+	background: #fff url(../../../images/pages/topup-cash/btn2.png) 0 0 no-repeat;
+	 background-size:contain;
+	line-height:0.4rem;
+	border: none;
+	font-size:0.45rem;
+	font-family:微软雅黑；;
+	font-style: normal;
+	color:white;
+	margin-right:0.29375rem;
+	text-indent: -0.25em;
+}

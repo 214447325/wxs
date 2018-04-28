@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>现金奖励</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css">
+  <link rel="stylesheet" href="../../css/mui.min.css">
+  <link rel="stylesheet" href="../../css/pages/my-account/myPrivilege.css">
+  <link rel="stylesheet" href="../../css/pages/my-account/reward/rewardCenter.css?v=9.0.0">
+
+</head>
+<style>
+.mui-control-content{
+  display:block;
+  height:100%;
+}
+#pullrefresh{
+  height:85%;
+}
+</style>
+
+<body>
+  <div class="wrapper">
+
+<!--     <div  class="notice ">
+        <div class="noticeleft"></div>
+        <ul id="ticker02" style="width: 750px">
+                <li>
+                    <a>同时使用的奖励最多3个（加息券、投资红包），每笔投资只可释放1个红包</a>
+                </li>
+        </ul>
+    </div> -->
+
+  <!--   <div class="couponList demolist">
+    </div> -->
+      <div class="mui-slider-group" id="pullrefresh">
+
+        <div id="item1mobile" class="mui-slider-item mui-control-content">
+            <div id="scroll1" class="mui-content mui-scroll-wrapper refresh">
+                <div class="mui-scroll">
+                    <ul class="couponList demolist" id="activeMess"></ul>
+                      <div class="unList "></div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+   <!--  <div class="unList ">
+    </div>
+ -->
+
+  </div>  
+    <div class="totalled ">
+    <div class="fz26">红包总计：<span class="red amount">0.00元</span></div>
+    <a href="javascript:;" class="btn btn-gray mt10 extractReward disabled">提取至余额</a>
+    </div>
+
+            <div class="alert-layer">
+                <div class="resalert">
+                  <div>温馨提示</div>
+                  <div class="resmes"><div id="resmes">领取成功</div></div>
+                  <div id="reloadbtn">确定</div>
+                </div>
+            </div>   
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/mui.min.js"></script>
+<script src="../../js/mui.pullToRefresh.js"></script>
+<script src="../../js/mui.pullToRefresh.material.js"></script>
+<script src="../../js/pages/my-account/reward/ticker.js"></script>
+<script src="../../js/pages/my-account/rewardCenter.js?v=9.0.0"></script>
+
+</body>
+</html>

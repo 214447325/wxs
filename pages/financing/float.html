@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title>理财</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/float3.0.css">
+  <style>
+      .wrapper {
+          margin-top: 6.5px;
+      }
+
+      .financing .tab {
+        height: 1.23375rem;
+      }
+
+      .financing .tab a.active:after {
+          border: none;
+      }
+
+      .underline {
+         	width: 0.56rem;
+	        height: 0.066666rem;
+	        display: block;
+	        background: #6C6FFF;
+	        border-radius: 5px ;
+	        z-index: 10;
+	        position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 0.92rem;
+		    bottom: 0;
+		    margin: 0 auto;
+      }
+      .item-buy {
+      	border-radius:0.466666rem;
+      }
+      #navNew a{
+  		font-size: .28rem;
+  	}
+  </style>
+</head>
+<body class="financing regular float" data-target="money">
+	<div class="tab">
+		<a href="regular.html" >固收</a>
+		<a href="current.html" >周周涨</a>
+		<a href="javascript:;" class="active">浮动
+            <div class="underline"></div>
+        </a>
+	</div>
+	<div class="wrapper"><!-- wrapper外层 -->
+		<div class="regular-title" style="height:0px;">
+			<!-- <span class="regularTitle">正在热卖</span>
+			<span><img style="width:0.2933rem;    margin-left: 0.13rem;margin-top:0.31rem;" src="../../images/pages/financing/float3.0/hot.png" alt=""></span>
+			<span class="regulartitle-p">双重收益，本金保护</span> -->
+		</div>
+		<div class="floatList">
+<!-- 			<div class="floatItem">
+				<div class="itemName">择时稳赢三期</div>
+				<div class="itemLeft">
+					<span class="title-top">预期年化收益率</span>
+					<span class="title-p">8.00%－33.00%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">210天</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">抢购</a>
+				</div>
+			</div> -->
+		</div>	
+		<div class="regular-title-past">
+			<span class="regularTitle-past">往期产品</span>
+			<span class="regulartitle-p-past">累计投资金额：3,000,000.15元</span>
+		</div>
+		<div class="floatList-past">
+<!-- 			<div class="floatItem stopItem">
+				<div class="itemName">择时稳赢二期</div>
+				<div class="itemLeft">
+					<span class="title-top">最新年化收益率</span>
+					<span class="title-p">8.00%－33.00%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">210天</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">已售停</a>
+				</div>
+			</div>
+			<div class="floatItem stopItem">
+				<div class="itemName">择时稳赢一期</div>
+				<div class="itemLeft">
+					<span class="title-top">最新年化收益率</span>
+					<span class="title-p">8.00%－33.00%</span>
+				</div>
+				<div class="itemCenter">
+					<span class="title-top">投资期限</span>
+					<span class="title-p">210天</span>
+				</div>
+				<div class="itemRright">
+					<a href="javascript:;" class="item-buy">已售停</a>
+				</div>
+			</div> -->
+		</div>		
+	</div>
+
+	<div class="ui-dialog ui-dialog-name backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未完成实名认证，请先完成实名认证</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+	       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="ui-dialog ui-dialog-trade backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未设置交易密码，请先设置交易密码</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+	       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="nav clearfix" id="navNew"></div>
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/float3.0.js?v=9.0.0"></script>
+	<script type="text/javascript">
+	(function() {
+		var el = document.querySelector('.regular');
+		var startPosition, endPosition, deltaX, deltaY, moveLength;
+
+		el.addEventListener('touchstart', function(e) {
+			var touch = e.touches[0];
+			startPosition = {
+				x: touch.pageX,
+				y: touch.pageY
+			}
+		});
+		
+		el.addEventListener('touchend', function(e) {
+			var touch = e.touches[0];
+			$(".test").css("left",0);
+		});
+
+		el.addEventListener('touchmove', function(e) {
+			var touch = e.touches[0];
+			endPosition = {
+				x: touch.pageX,
+				y: touch.pageY
+			}
+			deltaX = endPosition.x - startPosition.x;
+			deltaY = endPosition.y - startPosition.y;
+			moveLength = Math.sqrt(Math.pow(Math.abs(deltaX), 2) + Math.pow(Math.abs(deltaY), 2));
+			
+			$(".test").css("left",deltaX);
+			
+			// if(Math.abs(deltaX)>150){
+			// 	location.href="float.html";
+			// }else{
+				
+			// }
+			if(deltaX>100){
+				location.href="current.html";
+			}
+			if (deltaX< -100) {
+				// location.href="float.html";
+			}
+		});
+	})();
+	</script>
+	
+</body>
+</html>

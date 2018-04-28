@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>社区</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../tabBar/mui.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pages/explore.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pages/message/messages.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/pages/message/photo.css"/>-->
+</head>
+
+<style>
+    .mui-pull-bottom-tips {
+        text-align: center;
+    }
+</style>
+
+<body>
+<!--下拉刷新容器-->
+<div id="refreshContainer mui-slider-group mui-slider-group" class="mui-content mui-scroll-wrapper">
+    <div class="mui-scroll">
+        <!--数据列表-->
+        <ul class="mui-table-view mui-table-view-chevron " id="ul">
+            <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li> <li class="mui-table-view-cell">
+                第1个选项卡子项-1
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<!--<script src="../../js/lib/doT.min.js?v=9.0.0"></script>-->
+<script src="../../js/setting.js?v=9.0.0"></script>
+<!--<script src="../../js/common3.0.js?v=9.0.0"></script>-->
+<script src="../tabBar/mui.min.js"></script>
+<!--<script src="../../js/pages/message/messages3.0.js?v=9.0.0"></script>-->
+<!--<script src="../../js/lib/vue-resource.js"></script>-->
+<script src="../../js/mui.pullToRefresh.js"></script>
+<script src="../../js/mui.pullToRefresh.material.js"></script>
+<!--<script src="../../js/pages/message/photo.js?v=9.0.0"></script>-->
+<script>
+
+
+    mui.init();
+    (function($) {
+        //阻尼系数
+//        var deceleration = mui.os.ios?0.003:0.0009;
+        $('.mui-scroll-wrapper').scroll({
+            bounce: false,
+            indicators: true//是否显示滚动条
+//            deceleration:deceleration
+        });
+        $.ready(function() {
+            //循环初始化所有下拉刷新，上拉加载。
+            $.each(document.querySelectorAll('.mui-scroll'), function(index, pullRefreshEl) {
+                $(pullRefreshEl).pullToRefresh({
+                    down: {
+                        callback: function() {
+                            var self = this;
+                            setTimeout(function() {
+                                var ul = self.element.querySelector('.mui-table-view');
+                                ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+                                self.endPullDownToRefresh();
+                            }, 1000);
+                        }
+                    },
+                    up: {
+                        callback: function() {
+                            var self = this;
+                            setTimeout(function() {
+                                var ul = self.element.querySelector('.mui-table-view');
+                                ul.appendChild(createFragment(ul, index, 5));
+                                self.endPullUpToRefresh();
+                            }, 5000);
+                        }
+                    }
+                });
+            });
+            var createFragment = function(ul, index, count, reverse) {
+                var length = ul.querySelectorAll('li').length;
+                var fragment = document.createDocumentFragment();
+                var li;
+                for (var i = 0; i < count; i++) {
+                    li = document.createElement('li');
+                    li.className = 'mui-table-view-cell';
+                    li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+                    fragment.appendChild(li);
+                }
+                return fragment;
+            };
+        });
+    })(mui);
+
+</script>
+</body>
+
+</html>

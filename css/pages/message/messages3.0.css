@@ -1,0 +1,161 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 40px;
+}
+.messagelist{
+    background:#fff ;
+}
+.messagelist .wrapper{
+    width:100%;
+    background:#E7ECED;
+    height:100%;
+}
+.mui-slider {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+.messageTitle {
+    width: 100%;
+    height: 1.2rem;
+    background: rgba(255,255,255,0.9);
+    border-bottom: 0.04rem solid rgb(236,236,236);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#sliderSegmentedControl {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#active {
+    width: 50%;
+    height: 100%;
+    line-height: 1.2rem;
+    float: left;
+    font-size: 0.5rem;
+    text-align: center;
+    color: rgb(140,154,211);
+    border-right: 0.02rem solid rgb(236,236,236);
+    /*background: chartreuse;*/
+}
+
+#message {
+    width: 50%;
+    height: 100%;
+    line-height: 1.2rem;
+    float: left;
+    font-size: 0.5rem;
+    text-align: center;
+    color: rgb(55,78,171);
+}
+
+
+.messageContent {
+    width: 100%;
+    height: 100%;
+    margin-top: 0.1rem;
+    border-bottom: 0.02rem solid rgb(236,236,236);
+}
+
+.iframeMess {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/*
+* @Author: zyx
+*/
+
+.messageList .messageOne{
+    width: 100%;
+    height:1.8375rem;
+    background: #fff;
+    padding: 0.35rem 0.4rem;
+    box-sizing:border-box;
+    overflow-y: hidden;
+    border-bottom: 0.14rem solid rgb(236,236,236);
+
+}
+
+.imgli {
+    width: 100%;
+    height:1.8375rem;
+    background: #fff;
+    box-sizing:border-box;
+    overflow-y: hidden;
+    border-bottom: 0.14rem solid rgb(236,236,236);
+
+}
+
+.messageList .messageOne .imga {
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+
+.messageList li{
+
+    text-overflow:ellipsis;
+}
+.messageList li a{
+    display: block;
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+.messageInfo{
+    width:100%;
+    display: inline-block;
+    overflow-y: hidden;
+
+}
+
+.messageInfo h2{
+    width: 7rem;
+    font-size: 0.45rem;
+    color:rgb(51,51,51);
+    /*font-weight:bold;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.messageInfo p.detail{
+    height:0.825rem;
+    width: 7rem;
+    font-size: 0.378rem;
+    line-height:0.825rem;
+    color: rgb(153,153,153);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    /*font-family: 'PingFangSC-Regular ';*/
+}
+.messageInfo p.time{
+    height:0.5rem;
+    font-size: 0.34rem;
+    line-height:0.5rem;
+    color: rgb(153,153,153);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    text-align:right;
+}
+

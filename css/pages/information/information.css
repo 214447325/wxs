@@ -1,0 +1,40 @@
+ body{
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background:#f1f1f1;
+ }
+ .tab {
+      height: 1.1733333rem;
+      line-height: 1.1733333rem;
+      background:#fff;
+  }
+  .tab a.active {
+      color: #6C6FFF;
+      /*font-size: .453333rem;*/
+  }
+  .tab a {
+    text-align: center;
+    float: left;
+    width: 50%;
+    height: 100%;
+    color: #888;
+    font-size: .3733rem;
+    position: relative;
+  }
+  .underline {
+    width: 1.5rem;
+    height: 0.066666rem;
+    display: block;
+    background: #6C6FFF;
+    margin: 0 auto;
+    border-radius: 5px;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .wrapper{
+    height:92%;
+    margin-top: 0.26rem;
+  }

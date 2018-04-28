@@ -1,0 +1,57 @@
+/*
+* @Author: User
+* @Date:   2016-08-26 17:46:58
+* @Last Modified by:   User
+* @Last Modified time: 2016-08-26 18:55:05
+*/
+.iphoneActive{
+    position: relative;
+    overflow-y:scroll;
+}
+.iphoneActive .inviteBanner{
+    width:100%;
+    height:10rem;
+    background:  url(../../../images/pages/activity/head.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.active-p{
+	width: 100%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	padding-bottom: 1.8rem;
+}
+.active-p .p1{
+	font-size: 0.525rem;
+	color: #47381b;
+	font-weight: bold;
+	line-height: 1.125rem;
+}
+.active-p .p2{
+	font-size: 0.35rem;
+	line-height: 0.7rem;
+}
+.active-p img{
+	width: 100%;
+	height: auto;
+}
+.btns{
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
+	position: fixed;
+	bottom: 0;
+}
+.btns a{
+	display: block;
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	border: 0;
+}
+.btns a img{
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,31 @@
+/*
+* @Author: User
+* @Date:   2016-09-13 17:17:22
+* @Last Modified by:   User
+* @Last Modified time: 2016-09-13 17:21:27
+*/
+.bgblue{
+	background: rgb(55,78,171) url() 0 0 no-repeat;
+}
+.transaction-records .caption {
+    height: 1.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.475rem;
+    line-height: 1.25rem;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+/*     margin-bottom: 0.2rem; */
+    color: rgb(55,78,171);
+    background: #fff url() 0 0 no-repeat;
+}
+.transaction-records .caption a.back {
+    display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0.4140625rem;
+    top: .359375rem;
+}

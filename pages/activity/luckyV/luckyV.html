@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>幸运V榜单</title>
+    <script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/invite/newfriends.css">
+    <link rel="stylesheet" href="../../../css/pages/active/shareButton.css">
+    <style>
+    html,body{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        list-style:none;
+        overflow: auto;
+    }
+    .wrapper ::-webkit-scrollbar {
+      width: 0.133rem;
+      height: 12px;
+    }
+     
+    .wrapper ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal {
+      border-radius: 0.066rem;
+      background: #A7A7A7;
+    }
+     
+    .wrapper ::-webkit-scrollbar-button {
+      display: none;
+    }
+     
+    .wrapper ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+      background: -webkit-gradient(linear,left);
+    }
+     
+    .wrapper ::-webkit-scrollbar-track-piece {
+      background: #3E3E3E;
+      border-radius: 0.066rem;
+    }
+
+
+
+    img{
+        width:100%;
+        display:block;
+        list-style:none;
+        border:0;
+        margin:0;
+        padding:0;
+    }
+    .wrapper{
+        width:100%;
+        /*width:10rem;*/
+        height:100%;
+        /*overflow: auto;*/
+     /*   background:url(../../../images/pages/activity/luckyV/bak.png);
+        background-size:100% 100%;*/
+        /*background:#00052C;*/
+      /*  padding:0.4rem;
+        padding-bottom:0.8rem;*/
+    }
+    .luckyV{
+      width:100%;
+      /*width:10rem;*/
+      height:auto;
+      min-height:100%;
+      /*overflow: auto;*/
+      background:url(../../../images/pages/activity/luckyV/bak.png);
+      background-size:100% 100%;
+      /*background:#00052C;*/
+      padding:0.4rem;
+      padding-bottom:0.8rem;
+    }
+    .center-left{
+      width:50%;
+      float:left;
+      padding:0.2rem 1.1rem 0.2rem 1.7rem;
+    }
+    .center-right{
+      width:50%;
+      float:left;
+      padding:0.2rem 1.7rem 0.2rem 1.1rem;
+    }
+    .runing{
+      width:100%;
+      height:4.2rem;
+      background:url(../../../images/pages/activity/luckyV/runing.png);
+      background-size:100% 100%;
+      color:#fff;
+      padding:0.6rem;
+      font-size: 0.32rem;
+    }
+    .runingTitle{
+      font-size: 0.48rem;
+      text-align:center;
+    }
+    .waterspout{
+      padding:0.4rem 0 0.25rem 0;
+
+    }
+    .waterspout:before{
+      display:block;
+      content:"";
+      clear: both;
+    }
+    .waterspout:after{
+      display:block;
+      content:"";
+      clear: both;
+    }
+    .floatLeft{
+      float:left;
+    }
+     .floatRight{
+      float:right;
+    }
+    .waterspout-box{
+      background:#fff;
+      width:100%;
+      height:0.4rem;
+      border-radius:0.066rem;
+      overflow: hidden;
+    }
+    .waterspout-con{
+      width:0%;
+      height:0.4rem;
+      background:#2AC5FF;
+      border-radius:0.066rem;
+    }
+    .percentage{
+      width:10%;
+      text-align:right;
+      margin-top:0.2rem;
+    }
+    .text{
+      text-align:center;
+    }
+    .text span{
+      color:#FF7A99;
+    }
+    #button1{
+      width:6.08rem;
+      margin:0.66rem auto;
+    }
+    .rankingList{
+      width:100%;
+      height:10rem;
+      background:url(../../../images/pages/activity/luckyV/rankingList.png);
+      background-size:100% 100%;
+      color: #fff;
+    }
+    .rankingListTitle{
+      font-size:0.4rem;
+      text-align: center;
+      padding: 0.4rem;
+    }
+    .rankingListLogin{
+      font-size:0.3733rem;
+      text-align: center;
+      padding: 0.1rem;
+    }
+    .rankingListLogin span{
+      color:#3EA6FF;
+    }
+    .rankingListListTitle{
+      margin-top:0.4rem;
+      margin-right:0.4rem;
+      margin-left:0.6rem;
+    }
+    .rankingListListTitle div{
+      width:1.8rem;
+      display:inline-block;
+      height:0.5rem;
+      
+    }
+     .rankingListListTitle div:nth-child(3){
+      width:2.5rem;
+    }
+    .rankingListListTitle div:nth-child(4){
+      width:1.7rem;
+    }
+    .rankingListList{
+      display:inherit;
+      height:6.5rem;
+      color:#fff;
+      font-size:0.32rem;
+      margin-bottom:0.4rem;
+      margin-right:0.4rem;
+      margin-left:0.6rem;
+      overflow-y:auto;
+    }
+    .rankingListList tr{
+      height:0.5rem;
+    }
+    .rankingListList tr td{
+      width:1.8rem;
+      text-align: left;
+    }
+    .rankingListList tr td:nth-child(3){
+      width:3rem;
+    }
+    .rankingListList tr td:nth-child(4){
+      width:1.5rem;
+    }
+    .bottom img{
+      display:inline-block;
+    }
+    #button2{
+      width:3.52rem;
+      margin-left:0.56rem;
+    }
+     #button3{
+      width:3.52rem;
+      float:right;
+      margin-right:0.56rem;
+
+    }
+    .closeguize{
+      width:0.92rem;
+      height:0.92rem;
+      position:absolute;
+      right:0;
+      top:-0.8rem;
+    }
+    .bkgguize{
+      width:8rem;
+      height:70%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right:0;
+      bottom:0;
+      margin:auto;
+      padding:0.5rem;
+      background:url(../../../images/pages/activity/luckyV/bkgguize.png);
+      background-size:100% 100%;
+      font-size: 0.32rem;
+      color:#fff;
+    }
+    .content{
+      height:100%;
+      overflow: hidden;
+      text-align:justify;
+      padding: 0.4rem 0;
+
+    }
+    .content h2{
+      text-align:center;
+
+    }
+    .content-text{
+      height:78%;
+      width:100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+    }
+    .content-text div{
+      /*margin-top:0.2rem;*/
+      padding:0 0.4rem;
+    }
+    .guize{
+      display:none;
+    }
+    .bangdan{
+      display:none;
+    }
+    .bangdantitle{
+      width:4.1866rem;
+      margin:auto;
+    }
+    .fflinebox{
+      height:0.4rem;
+      box-sizing: border-box;
+    }
+    .ffline{
+      width:30%;
+      height:0.2233rem;
+      float:left;
+      border-bottom:0.0233rem solid #fff;
+    }
+    .fflineTitle{
+      text-align:center;
+      width:36%;
+      float:left;
+      margin:0px !important;
+    }
+    .fflineBigBox{
+      margin-bottom:0.4rem;
+      height:auto;
+    }
+    .fflineBigBox div{
+      /*text-align:center;*/
+    }
+    .fflineBigBox span{
+      color:#FF4A75;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+     <div class="luckyV">
+     <!-- <video id="videoMp4">
+        <source src="../../../images/pages/activity/luckyV/35e7e75c0fe06c6d56b7350eb730193b.mp4" type="video/mp4"></source>
+     </video> -->
+    <!-- one -->
+      <img src="../../../images/pages/activity/luckyV/main.png" alt="">
+      <!-- two -->
+      <div>
+        <div class="center-left">
+          <img src="../../../images/pages/activity/luckyV/center-left.png" alt="" id='share'>
+        </div>
+        <div class="center-right">
+          <img src="../../../images/pages/activity/luckyV/center-right.png" alt="" id='guizeButton'>
+        </div>
+      </div>
+      <!-- three -->
+      <div>
+        <img src="../../../images/pages/activity/luckyV/shuoming.png" alt="">
+      </div>
+      <!-- four -->
+      <div class="runing">
+        <div class="runingTitle">第1期</div>
+        <div class="waterspout">
+          <div class="floatLeft" style="width:0.7rem;">0张</div>
+          <div class="floatLeft" style="width:6.2rem;">
+            <div class="waterspout-box">
+              <div class="waterspout-con"></div>
+            </div>
+            <div class="percentage">0张</div>
+
+          </div>
+          <div class="floatRight">80张</div>
+        </div>
+        <div class="text">本期剩余抽奖券张数：<span>80</span>张（投资满<span>80</span>万元）</div>
+      </div>
+      <!-- five -->
+      <div>
+        <img src="../../../images/pages/activity/luckyV/button1.png" alt="" id="button1">
+      </div>
+      <!-- six -->
+      <div class="rankingList">
+          <div class='rankingListTitle'>投资英雄榜</div>
+          <div class="rankingListLogin"><span class="login">登录后</span>可查看您的排名</div>
+          <div class="rankingListListTitle">
+            <div>排名</div>
+            <div>姓名</div>
+            <div>手机号</div>
+            <div>抽奖券张数</div>
+          </div>
+          <table class="rankingListList">
+            <tbody>
+            </tbody>
+           
+          </table>
+      </div>
+      <!-- seven -->
+      <div class="bottom">
+        <img src="../../../images/pages/activity/luckyV/button2.png" alt="" id="button2">
+        <img src="../../../images/pages/activity/luckyV/button3.png" alt="" id="button3">
+      </div>
+      <!-- alert -->
+      <div class='ui-alert backdrop guize'>
+        <div class="bkgguize">
+          <div class="closeguize">
+            <img src="../../../images/pages/activity/luckyV/closeguize.png" alt="">
+          </div>
+          <div class="content">
+          <h2>活动规则</h2>
+          <div class="content-text" style="height:91%;">
+            <div>1.活动时间：2017.11.18至2017.12.06；</div>
+            <div>2.活动期间投资12周定期及以上产品可享受额外加息(详情可参见活动页面或理财列表)；</div>
+            <div>3.用户单笔投资12周定期及以上产品每满1万元即可获得一张抽奖券，每期满80张抽奖券，即开始下一期（如：当期剩下3张抽奖券，而您投资获得13张抽奖券，则其中10张计入下一期排名）；</div>
+            <div>4.每期设一名最佳投资奖（单期抽奖券张数排名第一且≥20张）：3000元现金红包，以及一名最佳幸运奖（随机抽取）：1000元现金红包</div>
+            <div>5.若当期的抽奖券张数排名出现重复的情况，按照第一笔投资时间先后顺序进行排序；</div>
+            <div>6.开奖方式和开奖结果：每一期标满的下一工作日通过“一直播”平台直播抽奖，确定本期的最佳幸运奖；</div>
+            <div>7.最佳投资奖在每期结束后2个工作日内派发至获奖人员的“账户-现金奖励”中，最佳幸运奖在直播结束后2个工作日内派发至获奖人员的“账户-现金奖励”中；</div>
+            <div>8.若活动结束当日，最后一期未满标，但第一名符合抽奖券张数≥20张的条件，则最佳投资奖和最佳幸运奖按比例（最后一期抽奖券张数之和/80）颁给相应获奖者；</div>
+            <div>9.本活动采取公平公开的方式颁布获奖名单,用户可在活动页面中查看；</div>
+            <div>10.活动期间可使用全程加息券、天数加息券、投资红包。</div>
+            <div>11.如有疑问，可拨打客服热线：4000-521-388（工作日9:00-18:00）。</div>
+          </div>
+
+          </div>
+        </div>
+    </div> 
+
+
+      <div class='ui-alert backdrop bangdan'>
+        <div class="bkgguize">
+          <div class="closeguize">
+            <img src="../../../images/pages/activity/luckyV/closeguize.png" alt="">
+          </div>
+          <div class="content">
+            <img src="../../../images/pages/activity/luckyV/bangdantitle.png" alt="" class="bangdantitle">
+            <div class="content-text" id='paimingList'>
+             <!--  <div class="fflineBigBox">
+                <div class='fflinebox'>
+                  <div class="ffline"></div>
+                  <div class="fflineTitle">第三期</div>
+                  <div class="ffline"></div>
+                </div>
+                <div style="font-size:0.32rem;">您此期排名为第<span>5</span>名</div>
+                <div style="font-size:0.2933rem;">最佳投资奖：<span>*杰 159****6666</span></div>
+                <div style="font-size:0.2933rem;">最佳幸运奖：<span>*杰 159****6666</span></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+  <script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+  <script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../../js/setting.js?v=9.0.0"></script>
+  <script src="../../../js/lib/md5.min.js?v=9.0.0"></script>
+  <script src="../../../js/common3.0.js?v=9.0.0"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+  <!-- <script src="../../../js/pages/invite/myInvite.js?v=9.0.0"></script> -->
+ <script src="../../../js/pages/activity/shareButton.js?v=9.1.0"></script>
+ <script src="../../../js/pages/activity/shareActivity.js?v=9.1.0"></script>
+ <script src="../../../js/pages/activity/luckyV/luckyV.js?v=9.1.0"></script>
+</body>
+</html>

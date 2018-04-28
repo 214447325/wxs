@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0"/>
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+	<script type="text/javascript" src="../../../js/lib/flexible.debug.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../../css/main.min3.0.css"/>
+	<link rel="stylesheet" href="../../../css/mui.min.css?v=9.0.0">
+	 <link href="../../../css/mui.picker.css" rel="stylesheet" />
+
+    <link href="../../../css/mui.poppicker.css" rel="stylesheet" />
+    <link href="../../../css/mui.dtpicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../../../css/pages/shoppingMall/map.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="mui-collapse-content">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>联系人</label>
+					<input id="name" type="text" placeholder="名字" maxlength="10">
+				</div>
+				<div class="mui-input-row">
+					<label>手机号码</label>
+					<input type="tel" id="phoneNum" class="mui-input-clear" placeholder="11位手机号" data-input-clear="3" maxlength="11"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+				</div>
+
+				<div class="mui-input-row mui-plus-hidden">
+					<label>选择地区</label>
+					<input type="text" id="address" class="mui-input-speech mui-input-clear" placeholder="地区信息" data-input-clear="4" data-input-speech="4" disabled="true"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+					<!-- <span class="mui-icon mui-icon-location"></span> -->
+					<img class="map" src="../../../images/pages/shoppingMall/map/map.png">
+					<div class="map2" style="width:65%;height:1.333rem;background:transparent;position: absolute;right:0;top:0;"></div>
+					
+				</div>
+
+				<div class="mui-input-row mui-plus-hidden" style="height:auto;">
+					<label>详细信息</label>
+					<textarea id="detailAddress" class="mui-input-speech mui-input-clear " placeholder="街道门牌信息" data-input-clear="4" data-input-speech="4" maxlength="15"></textarea><span class="mui-icon mui-icon-clear mui-hidden"></span>
+				</div>
+
+				<div class="mui-input-row mui-plus-hidden">
+					<label>邮政编码</label>
+					<input type="text" id="postcode" class="mui-input-speech mui-input-clear" placeholder="选填" data-input-clear="4" data-input-speech="4"><span class="mui-icon mui-icon-clear mui-hidden"></span>
+				</div>
+			
+				<div class="mui-input-row mui-plus-hidden switch">
+					<label>设为默认地址</label>
+					<div id="mySwitch" class="mui-switch mui-switch-mini mui-switch-green">
+					  <div class="mui-switch-handle"></div>
+					</div>
+				</div>
+
+				<div class="add addAddress">保存</div>
+			</form>
+
+			
+		</div>
+	</div>
+	<!-- <div class="myAddress-button">新增地址</div> -->
+
+
+
+
+	<script type="text/javascript" src="../../../js/lib/jquery-2.1.3.min.js"></script>
+	<script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+	<script src="../../../js/mui.min.js?v=9.0.0"></script>
+	<script src="../../../js/mui.poppicker.js"></script>
+	<script src="../../../js/mui.dtpicker.js"></script>
+	<script src="../../../js/mui.picker.js"></script>
+	<script src="../../../js/setting.js?v=9.0.0"></script>
+	<script src="../../../js/common3.0.js?v=9.0.0"></script>
+	<script src="../../../js/common2.js?v=9.0.0"></script>
+	<script src="../../../js/pages/shoppingMall/map/cityData.js?v=9.0.0"></script>
+	<script type="text/javascript" src="../../../js/pages/shoppingMall/map/editAddress.js?v=9.0.2"></script>
+</body>
+</html>

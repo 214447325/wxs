@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>  
+  <title>购买周周涨</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+</head>
+
+<style>
+  .page-buy .rechargeBtn{
+    display: block;
+    width:1.6rem;
+    height:0.8rem;
+    border: 1px solid #fff;
+    box-sizing:border-box;
+    border-radius:0.2rem;
+    text-align:center;
+    line-height:0.8rem;
+    float: right;
+margin-top:0.303125rem;
+  }
+  .page-buy .auto{
+    width:100%;
+    height:0.7rem;
+    padding: 0.2rem .4375rem   0;
+    font-size:0.5rem;
+    color: #fff;
+    box-sizing:border-box;
+    z-index:1;
+  }
+     .page-buy .auto p{
+      display: inline-block;
+      width:2.2rem;
+       height:0.5rem;
+  line-height:.5rem;
+      float: right;
+    }
+    
+      .page-buy .auto .automatic{
+   border-radius:0;
+   width:0.5rem;
+   height:0.5rem;
+   float: right;
+   background:#fff url(../../images/pages/buy7day_true.png) center center no-repeat;
+  background-size:cover;
+     }
+    
+   .page-buy .auto p1{
+      display: inline-block;
+      width:50%;
+       height:0.5rem;
+  line-height:.5rem;
+      float: left;
+    }
+     
+   .page-buy .auto .joinActive{
+   border-radius:0;
+   width:0.5rem;
+   height:0.5rem;
+   float: left;
+   background:#fff url(../../images/pages/buy7day_true.png) center center no-repeat;
+  background-size:cover;
+   }   
+     
+    
+.sevdaycontent{
+  width:100%;
+    height:2.95rem;
+   margin:0 auto;
+   position: relative;
+ margin-top:0.3rem; 
+   margin-bottom:0.3rem;
+}
+.sev{
+  display: none;
+}
+.page-buy  .trangle{
+    width:0.85rem;
+    height:1.375rem; 
+    background:#fff url(../../images/pages/buy7day_context_arrow.png) center center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top:0;
+  right:0.5rem;
+  z-index:3;
+  }
+     
+.page-buy  .sevday{
+    width:8.3125rem;
+    height:2.95rem;
+    background:#fff url(../../images/pages/financing/ha.png) center center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top:0;
+  left:50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+ }
+  
+  .page-buy .detail{
+    height: 0.8rem;
+    line-height: 0.4rem;
+    margin-right: 0.2rem;
+       border: none;
+       padding:0 0.5rem;
+       box-sizing: border-box;
+       font-size: 0.3rem;
+  }
+  .page-buy .ui-list{
+       border: none;
+  }
+     
+.maskLayer{
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top:0;
+  left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); 
+  display: none;
+  z-index:200;
+}
+ .maskLayer .juzhong{
+  width:100%;
+  height: 100%;
+  position:relative;
+}
+.bunus{
+  width:9rem;
+  height:14rem;
+  /*background: #f4f2e6;*/
+    background: none;
+    position: absolute;
+    bottom:1.109375rem;
+    left:50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%); 
+  font-size:0.4rem;
+  padding:0.35rem;
+  z-index:999;
+  
+}
+.bunus .close{
+  width:0.8rem;
+  height:0.8rem;
+  background:  url(../../images/pages/invite/p2-x.png) 0 0 no-repeat;
+  background-size:contain;
+  position: absolute;
+  top:0.45rem;
+  right:0.4rem;
+}
+.bunus h1{
+  font-size:0.6rem;
+  line-height:0.859375rem;
+  color:#fff;
+  width:7.1875rem;
+  height:0.859375rem;
+  background:  url(../../images/pages/invite/p2-4.png) 0 0 no-repeat;
+  background-size:contain;
+  margin:0 auto;
+  text-align:center;
+}
+span{
+  color:#ee5e00;
+}
+.page-buy .agreement{
+   display: block;
+   width:100%;
+   text-align:center;
+   font-size:0.35rem;
+   margin-top:0.25rem;
+     color: rgb(51,51,51);
+/* position: fixed;
+bottom:1.953125rem; */
+}
+.page-buy .agreement i{
+  font-style:normal;
+  color: rgb(55,78,171);
+}
+.page-buy .Bonusrules{
+  color: rgb(51,51,51);
+   font-size:0.305rem;
+
+}
+.page-buy .Bonusrules span{
+   color: rgb(55,78,171);
+}
+/* 新样式 */
+.my-product .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.475rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom:0.2rem;
+      color: rgb(55,78,171);
+      background: #fff url() 0 0 no-repeat;
+}
+.my-product .caption a.back{
+  display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+.my-product .caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+.page-buy .row {
+    margin:0;
+    border-bottom: 1px solid #dfdfdf!important;
+    padding-left:0.5rem;
+    box-sizing:border-box;
+    color: #333;
+    height: 1.025rem;
+    line-height: 1.025rem;
+    font-size: 0.35rem;
+    background: #fff url() 0 0 no-repeat;
+}
+.page-buy .row.top-row{
+margin-top:0.25rem;  
+}
+.page-buy .row.margin{
+margin-bottom:0.2rem;
+}
+.page-buy .row span,u{
+  color: #333;
+}
+.page-buy .row u{
+  text-decoration:none;
+  position:absolute;
+  right:0.5rem;
+    color: rgb(55,78,171);
+}
+.page-buy .row input.input{
+  width:5rem;
+  border: none;
+  height:100%;
+}
+  .page-buy .auto{
+    width:100%;
+    height:0.7rem;
+    padding: 0.2rem .4375rem   0;
+    font-size:0.5rem;
+    color: #333;
+    box-sizing:border-box;
+    z-index:1;
+  }
+    .page-buy .wrapper{
+      padding-bottom:0;
+    }
+    .page-buy .row .selfExtra{
+      font-size:0.35rem;
+      color:#999999;
+    }
+   .page-buy .row.row-invest{
+      color: rgb(55,78,171);
+      position:relative;
+    }
+   .page-buy .row.row-invest input{
+    width: 4rem;
+    border: none;
+    height: 0.9rem;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 0.9rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+      color:#333;
+    }
+    .page-buy .row.row-invest .full{
+       height: 1.025rem;
+    text-align:center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.025rem;
+    position: absolute;
+    right:0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+        color: rgb(55,78,171);
+      padding:0;
+      margin:0;
+    }
+/*     .page-buy .row.row-invest .full-after{
+             height: 1.025rem;
+    text-align:center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    line-height: 1.025rem;
+    position: absolute;
+    right:0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+      color:#ccc;
+      padding:0;
+      margin:0;
+    } */
+.page-buy .row .expectmoney{
+      color:#ef5344;
+}
+ .content-Img {
+      width: 100%;
+      height: 100%;
+  }
+  .page-buy .btn-box {
+    background: transparent;
+    height: 2.953125rem
+}
+.Joinactive{
+  width: 100%;
+  height: 0.8rem;
+ padding: 0 0.5rem;
+ box-sizing: border-box;
+ overflow: hidden;
+ z-index: 1;
+}
+.Joinactive .joinActive{
+  width: 0.5rem;
+  height: 0.5rem;
+  border: none;
+ margin-top: 0.1rem;
+ float: left;
+ /* background: transparent url(../../images/pages/financing/current3.0/ifJoin.png) 0 0 no-repeat; */
+ background: transparent url(../../images/pages/buy7day_bg.png) 0 0 no-repeat;
+ background-size: contain;
+}
+.Joinactive span{
+  display: inline-block;
+height: 0.8rem;
+color: rgb(153,153,153);
+  line-height: 0.8rem;
+  font-size: 0.325rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  float: left;
+   margin-left: 0.1rem;
+}
+.dialog-content .dialog-article p {
+    text-align: center;
+}
+</style>
+<body class="page-buy bg  my-product">
+  <div class="wrapper">
+<!--       <div class="caption">
+      <a href="javascript:;" class="back"></a>
+      购买周周涨
+      </div> -->
+      <div class="row last top-row">可投余额（元）：<span  class="amount">0.00</span></div>
+      <div class="row margin" >
+          账户余额（元）：<span  class="balanceAccount">0.00</span>
+        <a href="../my-account/topup-cash.html"><u>充值</u></a>
+      </div>
+      <div class="row margin row-invest">投资金额（元）：<!-- <span style="font-size: 14pt;" class="floatMoney">0.00</span> -->
+        <input type="number" placeholder="起投金额100"    class="input"  name="money">
+        <a class="full">全额购买</a>
+      </div>
+      <div class="row ">每月收益（元）：<span class="expectmoney">0.00</span></div>
+<!--       <div class="row  margin">活动奖励（元）：<span class="selfExtra" >勾选参加邀请活动会获得活动奖励</span></div> -->
+      <!-- 参加邀请活动 -->
+<!--          <div >
+         <input type="checkbox" checked="" id="joinActive"  class="joinActive" name="joinActiveChk">
+         <p1> </p1>
+         </div> -->
+<!--          <div class="Joinactive">
+                <input type="checkbox"  id="joinActive"  class="joinActive" name="joinActiveChk">
+                <span>参加邀请活动（起投金额1000元）</span>       
+         </div> -->
+
+
+
+<!--   <div class="detail" >
+          <div class="Bonusrules"   id="Bonusrules">该产品参加邀请好友活动，最高可获得1100元现金奖励具体查看奖励细则,<span> 查看具体奖励细则</span></div>
+  </div> -->
+
+    
+<!--     <div class="ui-list ">
+        <div class="public-title mt30"></div>
+        <ul></ul>
+    </div> -->
+
+<div class="maskLayer" id="maskLayer">
+   <div class="juzhong">
+          <div class="bunus" id="bunus">
+                   <img src="../../images/pages/sevenday/buy-sev.png" class="content-Img">
+        </div>
+   </div>
+</div>
+
+  </div>
+
+  
+  <div class="btn-box tc">
+    <a href="javascript:;" class="btn btn-default pay-money">立即抢购</a>
+    <a class="agreement"   href="javascript:;">购买即同意<i>《周周涨产品投资协议》</i></a> 
+  </div>
+
+<div class="ui-dialog backdrop hide">
+      <div class="dialog-content">
+            <a href="javascript:;" class="close dialog-close"></a>
+            <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+            <div class="dialog-article"> <!-- 内容 -->
+                  <p>余额不足请前往充值</p>
+            </div>
+            <div class="tc btn-box1  "><!-- 按钮 -->
+                  <a href="javascript:;" class="btn btn-link btn-sm " >确认</a>
+                  <a href="javascript:;" class="btn btn-default btn-sm ">取消</a>
+            </div>
+      </div>
+</div>           
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/moment.js"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.1"></script>
+  <script src="../../js/pages/financing/currentbuy3.0.js?v=9.0.0"></script>
+</body>
+</html>

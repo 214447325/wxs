@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title>累计收益详情</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+</head>
+<style>
+	.addup{
+		width: 100%;
+		height: 1.52rem;
+		background: #fff url() 0 0 no-repeat;
+		line-height: 1.52rem;
+		color: rgb(51,51,51);
+		text-align: center;
+	}
+	.p1{
+		font-size: 0.32rem;
+	}
+	.p2{
+		font-size: 0.75rem;
+	}
+	.prop{
+		white-space:pre;
+	}
+	.legendStyle{
+		width:6rem;
+		margin:0 auto;
+		color:#000;
+		font-size:0.32rem;
+	    line-height:0.73rem;
+		clear:both;
+	}
+	.legendStyle span{
+		display:inline-table;width:0.2rem;height:0.2rem;vertical-align:middle;border-radius:50%;margin-right:0.1533rem;
+	}
+	tspan{
+		stroke:transparent;
+	}
+
+</style>
+<body >
+	<div class="wrapper"><!-- wrapper外层 -->
+		<p class="addup p1">累计收益(元)</p>
+		<p class="addup p2"></p>
+		<div id="portfolioChart" style="height: 6.12rem;margin-bottom:2rem;"></div>
+		<div id="chartLegend"></div>
+	</div>
+
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/highcharts.js"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/pages/my-account/addupIncome.js?v=9.0.1"></script>	
+</body>
+</html>

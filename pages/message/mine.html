@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<title>个人设置</title>
+	<script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+	<link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/pages/explore.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/pages/message/mine.css" />
+	<script src="../../js/lib/vue.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+		<!--主界面部分-->
+		<!--<div class="mui-inner-wrap">-->
+			<!--<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">-->
+				<!--<div class="mui-scroll">-->
+					<ul>
+						<li class="user_li" onsubmit="return saveReport();">
+							<form id="imageForm" enctype="multipart/form-data" action="https://bbsweb.wdclc.cn/pic/upload.do" method="POST" >
+								<a href="javascript:;" class="a-upload" >
+                                    <div>头像</div>
+									<input id="inputImg" type="file" name="uploadFile" multiple>
+									<img id="userImg"/>
+                                    <div class="mineIcon"></div>
+                                    <!--<div class="update_head">-->
+                                        <!--更换头像&nbsp;&nbsp;<span class="update_head_span"></span>-->
+                                    <!--</div>-->
+								</a>
+							</form>
+						</li>
+                        <li>
+                            <div>绑定手机号</div>
+                            <div id="userNumber"  class="mineFont"></div>
+                            <div class="mine-icon"></div>
+                        </li>
+
+                        <li class="li-btn">
+                            <a class="libtn" href="javascript:;">退出账户</a>
+                        </li>
+                        <!--<div class="distance"></div>-->
+						<!--<li class="mui-table-view-cell mui-media" id="reviseName">-->
+                            <!--<div class="mui-media-body  mui-pull-left" style="padding: 10px 0px;" >-->
+                                <!--<label class="mineLeft" class="mui-input-speech mui-input-clear">昵称</label>-->
+                            <!--</div>-->
+                            <!--<div class="mui-media-body  mui-pull-right">-->
+                                <!--<span class="mineFont" id="userName1"></span>-->
+                                <!--<span class="update_head_span">></span>-->
+                            <!--</div>-->
+						<!--</li>-->
+						<!--<li class="mui-table-view-cell mui-media">-->
+                            <!--<div class="mui-media-body  mui-pull-left" style="padding: 10px 0px;">-->
+                                <!--<label class="mineLeft">手机号</label>-->
+                            <!--</div>-->
+                            <!--<div class="mui-media-body  mui-pull-right">-->
+                                <!--<span id="userNumber"  class="mineFont"></span>-->
+                                <!--<span class="update_head_span"></span>-->
+                            <!--</div>-->
+						<!--</li>-->
+						<!--<li id="offCanvasShow" type="button" class="mui-table-view-cell mui-media"  style="border-bottom: none !important;">-->
+							<!--<div id="load" class="mui-media-body  mui-pull-left" style="padding: 10px 0px;">-->
+								<!--<label class="mineLeft">我的收藏</label>-->
+							<!--</div>-->
+							<!--<div class="mui-media-body  mui-pull-right">-->
+								<!--<span v-text="mine.tel"  class="mineFont"></span>-->
+                                <!--<span class="update_head_span">></span>-->
+							<!--</div>-->
+						<!--</li>-->
+					</ul>
+					<!--<div class="mui-input-row mui-radio mui-hidden" id="move-togger"></div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="mui-off-canvas-backdrop"></div>-->
+		<!--</div>-->
+	</div>
+</div>
+	<script src="../../js/lib/jquery-2.1.3.min.js"></script>
+	<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+	<script src="../../js/setting.js?v=9.0.0"></script>
+	<script src="../../js/common3.0.js?v=9.0.0"></script>
+	<script src="../../js/common2.js?v=9.0.0"></script>
+	<script src="../../js/mui.min.js"></script>
+	<!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+	<script src="../../js/lib/vue-touch.js"></script>
+	<script src="../../js/lib/vue-resource.js"></script>
+	<script src="../../js/mui.pullToRefresh.js"></script>
+	<script src="../../js/mui.pullToRefresh.material.js"></script>
+	<script src="../../js/pages/message/mine.js"></script>
+	<script src="../../js/lib/jquery.form.js"></script>
+</body>
+</html>

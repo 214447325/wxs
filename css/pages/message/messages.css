@@ -1,0 +1,222 @@
+
+html{
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 98%;
+    overflow: hidden;
+}
+
+.messageList li {
+    overflow-y: hidden;
+    /*height: 11.3rem;*/
+    padding-top: 0.3rem;
+    height: auto;
+}
+
+.actli {
+    width: 100%;
+    background: #ffffff;
+}
+
+.actli .div_content {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.actli .div_content .top {
+    width: 100%;
+    height: 1rem;
+}
+
+.icon {
+    width: 1rem;
+    height: 100%;
+    float: left;
+}
+
+.actImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.iconUser {
+    width: 6rem;
+    height: 100%;
+    float: left;
+    margin-left: 0.3rem;
+}
+
+.read {
+    width: 1.2rem;
+    height: 100%;
+    float: left;
+    border: 1px solid #d5dade;
+    color: rgb(153,153,153);
+    font-size: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.readCount {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+
+.readContent {
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.3rem;
+    text-align: center;
+}
+
+.userName {
+    width: 100%;
+    height: 0.6rem;
+    font-size: 0.4rem;
+    color: #000000;
+    font-weight: bold;
+    line-height: 0.6rem;
+}
+
+.userTime {
+    width: 100%;
+    height: 0.4rem;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: rgb(153,153,153);
+}
+
+.middle {
+    width: 100%;
+    /*height: 4.35rem;*/
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+
+.middleContent {
+    width: 100%;
+    font-size: 0.3rem;
+    color: #000000;
+    line-height: 0.5rem;
+}
+
+.middleContent span {
+    width: 100%;
+    height: 0.6rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #000000;
+    line-height: 0.6rem;
+}
+
+.middleContent img {
+    width: 200px !important;
+    height: 100px !important;
+    margin-top: 0.2rem;
+    float: left;
+    /*height: 5.5rem;*/
+}
+
+.div_content .bottom {
+    width: 100%;
+    height: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.comments {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    font-size: 0.38rem !important;
+}
+
+.praises {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    font-size: 0.38rem !important;
+}
+
+.collection {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    font-size: 0.38rem !important;
+}
+
+.commentImg {
+    width: 0.4rem !important;
+    height: 0.4rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.praiseImg {
+    width: 0.6rem !important;
+    height: 0.6rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.div01 {
+    width: 1.5rem;
+    height: 0.9rem;
+    margin: 0 auto;
+    margin-left: 1.1rem;
+}
+
+.comment {
+    float: left;
+    color: #000000;
+    margin-top: 0.15rem;
+    margin-left: 0.1rem;
+}
+
+.praise {
+    float: left;
+    color: #000000;
+    margin-top: 0.15rem;
+    margin-left: 0.1rem;
+}
+
+.likeTotal {
+    color: rgb( 255,131,86);
+}
+
+
+.endli {
+     position: relative;
+ }
+
+.endAct {
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    opacity: 0.6;
+}
+
+.endActicon {
+    width: 1.2rem;
+    height: 1.7rem;
+    background: url(../../../images/pages/activityOver/Rectangle33@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 0.45rem;
+    text-align: center;
+    padding-top: 0.1rem;
+    line-height: 0.6rem;
+    right: 0.5rem;
+}
+
+#activeMess {
+    position: relative;
+}

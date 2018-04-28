@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+	<title>红包欢乐颂</title>
+	<script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+	 <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/invite/newfriends.css">
+    <link rel="stylesheet" href="../../../css/pages/active/shareButton.css">
+	<link rel="stylesheet" href="../../../css/pages/activity/redPacket/redPacket.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top-warpper">
+		  	<div class="top-botton">
+		  		<div id="share">立即分享</div>
+		  		<div class="rule">活动规则</div>
+		  	</div>
+		</div>
+		<div class="centter">
+			<div class="centter-box">
+				<div style="text-align:center;">年化投资金额 - 年化退出金额 = 年化新增投资</div>
+				<div class="dataMoney">
+					<div class="money">0</div>
+					<div>-</div>
+					<div class="money">0</div>
+					<div>=</div>
+					<div class="money red">0</div>
+				</div>
+				<img src="../../../images/pages/activity/redPacket/tips-line.png" alt="" class="boxImg">
+				<div class='box-rule'>
+					<div>1.年化投资金额=投资金额*投资产品期限(天)/365；</div>
+					<div>2.年化退出金额=到期退出金额*投资产品期限(天)/365。</div>
+					<div>3.目前现金红包=年化新增投资/1000*10(小于10元不予发放)</div>
+				</div>
+			</div>
+		</div>
+		<div class="redPacket-box">
+			<div class="redPacket">
+				<div class="noMoney">暂无奖励，快去投资吧</div>
+				<div class="redMoney">0.00<div>元</div></div>
+				<div class="title">目前现金红包</div>
+			</div>
+
+		</div>
+		<div>
+			<a class="button" href="../../../pages/financing/regular.html">立即投资</a>
+		</div>
+		<!-- alert -->
+	    <div class='ui-alert backdrop guize'>
+	        <div class="bkgguize">
+	          <div class="closeguize"></div>
+	          <div class="content">
+		          <div class="content-text" style="height:100%;">
+		          	<img src="../../../images/pages/activity/redPacket/alert-title.png" alt="" class="alert-title">
+					<div>1.活动时间：即日起至2017.12.05；</div>
+					<div>2.活动期间，任意定期产品（新手标除外）年化新增投资每达1000元(低于1000元无奖励)，即可获得10元现金红包，上不封顶；</div>
+					<div>3.年化新增投资=活动期间年化投资金额-活动期间年化退出金额（算法见活动页面，所有金额仅保留2位小数，不进行四舍五入）；</div>
+					<div>4.现金红包将在活动结束后2个工作日内放入您的“账户-现金奖励”中；</div>
+					<div>5.活动期间可使用全程加息券、天数加息券、体验金、投资红包；</div>
+					<div>6.该活动与幸运V榜单活动并行；</div>
+					<div>7.如有疑问，请拨打客服热线4000-521-388（工作日9：00-18：00）。</div>
+		          	<img src="../../../images/pages/activity/redPacket/alert-gongshi.png" alt="" class="alert-gongshi">
+		          	<div>举例：</div>
+					<div>a.活动期间，A用户有10000元4周定期产品到期退出，另A用户投资10000元52周定期产品，则A用户可获得现金红包奖励:(10000*52*7/365-10000*4*7/365)/1,000*10=92.05元；</div>
+					<div>b.活动期间，B用户无产品到期退出，另B用户投资10000元52周定期产品，即B用户可获得现金红包奖励:(10000*52*7/365)/1000*10=99.72元；</div>
+					<div>c.活动期间，C用户有10000元26周定期产品到期退出，另C用户投资2000元52周定期产品，由于活动期间年化投资金额(2000*52*7/365=1994.52元)&lt;活动期间年化退出金额(10000*26*7/365=4986.30元)，故C用户不能得到奖励。</div>
+		          </div>
+
+	          </div>
+	        </div>
+	    </div> 
+	</div>
+	<script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  	<script src="../../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+  	<script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+  	<script src="../../../js/setting.js?v=9.0.0"></script>
+  	<script src="../../../js/lib/md5.min.js?v=9.0.0"></script>
+  	<script src="../../../js/common3.0.js?v=9.0.0"></script>
+  	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+ 	<script src="../../../js/pages/activity/shareButton.js?v=9.1.0"></script>
+ 	<script src="../../../js/pages/activity/shareActivity.js?v=9.1.0"></script>
+ 	<script src="../../../js/pages/activity/redPacket/redPacket.js?v=9.1.0"></script>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>浮动产品详情</title>
+  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../css/main.min.css?v=9.0.0">
+</head>
+<style>
+  .product-info .tab-info a {
+    width: 33.333333%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: .375rem;
+    color: #333;
+}
+  .product-info{
+  background:#efefef url() 0 0 no-repeat;
+}
+.product-info  .title{
+  width:100%;
+  height:1rem;
+  line-height:1rem;
+  padding: 0 0.5rem;
+  box-sizing:border-box;
+  color:red;
+  font-size:0.4rem;
+  font-weight:600;
+  background: #fff url() 0 0 no-repeat;
+  overflow:hidden;
+  z-index:1;
+  margin-top: 0.3rem;
+  margin-bottom:0;
+ border-bottom: 1px solid  #efefef;
+  text-align:left;
+}
+.product-info  .titlebg1{
+  height:3rem;
+    background: #fff url(../images/pages/financing/chan-4-bg.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+
+.product-info  .titlebg2{
+  height:3.5rem;
+    background: #fff url(../images/pages/financing/chan-5-bg.png) right 0 no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.product-info  .titlebg3{
+  height:3rem;
+    background: #fff url(../images/pages/financing/bg-xin.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info  .titlebg4{
+  height:2.225rem;
+    background: #fff url(../images/pages/financing/qixian2.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info  .titlebg5{
+  height:2.225rem;
+    background: #fff url(../images/pages/financing/baozhang2.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info  .titlebg6{
+  height:2.2875rem;
+  height:3.325rem;
+    background: #fff url(../images/pages/financing/zuhe2.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info  .titlebg7{
+  height:2.5rem;
+    background: #fff url(../images/pages/financing/jixi2.png) right 0 no-repeat;
+    background-size:contain;
+    position: relative;
+}
+.product-info .titlebg1 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info  .titlebg2  .doorsillWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+     background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+    left:1.325rem;
+}
+.product-info  .titlebg3  .wayWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+     background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+}
+.product-info .titlebg1 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info .titlebg4 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info .titlebg5 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info .titlebg6 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info .titlebg7 .jixiWord{
+  padding:0;
+    font-weight:normal;
+    font-style:normal;
+    background: transparent url() 0 0 no-repeat;
+    position: absolute;
+    top:1.3rem;
+
+}
+.product-info .titlebg1 .line,.product-info .titlebg2 .line,.product-info .titlebg3 .line{
+   width:60%;
+   height:1px;
+    border-bottom: 1px solid #efefef;
+   position: absolute;
+   top:1rem;
+   left:0;
+ }
+.product-info  .illustrate{
+  color:#fab13b;
+}
+.product-info  .income{
+  color:#fe7a78;
+}
+.product-info  .how{
+  color:#ef753f;
+}
+.product-info  .jixi{
+  color:#8bbc5b;
+}
+.product-info  .doorsill{
+  color:#35c4c7;
+}
+.product-info  .way{
+  color:#3a70af;
+}
+.product-info  .fee{
+color:#35c4c7;
+}
+.product-info  .calculation{
+color:#ff6893;
+}
+.product-info  .deadline{
+color:#f27441;
+}
+.product-info  .baozhang{
+color:#a1da67;
+}
+.product-info  .zuhe{
+color:#48aeff;
+}
+/* .product-info  .fee{
+color:#35c4c7;
+}
+.product-info  .fee{
+color:#35c4c7;
+} */
+.illustrate i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:  url(../images/pages/financing/chan-1.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.income i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-2.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.how i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-3.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.jixi i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/chan-4.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.calculation i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/jixi.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.deadline i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/qixian1.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.baozhang i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/baozhang1.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.zuhe i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background:url(../images/pages/financing/zuhe1.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.doorsill i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/chan-5.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.way i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/an-6.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.fee i{
+  display: block;
+  float: left;
+  width:0.546875rem;
+  height:0.546875rem;
+background: url(../images/pages/financing/an-5.png) center center no-repeat;
+-webkit-background-size: contain;
+background-size: contain;
+margin-top:0.25rem;
+margin-right: 0.25rem;
+}
+.an1 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-1.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an2 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-2.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an3 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-3.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+.an4 i{
+  width:0.546875rem;
+  height:0.546875rem;
+  background: url(../images/pages/financing/an-4.png) center center no-repeat;
+  -webkit-background-size: contain;
+background-size: contain;
+}
+
+.feeWord,.wayWord,.doorsillWord,.jixiWord,.howWord,.incomeWord,.illustrateWord{
+  width:100%;
+
+  padding: 0.3rem 0.5rem;
+  box-sizing:border-box;
+  background: #FFF url() 0 0 no-repeat;
+  font-size:0.35rem;
+  line-height:0.5rem;
+  color:#666;
+}
+.time .special{
+  display: inline-block;
+  font-size:0.35rem;
+  line-height:2;
+  font-style:normal;
+font-weight:bold;
+color:#333;
+}
+.product-info .problem .title1{
+    background-color: #FFF;
+    height: 1.09375rem;
+    border-top: 1px solid #dfdfdf;
+    line-height: 1.09375rem;
+    font-size: .34375rem;
+    color: #333;
+    padding: 0 1.25rem 0 .359375rem;
+    position: relative;
+}
+.performance-wrap{
+  width: 100%;
+  background: #fff url() 0 0 no-repeat;
+}
+.performance{
+	width:92%;
+	height:7.5rem;
+  box-sizing:border-box;
+	margin:.1rem auto;
+	box-sizing:border-box;
+	background: #fff url(../images/pages/financing/u302.png) center 0.3rem no-repeat;
+	background-size:contain;
+	-moz-columns: contain;
+	-o-columns: contain;
+	columns: contain;
+}
+.pic-detail{
+	width:92%;
+	font-weight:200;
+	color:#666;
+	font-size:0.325rem;
+	margin:.1rem auto;
+  line-height: 2;
+}
+
+.problem .title1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: .703125rem;
+    margin-top: -.203125rem;
+    background: url(../images/pages/problem/arrow.png) no-repeat;
+    background-size: 100% 100%;
+    width: .390625rem;
+    height: .390625rem;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+.problem .title1:after {
+    background: url(../images/pages/problem/arrow.png) no-repeat center center;
+    width: .5rem;
+    height: .5rem;
+    background-size: .390625rem .390625rem;
+}
+.problem .item.active .title1:after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+</style>
+<body class="financing product-info">
+  <div class="wrapper">
+    <div class="tab-info"> 
+      <a href="javascript:;" class="active" data-target="info">产品介绍</a>
+      <a href="javascript:;" data-target="historical">历史业绩</a>
+      <a href="javascript:;" data-target="safemode">常见问答</a>
+
+    </div>
+
+  <div class="tab-container">
+ 
+        <div class="block-items info  ">
+        
+        <div class="title illustrate"><i></i>产品说明</div>
+ <div class="illustrateWord">
+  <p>V金融金融团队倾力推出的一款“基础收益+浮动收益”类产品，投资者无需学习金融产品知识，即可一步完成资产配置。该产品通过平台专业化的资产管理能力，对接海量金融资产，包含资管计划、分级基金、FOF基金、对冲基金等。提供简单、无门槛的投资组合产品，帮助投资人参与股权、股票、债权市场的投资。</p>
+ </div>
+
+ <div class="title income"><i></i>产品收益</div>
+ <div class="incomeWord">
+  <p>基础收益+浮动收益，8%+(0%~25%)</p>
+ </div>
+
+   <div class="title jixi calculation titlebg titlebg7"><i></i>计息方式
+    <div class="line"></div>
+   <div class="jixiWord">
+  <p>（到期时净值-买入时净值）*购买份数</p>
+   </div>
+   </div>
+
+   <div class="title jixi deadline titlebg titlebg4"><i></i>产品期限
+    <div class="line"></div>
+   <div class="jixiWord">
+  <p>210天</p>
+   </div>
+   </div>
+
+<div class="title jixi baozhang titlebg titlebg5"><i></i>保障方式
+    <div class="line"></div>
+   <div class="jixiWord">
+  <p>本金保护+基础收益保障</p>
+   </div>
+   </div>
+
+   <div class="title jixi menkan titlebg titlebg1"><i></i>投资门槛
+    <div class="line"></div>
+   <div class="jixiWord">
+  <p>5000份起购，购买初始净值为1.0</p>
+   </div>
+   </div>
+
+   <div class="title doorsill titlebg  titlebg2"><i></i>赎回方式
+      <div class="line"></div>
+    <div class="doorsillWord">
+  <p>购买后至到期日之间无法赎回，<br>到期后一次性返还本金和收益</p>
+   </div>
+   </div>
+
+<div class="title jixi zuhe titlebg titlebg6"><i></i>资产组合
+    <div class="line"></div>
+   <div class="jixiWord">
+  <p>固定收益为个人借贷， 保障投资者<br>基础收益；<br> 浮动收益为各类金融资产</p>
+   </div>
+   </div>
+
+<!--   <div class="title way  titlebg titlebg3"><i></i>费用
+     <div class="line"></div>
+  <div class="wayWord">
+  <p>目前平台的申购、赎回不收取任何费用</p>
+   </div>
+   </div> -->
+  
+
+ <!--          <div class="title fee"><i></i>7天乐如何能收到12.08%的高收益</div>
+ <div class="feeWord">
+  <p>V金融风控内审团队，由数位多年金融行业精英组成，<br>该团队成员来自银行、券商</p>
+   </div> -->
+  </div>
+
+<!--             <div class="block-items safemode hide">
+              <div class="title illustrate  an1"><i></i>我的资金投向哪里？</div>
+ <div class="illustrateWord">
+  <p>1、 小额信贷
+专注于小额分散微金融模式，拥有严格的投行计量模型和严谨的风控系统，多重筛选借款项目。<br>
+2、  采用P2F模式，投资大型金融机构产品
+我们选择正规银行、证券、保险等大型金融机构的金融产品，利用金融机构自身强大的抗风险能力及成熟的风控体系，产品历史兑付率接近100%。
+</p>
+ </div>
+
+ <div class="title income an2"><i></i>项目资产如何挑选？</div>
+ <div class="incomeWord">
+  <p>我们利用品牌渠道从海量的金融产品中进行组合、筛选，凭借专业优势进行时机的把握，为投资人提供专业定制级理财产品投资服务。<br>
+信托：银监会监管，银行级风控标准，兑付有保障，历史违约率接近为零，收益稳定。<br>
+基金：证监会监管，协会备案，资金由银行托管，专选中间级份额，高收益低风险。<br>
+证券：证监会监管，协会备案，资金由银行托管，挑选固定收益和优先级份额产品，收益稳风险低。
+</p>
+ </div>
+
+ <div class="title how an3"><i></i>产品如何审核？</div>
+ <div class="howWord">
+  <p>V金融风控内审团队，由数位多年金融行业精英组成，该团队成员来自银行、券商、基金公司等多家金融机构。审核项目资产的所有资料，保证合作机构提供资料的真实可信，并对投资时机进行把握，帮助投资人实现收益最大化。</p>
+   </div>
+
+    <div class="title deadline an4"><i></i>智能分散投资</div>
+ <div class="deadlineWord">
+  <p>传统方式购买金融机构的理财产品，只能逐次购买，很难分散。但在V金融购买投资产品，您的每一笔资金，我们帮您做了智能分散投资，为您最大化规避风险。</p>
+   </div>
+
+   <div class="title doorsill"><i></i>收益如何保障？</div>
+ <div class="doorsillWord">
+  <p>1、 金融机构保证兑付
+V金融和大型正规金融机构合作（P2F模式），通过金融机构21层专业风控及自有的360度风控内审团队的审核，使资产达到了银行级别的安全。从合作金融机构的历史数据来看，兑付率接近100%。<br>
+2、  风险备付金
+V金融在自有资金中划拨相应的起始资金存放于风险备付金账户中。平台每次募集资金，都提取0.1%的成交金额放入风险备付金账户。
+  </div>
+
+      <div class="title way"><i></i>资金保证如何安全？</div>
+ <div class="wayWord">
+  <p>1、 银行级技术安全V金融采用银行级别的核心功能，分布式构架，全程加密，系统隔离，安全监测，低出错率，高安全性。</p>
+   </div>
+
+          
+    </div> -->
+         <div class="block-items historical hide" >
+         <div class="picture">
+         <div class="performance-wrap">
+        <div class="performance"></div>
+        </div>
+        <p class="pic-detail"> 
+        该图为择时稳赢2月产品至今的净值走势图，橙色线为上证指数同期走势。该产品最新净值为1.14，年化收益率为28.32%，大幅跑赢各类同期沪深股指。</p>
+          </div>
+  </div>  
+
+     <div class="block-items safemode problem hide" onload="jump()">
+        <div class="item ">
+      <div class="title1" id="jump22">1、什么是浮动收益？</div>
+      <div class="content"><p>浮动收益产品的收益采用“固定+浮动”的模式，固定收益给到用户稳定的基础收益，保障您的本金和基础收益。浮动收益则根据所投资产的净值表现分配收益。</p></div>
+    </div>
+    <div class="item ">
+      <div class="title1" id="jump23">2、浮动收益投资对象是什么？</div>
+      <div class="content"><p>固定收益资产组合：主要专注于小额分散微金融模式，拥有严格的投行计量模型和严谨的风控系统，多重筛选借款项目。浮动收益资产组合：我们选择正规银行、证券、保险等大型金融机构的金融产品，利用金融机构自身强大的抗风险能力及成熟的风控体系，产品历史兑付率接近100%。</p></div>
+    </div>
+    <div class="item ">
+      <div class="title1" id="jump24">3、收益是怎么计算的？</div>
+      <div class="content"><p>收益采用到期一次性还本付息的方式，计算方式为（到期时净值-买入时净值）*购买本金，到期日第二天将收益和本金返还到您的可用余额中。</p></div>
+    </div>
+    <div class="item ">
+      <div class="title1" id="jump25">4、净值如何查询？</div>
+      <div class="content"><p>可以前往“我的账户-我的浮动收益”查看自己所购买产品净值走势。</p></div>
+    </div>
+    <div class="item ">
+      <div class="title1" id="jump26">5、产品到期后如何提现？</div>
+      <div class="content"><p>产品到期后您可以在可用余额中查询到本次投资的收益和本金，申请提现可将资金提现至您的银行卡中。</p></div>
+    </div>
+    <div class="item ">
+      <div class="title1" id="jump26">6、净值多久更新一次？</div>
+      <div class="content"><p>净值一个月更新一次。</p></div>
+    </div>
+  </div>  
+  <script type="text/javascript">
+	  function GetQueryString(name)
+	  {
+	       var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	       var r = window.location.search.substr(1).match(reg);
+	       if(r!=null)return  unescape(r[2]); return null;
+	  }
+	  function jump(){
+		  var jumpNo = GetQueryString("jumpNo");
+		  var node = document.getElementById("jump"+jumpNo).click();
+		  alert(node.id);
+	  }
+	   
+  </script>
+</div>  
+  <script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../js/setting.js?v=9.0.0"></script>
+  <script src="../js/common.js?v=9.0.0"></script>
+  <script src="../js/pages/float-problem.js?v=9.0.0"></script>
+  <script src="../js/pages/financing/product-info3.js?v=9.0.0"></script>
+</body>
+</html>

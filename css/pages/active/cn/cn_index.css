@@ -1,0 +1,76 @@
+body {
+     background: #7CEDFA;
+ }
+
+.header {
+    width: 100%;
+    height: 16rem;
+    background: url(../../../../images/pages/activity/cn/index-header.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.center {
+    width: 100%;
+    height: 2.5rem;
+    background: url(../../../../images/pages/activity/cn/index-center.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 6.25rem;
+    background: url(../../../../images/pages/activity/cn/index-footer.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.footerButton {
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    background:#FF5400;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5rem;
+    font-size: 0.5rem;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}

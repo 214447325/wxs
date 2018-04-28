@@ -1,0 +1,93 @@
+.icon-d {
+    float: right;
+    margin-right: 0;
+    position: relative;
+    text-align: right;
+    font-size: 0.38rem;
+}
+
+.wrapper > .ui-list > ul > .about-li {
+    width: 100%;
+    height: 4rem;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.wrapper > .ui-list > ul > .about-li > div {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../../../images/pages/my-account3.0/vimg/logo@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 1.25rem;
+}
+
+.setting-center .ui-list li i {
+    font-size: 0.38rem;
+}
+
+.about-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about-div {
+    width: 9rem;
+    height: 5.1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5.1rem;
+    margin: 0 auto;
+    z-index: 11;
+}
+
+.about-div > div {
+    width: 100%;
+    height: auto;
+    background: rgba(252,252,252,0.80);
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.about-div > div > div:nth-child(1) {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid  rgba(255,255,255,0.50);
+    font-size: 0.6rem;
+    color: #0076FF;
+}
+
+.about-div > div > div:nth-child(2) {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color:  #4A4A4A;
+}
+
+.aboutbtn {
+    width: 100%;
+    height: 1.5rem;
+    display: block;
+    border-radius: 0.2rem;
+    background: rgba(252,252,252,0.80);
+    margin: 0.3rem 0;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #0076FF;
+}

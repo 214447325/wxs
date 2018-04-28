@@ -1,0 +1,77 @@
+.page-pay{
+  .title{font-size: 26px;padding: 30px;}
+  .input-box {
+    border: 1px solid #bcbcbc;/* no */
+    margin-left: 35px;
+    display: inline-block;
+    border-bottom: none;
+    border-right: none;
+    height: 96px;
+    overflow: hidden;
+    position: relative;
+  }
+  .input-box .box {
+    border-bottom: 1px solid #bcbcbc;/* no */
+    font-size: 60px;
+    border-radius: 0;
+    text-align: center;
+    border-right: 1px solid #bcbcbc;/* no */
+    float: left;
+    width: 95px;
+    height: 95px;
+    background-color: #FFF;
+    position: relative;
+  }
+
+  .input-box .box.full:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .input-box .box.focus:after{
+    content: '';
+    width: 2px;
+    height: 50%;
+    background-color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: cursor .7s ease-in infinite;
+  }
+  .input-box .box.full.focus:after{
+    left: 70%;
+  }
+  .input-box input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1px;/*no*/
+    color: #FFF;
+    line-height: 0;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  .tips{color: #757575;width: 100%}
+  .btn-box{margin-top: 90px;}
+}
+
+@keyframes cursor{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

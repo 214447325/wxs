@@ -1,0 +1,225 @@
+
+html {
+    font-family: PingFangSC-Regular;
+}
+.header {
+    width: 100%;
+    height: 1.2rem;
+}
+
+.title {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2rem;
+    position: relative;
+}
+
+.titleImg {
+    width: 0.3rem;
+    background: url(../../../images/pages/platform/return.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    height: 0.6rem;
+    position: absolute;
+    margin-top: 0.3rem;
+}
+
+.titleContent {
+    font-size: 0.5rem;
+    color: rgb(55,78,171);
+}
+
+.div-world {
+    border-bottom: 0.05rem solid rgba(213,215,220,0.5);
+}
+
+.div1 {
+    width: 9rem;
+    height: 4.6rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.div1-icon {
+    width: 100%;
+    height: 2rem;
+}
+
+.div1-header {
+    width: 100%;
+    height: 1.32rem;
+    float: left;
+    margin: 0.3rem auto;
+}
+
+.div1-img {
+    width: 3.3rem;
+    height: 100%;
+    background: url(../../../images/pages/platform/logo.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    float: left;
+}
+
+.div-world .div1 .div1-content span {
+    font-size: 0.41rem;
+    color: rgb(51,51,51);
+}
+
+.div1-content {
+    width: 9rem;
+    height: 2.6rem;
+    line-height: 0.49rem;
+}
+
+.div1-content span {
+    color: rgb(51,51,51)
+}
+
+.div-content {
+    padding-top: 0.3rem;
+}
+.div-bigEvent {
+    width: 2.3rem;
+    height: 0.8rem;
+    background: url(../../../images/pages/platform/bigEvent.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-top: 0.3rem;
+    color: #ffffff;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div-content .cont {
+    width: 9rem;
+    margin: 0 auto;
+}
+
+.div-content .cont .world {
+    width: 100%;
+    height: 10.2rem;
+    border-bottom: 0.05rem solid rgba(213,215,220,0.5);
+    margin-top: 0.3rem;
+    overflow: hidden;
+}
+
+.div-content .cont .world .world-title h1 {
+    width: 100%;
+    /*height: 2rem;*/
+    line-height: 0.8rem;
+    font-size: 0.5rem;
+}
+
+.div-content .cont .world .world-content {
+    width: 100%;
+    height: 1.8rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    color: rgb(153,153,153);
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+}
+
+.div-content .cont .world .img {
+    width: 100%;
+    height: 6rem;
+}
+
+.div-content .cont .world .world-img1 {
+    background: url(../../../images/pages/platform/xinyong.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img2 {
+    background: url(../../../images/pages/platform/jijin.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img3 {
+    background: url(../../../images/pages/platform/xiehui.png) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img4 {
+    background: url(../../../images/pages/platform/cctv.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img5 {
+    background: url(../../../images/pages/platform/APEC.png) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img6 {
+    background: url(../../../images/pages/platform/cctvNews.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.div-content .cont .world .world-img7 {
+    background: url(../../../images/pages/platform/guapai.jpg) 0 0 no-repeat;
+    background-size:100% 100%;
+}
+
+.now {
+    border-bottom: 0.05rem solid rgba(213,215,220,0.5);
+}
+.now h1 {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.div-content .cont .association {
+    height: 8.1rem;
+}
+
+.div-content .cont .people {
+    height: 3rem;
+}
+
+.world-cont {
+    height: 1.2rem;
+    color: rgb(51,51,51);
+}
+
+.time {
+    width: 100%;
+    line-height: 0.5rem;
+    text-align: right;
+    color: rgb(153,153,153);
+    font-size: 0.35rem;
+}
+
+.time1 {
+    margin-bottom: 0.3rem;
+    font-size: 0.35rem;
+    /*padding-top: 1.2rem;*/
+}
+
+.div-content .cont .first {
+    height: 8.8rem;
+}
+
+.div-content .cont .news {
+    height: 8.9rem;
+}
+
+.div-content .cont .news .span {
+    font-size: 0.3rem;
+}
+
+.div-content .cont .lawyer {
+    height: 3.8rem;
+}
+
+.cont1 {
+    height: 0.6rem;
+}
+
+.div-content .cont .world .content1 {
+    height: 1.2rem;
+}

@@ -1,0 +1,186 @@
+.wrapper{
+	font-size:0.3733rem;
+	color: #666;
+	padding-bottom:1.5rem;
+}
+
+
+/*hobby--兴趣爱好*/
+.hobby-title{
+	margin:1.5rem 0;
+	text-align:center;
+	line-height: 0.68rem;
+}
+.font18px{
+	font-size:0.48rem;
+	color:#4A4A4A;
+	font-weight:bolder;
+}
+.box{
+	width:8.2rem;
+	margin:auto;
+}
+.piece{
+	width:2.1621rem;
+	line-height:0.8rem;
+	text-align:center;
+	background: #FFFFFF;
+	border: 0.0266rem solid #B1B1B1;
+	border-radius: 0.08rem;
+	margin:0.2666rem;
+	position:relative;
+}
+.hobby-selected{
+	border-color:#D7BB88;
+	color:#D7BB88;
+}
+.hobby-selected > div{
+	display: block;
+}
+.hobby-selected-img{
+	display:none;
+	width:0.64rem;
+	height:0.64rem;
+	background:url('../../../../images/pages/my-account3.0/information/selected.png') no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	right:-0.28rem;
+	top:-0.32rem;
+}
+.hobby-button {
+    width: 100%;
+    display: block;
+    line-height: 1.333rem;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    background: #DDDDDD;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.hobby-button-flag{
+    background: #D7BB88;
+}
+
+/*个人基本信息 marriage*/
+.marriage{
+	width:100%;
+	height:100%;
+	background:#F3F3F3;
+	padding-top:0.2666rem;
+}
+.margin-top{
+	margin-top:0.2666rem;
+}
+.margin-bottom{
+	margin-bottom:0.2666rem;
+}
+.mariage-title{
+	padding:0.2666rem 0.4rem;
+	line-height: 0.68rem;
+	background:#fff;
+}
+.font16px{
+	font-size:0.4266rem;
+	color:#4A4A4A;
+	font-weight:bolder;
+	line-height:0.8rem;
+}
+.marriage-list{
+	font-size:0.4266rem;
+	color:#4A4A4A;
+	
+	line-height: 1.333rem;
+}
+.marriage-list>div{
+	padding:0 0.4rem;
+	background:#fff;
+}
+.marriage-downImg{
+	width:0.3893rem;
+	height:0.24rem;
+	margin:0.5rem 0 0 0.25rem;
+}
+.marriagesss{
+	color:#9B9B9B
+}
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+    color: #2B6FF9;
+    border: 0;
+    background-color: transparent;
+}
+.mui-poppicker-btn-cancel{
+	display:none;
+}
+.marriage-button {
+    width: 100%;
+    display: block;
+    line-height: 1.333rem;
+    font-size: .48rem;
+    color: #fff;
+    text-align: center;
+    background: #DDDDDD;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.marriage-button-flag{
+    background: #D7BB88;
+}
+.marriage-children{
+	// display:none;
+	color:#9B9B9B;
+}
+.spouse{
+	display:none;
+}
+.marriage-spouse{
+	color:#9B9B9B
+}
+.family-list{
+	font-size:0.4266rem;
+	color:#4A4A4A;
+	
+	line-height: 1.333rem;
+}
+.family-list>div>div{
+	padding:0 0.4rem;
+}
+.family-list>div{
+	background:#fff;
+}
+.family-downImg {
+    width: 0.3893rem;
+    height: 0.24rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.children-list{
+	font-size:0.4266rem;
+	color:#4A4A4A;
+	
+	line-height: 1.333rem;
+}
+.children-list>div>div{
+	padding:0 0.4rem;
+}
+.children-list>div{
+	background:#fff;
+}
+.children-downImg {
+    width: 0.3893rem;
+    height: 0.24rem;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+[data-id="picker-m"],[data-id="title-m"],[data-id="title-y"]{
+	display:none !important;
+}
+[data-type="month"] .mui-picker, [data-type="month"] .mui-dtpicker-title h5{
+	width:100%;
+}
+
+.border-bottom{
+	border-bottom:0.0133rem solid #DCDCDC;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/active/muhammad/muhammad_index.css">
+    <!--<link rel="stylesheet" href="../../../css/pages/active/shareButton.css?v=9.0.0">-->
+
+    <title>拳王争霸</title>
+    <style>
+        .alertBox_rule {
+            top: 5%;
+        }
+        /*.wrapper {*/
+            /*display: none;*/
+        /*}*/
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+        .app1 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/app1.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .app2 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/app2.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .app3 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/app3.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .app4 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/app4.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .divButton {
+            width: 4rem;
+            height: 1.2rem;
+            position: absolute;
+            bottom: 30%;
+            left: 30%;
+            background: url(../../../images/pages/activity/muhammad/button.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="swiper-container" style="display: none">-->
+    <!--<div class="swiper-wrapper">-->
+        <!--<div class="swiper-slide app1"></div>-->
+        <!--<div class="swiper-slide app2"></div>-->
+        <!--<div class="swiper-slide app3"></div>-->
+        <!--<div class="swiper-slide app4">-->
+            <!--<div class="divButton"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div class="swiper-pagination"></div>&ndash;&gt;-->
+<!--</div>-->
+
+<div class="wrapper" style="position: relative">
+    <div class="back">
+        <div class="back_bottom">
+
+            <!--规则-->
+            <div class="rule">
+                <img src="../../../images/pages/activity/muhammad/rule.png" class="ruleImg">
+                <img src="../../../images/pages/activity/muhammad/result.png" class="ruleNum">
+            </div>
+            <!--规则-->
+
+
+
+            <!--猜拳-->
+            <div class="mora">
+                <div class="moraleft">
+                    <img src="../../../images/pages/activity/muhammad/left1.png" class="imgleft">
+                </div>
+                <div class="moraright">
+                    <img src="../../../images/pages/activity/muhammad/right2.png" class="imgClick imgright" />
+                </div>
+                <div class="userImg2">
+
+                </div>
+            </div>
+
+            <!--金额-->
+            <div class="ranking">
+                <div class="ranking_bottom">
+                    <div class="left">V金融</div>
+                    <div class="right" id="userPhone"></div>
+                </div>
+                <div class="center">已获现金:<a class="center_a" id="money">0</a><a style="color: #ffff7e">元</a></div>
+                <!--机会-->
+                <!--<div class="opportunity" id="opportunity">可出拳次数:<a class="opportunity_a" id="numberPunche"></a></div>-->
+
+            </div>
+
+
+            <div id="opportunitys"></div>
+            <!--出拳-->
+            <!--<div class="opp">-->
+                <!--<div class="ten" id="ten">十拳连出</div>-->
+                <!--<div class="one" id="one">我要出拳</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+    <div class="bottom">
+        <!--如何出拳-->
+        <div class="boxRule">
+            <div class="boxRule_div">
+                <div class="boxRule_title">如何获得出拳次数？</div>
+                <div class="boxRule_content">
+                    每笔投资获得的出拳次数=（单笔投资金额/10000）的整数部分，参与活动产品： 5周及以上定期产品
+                </div>
+                <div class="boxRule_title">拳王排行榜前十名即可获得：</div>
+                <div class="boxRule_reward">拳王排行榜按出拳次数排名</div>
+                <div class="reward"></div>
+                <div class="reward1"></div>
+            </div>
+        </div>
+
+        <!--排行旁-->
+        <div class="rank">
+            <div class="rankBox">
+                <div class="rankBox_title">
+                    <div class="rankBox_div01"></div>
+                    <div class="rankBox_div02">拳王排行榜</div>
+                    <!--<div class="rankBox_div03">(每隔30分钟更新战绩及排行榜)</div>-->
+                </div>
+                <div class="information">
+                    <div class="rank_num_content"></div>
+                </div>
+                <div class="rank_information">
+                    <div class="rankleft">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--悬浮按钮-->
+<div class="wrapper_buttom">
+    <div class="wrapper_opacity"></div>
+    <div class="twoButtom">
+        <a href="javascript:;" class="sharea">
+            <div class="share_buttom index_font">查看分会场战绩</div>
+        </a>
+        <!--<a href="../../../pages/financing/regular.html">-->
+            <!--<div class="mora_buttom index_font">投资猜拳</div>-->
+        <!--</a>-->
+    </div>
+</div>
+<!--弹框的样式-->
+<div class="alert_box"></div>
+<script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../../js/setting.js?v=9.0.0"></script>
+<script src="../../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../../js/pages/activity/muhammad/muhammad_index.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+<script src="../../../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+<!--<script src="../../../js/pages/activity/shareButton.js?v=9.0.0"></script>-->
+<!--<script>-->
+    <!--$(function() {-->
+        <!--var _date = getCookie('cookieDate');-->
+        <!--if(_date != null && _date != '' && _date != undefined) {-->
+            <!--$('.wrapper').show();-->
+            <!--$('.wrapper_buttom ').show();-->
+        <!--} else {-->
+            <!--$('.swiper-container').show();-->
+        <!--}-->
+
+        <!--function setCookie(c_name,value,expiredays) {-->
+            <!--var exdate=new Date();-->
+            <!--exdate.setDate(exdate.getDate()+expiredays);-->
+            <!--document.cookie=c_name+ "=" +escape(value)+-->
+            <!--((expiredays==null) ? "" : ";expires="+exdate.toGMTString());-->
+        <!--}-->
+
+<!--//取回cookie-->
+        <!--function getCookie(c_name) {-->
+            <!--if (document.cookie.length>0)-->
+            <!--{-->
+                <!--c_start=document.cookie.indexOf(c_name + "=");-->
+                <!--if (c_start!=-1)-->
+                <!--{-->
+                    <!--c_start=c_start + c_name.length+1;-->
+                    <!--c_end=document.cookie.indexOf(";",c_start);-->
+                    <!--if (c_end==-1) c_end=document.cookie.length;-->
+                    <!--return unescape(document.cookie.substring(c_start,c_end));-->
+                <!--}-->
+            <!--}-->
+            <!--return ""-->
+        <!--}-->
+
+        <!--var count = 0;-->
+        <!--var mySwiper = new Swiper('.swiper-container',{-->
+            <!--initialSlide:count,-->
+            <!--followFinger : false,-->
+            <!--paginationClickable :true,-->
+            <!--nextButton:'.swiper-slide',-->
+            <!--effect : 'fade'-->
+        <!--});-->
+
+        <!--$('.divButton').click(function() {-->
+            <!--$('.swiper-container').hide();-->
+            <!--$('.wrapper').show();-->
+            <!--$('.wrapper_buttom ').show();-->
+            <!--setCookie('cookieDate',getDay(),365);-->
+
+        <!--});-->
+
+        <!--$('.app4').click(function() {-->
+            <!--$('.swiper-container').hide();-->
+            <!--$('.wrapper').show();-->
+            <!--$('.wrapper_buttom ').show();-->
+            <!--setCookie('cookieDate',getDay(),365);-->
+
+        <!--});-->
+
+        <!--function getDay() {-->
+            <!--var date = new Date;-->
+            <!--var year = date.getFullYear();-->
+            <!--var month = date.getMonth()+1;-->
+            <!--month = (month<10 ? "0"+month:month);//月-->
+            <!--var _date = date.getDate();-->
+            <!--_date = (_date<10 ? "0"+_date:_date);//日-->
+            <!--var _hour = date.getHours();-->
+            <!--_hour = (_hour<10 ? "0"+_hour:_hour);//时-->
+            <!--var _min = date.getMinutes();-->
+            <!--_min = (_min<10 ? "0"+_min:_min);//分-->
+            <!--var _second = date.getSeconds();-->
+            <!--_second = (_second<10 ? "0"+_second:_second);//秒-->
+            <!--var mydate = (year.toString()+month.toString()+_date.toString()+_hour.toString()+_min.toString()+_second.toString());-->
+            <!--return mydate;-->
+        <!--}-->
+
+
+<!--//        if(_date == 1) {-->
+<!--//            $('.swiper-container').hide();-->
+<!--//            $('.wrapper').show();-->
+<!--//            $('.wrapper_buttom ').show();-->
+<!--//        }-->
+        <!--//分享-->
+    <!--});-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,445 @@
+
+.dial .wrapper {
+    width: 100%;
+    background: url(../../../../images/pages/activity/year/background.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.dial-active {
+    font-weight: bold;
+}
+.dial .rule-btn {
+    background: url(../../../../images/pages/dial/rule-bt.png) no-repeat;
+    position: absolute;
+    top: 13.6rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 6.1375rem;
+    height: 1.1875rem;
+    background-size: 6rem;
+}
+
+.header {
+    width: 100%;
+    height: 6.8rem;
+    background: url(../../../../images/pages/activity/year/title.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.header-center {
+    width: 10rem;
+    height: 10rem;
+    background: url(../../../../images/pages/activity/year/back2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: -2rem;
+}
+
+.dial .price {
+    background: url() no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 10rem;
+    height: 10rem;
+}
+
+.dial .start {
+    background: url(../../../../images/pages/activity/year/start2.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: 8rem;
+}
+
+.dial .stage {
+    background: url() no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: 8rem;
+}
+
+.num {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #ffffff;
+}
+
+.span {
+    color: #ffff05;
+}
+
+.mybtn {
+    width: 4rem;
+    height: 1.1rem;
+    background: url(../../../../images/pages/activity/year/btn1.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0.2rem auto;
+    line-height: 1rem;
+    color: #ff3a59;
+    text-align: center;
+    font-size: 0.5rem;
+    z-index: 1000;
+}
+
+.back3 {
+    width: 9rem;
+    height: 22rem;
+    margin: 0 auto;
+    background: url(../../../../images/pages/activity/year/back3.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 1rem;
+}
+
+.rule {
+    width: 9rem;
+    height: 8.6rem;
+    margin: 0 auto;
+    background: url(../../../../images/pages/activity/year/rule.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.1rem;
+    overflow: hidden;
+}
+
+.rtitle {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.45rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.rcontent {
+    width: 8rem;
+    height: 7.2rem;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 0.3rem;
+    line-height: 0.38rem;
+}
+
+.footer {
+    width: 100%;
+    height: 1.5rem;
+}
+
+.investment {
+    width: 100%;
+    height: 1.2rem;
+    background: url(../../../../images/pages/activity/year/button.png) no-repeat;
+    background-size: 100% 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #ff3a59;
+    font-size: 0.5rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    display: none;
+}
+
+a {
+    color: #ffff05;
+}
+
+.dalertback {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+.dalert {
+    display: none;
+}
+
+.div1 {
+    width: 9rem;
+    height: 7.6rem;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    top: 26%;
+    left: 5%;
+}
+
+.close {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 7.8rem;
+}
+
+.alertbox {
+    width: 100%;
+    height: 7rem;
+    background: url(../../../../images/pages/activity/year/alert1.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.3rem;
+}
+
+.boxdiv {
+    width: 7.6rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.atitle {
+    width: 100%;
+    height: 0.8rem;
+    margin: 0 auto;
+    line-height: 0.8rem;
+    font-size: 0.4rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.ad1content1 {
+    width: 100%;
+    height: 2.2rem;
+    margin: 0.2rem auto;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: #ffffff;
+}
+
+.ad1content2 {
+    width: 100%;
+    height: 2.4rem;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    line-height: 0.4rem;
+    color: #ffffff;
+}
+
+.div2 {
+    width: 9rem;
+    height: 14rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    display: none;
+}
+
+.alertbox2 {
+    width: 100%;
+    height: 13rem;
+    background: url(../../../../images/pages/activity/year/alert2.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 0.3rem;
+}
+
+.box2table {
+    width: 7.6rem;
+    height: 11.6rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    background: url(../../../../images/pages/activity/year/table.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.div3 {
+    width: 9rem;
+    height: 7.6rem;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    top: 26%;
+    left: 5%;
+    color: #ffffff;
+}
+
+.div4 {
+    width: 9rem;
+    height: 7.6rem;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    top: 26%;
+    left: 5%;
+    color: #ffffff;
+}
+
+.div5 {
+    width: 9rem;
+    height: 7.6rem;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+    top: 26%;
+    left: 5%;
+    color: #ffffff;
+}
+
+.blessing {
+    width: 7.6rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.reward {
+    width: 7.6rem;
+    height: 1.2rem;
+    margin: 0 auto;
+    line-height:1.2rem;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #ff3a59;
+}
+
+.line {
+    width: 8rem;
+    height: 0.21rem;
+    background: url(../../../../images/pages/activity/year/line.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.divtent {
+    width: 7.6rem;
+    height: 2.6rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    font-size: 0.35rem;
+    line-height: 0.6rem;
+}
+
+.button {
+    width: 3.6rem;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/year/abutton.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: #ff3a59;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.dial .price .col:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.dial .price .col:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.dial .price .col:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.dial .price .col:nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.dial .price .col:nth-child(5) {
+    transform: rotate(240deg);
+}
+
+.dial .price .col:nth-child(6) {
+    transform: rotate(300deg);
+}
+
+.dial .price .col {
+    display: block;
+    height: 90%;
+    position: absolute;
+    left: 23%;
+    top: .5rem;
+    width:8rem;
+    margin-left: -1.29rem;
+    text-align: center;
+    padding-top: .8rem;
+}
+
+.dal {
+    width: 7.6rem;
+    height: 2.6rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    text-align: center;
+}
+
+.bton {
+    width: 3.6rem;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/year/abutton.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: #ff3a59;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.loginbtn {
+    width: 3.6rem;
+    height: 1rem;
+    background: url(../../../../images/pages/activity/year/abutton.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: #ff3a59;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.abox {
+    height: 5rem;
+}
+
+.dardal {
+    height: 0.7rem;
+    width: 7.6rem;
+    margin: 0 auto;
+    line-height:1.2rem;
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: #ff3a59;
+}
+
+.logindal {
+    width: 7.6rem;
+    height: 2rem;
+    margin: 0 auto;
+    font-size: 0.48rem;
+    line-height: 0.6rem;
+    text-align: center;
+}

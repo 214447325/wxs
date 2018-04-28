@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <title>现金狂欢计划</title>
+    <link rel="stylesheet" href="../../css/pages/activity/redMoney/lean.css">
+    <link rel="stylesheet" href="../../css/pages/activity/redMoney/getMoney.css">
+    <style>
+        .dialog-btn {
+            background: rgb(55,78,171);
+            color: #fff;
+        }
+
+        body {
+            height: auto;
+        }
+        .join {
+            overflow: hidden;
+            /*height: 385px;*/
+            /*margin-top: 6rem;*/
+            /*background: green;*/
+        }
+
+        .banner {
+            /*background: red;*/
+            /*height: 1698px;*/
+            overflow: hidden;
+        }
+
+        .look {
+            color: rgb(138,73,202);
+        }
+
+        .active-log {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            bottom: 0;
+            background: #000000;
+            opacity: 0.7;
+        }
+
+        .alertDiv {
+            width: 90%;
+            height: 90%;
+            background:url(../../images/pages/activity/redMoney/alert.png) no-repeat center 0 ;
+            background-size: 100% 100%;
+            position: absolute;
+            left: 5%;
+            top: 5%;
+        }
+
+        .whyContent {
+            height: 16rem;
+            margin: 0 1.5rem;
+            line-height:1.8rem;
+            font-size: 1.4rem;
+            text-align: left;
+            margin-top: 1.6rem;
+            color:#907bd0;
+        }
+
+
+        .log-alert {
+            display: none;
+        }
+
+        .sco {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="banner" id="banner">
+    <!-- banner -->
+    <header class="header"><img src="../../images/pages/activity/redMoney/banner.png" alt=""></header>
+    <!-- banner -->
+
+    <!-- rewardDec -->
+    <aside class="rewardDec font-weight text-right"><div class="look">查看奖励说明></div></aside>
+    <!-- rewardDec -->
+
+    <!-- friendInvent -->
+    <section class="friendInvent font-weight text-center">好友<span class="mobilePhone">159****1189</span>邀您加入V金融</section>
+    <!-- friendInvent -->
+
+    <!-- info -->
+    <section class="info clearfix">
+        <article class="flex-list clearfix">
+            <div class="col-4 text-center"><img src="../../images/pages/activity/redMoney/info01.png" alt=""></div>
+            <ul class="col-6">
+                <li>周周涨：8.88%-12.08%</li>
+                <li>定期：9.00%-12.00%</li>
+                <li>浮动收益：8.00%-33.00%</li>
+            </ul>
+        </article>
+
+        <article class="flex-list clearfix">
+            <div class="col-4 text-center"><img src="../../images/pages/activity/redMoney/info02.png" alt=""></div>
+            <ul class="col-6">
+                <li>8.8元和88.8元现金红包天天抽</li>
+                <li>抽到的红包可立即提现到银行卡</li>
+                <!--<li>浮动收益：8.00%-33.00%</li>-->
+            </ul>
+        </article>
+
+        <!--<article class="flex-list clearfix">-->
+            <!--<ul class="col-6 text-right">-->
+                <!--<li>8.8元和88.8元现金红包天天抽</li>-->
+                <!--<li>每笔投资返现金即时到账可提现</li>-->
+                <!--<li>每笔最高13000元</li>-->
+            <!--</ul>-->
+            <!--<div class="col-4 text-center"><img src="../../images/pages/activity/redMoney/info2.png" alt=""></div>-->
+        <!--</article>-->
+        <article class="flex-list clearfix">
+            <div class="col-4 text-center"><img src="../../images/pages/activity/redMoney/info03.png" alt=""></div>
+            <ul class="col-6">
+                <li>随存随取</li>
+                <li>投资即刻起息</li>
+                <li>提现最快1分钟到账</li>
+            </ul>
+        </article>
+    </section>
+    <!-- info -->
+
+    <!-- radio -->
+    <section class="radio">
+        <h3 class="text-center">平台累计投资额超过300，000，000.00</h3>
+        <section>
+            <header><img src="../../images/pages/activity/redMoney/radio.png" alt=""></header>
+            <div class="quotation">
+                <ul class="quotationGun">
+
+                </ul>
+            </div>
+        </section>
+    </section>
+    <!-- radio -->
+
+    <!-- why -->
+    <section class="why">
+        <header class="text-center">
+            <h3>为什么选择“V金融”</h3>
+            <p><img src="../../images/pages/activity/redMoney/why_icon.png" alt=""></p>
+            <div class="whyContent">“V金融”是上海中赢金融旗下的线上一键资产配置平台。中赢金融是首批获国家“金融信息服务资质”的优秀金融服务企业，与全国十大律师事务所之一大成律师事务所建立了战略合作关系。2016年3月，中赢金融荣获“2016中国最佳诚信示范金融企业”称号。
+                <!--<div class="whySpan"></div>-->
+            </div>
+            <!--<h4>一键资产配置平台</h4>-->
+        </header>
+      <!--  <article class="text-center clearfix">
+            <dl class="col-3-3">
+                <dt><img src="../../images/pages/activity/redMoney/why_icon1.png" alt=""></dt>
+                <dd>
+                    <p>严格风控</p>
+				<span>
+					多重风控体系
+					<br>
+					银行技术安全
+					<br>
+					及用户隐私安全
+				</span>
+                </dd>
+            </dl>
+            <dl class="col-3-3">
+                <dt><img src="../../images/pages/activity/redMoney/why_icon2.png" alt=""></dt>
+                <dd>
+                    <p>周周涨、定期</p>
+				<span>
+					随存、随取
+					<br>
+					提现时尚到账
+				</span>
+                </dd>
+            </dl>
+            <dl class="col-3-3">
+                <dt><img src="../../images/pages/activity/redMoney/why_icon3.png" alt=""></dt>
+                <dd>
+                    <p>一键配置</p>
+				<span>
+					投资极致分散
+					<br>
+					一键完成资产配置
+				</span>
+                </dd>
+            </dl>
+        </article>-->
+    </section>
+</div>
+<!-- why -->
+
+<!-- join -->
+<div class="join">
+    <header class="text-center">
+        <div class="join-header"><h3>加入V金融</h3></div>
+        <p><img src="../../images/pages/activity/redMoney/why_icon.png" alt=""></p>
+    </header>
+    <form class="register" id="formRegister">
+        <div class="form-list">
+            <div class="col-2 text-center">+86</div>
+            <div class="col-8">
+                <input type="text" id="phone" placeholder="请输入手机号">
+            </div>
+        </div>
+        <div class="form-list">
+            <div class="col-2 text-center"><img src="../../images/pages/activity/redMoney/join_code.png" alt=""></div>
+            <div class="col-5">
+                <input type="text" id="code" placeholder="短信验证码">
+            </div>
+            <div class="col-3 text-center getVerCode"><button type="button" class="getVerCodeBtn">获取验证码</button></div>
+        </div>
+        <div class="form-list">
+            <div class="col-2 text-center"><img src="../../images/pages/activity/redMoney/eye-close.png" alt="" class="images"></div>
+            <div class="col-8">
+                <input type="password" id="pwd" placeholder="密码（6-20位数字、字母）" maxlength="20">
+            </div>
+        </div>
+        <div class="form-tips text-center">
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=zy.yunhoo.com.zhongyin" class="downLoad">手机号已注册？点此下载app</a>
+        </div>
+        <div class="register-button submit">立即注册</div>
+    </form>
+</div>
+<!-- join -->
+<button class="fixed-bottom text-center" type="button">立即注册</button>
+
+<!-- dialog -->
+<div class="dialog hide">
+    <div class="dialog-content text-center">
+        <div class="dialog-title"></div>
+        <div class="dialog-desc"></div>
+        <div class="dialog-btn">确定</div>
+    </div>
+    <div class="dialog-bg"></div>
+</div>
+<!-- dialog -->
+<div class="log-alert">
+    <div class="active-log">
+    </div>
+    <div class="alertDiv">
+
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js"></script>
+<script src="../../js/pages/activity/redMoney/getMoney.js"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+.wrapper {
+    background: #1a4a69;
+}
+
+.wrapper .banner {
+   width: 100%;
+    height: 13rem;
+    background: url(../../../images/pages/invite/bannermain.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper .part1 {
+    width: 100%;
+    height: 11rem;
+    background: url(../../../images/pages/invite/part1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper .part2 {
+    width: 100%;
+    height: 11rem;
+    background: url(../../../images/pages/invite/part2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper .part3 {
+    width: 100%;
+    // height: 18rem;
+    height: 12rem;
+    background: url(../../../images/pages/invite/part3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+.wrapper .part3 .part3Box {
+    width: 7rem;
+    // height: 19rem;
+    margin: 0 auto;
+}
+
+.wrapper .part3 .part3Box ul {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .part3 .part3Box ul li {
+    color: #537d81;
+    font-size: 0.35rem;
+    line-height: 0.5rem;
+}
+
+.table {
+    display: block;
+}
+
+.table table {
+    width: 100%;
+    height: 1.8rem;
+    background: #ffffff;
+}
+
+.table table tr {
+    width: 100%;
+    height: 0.6rem;
+}
+
+.table table tr td {
+    width: 3.5rem;
+    height: 100%;
+    border: 1px solid #537d81;
+    padding-left: 0.2rem;
+}
+.table table tr .td1 {
+    width: 4rem;
+    height: 100%;
+    line-height: 0.6rem;
+}
+
+.table table tr .td2 {
+    width: 3rem;
+    height: 100%;
+    line-height: 0.6rem;
+}
+
+.inviteFooter {
+    width: 80%;
+    height: 1rem;
+    background:url(../../../images/pages/invite/buttonflow.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+}

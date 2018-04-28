@@ -1,0 +1,38 @@
+/*
+* @Author: User
+* @Date:   2016-09-19 11:10:45
+* @Last Modified by:   User
+* @Last Modified time: 2016-09-19 12:21:54
+*/
+.popup-tip{width: 100%;height: 100%;position: absolute; /* display: flex;justify-content: center; */align-items: center;z-index: 2;}
+.popup-tip span{background: rgba(40,40,40,.25);color: #fff;width: 6rem; padding: 0.2rem 0; border-radius: 20px;font-size: 0.4rem;opacity: 0;
+animation: fadein 1.5s;animation-fill-mode: forwards; -webkit-animation: fadein 1.5s;-webkit-animation-fill-mode: forwards;
+position: absolute;
+left: 50%; top: 45%; -webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%); 
+ }
+@keyframes fadein{
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes fadein{
+	0% {opacity: 0;}
+	25% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.page-tip{width: 100%;height: 100%;position: fixed;background: rgba(40,40,40,.75);top: 100%; z-index: 200;animation: slidein .5s;animation-fill-mode: forwards; 
+-webkit-animation: slidein .5s;-webkit-animation-fill-mode: forwards;}
+@keyframes slidein{
+	from {top: 100%;}
+	to {top: 0;}
+}
+@-webkit-keyframes slidein{
+	from {left: 100%;}
+	to {left: 0;}
+}

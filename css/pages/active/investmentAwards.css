@@ -1,0 +1,58 @@
+
+.inviteHeader {
+    width: 10rem;
+    height: 8rem;
+    background:  url(../../../images/pages/activity/grouping1.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 9rem;
+    background: red;
+    margin: 0 auto;
+}
+
+.activityRules {
+    margin-top: 0.3rem;
+    font-size: 0.4rem;
+    float: left;
+    color: rgb(30,0,70);
+}
+
+.rules-Content {
+    float: left;
+    font-size: 0.36rem;
+    color:rgb(30,0,70);
+    margin-top: 0.2rem;
+    line-height: 0.6rem;
+}
+
+.activeImg {
+    width: 100%;
+    height: 7rem;
+    background: url(../../../images/pages/activity/inviteTable1.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+    float: left;
+    margin: 0.3rem auto;
+    /*margin-top: 0.3rem;*/
+}
+
+.number {
+    width: 100%;
+    height: 3.5rem;
+    background: url(../../../images/pages/activity/number.png) no-repeat center 0 ;
+    background-size: 100% 100%;
+    float: left;
+    margin: 0.5rem auto;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    width: 100%;
+    height: 1.3rem;
+    background: url(../../../images/pages/activity/btnn.png) no-repeat center 0 ;
+      background-size: 100% 100%;
+    position: fixed;
+    bottom: 0;
+}

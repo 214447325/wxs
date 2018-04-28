@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/active/muhammad/muhammad_index.css">
+    <link rel="stylesheet" href="../../../css/pages/active/muhammad/share_index.css">
+    <title>拳王争霸</title>
+    <style>
+        .share_content {
+            height: 70%;
+            bottom: 1.5rem;
+        }
+
+        .countless_box {
+            width: 8.5rem;
+            height: 8.5rem;
+            left:8%;
+            top: 26%;
+        }
+
+        .phone_input {
+            width: 6rem;
+            height: 3.8rem;
+        }
+
+        .hand {
+            height: 2rem;
+        }
+
+        .alertBox_rule {
+            height: 12rem;
+            top:10%;
+        }
+
+        .mbutton {
+            width: 4.5rem;
+            height: 1.3rem;
+            margin: 0 auto;
+            margin-top: 0.4rem;
+            background: url(../../../images/pages/activity/muhammad/button1.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+            line-height: 1.1rem;
+            color: #000000;
+            text-align: center;
+            font-size: 0.4rem;
+            font-weight: bold;
+        }
+
+        .wrapper {
+            display: none;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+
+        .wechat1 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/wechat1.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wechat2 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/wechat2.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wechat3 {
+            width: 100%;
+            height: 100%;
+            background: url(../../../images/pages/activity/muhammad/wechat3.jpg) 0 0 no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .divButton {
+            width: 4rem;
+            height: 1.2rem;
+            position: absolute;
+            bottom: 30%;
+            left: 30%;
+            background: url(../../../images/pages/activity/muhammad/button.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container" style="display: none">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide wechat1"></div>
+        <div class="swiper-slide wechat2"></div>
+        <div class="swiper-slide wechat3">
+            <div class="divButton"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div class="share_back">
+        <div class="share_content">
+            <div class="share_rule_img">
+                <img src="../../../images/pages/activity/muhammad/rules2.png" class="share_ruleImg" />
+            </div>
+
+
+
+            <div class="share_ring">
+                <div class="share_champion">
+                    <div class="share_ldiv">
+                        <div class="share_crown crown"></div>
+                        <div class="share_portrait_left">
+                            <img src="../../../images/pages/activity/muhammad/usericon.png" class="left_img">
+                        </div>
+                    </div>
+
+                    <div class="share_rdiv">
+                        <div class="share_crown"></div>
+                        <div class="share_portrait_left">
+                            <img src="../../../images/pages/activity/muhammad/usericon.png" class="right_img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="share_leftDiv_img">
+                    <img src="../../../images/pages/activity/muhammad/left1.png" class="share_leftImg" />
+                </div>
+                <div class="share_rightDiv_img">
+                    <img src="../../../images/pages/activity/muhammad/right1.png" class="share_rightImg" />
+                </div>
+
+                <div class="share_ring_left">
+                    <div class="share_lcontent"> </div>
+                    <div class="share_ring_left_number ">
+                        争霸<a class="font championInfo">0</a>次
+                    </div>
+                    <div class="share_ring_left_result champion">
+                        <a>赢<a class="font championWin">0</a></a>
+                        <a>平<a class="font championFlat">0</a></a>
+                        <a>输<a class="font championLoser">0</a></a>
+                    </div>
+                </div>
+                <div class="share_ring_right">
+                    <div class="share_rcontent"> </div>
+                    <div class="share_ring_left_number  part">
+                        争霸<a class="font challengerInfo">0</a>次
+                    </div>
+                    <div class="share_ring_left_result challenger">
+                        <a>赢<a class="font challengerWin">0</a></a>
+                        <a>平<a class="font challengerFlat">0</a></a>
+                        <a>输<a class="font challengerLoser">0</a></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="share_cash">-->
+                <!--已获现金： <a class="font sumReward">0</a>元／50元-->
+            <!--</div>-->
+
+            <div class="share_button">
+                <div class="btnTwo">
+                    <!--<div class="share_button_divLeft receive">领取现金</div>-->
+                    <div class=" punches share_button_divRight ">我要出拳*<a class="numbers">0</a></div>
+                </div>
+
+                <div class="btnOne">
+                    <div class="participate">立即参与</div>
+                </div>
+            </div>
+            <div class="share_most">每日可以挑战同一个用户3次</div>
+        </div>
+    </div>
+</div>
+<div class="alert_box"></div>
+<div class="share_bottom">
+    <a href="../../../pages/active/muhammad/muhammad_index.html">
+        <div class="share_bottom_left">前往主会场</div>
+    </a>
+    <a href="javascript:;" class="look">
+        <div class="share_bottom_right">查看已获奖励</div>
+    </a>
+</div>
+<script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../../js/setting.js?v=9.0.0"></script>
+<script src="../../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../../js/pages/activity/muhammad/share_index.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+<script src="../../../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+<script>
+    $(function() {
+        var _date = getCookie('cookieDate');
+        if(_date != null && _date != '' && _date != undefined) {
+//            $('.swiper-container').hide();
+            $('.wrapper').show();
+//            $('.share_bottom').show();
+        } else {
+            $('.swiper-container').show();
+        }
+        var count = 0;
+        var mySwiper = new Swiper('.swiper-container',{
+            initialSlide:count,
+            followFinger : false,
+            paginationClickable :true,
+            nextButton:'.swiper-slide',
+            effect : 'fade'
+        });
+
+        $('.divButton').click(function() {
+            $('.swiper-container').hide();
+            $('.wrapper').show();
+//            $('.share_bottom').show();
+            setCookie('cookieDate',getDay(),365);
+        });
+
+        $('.wechat3').click(function() {
+            $('.swiper-container').hide();
+            $('.wrapper').show();
+//            $('.share_bottom').show();
+            setCookie('cookieDate',getDay(),365);
+        });
+
+
+        function setCookie(c_name,value,expiredays) {
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate()+expiredays);
+            document.cookie=c_name+ "=" +escape(value)+
+            ((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+        }
+
+//取回cookie
+        function getCookie(c_name) {
+            if (document.cookie.length>0)
+            {
+                c_start=document.cookie.indexOf(c_name + "=");
+                if (c_start!=-1)
+                {
+                    c_start=c_start + c_name.length+1;
+                    c_end=document.cookie.indexOf(";",c_start);
+                    if (c_end==-1) c_end=document.cookie.length;
+                    return unescape(document.cookie.substring(c_start,c_end));
+                }
+            }
+            return ""
+        }
+
+        function getDay() {
+            var date = new Date;
+            var year = date.getFullYear();
+            var month = date.getMonth()+1;
+            month = (month<10 ? "0"+month:month);//月
+            var _date = date.getDate();
+            _date = (_date<10 ? "0"+_date:_date);//日
+            var _hour = date.getHours();
+            _hour = (_hour<10 ? "0"+_hour:_hour);//时
+            var _min = date.getMinutes();
+            _min = (_min<10 ? "0"+_min:_min);//分
+            var _second = date.getSeconds();
+            _second = (_second<10 ? "0"+_second:_second);//秒
+            var mydate = (year.toString()+month.toString()+_date.toString()+_hour.toString()+_min.toString()+_second.toString());
+            return mydate;
+        }
+
+//        if(_date == 2) {
+//            $('.swiper-container').hide();
+//            $('.wrapper').show();
+//            $('.share_bottom').show();
+//        }
+    });
+</script>
+</body>
+</html>

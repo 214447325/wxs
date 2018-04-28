@@ -1,0 +1,390 @@
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: #3b1148;
+}
+
+.background {
+   width: 100%;
+    height: 16rem;
+    background: url(../../../../images/pages/activity/muhammad/resultpage.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.wrapper .userbox {
+    width: 100%;
+    height: 12rem;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper .userbox .userbox-rules {
+    width: 9rem;
+    height: 1.8rem;
+}
+
+.userbox-ruleImg {
+    width: 1.3rem;
+    height: 100%;
+    float: right;
+}
+.wrapper .userbox .user-div {
+    width: 8rem;
+    height: 100%;
+    background: url(../../../../images/pages/activity/muhammad/ruleswindow.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.wrapper .userbox .user-div .user-div-info {
+    width: 7.2rem;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0.3rem;
+    overflow-y: scroll;
+}
+
+.wrapper .userbox .user-div .user-div-info .user-div-top {
+    width: 100%;
+    height: 2.6rem;
+}
+
+.wrapper .userbox .user-div .user-div-info .user-div-info-left {
+    width: 2.2rem;
+    height: 100%;
+    float: left;
+}
+
+.wrapper .userbox .user-div .user-div-info .user-div-info-left .user-div-tou {
+    width: 1rem;
+    height: 1.4rem;
+    margin: 0 auto;
+}
+
+
+.wrapper .userbox .user-div .user-div-info .user-div-info-right {
+    width: 5rem;
+    height: 100%;
+    float: right;
+}
+
+.crown {
+    width: 100%;
+    height: 0.5rem;
+}
+
+.tou {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.user-div-phone {
+    width: 100%;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: #ff5c1c;
+    text-align: center;
+    line-height: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.user-div-info-right ul{
+    width: 100%;
+    height: 100%;
+}
+
+.user-div-info-right ul li {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.5rem;
+    font-size: 0.36rem;
+    color: #000000;
+}
+
+.user-div-info-right ul li a {
+    color: #ff0000;
+}
+
+.user-div-center {
+    width: 100%;
+    height: 6rem;
+    margin-top: 0.3rem;
+}
+
+.progress {
+    width: 0.5rem;
+    height: 5.4rem;
+    background: url(../../../../images/pages/activity/muhammad/empty.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    float: left;
+    margin-left: 0.36rem;
+    position: relative;
+    margin-top: 0.6rem;
+}
+
+.pos {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.progress-left {
+    width: 3rem;
+    height: 6rem;
+    float: left;
+}
+
+.progress-right {
+    width: 3rem;
+    height: 6rem;
+    float: right;
+}
+
+.progress-left ul {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-left ul li {
+    width: 100%;
+    height: 1.5rem;
+    color: #000000;
+    font-size: 0.4rem;
+    line-height: 1.5rem !important;
+    border-bottom: 1px solid #ff5c1b;
+    text-align: center;
+}
+
+.div1 {
+    width: 0;
+    height: 0;
+    border-top: 0.2rem solid transparent;
+    border-left: 0.2rem solid red;
+    border-bottom: 0.2rem solid transparent;
+    float: right;
+    margin-top: 0.59rem;
+}
+
+.winli {
+    border: none !important;
+    padding-top: 0.6rem;
+}
+
+.win {
+    width: 0.9rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    background: url(../../../../images/pages/activity/muhammad/win.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.jiang {
+    width: 0.9rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    background: url(../../../../images/pages/activity/muhammad/jiang.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.progress-right ul {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-right ul li {
+    width: 100%;
+    height: 1.5rem;
+    border-bottom: 1px solid #ff5c1b;
+    color: #ff5c1b;
+    line-height: 1.5rem !important;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.big {
+   width: 0.8rem;
+    height: 0.8rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.small {
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.bigImg {
+    width: 100%;
+    height: 100%;
+}
+
+.user-div-bottom {
+    width: 100%;
+    height: 6rem;
+    /*background:url(../../../../images/pages/activity/muhammad/resultpagebg.png) 0 0 no-repeat;*/
+    /*background-size: 100% 100%;*/
+    margin-top: 0.2rem;
+    padding-top: 0.3rem;
+    border: 2px solid #f6b85c;
+    border-radius: 5px;
+}
+
+.user-div-bottom .user-div-bottom-content {
+    width: 5.8rem;
+    height: 5.3rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    overflow-y: scroll;
+}
+
+.user-div-bottom-text {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    color: #ffffff;
+    background: #f67900;
+    font-size: 0.36rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+}
+
+.user-div-bottom .user-div-bottom-content ul {
+    width: 100%;
+    height: 100%;
+}
+
+.user-div-bottom .user-div-bottom-content ul li {
+    width: 100%;
+    height: 1rem;
+}
+
+.user-div-bottom .user-div-bottom-content ul li .tou1 {
+    width: 0.8rem;
+    height: 0.8rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.user {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.userphone {
+    width: 3rem;
+    height: 100%;
+    float: left;
+    font-size: 0.4rem;
+    color: #000000;
+    line-height: 1rem;
+    text-align: center;
+    margin-left: 0.4rem;
+}
+
+.challenge {
+    width: 1.5rem;
+    height: 0.6rem;
+    float: right;
+    color: #ffffff;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.count {
+    width: 1.5rem;
+    height: 0.6rem;
+    float: right;
+    color: #000000;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.yes {
+    background: #ff5c1b;
+}
+
+.no {
+    background: #969696;
+}
+
+.nonePeople {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    text-align: center;
+    line-height: 3.3rem;
+    font-size: 0.3rem;
+}
+
+.user-div-top-title {
+    width: 100%;
+    height: 100%;
+    line-height: 2rem;
+}
+
+.user-div-top-title ul li {
+    line-height: 0.6rem;
+    text-align: left;
+    font-size: 0.36rem;
+}
+
+.btn-bottom {
+    width: 100%;
+    height: 1.5rem;
+    background: #000000;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-btn1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url(../../../../images/pages/activity/muhammad/button2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    font-weight: bold;
+    /*float: left;*/
+}
+
+.bottom-btn2 {
+    width: 4.9rem;
+    height: 100%;
+    text-align: center;
+    background: url(../../../../images/pages/activity/muhammad/button1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    color: #ffffff;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    font-weight: bold;
+    float: right;
+}
+
+/*.alertBox_rule {*/
+    /*top: 10%;*/
+/*}*/

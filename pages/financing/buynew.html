@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+  <title></title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/financing/buy3.0.css">
+</head>
+
+<body class="page-buy bg  my-product">
+  <div class="wrapper">
+<!--       <div class="caption">
+        <a href="javascript:;" class="back"></a>
+        <div class="regularTitle"></div>
+      </div> -->
+      <div class="row last top-row">可投金额（元）：<span class="amount"></span></div>
+      <div class="row margin" >
+        账户余额（元）：<span class="balanceAccount">0.00</span>
+        <a href="../my-account/topup-cash.html"><u>充值</u></a>
+      </div>
+      <div class="row margin row-invest">投资金额（元）：
+        <input type="number" placeholder="起投金额100"   class="input">
+        <a class="full">全额购买</a>
+      </div>
+
+            <div class="row addcoupon rowac" type="jx">加息券：
+                          <a class="usecoupon">
+                                        <span id="addcoupon">请选择</span>
+                                        <img src="../../images/pages/my-account3.0/nextPage3.0.png">
+                          </a>
+            </div>
+            <div class="jxdata ret" >
+                    <div class="indata">
+                    奖励(元)：<span id="jxspan"></span>              
+                    </div>
+            </div>
+
+            <div class="row investred rowac" type="tz">投资红包：
+                          <a class="useinvestred">
+                                        <span id="addred">请选择</span>
+                                        <img src="../../images/pages/my-account3.0/nextPage3.0.png">
+                          </a>
+            </div>
+            <div class="tzdata ret" >
+                    <div class="indata">
+                    奖励(元)：<span id="tzspan"></span>              
+                    </div>
+            </div>
+
+            <div class="row experience rowac" type="ty">体验金：
+                          <a class="useexperience">
+                                        <span id="addexperience">请选择</span>
+                                        <img src="../../images/pages/my-account3.0/nextPage3.0.png">
+                          </a>
+            </div>
+            <div class="tydata ret" >
+                    <div class="indata">
+                    奖励(元)：<span id="tyspan"></span>              
+                    </div>
+            </div>      
+
+      <div class="row expectrow">预期收益（元）：<span class="expectmoney">0.00</span></div>
+      <!-- <div class="row  margin row-active">活动奖励（元）：<span class="selfExtra" >勾选参加邀请活动会获得活动奖励</span></div> -->
+
+<!--   <div class="detail" >
+          <div class="Bonusrules"   id="Bonusrules">该产品参加邀请好友活动，最高可获得1100元现金奖励具体查看奖励细则,<span> 查看具体奖励细则</span></div>
+  </div> -->
+      <img src="../../images/pages/action/addRateImage@2x.png" class="addimg hide">
+  </div>
+  
+  <div class="btn-box tc">
+    <a href="javascript:;" class="btn btn-default pay-money">确定</a>
+     <a class="agreement"   href="javascript:;">购买即同意《<i>定期产品投资协议</i>》</a> 
+  </div>
+
+<div class="maskLayer" id="maskLayer">
+      
+   <div class="juzhong">
+          <div class="bunus" id="bunus">
+              <img src="../../images/pages/invite/cha.png" class="content-Img0">
+              <img src="../../images/pages/invite/jianglixq.png" class="content-Img">
+        </div>
+        <div class="redpackets">
+          <div class="center" id="center"></div>
+
+        </div>
+        </div>
+  </div>
+
+<div class="ui-dialog backdrop hide">
+      <div class="dialog-content">
+            <a href="javascript:;" class="close dialog-close"></a>
+            <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+            <div class="dialog-article"> <!-- 内容 -->
+                  <p>余额不足请前往充值</p>
+            </div>
+            <div class="tc btn-box1  "><!-- 按钮 -->
+                  <a href="javascript:;" class="btn btn-link btn-sm " >确认</a>
+                  <a href="javascript:;" class="btn btn-default btn-sm ">取消</a>
+            </div>
+      </div>
+</div>      
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/moment.js"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/buy3.0.js?v=9.0.0"></script>
+</body>
+</html>

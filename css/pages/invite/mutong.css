@@ -1,0 +1,795 @@
+/*
+* @Author: User
+* @Date:   2016-03-21 20:30:16
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-13 13:58:36
+*/
+.getmoney .red{
+    color:#ff294d;
+}
+.getmoney{
+    position: relative!important;
+    overflow-y:scroll;
+    background-color: #721634;
+}
+.getmoney .inviteBanner{
+ 	width:100%;
+    height:10rem;
+ 	background:  url(../../../images/pages/invite/mt-head01.png) no-repeat center 0 ;
+	background-size: contain ;
+ 	/*  position: absolute;
+ 	 	top:0;
+ 	 	left:50%;
+ 	 	-webkit-transform: translateX(-50%);
+ 	 	-ms-transform: translateX(-50%);
+ 	 	-o-transform: translateX(-50%);
+ 	 	transform: translateX(-50%);  */
+ }
+ .getmoney .friend{
+  width:100%;
+ background-size:contain;
+ color:#fff;
+ font-size:0.5rem;
+ text-align:center;
+   }
+ .getmoney .friend  .invitephone{
+  color:#eacc59;
+}
+.getmoney .pic{
+  width:90%;
+ height:10.8125rem;
+background: url(../../../images/pages/invite/mt-intro.png) 0 0 no-repeat;
+ background-size:contain;
+ margin:0.5rem auto 0;
+    }
+.box-wrapper{
+    width:85%;
+  /*   height:6rem; */
+    margin:0 auto;
+    box-sizing:border-box;
+    border-top: 1px dashed #fff;
+    border-bottom:1px dashed #fff;
+}
+.box-wrapper p.leiji{
+  display: block;
+  color:#fff;
+  padding: 0.75rem 0;
+  font-size:0.45rem;
+  text-align:center;
+}
+.box-wrapper .box{
+  width:100%!important;
+  border-radius:20px;
+margin:0 auto;
+background: #eacd58 url() 0 0 no-repeat;
+border: 1px solid #000;
+}
+.box-wrapper .bcon {
+border: none;
+height:4rem;
+  }
+ .getmoney .word{
+ 	width:100%;
+ 	height:2.5rem;
+ 	padding:0.8rem   1rem;
+ 	box-sizing:border-box;
+ 	overflow:hidden;
+
+ }
+ .getmoney .totalbox{
+  width:80%;
+  margin:0 auto;
+  overflow:hidden;
+  z-index:1;
+ }
+.getmoney .total{
+  display: inline-block;
+    height:.6rem;
+float: left;
+  line-height:1.6rem;
+  font-size:.48rem;
+/*   position: absolute;
+   top:8rem;
+   left:1rem;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); */
+}
+.getmoney .total .red{
+  display:inline-block;
+}
+.getmoney .word i{
+	width:1.3875rem;
+	height:2.7rem;
+	background:  url(../../../images/pages/invite/mt-p3-1.png) no-repeat 0 0 ;
+ 	-webkit-background-size: contain;
+	background-size: contain;
+	float: left;
+ }
+ .getmoney .word  p{
+  	height:2.7rem;
+  	font-size:.5rem;
+      text-align:center;
+  }
+   .getmoney .word  p span{
+color:#ff294d;
+   }
+  .getmoney  .ui-text-input{
+  	border:none;
+  }
+  .getmoney .getmoneyInfo{
+   	border-radius:5px;
+   	margin:0;
+   	margin:0 auto ;
+   	margin-bottom:0.2rem;
+   	border: 1px solid #ccc;
+	padding:0;
+
+   }
+     .getmoney .getmoneyInfo input{
+     	padding:0;
+     	margin:0;
+     	height:1.5rem;
+     	line-height:1.5rem;
+     	position: absolute;
+     	top:0;
+     	left:0;
+     	text-indent:1em;
+     }
+
+      .getmoney .getmoneyInfo  .sms-code{
+      	width:6.5rem;
+        border: 1px solid #ccc;
+      }
+      .getmoney .short{
+            	position: relative;
+            	background: transparent;
+            	border:none;
+            }
+       .getmoney .short .btn-sm{
+       	height:1.4rem;
+       	line-height:1.4rem;
+       	border-radius:5px;
+       	position: absolute;
+       	top:0;
+       	right:0;
+       	z-index:200;
+       	background: #ff294d url() 0 0 no-repeat;
+       }
+
+      .invitenum span{
+    color:#ee5e00;
+      }
+          .getmoney  .invitenum{
+        background: transparent;
+        width:75%;
+    height:.5rem;
+    font-size:.4rem;
+    position: relative;
+    margin:0 auto ;
+    margin-bottom: 1rem;
+      }
+  .invitenum p{
+position: absolute;
+top:0 ;
+right:0;
+         }
+  .invitenum p span{
+          color:#ee5e00;
+          }
+
+  .inviteMoneybtn{
+  display: block;
+  width:8.84375rem;
+  height:1.46875rem;
+   background: #ff294d;/* url(../../../images/pages/invite/p3-button.png) no-repeat 0 0 ; */
+  background-size:contain;
+  line-height:1.46875rem;
+  text-align:center;
+  color:#fff;
+  font-size:.75rem;
+    margin:0 auto;
+ }
+.getmoney .Bonusrules{
+  display: inline-block;
+  width:2.6rem;
+  height:.6rem;
+  overflow:hidden;
+
+  font-size:.48rem;
+  float: right;
+  color:#ff294d;
+  margin:0.5rem auto;
+
+  cursor: pointer;
+ /*  position: absolute;
+    top:7.4rem;
+    right:1rem;
+   -webkit-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   transform: translateX(-50%); */
+}
+.getmoney .Bonusrules .left{
+   float: left;
+  width:0.6rem;
+  height:0.6rem;
+  background:  url(../../../images/pages/invite/mt-info.png) 0 center no-repeat;
+  background-size:contain;
+ /*  position: absolute;
+ top:50%;
+ left:0;
+  -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ -o-transform: translateY(-50%);
+ transform: translateY(-50%); */
+}
+.getmoney .Bonusrules .right{
+
+  float: right;text-decoration: underline;
+  /* position: absolute;
+  top:50%;
+   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
+.getmoney .line{
+  width:90%;
+  height:1px;
+  border-bottom: 1px solid #ee5e00 ;
+
+  margin:2rem auto;
+  position: relative;
+  margin-bottom:1rem;
+}
+.getmoney .line .reason{
+  width:45%;
+  height:2rem;
+  background: #f4f2e6;
+  text-align:center;
+  line-height:2rem;
+  font-size:.5rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+margin-bottom:2rem;
+}
+.getmoney .line .reason .left,.getmoney .line .reason .right{
+  width:.19rem;
+  height:.19rem;
+  border: 1px solid #ee5e00;
+  position: absolute;
+  top:50%;
+  left:0;
+  -webkit-transform: rotate(45deg) translateY(-50%) ;
+  -ms-transform: rotate(45deg) translateY(-50%) ;
+  -o-transform: rotate(45deg) translateY(-50%) ;
+  transform: rotate(45deg) translateY(-50%) ;
+
+
+}
+.getmoney .line .reason .right{
+  position: absolute;
+  top:50%;
+right:0;
+  -webkit-transform: rotate(45deg) translateY(-50%) ;
+  -ms-transform: rotate(45deg) translateY(-50%) ;
+  -o-transform: rotate(45deg) translateY(-50%) ;
+  transform: rotate(45deg) translateY(-50%) ;
+
+
+}
+.getmoney .adword{
+  width:80%;
+  height:10rem;
+ /*  border: 1px solid #000; */
+  font-size:.5rem;
+  margin:0 auto;
+  text-align:center;
+}
+.getmoney .adword h2{
+  color:#ee5e00;
+  font-size:.8rem;
+  font-weight:normal;
+}
+.getmoney .adword .keyword{
+  width:90%;height:1.5rem;
+  line-height:1.5rem;
+  color:#50b59a;
+  font-size:1.3rem;
+  font-weight:normal;
+  padding:0;
+  margin:0;
+  position: relative;
+  margin:0 auto;
+  text-align:left;
+  margin-bottom: 1rem;
+}
+.getmoney .adword .keyword .above{
+  font-size:0.5rem;
+  line-height:0.5rem;
+  color:#666;
+ position: absolute;
+ top:0;
+ right:0;
+}
+.getmoney .adword .keyword .bottom{
+  font-size:0.5rem;
+  line-height:0.5rem;
+    color:#666;
+  position: absolute;
+  bottom:0;
+  right:0;
+
+}
+.getmoney .adword .thick{
+  font-weight:normal;
+  font-size:.5rem;
+   color:#50b59a;
+}
+.picture{
+  width:100%;
+  height:15rem;
+  margin-top:0.5rem;
+  background:  url(../../../images/pages/invite/mt-introduce.png) center 0 no-repeat;
+  background-size:contain;
+}
+
+.getmoney .maskLayer{
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top:0;
+  left:50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  display: none;
+  z-index:200;
+}
+.getmoney .maskLayer .juzhong{
+  width:100%;
+  height: 100%;
+  position:relative;
+}
+.bunus{
+  width:10rem;
+  height:18rem;
+  background: #f4f2e6;
+ position: absolute;
+    bottom:1.109375rem;
+    left:50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+  font-size:0.4rem;
+  padding:0.35rem;
+  z-index:999;
+
+}
+.bunus .close{
+  width:0.8rem;
+  height:0.8rem;
+  background:  url(../../../images/pages/invite/mt-p2-x.png) 0 0 no-repeat;
+  background-size:contain;
+  position: absolute;
+  top:0.45rem;
+  right:0.4rem;
+}
+.bunus h1{
+  font-size:0.6rem;
+  line-height:0.859375rem;
+  color:#fff;
+  width:7.1875rem;
+  height:0.859375rem;
+  background:  url(../../../images/pages/invite/mt-p2-4.png) 0 0 no-repeat;
+  background-size:contain;
+  margin:0 auto;
+  text-align:center;
+}
+
+.getmoney .maskLayer .juzhong .redpackets{
+  width:10.78125rem;
+  height:4.640625rem;
+  background:  url(../../../images/pages/invite/mt-p2-1.png) 0 0 no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+}
+.redpackets .center{
+  width:1.09375rem;
+  height:0.546875rem;
+  background:  url(../../../images/pages/invite/mt-p2-3.png) 0 0 no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom:0.546875rem;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index:1000;
+
+}
+.redpackets .centerOpen{
+  width:1.09375rem;
+  height:0.546875rem;
+  background:  url(../../../images/pages/invite/mt-p2-2.png) 0 0 no-repeat;
+  background-size:contain;
+  position: absolute;
+  bottom:0.546875rem;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index:1001;
+}
+div .c {
+    max-width: 100%;
+    margin:0.75rem auto;
+}
+
+.hrefImgsp {
+    width: 270px;
+}
+
+.splieFontSpan{
+    color:#000000;
+    font-size: 0.4375rem;
+    line-height:0.6rem;
+}
+
+.splieImg{
+    margin: 0.8rem auto 0.65rem;
+}
+
+.splieHref{
+    width:100%;
+    height:5.28125rem;
+    padding:0 0.5rem;
+    box-sizing:border-box;
+overflow:hidden;
+    z-index:1;
+}
+
+.splieHref a.splieAHref1{
+    display:block;
+    float:left;
+    width:4.15rem;
+    height:4.225rem;
+    background:  url(../../../images/pages/invite/mt-hongbao.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.splieHref a.splieAHref2{
+    display:block;
+    float:right;
+        width:4.15rem;
+    height:4.225rem;
+    background:  url(../../../images/pages/invite/mt-lianjie.png) 0 0 no-repeat;
+    background-size:contain;
+}
+
+.form-ui .phone:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/phone.png); margin-top: 6px; margin-left: -45px;
+}
+
+.form-ui .verification:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/verification1.png); margin-top: 6px;margin-left: 10px;
+}
+
+.form-ui .lock:before{
+    width:26px; height: 40px;background-image: url(../../../images/pages/invite/pass.png); margin-top: 35px; margin-left: -45px;
+}
+
+.getVerification {
+   width: 160px;
+    position: absolute;
+   right: 30px;
+}
+
+.form-ui input {
+    font-size: 28px;
+}
+
+.ver-Img {
+ position: absolute;
+ right: 5px;
+}
+
+.password-Img {
+    position: absolute;
+    left: 560px;
+    top: 50px;
+}
+
+.register-Img {
+    width:100%;
+    height:2.87rem;
+    margin:0 auto;
+    background:  url(../../../images/pages/invite/redister.png) 0 0 no-repeat;
+    background-size:contain;
+    display: none;
+}
+
+.register-Div {
+    position: absolute;
+    top: 50px;
+}
+
+.navn {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+   bottom:0;
+      z-index: 1;
+  }
+.navn a {
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+     font-size: 18px;
+     color: #757575;
+     line-height: 140px;
+}
+
+.splieAHref2 {
+    float: right;
+}
+  .ui-text-input {
+    border: none;
+}
+
+ .getmoneyInfo {
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 5px;
+    margin: 0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+ .getmoneyInfo input {
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 1em;
+}
+  li.getmoneyPassword{
+    overflow:hidden;
+    z-index:1;
+}
+.getmoneyInfo input.cipher{
+    width:80%;
+    height:100%;
+
+    float: left;
+}
+ .getmoneyInfo .switchPassword{
+    width:1.5rem;
+    height:0.9rem;
+    margin-top:0.3rem;
+    padding-left:0.2rem;
+    /* margin-right:0.2rem; */
+    border-left: 1px solid #efefef;
+    float: right;
+}
+ .getmoneyInfo  .sms-code {
+    width: 8.5rem;
+
+}
+
+
+
+.invitenum span {
+    color: #ee5e00;
+}
+
+  .invitenum {
+    background: transparent;
+    width: 90%;
+    height: .5rem;
+    font-size: .4rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.invitenum p {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.invitenum p span {
+    color: #ee5e00;
+}
+
+.inviteMoneybtn {
+    display: block;
+    width: 90%;
+    height: 1.35rem;
+/*  background: #ff294d; */
+    background:url(../../../images/pages/invite/redister.png) no-repeat 0 center;
+
+    background-size: cover;
+    line-height: 1.46875rem;
+    text-align: center;
+    color: #fff;
+    font-size: .75rem;
+    margin: 0 auto;
+}
+.ui-text-input li {
+    width: 9rem;
+    height: 1.35rem;
+    margin:0 auto 0.25rem;
+    line-height: 1.35rem;
+    border-radius:5px;
+    background: #fff;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.form-ui .ui-text-input li .txt {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    line-height:1.05rem;
+    padding-left:0.5rem;
+    margin-top: 0;
+    background: transparent url() 0 0 no-repeat;
+    border: none;
+    font-size: .40625rem;
+    color: #757575;
+}
+.form-ui .ui-text-input li.short{
+    border: none;
+    background: transparent url() 0 0 no-repeat;
+}
+.form-ui .ui-text-input li.short .txt{
+    display:inline-block;
+    width:4.5rem;
+    border-radius:5px;
+    background: #fff url() 0 0 no-repeat;
+    border: 1px solid #333;
+    box-sizing:border-box;
+}
+.form-ui .ui-text-input li.short .btn-sm {
+    display:inline-block!important;
+    width:4rem;
+    height: 1.35rem;
+    margin-left:5rem;
+    font-size:0.40625rem;
+    line-height: 1.35rem;
+    border: 1px solid #333;
+    box-sizing:border-box;
+    border-radius: 5px;
+    background: #da9942;
+}
+.form-ui .ui-text-input li{
+    position:relative;
+}
+.icon1{
+    display: block;
+    width:0.34375rem;
+    height:0.671875rem;
+    background:  url(../../../images/pages/invite/phone.png) 0 0 no-repeat;
+    background-size:contain;
+position:absolute;
+top:50%;
+left:0.25rem;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.icon2{
+    display: block;
+    width:0.484375rem;
+    height:0.484375rem;
+    background:  url(../../../images/pages/invite/verification1.png) 0 0 no-repeat;
+    background-size:contain;
+    z-index:200;
+position:absolute;
+top:50%;
+left:0.25rem;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+.icon3{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../images/pages/invite/pass.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.regist{
+display: block;
+    width: 100%;
+    height: 1.35rem;
+    /* background: #ff294d; */
+    background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;
+    border-radius: 0.5rem;
+    background-size: cover;
+    margin: 0 auto;
+    position:fixed;
+    bottom:0;
+}
+.list_lh li p{
+  text-align:center;
+}
+a.download{
+  display: block;
+  color:#fff;
+  text-decoration:underline;
+text-align:center;
+margin: 0.5rem  0;
+
+font-size:0.5rem;
+}
+.regist {
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    /* background: #ff294d; */
+    background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;
+    border-radius: 0.5rem;
+    background-size: cover;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+}
+.detail{
+  width:90%;
+  height:1.21875rem;
+  background:  url(../../../images/pages/invite/jiang.png) right top no-repeat;
+  background-size:contain;
+  margin:0 auto  0.5rem;
+}
+
+.registered-img {
+    width: 100%;
+}
+
+.regist{
+    display: block;
+    width: 100%;
+    height: 1.35rem;
+    /*background: url(../../../images/pages/invite/redister.png) no-repeat 0 center;*/
+    border-radius: 0.5rem;
+    background-size: cover;
+    margin: 0 auto;
+    position:fixed;
+    bottom:0; 
+}

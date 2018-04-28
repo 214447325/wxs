@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>限额说明</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+  <style>
+  .limit  table .tableremark{
+    background-color:#fff!important;
+  }
+  .limit  table .tableremark  p{
+    font-size:0.32rem!important;
+    text-indent:0.2rem;
+  }
+   .limit p.beizhu{
+    font-size:0.32rem;
+    padding: 0  0.5rem;
+    color:#9B9B9B;
+    /*box-sizing:border-box;*/
+    line-height:0.6rem;
+  }
+  .limit-table tr th {
+    height: 0.75rem;
+    line-height:0.75rem;
+    border-right: 1px solid #fff;
+}
+  .limit-table tr th p{
+    border-bottom: 1px solid #fff;
+  }
+  .limit-table tr td{
+    line-height: normal;
+    padding:0.28rem 0;
+  }
+  .limit-table tr:nth-child(n){
+    background:#fff;
+  }
+  </style>
+</head>
+
+<body class="limit bg">
+  <div class="wrapper">
+    <table width="100%" cellpadding="0" class="limit-table" id="fypay"></table>
+    <p  class="beizhu">备注：</p><p  class="beizhu">1.建议用户开通手机银行。</p><p  class="beizhu">2.当期支付渠道只能绑定同一张银行卡。</p><p  class="beizhu">3.商户限额、用户银行卡本身限额、认证支付标准限额，三者取最低限额。限额表仅供参考，实际以支付界面提示为准。</p>
+  </div>
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script type="text/javascript">
+    $(function(){
+      _html = doT.template([
+          '{{~it :item:index}}',
+              '<tr>',
+                '<td style="font-size:0.3733rem;color:#4A4A4A;">',
+                  '<img src={{=item.icon}} style="width:0.48rem;margin-right:0.25rem;"/>',
+                  '<span>{{=item.bankName}}</span>',
+                '</td>',   
+                '<td style="font-size:0.32rem;color:#9B9B9B;text-align:right;padding-right:0.4266rem;">单日限额{{=item.fyLimitDay/10000}}万，单笔限额{{=item.fyLimitOnce/10000}}万',
+                '{{?item.fyLimitTimes != 0 && item.fyLimitTimes != undefined }}',
+                // '(单日限{{=item.fyLimitTimes}}笔成功交易)',
+                '{{?}}',
+                '</td>',
+              '</tr>',
+          '{{~}}'
+      ].join(''));
+
+      $.ajax({
+        url:Setting.apiRoot1 + '/pay/channelInfo.p2p',
+        dataType:'json',
+        type:'POST'
+      }).done(function(res){
+        if(res.code == 1){
+          $('#fypay').html(_html(JSON.parse(res.data)))
+          console.log(JSON.parse(res.data))
+        }else{
+          Common2.toast('网络异常',Setting.staticRoot+'/images/pages/ui/wifi.png');
+        }
+      }).fail(function(res){
+          Common2.toast('网络异常',Setting.staticRoot+'/images/pages/ui/wifi.png');
+      })
+    });
+  </script>
+</body>
+</html>

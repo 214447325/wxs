@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class='bg'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>UI | V金融</title>
+  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../css/main.min.css?v=9.0.0">
+</head>
+<body class="bg testui">
+  <div class="wrapper">
+    <!-- 表单 -->
+    <div class="form-ui tc">
+      <h2 class="title red">form-ui</h2>
+      <h3 class="title">class: <small>input icon-input icon-phone</small></h3>
+      <div class="input icon-input icon-phone"><input type="text" placeholder="请输入手机号码" ></div> 
+      <h3 class="title">class: <small>input icon-input icon-lock</small></h3>
+      <div class="input icon-input icon-lock"><input type="password" placeholder="请输入密码"  ></div> 
+    </div>
+    <!-- 单选框 -->
+    <div class="row mt30 tc">
+      <h2 class="title">checkbox</h2>
+      <span class="checkbox"><input type="checkbox"><i></i></span>
+      <span class="checkbox"><input type="checkbox" checked><i></i></span>
+    </div>
+    <!-- 按钮 -->
+    <div class="row mt30 tc">
+      <h2 class="title red">form-Btn</h2>
+      <h3 class="title">class: <small>btn btn-default</small></h3>
+      <div class="row"><a href="" class="btn btn-default ">默认按钮</a></div>
+      <h3 class="title">class: <small>btn btn-warning</small></h3>
+      <div class="row"><a href="" class="btn btn-warning ">警告按钮</a></div>
+      <h3 class="title">class: <small>btn btn-link</small></h3>
+      <div class="row"><a href="" class="btn btn-link ">链接按钮</a></div>
+      <h3 class="title">class: <small>btn btn-border</small></h3>
+      <div class="row"><a href="" class="btn btn-border">边框按钮</a></div>
+      <h3 class="title">class: <small>btn btn-gray</small></h3>
+      <div class="row"><a href="" class="btn btn-gray ">灰色按钮</a></div>
+
+      <h3 class="title">class: <small>btn btn-primary</small></h3>
+      <div class="row"><a href="" class="btn btn-primary">浅色按钮</a></div>
+
+      <!-- <h3 class="title">class: <small> +btn-lg</small></h3>
+      <div class="row"><a href="" class="btn btn-default btn-lg">大按钮</a></div> -->
+
+      <h3 class="title">class: <small> +btn-sm</small></h3>
+      <div class="row"><a href="" class="btn btn-border btn-sm">小按钮</a></div>
+
+      <!-- <h3 class="title">class: <small> +btn-xs</small></h3>      
+      <div class="row"><a href="" class="btn btn-default btn-xs">超小尺寸</a></div> -->
+    </div>
+    <!-- dialog -->
+    <div class="row mt30 tc">
+    <h2 class="title red">弹层</h2>
+      <div class="row"><a href="javascript:;" class="show-dialog">弹层</a></div>
+      <div class="ui-dialog backdrop hide">
+        <div class="dialog-content"> 
+          <a href="javasript:;" class="close"></a>
+           <h3 class="dialog-title">温馨提示</h3> <!-- 标题 -->
+           <div class="dialog-article"> <!-- 内容 -->
+             <p>成功充值100元，如有疑问请拨打客户电话<span class="red">400521388</span></p>
+           </div>
+           <div class="tc btn-box full-btn "><!-- 按钮 -->
+             <a href="" class="btn btn-default btn-sm">立即抢购</a>
+           </div>
+           <div class="tc btn-box  "><!-- 按钮 -->
+             <a href="" class="btn btn-link btn-sm">立即抢购</a>
+             <a href="" class="btn btn-default btn-sm">立即抢购</a>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- icon -->
+    <div class="row mt30 tl">
+    <h2 class="title red mb20">input-ui-2</h2>
+      <ul class="ui-text-input">
+         <li>
+          <label><i class="icon icon-bank-card">银行卡</i></label>
+          <input type="text" placeholder='6526*********571' class="txt">
+         </li>
+       </ul>
+    </div>
+
+    <!-- icon -->
+    <div class="row mt30 tc">
+    <h2 class="title red">图标</h2>
+       <i class="icon icon-bank-card">银行卡</i> <br>
+       <i class="icon icon-bank">银行</i><br>
+       <i class="icon icon-money">现金</i><br>
+       <i class="icon icon-safe">安全</i><br>
+    </div>
+
+
+
+  </div>
+
+  <script>
+  jQuery(document).ready(function($) {
+    $('.show-dialog').click(function(event) {
+      $('.ui-dialog').show();
+    }); 
+    $('.ui-dialog .close').click(function(event) {
+     $(this).closest('.ui-dialog').hide();
+    });
+  });
+     
+  </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>票据</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+  <link rel="stylesheet" href="../../js/lib/swiper/css/swiper.min.css?v=9.0.0"> 
+  <style type="text/css">
+.regular .wrapper{
+    position: relative;
+  }
+ .procedure {
+    position: absolute;
+    background: url(../../images/pages/financing/procedure.png) no-repeat center center;
+    background-size: 1.6875rem 1.296875rem;
+    width: 1.6875rem;
+    height: 1.296875rem;
+    top: .625rem;
+    right: .703125rem;
+    z-index: 99;
+  }
+ .regular  .tag{
+    position: relative;
+  }
+ .financing.bill .tag{
+  background:  url(../../images/pages/financing/regular_edit2.png) center center no-repeat;
+  background-size: 2.515625rem .84375rem;
+  color:#56b4df;
+ }
+.financing.bill .circles .swiper-container {
+  width: 10rem;
+  height: 4.0625rem;
+
+  position: absolute;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+
+.financing.bill .swiper-slide-active .circle {
+  display: block;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background: transparent  url(../../images/pages/financing/regular_bg3.png) center center no-repeat;
+  background-size:contain;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index:8888;
+  box-shadow: none;
+  position: relative;
+}
+/* .billcircle
+.financing.bill  .billcircle {
+  display: block;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background: transparent  url(../../images/pages/financing/regular_bg3.png) center center no-repeat;
+  background-size:contain;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index:8888;
+  box-shadow: none;
+  position: relative;
+} */
+ .financing.bill .swiper-slide-active .circle .circle-empty{
+   display: block;
+   width: 4rem;
+ height: 4rem; 
+   background: transparent  url(../../images/pages/financing/regular_bg33.png) center center no-repeat;
+    background-size:contain;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index:9999;
+  box-shadow: none;
+ }
+.financing.bill .swiper-slide-active .circle .inner {
+
+  
+   background: transparent  url(../../images/pages/financing/regular_bg33.png) center center no-repeat!important;
+   background-size:contain;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    z-index:10002;
+}
+/* .financing.bill .swiper-slide-active .circle .inner .content{
+  width: 3.75rem;
+  height: 3.75rem;
+  background: transparent  url(../../images/pages/financing/round.png) center center no-repeat!important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+ */
+.financing.blii .circle .content {
+ 
+ background: transparent  url(../../images/pages/financing/round.png) center center no-repeat!important;
+ margin-top: 2rem;
+position: relative;
+}
+.bill .swiper-slide-prev .circle {
+  display: block;
+  left: .46875rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+
+.bill .swiper-slide-next .circle {
+  display: block;
+  right: .46875rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: none;
+}
+.financing.bill .circle .content span.prev{
+  position: absolute;
+top:1.1rem;
+left:0.75rem;
+font-weight:normal;
+font-size:1.6rem;
+}
+.financing.bill .circle .content span.above{
+  width:1.390625rem;
+  height:0.5625rem;
+  text-indent:0.3rem;
+background:  url(../../images/pages/financing/diff.png) center center no-repeat;
+background-size:contain;
+position: absolute;
+top:1.2rem;
+right:0.75rem;
+
+}
+.financing.bill .circle .content  .annualyield{
+  position: absolute;
+  bottom:1.15rem;
+  right:0.8rem;
+}
+.financing.bill .circle .content  a{
+   position: absolute;
+  bottom:0.1rem;
+left:50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+}
+
+.financing.bill .circles .billcontainer {
+  width: 4.0625rem;
+  height: 4.0625rem;
+
+ margin:0 auto;
+  background: transparent  url(../../images/pages/financing/regular_bg33.png) center center no-repeat;
+  background-size:contain;
+  position: relative;
+}
+.financing.bill .circles .billcircle{
+   width: 4.0425rem;
+ height: 4.0425rem; 
+  background: transparent  url(../../images/pages/financing/regular_bg3.png) center center no-repeat;
+  background-size:cover;
+ position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+
+  z-index:9999;
+  box-shadow: none;
+}
+.financing.bill  .billinner {
+   width: 4.0425rem;
+ height: 4.0425rem; 
+ border-radius:50%;
+ 
+
+
+    z-index:10002;
+}
+
+.financing.bill  .billinner .month{
+  font-size: .375rem;
+    color: #FFF;
+    line-height: 1.09375rem;
+    text-align:center;
+}
+.financing.bill  .billinner .content{
+  width:100%;
+  height:100%;
+  text-align:center;
+  padding-top:0.35rem;
+   box-sizing:border-box;
+   color:#fff;
+}
+.financing.bill  .billinner .content .prev{
+  position: absolute;
+    top: 1.1rem;
+    left: 0.75rem;
+    font-weight: normal;}
+.financing.bill  .billinner .content .above{
+  font-size: 0.35rem;
+    color: red;
+    line-height: 0.5625rem;
+    font-weight: normal;
+     width:1.390625rem;
+  height:0.5625rem;
+  text-indent:0.3rem;
+background:  url(../../images/pages/financing/diff.png) center center no-repeat;
+background-size:cover;
+position: absolute;
+top:1.5rem;
+right:0.75rem;
+
+}
+.financing.bill  .billinner .content .annualyield{
+
+  position: absolute;
+  bottom:1.45rem;
+  right:1.25rem;
+  font-size: 0.35rem;
+
+}
+.financing.bill  .billinner .content .billdetail{
+      font-size: 0.35rem;
+    color: #FFF;
+    display: block;
+    height: 1.09375rem;
+    line-height: 1.09375rem;
+    line-height: -0.8rem;
+    text-align: center;
+
+  position: absolute;
+  bottom:0.3rem;
+left:50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+transform: translateX(-50%);
+
+}
+
+
+  </style>
+
+</head>
+<body class="financing regular bill" data-target="money">
+  <div class="tab">
+    <a href="current.html">7天乐</a>
+    <a href="regular.html">定期</a>
+    <a href="javascript:;" class="active">银票</a>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+      
+      <p class="title">V金融银号X期</p>
+      <a href="controlflow.html" class="procedure"></a>
+      <div class="circles">
+      <!-- 定期样式 -->
+        <div class="billcontainer">
+         <div class="billcircle">
+          
+              <div class="billinner">
+               <div class="content">
+                <p class="month">90天</p>
+               
+                
+                  <p><span class="prev" style="font-size:1.4rem;">6</span>
+                   <span  class="above"  style="font-size:0.35rem;  color:red; line-height:0.5625rem;font-weight:normal;">+3.0%</span>
+                   </p>
+                    <p  class="annualyield" style="font-size:0.35rem">%&nbsp 年化</p>
+                  <a href="../../pages/yinpiaoDetails.html"   class="billdetail">产品详情&gt;</a>
+                </div>
+              </div>
+         
+            </div>
+             </div>
+   
+      </div>
+      
+      <p class="tag">已出售<span>0</span>% <!--  <i class="manageRecords">【银行票据托管记】</i> --></p>     
+      <div class="items clearfix">
+        <div class="item"><i class="icon icon-money-1"></i>银行承兑</div>
+        <div class="item"><i class="icon icon-money-2   icon-discount"></i>平台贴息</div>
+        <div class="item"><i class="icon icon-bao"></i>期限灵活</div>
+      </div>
+
+      <div class="bottom">
+        <p>可投金额：<span class="amount">0</span>元</p>
+        <a href="javascript:;" class="btn btn-default buy-now disabled btn-gray">立即抢购</a>
+      </div>
+  
+    </div>
+  </div> 
+
+  <div class="nav clearfix"></div>
+
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/bill.js?v=9.0.0"></script>
+</body>
+</html>

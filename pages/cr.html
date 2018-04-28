@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/main.min3.0.css">
+    <link type="text/css" href='../css/pages/invite/channelRegist.css' rel="stylesheet" />
+    <title>好友推荐注册领取现金</title>
+    </head>
+    <style>
+    
+    </style>
+ <body class="getmoney" id="longinBody">
+  <div class="getmoney">
+    <div class="inviteBanner"></div>
+    <div class="pic"></div>
+    <div class="crline"></div>
+    <img src="../images/pages/invite/cr03.png" class="adword">
+	<div class="form-ui  mt20" id="form-user">
+           <form class="inviteregister">
+	        <ul class="ui-text-input">
+	           <li  class="getmoneyInfo">
+	           <i class="icon1"></i>
+	            <input type="text" placeholder="请输入手机号" class="txt" maxlength="13"  name="phone" >
+	           </li>
+	           <li class="getmoneyInfo short">
+	           <i class="icon2"></i>
+	            <input type="text" placeholder="请输入短信验证码" class="txt sms-code" name="sms-code" id="inputfocus">
+	            <a href="javascript:;" class="btn btn-default btn-sm send-sms-code"><img src="../images/pages/invite/yzm-btn.png" ></a>
+	           </li>
+	           <li class="getmoneyInfo  getmoneyPassword">
+	           <i class="icon3"></i>
+	            <input type="text" placeholder="请设置6-20位数字和字母组合的密码" class="txt cipher" name="new-password" id="cipher">
+	           <!--  <div class="switchPassword"  id="switchPassword"><div class="switch"  id="switch"></div></div> -->
+	           </li>
+	         </ul>
+	         
+	         <a href="javascript:;"  class="inviteMoneybtn" id="inviteMoneybtn" ></a>
+          </form>   
+          </div>
+         
+       </div> 
+         <div class="regist" id="regist"></div>
+  <script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../js/lib/swiper/js/swiper.min.js?v=9.0.0"></script>
+  <script src="../js/lib/md5.min.js?v=9.0.0"></script>
+  <script src="../js/lib/jquery.cookie.js?v=9.0.0"></script>
+  <script src="../js/setting.js?v=9.0.0"></script>
+  <script src="../js/common3.0.js?v=9.0.0"></script>
+  <script src="../js/lib/doT.min.js?v=9.0.0"></script>  
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="../js/pages/invite/channelRegist.js?v=9.0.0"></script>
+  <script type="text/javascript">
+		$(document).ready(function(){
+			$('.list_lh li:even').addClass('lieven');
+		})
+		$(function(){
+		});
+		window.onload = function(){
+			var ohtml = document.documentElement;
+			getSize();
+
+			window.onresize = function(){
+				getSize();
+			}
+			function getSize(){
+				var screenWidth = ohtml.clientWidth;
+				if(screenWidth <= 320){
+					ohtml.style.fontSize = '23.7037px';
+				}else if(screenWidth >= 640){
+					ohtml.style.fontSize = '47.4074px';
+				}else{
+					ohtml.style.fontSize = screenWidth/(540/40)+'px';
+				}
+				
+			}
+			
+			   var url = window.location.href;
+// 			   alert(url);
+// 			   return false;
+			   //'http://static.wdclc.cn/wx/pages/cr.html?n=1';
+			   var info = {
+			        url:url
+			   };
+			    
+			  $.ajax({
+		          url: Setting.apiRoot1 + '/wx/jsInfo.p2p',
+		          type: 'GET',
+		          dataType: 'json',
+		          data: {"param": JSON.stringify(info)},
+		          async: true
+		        }).done(function(res) {
+		          
+		          if (res.code == 1) {
+		        	    
+		            var data = res;
+		            wx.config({
+		    	        debug: false,
+		                appId: data.appId,
+		                timestamp: data.timestamp,
+		                nonceStr: data.nonceStr,
+		                signature: data.signature,
+		    	        jsApiList: [
+		    	            'checkJsApi',  //判断当前客户端版本是否支持指定JS接口
+					       'onMenuShareTimeline', //分享给好友
+					       'onMenuShareAppMessage', //分享到朋友圈
+					       'onMenuShareQQ',  //分享到QQ
+					       'onMenuShareWeibo' //分享到微博
+		    	          ]
+		    	      });
+
+		    	 // 微信JSSDK开发
+		    	    wx.ready(function () {
+		    	        // 分享给朋友
+		    	        wx.onMenuShareAppMessage({
+		    	          title: '100%中奖概率！现金红包天天抽！', // 商品名
+		    	          desc: 'V金融邀您天天抽8.8元和88.8元现金红包！从此妈妈再也不用担心我的零花钱啦', // 店铺名
+		    	          link: 'https://static.wdclc.cn/wx/pages/cr.html?n=1', // 商品购买地址
+		    	          imgUrl: 'https://static.wdclc.cn/wx/images/pages/invitelogo.png', // 分享的图标
+		    	          fail: function (res) {
+		    	            alert(JSON.stringify(res));
+		    	          }
+		    	        });
+
+		    	        // 分享到朋友圈
+		    	        wx.onMenuShareTimeline({
+		    	          title: '100%中奖概率！现金红包天天抽！', // 商品名
+		    	          link: 'https://static.wdclc.cn/wx/pages/cr.html?n=1', // 商品购买地址
+		    	          imgUrl: 'https://static.wdclc.cn/wx/images/pages/invitelogo.png', // 分享的图标
+		    	          fail: function (res) {
+		    	            alert(JSON.stringify(res));
+		    	          }
+		    	        });
+		    	    });
+		    	 
+		    	    wx.error(function (res) {
+		    	    	 alert(res.errMsg);  //打印错误消息。及把 debug:false,设置为debug:ture就可以直接在网页上看到弹出的错误提示
+		    	    });
+		                            
+		          }else{
+		            //alert("网络异常:"+res.code);
+		        	  
+		          }
+		                    
+		        }).fail(function() {
+		          alert('网络链接失败，请刷新重试！');
+		          return false;
+		        });
+		}
+	 
+  </script> 
+ </body>
+</html>

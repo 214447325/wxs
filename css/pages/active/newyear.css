@@ -1,0 +1,194 @@
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: rgb(255,146,50);
+}
+
+.newyearicon {
+    width: 100%;
+    height: 8rem;
+    background: url(../../../images/pages/activity/newyear/1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.newbutton {
+    width: 100%;
+    height: 0.78rem;
+}
+
+.nshare {
+    width: 2.45rem;
+    height: 100%;
+    display: block;
+    background: url(../../../images/pages/activity/newyear/share.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.nrules {
+    width: 2.45rem;
+    height: 100%;
+    display: block;
+    background: url(../../../images/pages/activity/newyear/rules.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+.ntable1 {
+    width: 8.95rem;
+    height: 4.67rem;
+    background: url(../../../images/pages/activity/newyear/table1.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+}
+
+.ntext {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    font-size: 0.45rem;
+    text-align: center;
+    color: rgb(126, 60, 0);
+    margin-top: 0.9rem;
+}
+
+.abutton {
+    width: 7.97rem;
+    height: 1.42rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+
+.abutton img {
+    width: 100%;
+    height: 100%;
+}
+
+.ntable2 {
+    width: 8.95rem;
+    height: 2.46rem;
+    background: url(../../../images/pages/activity/newyear/2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+    margin-bottom: 1.4rem;
+}
+
+.newAlertBack {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.newAlertBox {
+    width: 8.45rem;
+    height: 15.5rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.nclose {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    background: url(../../../images/pages/activity/cancel.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    float: right;
+}
+
+.nAlertText {
+    width: 100%;
+    height: 13.5rem;
+    background: url(../../../images/pages/activity/newyear/3@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    padding-top: 0.4rem;
+}
+
+.ntextTitle {
+    width: 100%;
+    height: auto;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ntextTitle2 {
+    width: 100%;
+    height: auto;
+    line-height: 1rem;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.niconBox {
+    width: 7.8rem;
+    height: 8rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.niconhtml {
+    width: 100%;
+    height: 4.86rem;
+    background: url(../../../images/pages/activity/newyear/2@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.niconhtmlText {
+    width: 5.6rem;
+    height: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 0.35rem;
+    line-height: 0.5rem;
+    color: #ffffff;
+}
+
+.niconhtmlText a {
+    color: rgb(255, 214, 49);
+}
+
+.nIcButton {
+    width: 5.63rem;
+    height: 1.26rem;
+    display: block;
+    background: url(../../../images/pages/activity/newyear/button3.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.community {
+    margin-bottom: 1.2rem;
+}

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/active/shareButton.css?v=9.0.0">
+    <title>领券赚Money</title>
+    <style>
+        body {
+            background: #f5f5f5;
+            padding-bottom: 1.3rem;
+        }
+
+        .btn_buy {
+            width: 100%;
+            height: 1.3rem;
+        }
+
+        .buy1 {
+            background: url(../../images/pages/activity/vou_mainbutton.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .buy2 {
+            background: url(../../images/pages/activity/vou_mainbuttongrey.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wrapper .main {
+            width: 100%;
+            height: 6rem;
+            background: url(../../images/pages/activity/vou_main.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wrapper .content {
+            width: 9rem;
+            margin: 0 auto;
+            margin-top: 0.3rem;
+        }
+
+        .wrapper .content .instruction {
+            width: 8rem;
+            height: 2rem;
+            margin: 0 auto;
+            margin-top: 0.2rem;
+        }
+
+        .wrapper .content .instImg {
+            width: 2rem;
+            height: 100%;
+            float: left;
+        }
+
+        .wrapper .content .instImg img {
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .wrapper .content .content {
+            width: 5.6rem;
+            height: 2rem;
+            color: #ff852b;
+            font-size: 0.35rem;
+            line-height: 0.5rem;
+            float: left;
+            padding-top: 0.26rem;
+        }
+
+        .wrapper .content .cards {
+            width: 100%;
+        }
+
+        .wrapper .content .cards .card {
+            width: 100%;
+            height: 2.4rem;
+            margin-top: 0.6rem;
+        }
+
+        .wrapper .content .cards .card .caedBox {
+            width: 2.4rem;
+            height: 2.4rem;
+            float: right;
+            margin-right: 0.2rem;
+        }
+
+        .caedBox1 {
+            margin-right: 0.4rem !important;
+        }
+
+        .wrapper .content .cards .card .caedBox .timeContent {
+            width: 100%;
+            height: 0.4rem;
+            color: #ffffff;
+            font-size: 0.35rem;
+            line-height: 0.4rem;
+            text-align: center;
+            padding-top: 0.3rem;
+        }
+
+        .wrapper .content .cards .card .caedBox .timeBox {
+            width: 100%;
+            height: 0.36rem;
+            color: #ffffff;
+            font-size: 0.3rem;
+            line-height: 0.36rem;
+            margin-top: 0.5rem;
+            margin-left: 0.2rem;
+        }
+
+        .wrapper .content .cards .card .caedBox .timeBox a {
+            color: #000000;
+            background: #ffffff;
+            border-radius: 0.06rem;
+            display: inline-block;
+            width: 20px;
+            text-align: -webkit-center;
+        }
+
+        .wrapper .content .cards .card .caedBox .bton {
+            width: 2rem;
+            height: 0.6rem;
+            margin: 0 auto;
+            margin-top: 0.3rem;
+        }
+
+        .wrapper .content .cards .card .caedBox .btn2 {
+            width: 100%;
+            height: 0.8rem;
+            margin-top: 0.8rem;
+        }
+
+        .wrapper .content .active {
+            width: 100%;
+            margin-top: 0.8rem;
+        }
+
+        .wrapper .content .activeIcon {
+            width:2.2rem;
+            height: 0.6rem;
+            background: url(../../images/pages/activity/vou_ruletitle.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .wrapper .content .cont {
+            width: 100%;
+            margin-top: 0.5rem;
+            font-size: 0.36rem;
+            line-height: 0.6rem;
+            color: #f48647;
+        }
+
+        .card1 {
+            background: url(../../images/pages/activity/vou_sec1.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .card2 {
+            background: url(../../images/pages/activity/vou_sec2.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .card3 {
+            background: url(../../images/pages/activity/vou_sec3.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .b1 {
+            width: 100%;
+            height: 100%;
+            background: url(../../images/pages/activity/vou1.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .b2 {
+            width: 2rem;
+            height: 0.7rem;
+            background: url(../../images/pages/activity/vou2.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            margin-left: 0.3rem;
+        }
+
+        .b3 {
+            width: 100%;
+            height: 100%;
+            background: url(../../images/pages/activity/vou3.png) 0 0 no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .pCont {
+            color: #7b7b7b !important;
+        }
+
+        .dialogContent {
+            min-height:3.6875rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="main"></div>
+        <div class="instruction">
+            <div class="instImg">
+                <img src="../../images/pages/activity/vou_icon.png">
+            </div>
+            <div class="content">
+                活动期间，每日加息券领取总量不得超过9张，领取后可即时投资使用~
+            </div>
+        </div>
+        <div class="cards" id="cards">
+            <div class="card card1">
+                <div class="caedBox">
+                    <div class="timeContent">距开始还剩</div>
+                    <div class="timeBox">
+                        <a class="a1 hour"></a>&nbsp;:&nbsp;<a class="a1 min"></a>&nbsp;:&nbsp;<a class="a1 second"></a>
+                    </div>
+                    <div class="bton" id="1039">
+                        <div class="b3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="caedBox">
+                    <div class="timeContent">距开始还剩</div>
+                    <div class="timeBox">
+                        <a class="a1 hour"></a>&nbsp;:&nbsp;<a class="a1 min"></a>&nbsp;:&nbsp;<a class="a1 second"></a>
+                    </div>
+                    <div class="bton" id="1040">
+                        <div class="b3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="caedBox">
+                    <div class="timeContent">距开始还剩</div>
+                    <div class="timeBox">
+                        <a class="a1 hour"></a>&nbsp;:&nbsp;<a class="a1 min"></a>&nbsp;:&nbsp;<a class="a1 second"></a>
+                    </div>
+                    <div class="bton" id="1041">
+                        <div class="b3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="active">
+            <div class="activeIcon"></div>
+            <div class="cont pCont">
+                <p>1、活动开始时间：2017年4月26日10:00；</p>
+                <p>2、全程加息券领取成功后，可至“账户-超值礼券”中进行查看；</p>
+                <p>3、如有疑问，可致电客服热线：4000-521-388（工作日9:00-18:00）。</p>
+                <!--<p>4、本活动的最终解释权归V金融所有。</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="btn_buy buy2" onclick="getPage()"></div>
+
+
+<div class="ui-alert backdrop" style="display: none;">
+    <div class="dialog-content dialogContent" style="width:6.03rem;min-height:auto;background: #2c2b2b;left: 60%;top: 55%;">
+        <div class="dialog-article">
+            <p class="alert-message" style="color: #ffffff"></p>
+        </div>
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+<script src="../../js/pages/activityVersion/activityVersion.js?v=9.0.0"></script>
+<script src="../../js/pages/activity/shareButton.js?v=9.0.0"></script>
+<script>
+    $(function() {
+//        $('.backdrop').hide();
+        var $cards = $('#cards');
+        var $bton = $('.bton');
+        //1.前面补0
+        function p(n){
+            return n <10?'0'+n:n;
+        }
+
+        var startDate = new Date();
+        var sDate = new Date('2017/4/26 10:00:00');//开始时间
+        var count=(sDate.getTime()-startDate.getTime())/1000;
+        if(count > 0) {
+            var starTime = setInterval(function(){
+                var startDate = new Date();
+                var endDate = sDate;//开始时间
+                var countDown=(endDate.getTime()-startDate.getTime())/1000;
+                var day=parseInt(countDown/(24*60*60));
+                var h=parseInt(countDown/(60*60)%24);
+                var m=parseInt(countDown/60%60);
+                var s=parseInt(countDown%60);
+                var dayTime = '';
+                if(day > 0) {
+                     h = day*24 + h;
+                }
+                $('.hour').html(p(h));
+                $('.min').html(p(m));
+                $('.second').html(p(s));
+                if(countDown <= 0) {
+                    getStart();
+                    clearInterval(starTime);
+                    return false;
+                }
+            }, 1000);
+        } else {
+//            //活动结束
+//            var endDate = new Date();
+//            var eDate = new Date('2017/4/22 18:07:00');//结束时间
+//            var cou=(eDate.getTime()-endDate.getTime())/1000;
+//            var hou =parseInt(cou/(60*60)%24);
+//            var day=parseInt(cou/(24*60*60));
+//            if(day > 0) {
+                getStart();
+//            } else {
+//                var endTime = setInterval(function(){
+//                    var startDate = new Date();
+//                    var endDate = eDate; // 结束时间
+//                    var countDown=(endDate.getTime()-startDate.getTime())/1000;
+//                    var h=parseInt(countDown/(60*60)%24);
+//                    var m=parseInt(countDown/60%60);
+//                    var s=parseInt(countDown%60);
+//                    $('.hour').html(p(h));
+//                    $('.min').html(p(m));
+//                    $('.second').html(p(s));
+//                    if(h <= 24 && h >= 0 && s > 0) {
+//                        $('.timeContent').html('距结束还剩');
+//                        $('.bton').html('<div class="b1"></div>');
+//                        $('.btn_buy').removeClass('buy2').addClass('buy1').attr({'onclick':'getPage(1)'});
+//                        $bton.addClass('bt');
+//                    } else {
+//                        $('.hour').html(' 0 ');
+//                        $('.min').html(' 0 ');
+//                        $('.second').html(' 0 ');
+//                        $('.btn_buy ').removeClass('buy1').addClass('buy2').attr({'onclick':'getPage()'});
+//                        $('.timeContent').html('距开始还剩');
+//                        $('.bton').html('<div class="b3"></div>');
+//                        $bton.removeClass('bt');
+//                    }
+//                    if(countDown < 0) {
+//                        clearInterval(endTime);
+//                        return false;
+//                    }
+//                }, 1000);
+//            }
+
+        }
+
+        function getStart() {
+            var _html = '';
+            var cId = [1039,1040,1041];
+            for(var i = 1; i <= 3; i++) {
+                _html = _html + ' <div class="card card'+i+'">' +
+                                '<div class="caedBox caedBox1">' +
+                                '<div class="btn2" onclick="getRecieve('+ cId[i - 1] +')">' +
+                                '<div class="b2"></div>' +
+                                '</div>' +
+                                '</div>' +
+                                '</div>';
+            }
+
+            $cards.html(_html);
+            $('.btn_buy').removeClass('buy2').addClass('buy1').attr({'onclick':'getPage(1)'});
+            $bton.addClass('bt');
+        }
+
+        $bton.click(function(event) {
+            //说明活动还未结束
+            if($bton.hasClass('bt')) {
+                var cardId = $(this).attr('id');
+                getRecieve(cardId);
+            }
+        });
+
+
+        var url = window.location.href.split("#")[0];//获取地址
+        var imgurl = 'http://static.wdclc.cn/upload/20170424/20170424175203.jpg';//获取图片的logo
+        var info = {
+            url:url
+        };
+        var shareId = "888";
+        var one = {
+            title: '每天爱❤你多一点，每天比别人多赚3%！',
+            desc: '春风十里，不如宠你！3%全程加息券天天送，爱你的心意永不变~',
+            link: url,
+            imgUrl: imgurl
+        };
+
+        var all = {
+            title: '每天爱❤你多一点，每天比别人多赚3%！',
+            desc: '春风十里，不如宠你！3%全程加息券天天送，爱你的心意永不变~',
+            link: url,
+            imgUrl: imgurl
+        };
+
+        //获取分享信息
+        $.ajax({
+            url: Setting.apiRoot1 + '/getShare.p2p?shareId='+shareId,
+            type: 'GET',
+            dataType: 'json',
+            async: true
+        }).done(function(res) {
+            if (res.code == 1) {
+                one.title = '每天爱❤你多一点，每天比别人多赚3%！';
+                one.desc= '春风十里，不如宠你！3%全程加息券天天送，爱你的心意永不变~';
+                all.title = '每天爱❤你多一点，每天比别人多赚3%！';
+                all.desc= '春风十里，不如宠你！3%全程加息券天天送，爱你的心意永不变~';
+                one.imgUrl = imgurl;
+                all.imgUrl = imgurl;
+                one.link =  'https://static.wdclc.cn/wx/pages/active/voucher.html';
+                all.link =  'https://static.wdclc.cn/wx/pages/active/voucher.html';
+                wxshare();
+            } else {
+                alert(res.message);
+                return false;
+            }
+        });
+        function wxshare(){
+            $.ajax({
+                url: Setting.apiRoot1 + '/wx/jsInfo.p2p',
+                type: 'GET',
+                dataType: 'json',
+                data: {"param": JSON.stringify(info)},
+                async: true
+            }).done(function(res) {
+
+                if (res.code == 1) {
+                    var data = res;
+
+                    wx.config({
+                        debug: false,
+                        appId: data.appId,
+                        timestamp: data.timestamp,
+                        nonceStr: data.nonceStr,
+                        signature: data.signature,
+                        jsApiList: [
+                            // 所有要调用的 API 都要加到这个列表中
+                            'checkJsApi',
+                            'onMenuShareTimeline',
+                            'onMenuShareAppMessage',
+                            'onMenuShareQQ',
+                            'onMenuShareWeibo',
+                            'hideMenuItems',
+                            'showMenuItems',
+                            'hideAllNonBaseMenuItem',
+                            'showAllNonBaseMenuItem',
+                            'getNetworkType',
+                            'openLocation',
+                            'getLocation',
+                            'hideOptionMenu',
+                            'showOptionMenu',
+                            'closeWindow'
+                        ]
+                    });
+
+                    wx.ready(function () {
+                        wx.onMenuShareAppMessage(one);
+                        wx.onMenuShareTimeline(all);
+                        wx.onMenuShareQQ(one);
+                        wx.onMenuShareWeibo(one);
+                    });
+
+                }else{
+                    /*alert(res.code);*/
+                }
+
+            }).fail(function() {
+                alert('网络链接失败，请刷新重试！');
+                //return false;
+            });
+        }
+    });
+
+    function getPage(count) {
+       if(count == 1) {
+           window.location.href = '../../pages/financing/regular.html';
+       }
+    }
+
+    function getRecieve(cardId) {
+        var param = Common.getParam();//param取url参数
+        var sharePostId = param.sharePostId;
+        var userId = '';
+        var loginToken = '';
+        if(sharePostId == 1) {
+            userId = sessionStorage.getItem('uid');
+            loginToken = sessionStorage.getItem('loginToken');
+        } else {
+             userId = sessionStorage.getItem('uid') || param.uid;
+             loginToken = sessionStorage.getItem('loginToken') || param.loginToken;
+        }
+
+        if(userId == null ||userId == undefined || userId == '') {
+            Common.toLogin();
+        }
+        $.ajax({
+            url:Setting.apiRoot1 + '/u/receive.p2p',
+            type:"POST",
+            dataType:'json',
+            data: {
+                userId:userId,
+                loginToken: loginToken,
+                type: cardId
+            }
+        }).done(function(res) {
+            if(res.code == -99) {
+                Common.toLogin();
+                return false;
+            } else {
+                $('.backdrop').show();
+                $('.alert-message').html(res.message);
+                setTimeout(function(){
+                    $('.backdrop').hide();
+                },2000);
+            }
+        }).fail(function() {
+            alert('查询失败');
+        });
+    }
+
+</script>
+</body>
+</html>

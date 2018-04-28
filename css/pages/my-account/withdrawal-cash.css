@@ -1,0 +1,437 @@
+.withdrawal .vm{
+    color:#ef5344;
+
+}
+.bg{
+    background: #fff url() 0 0 no-repeat;
+}
+.contentChanel {
+
+    width:100%;
+    height:3rem;
+
+    padding:0.5rem;
+    box-sizing:border-box;
+}
+.chanelright{
+    width:0.4375rem;
+    height:0.4375rem;
+    /*background: transparent url(../../images/pages/top-up/bg-right.png) 0 0 no-repeat;*/
+    background: transparent url(../../../images/pages/top-up/bg-right.png) 0 0 no-repeat;
+    background-size:contain;
+    margin-top:-1.8rem;
+    margin-right:-2.875rem;
+    z-index:8877;
+    display:none;
+}
+#fyChanel{
+    float:right;
+
+    width:3.234375rem;
+    height:1.84375rem;
+
+    background: url(../../../images/pages/top-up/bg-gray.jpg) 0 bottom no-repeat;
+    background-size:contain;
+    box-sizing:border-box;
+    z-index:22244;
+    cursor: pointer;
+}
+#fyChanel .top,#bfChanel .top{
+
+    width:3.109375rem;
+    height:1.578125rem;
+    margin-top:0.225rem;
+    z-index:-89555;
+}
+#fyChanel .bind,#bfChanel .bind{
+    width:1.6875rem;
+    height:0.515625rem;
+    background:transparent url(../../../images/pages/top-up/bg-select-small.png) 0 0 no-repeat;
+    background-size:contain;
+    margin-top:-0.65rem;
+    z-index:4474;
+    color:#ccc;
+    font-size:0.425rem;
+    line-height:0.515625rem;
+}
+#fyChanel .top img,#bfChanel .top img{
+    width:80%;
+    z-index:-552522;
+}
+#bfChanel{
+    float:left;
+
+
+    width:3.234375rem;
+    height:1.84375rem;
+    background: url(../../../images/pages/top-up/bg-gray.jpg) 0 bottom no-repeat;
+    background-size:contain;
+
+    box-sizing:border-box;
+    z-index:20000;
+    cursor: pointer;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.bgr-title {
+    height: 1.3rem;
+    color: #000000;
+
+}
+
+.bgred {
+    background: #ffffff !important;
+}
+
+.with-title {
+    height: 100%;
+    font-size: 0.475rem;
+    /*font-weight: bolder;*/
+    margin-left: 45%;
+    /*margin-bottom: 50%;*/
+    color:  rgb(55,78,171);
+}
+
+.bank {
+    width: 0.48rem;
+    margin: 0.7rem 0.25rem 0 0.8rem;
+}
+
+.wrapper ul li.with-bank {
+    min-height: 2.5rem;
+    font-size: 0.4rem;
+    margin-bottom:0.25rem;
+}
+
+.wrapper ul li .bang-name {
+    position: absolute;
+    line-height: 1rem;
+    top: 0.3rem;
+}
+
+.wrapper ul li.bank-ground {
+    height: 0.3rem;
+    background: #ffffff;
+}
+
+.bank-city-div {
+    // background: whitesmoke;
+    // height: 0.6rem;
+}
+
+.city-div {
+    color: #4A4A4A;
+    font-size: 0.3733rem;
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+.city-div2 {
+    color: #4A4A4A;
+    font-size: 0.3733rem;
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+.city-div3 {
+    color: #4A4A4A;
+    font-size: 0.3733rem;
+    margin: 0 0.8rem 0 0.8rem;
+    display:none;
+}
+
+.city-span {
+    width:4.5rem;
+    display:inline-block;
+    margin-left: 1rem;
+    color: #CDCDCD;
+}
+
+.segmentation {
+    margin: 0 0.2rem;
+}
+
+.wrapper ul li.carry-li {
+    background: whitesmoke;
+}
+
+.carry-span {
+    display: inline !important;
+    float: right;
+    width: auto !important;
+    color:#2B6FF9 ;
+    font-size:0.3466rem;
+}
+
+.iconcar {
+    margin-left: -0.3rem;
+    color: #130303;
+    font-size: 0.5rem;
+}
+
+.deposit {
+    margin: 0 0.8rem;
+}
+
+.ui-text-input .txt {
+    overflow: hidden;
+    width: 6.35rem;
+    padding: .15625rem 0;
+    margin-top: .375rem;
+    padding-left: .15625rem;
+    border: none;
+    font-size: .6rem;
+    font-size: .585rem;
+    color: #4A4A4A;
+    // padding-right: 1rem;
+    // margin-left: 0.5rem;
+}
+
+
+.withdrawal-record {
+    height: 1.5rem;
+    /*background: red;*/
+    font-size: 0.35rem;
+    /*padding-top: 0.2rem;*/
+    padding: 0.6rem 0.5rem;
+}
+
+.withdrawal-record span {
+    /*margin: 1rem 0.2rem;*/
+}
+
+.span-account  {
+    // color: red;
+}
+
+.span-money  {
+    // color: red;
+}
+
+.withdrawal-record-monery {
+    margin-left: 1rem;
+}
+
+.regist {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    background-size: cover;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.city-cascade {
+    height: 6.8rem;
+    margin-top: 10rem;
+}
+
+.cascade-title {
+    height: 1.2rem;
+    background: #b3b3b3;
+    color: #ffffff;
+    font-size: 0.5rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.cascade-determine {
+    margin-left: 70%;
+}
+
+.city-content {
+    height: 100%;
+    width:100%;
+    background: #ffffff;
+}
+
+.top {
+    margin-top: 0rem;
+}
+
+.img1 {
+    width: 4.2rem;
+}
+
+.img2 {
+    width: 4.5rem;
+    float: right;
+}
+
+.bf {
+    color: #ffffff;
+    position: absolute;
+    margin-left: 0.2rem;
+    font-size: 0.375555rem;
+    margin-top: 0.1rem;
+}
+
+.fy {
+    color: #ffffff;
+    position: absolute;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+    font-size: 0.375555rem;
+}
+
+.bf-content {
+    position: absolute;
+    margin: 0.9rem 0.2rem;
+    /*margin-top: 0.8rem;*/
+    /*margin-left: 0.2rem;*/
+    font-size: 0.355555rem;
+}
+
+.fy-content {
+    position: absolute;
+    /*margin: 0.9rem 0.8rem;*/
+    margin: 0.9rem 0.2rem;
+    font-size: 0.355555rem;
+}
+
+.sp {
+    /*font-size: 0.4rem;*/
+    color: #000000;
+}
+
+p {
+    color: #999
+}
+
+.with-md20 {
+    margin-top: 0 !important;
+}
+
+.province {
+    width: 100%;
+    height: 1rem;
+    background: red;
+}
+
+.ui-text-input .with-bank-cit {
+    width: 100%;
+    height: 0rem;
+    line-height: 1.5625rem;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+    position: relative;
+    margin-top:0.25rem;
+    display: none;
+}
+
+.btn-next {
+    font-size: 0.5rem;
+    background: #AAC5FC;
+    // margin-bottom:0.25rem;
+    // margin-top: 0.8rem;
+}
+
+.contentChanel {
+    font-size: 0.4rem;
+}
+
+.divImg2 {
+    float: left;
+}
+
+.bindCard {
+    width: 0.5rem;
+    position: absolute;
+    margin-top: 0.863rem;
+    /*margin-left: 4rem;*/
+
+}
+.bank-Id {
+    color: #9B9B9B;
+    font-size;0.3733rem;
+    line-height: 0.4rem;
+}
+
+ img .bindCard2 .bindCard {
+
+ }
+
+ .bindCard2 {
+  /*margin: 0 auto;*/
+ }
+.caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.475rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #999;
+  margin-bottom:0.2rem;
+  color:  rgb(55,78,171);
+}
+.caption a.back{
+  display: block;
+    width: .275rem;
+    height: .45rem;
+    background: url(../../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+/*     transform:rotate(180deg);
+-ms-transform:rotate(180deg); 
+-moz-transform:rotate(180deg);  
+-webkit-transform:rotate(180deg);
+-o-transform:rotate(180deg);  */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+.caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+.caption .title{
+  position: absolute;
+    right:0.4140625rem;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size:0.35rem;
+    color: #999;
+
+}
+a.titleHref{
+    display: block;
+    color: rgb(55,78,171);
+    width: 100%;
+    height: 0.6rem;
+    font-size: 0.35rem;
+    line-height: 0.6rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    text-align: right;
+}
+.bank-city {
+    display:block !important;
+    height: 1.5rem !important;
+    background:#ffffff;
+}
+.wrapper{
+    padding: 0 0.25rem;
+}
+.bank-type{
+    font-size:0.4266rem;
+    color:#4A4A4A;
+}
+.ui-text-input li{
+    border:none;
+    height:auto;
+}
+.mt10{
+    padding:0.4rem 0.8rem;
+}
+.all{
+    color:#2B6FF9;font-size:0.3466rem;
+}

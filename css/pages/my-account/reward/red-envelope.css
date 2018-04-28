@@ -1,0 +1,61 @@
+#main{
+  height:100%;
+}
+.box-163css{
+  height:100%;
+  margin-bottom:0px;
+}
+#slider{
+  height:93% !important;
+  overflow: hidden;
+}
+#slider .box01_list{
+  height:100%;
+}
+#slider .box01_list .li_list{
+  height:100%;
+  overflow-y: scroll;
+}
+.nullimg{
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto;
+}  
+p.Null{
+  font-size: 0.3rem;
+  height: 1rem;
+  text-align: center;
+  color: rgb(180,180,180);
+}
+.coupon .state img{
+  max-width:1.2533rem;
+}
+.reward_cpinfo {
+    padding: 0.5rem 0 0 0.5rem!important;
+}
+.box01_list{
+    margin-top:0.266rem;
+}
+.page{
+    height:1.1733rem;
+    line-height:1.1733rem;
+    background:#fff;
+    color:#666;
+    font-size:0.3733rem;
+}
+.page li{
+    height:1.1733rem;
+    line-height:1.1733rem;
+}
+.page a.active{
+    display:inline-block;
+    color:#6C6FFF;
+    height:1.13rem;
+    border-bottom:0.0533rem solid #6C6FFF;
+}
+.mui-pull-loading{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+}

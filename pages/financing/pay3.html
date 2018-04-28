@@ -1,0 +1,368 @@
+<style type="text/css">
+    .page-pay .input-box{
+        height:1.15rem;
+        margin-left: 0.755rem;
+    }
+    .page-pay .input-box .box{
+        width:1.12rem;
+        height:1.12rem;
+    }
+    .page-pay .title{
+        font-size:0.4266rem;
+        padding:0.2rem 0;
+        text-align: center;
+        color:#4A4A4A ;
+    }
+    .red{
+        font-size:0.8rem;
+        padding:0.2rem 0;
+        text-align: center;
+        color:#4A4A4A !important;
+    }
+
+
+    .dialog-content{
+        border-radius: 0.1333rem;
+        min-height: inherit;
+    }
+
+    .topup_top_box{
+        padding:0.3733rem;
+        text-align:center;
+
+    }
+    .tc.btn-box1{
+        width:100%;
+        border-top: 0.0133rem solid #D2D3D5;
+        margin:0;
+    }
+    .btn{
+        font-size: 0.4rem;
+        font-weight:normal;
+    }
+    .btn.btn-link{
+        width:48% !important;
+        margin:0 !important;
+        box-sizing: border-box;
+        background: #fff;
+        color:#666;
+        border-right: 0.0133rem solid #D2D3D5;
+        padding:0.4266rem 0 ;
+        height: inherit;
+        line-height: inherit;
+    }
+    .btn.btn-default-two{
+        margin:0 !important;
+        width:50% !important;
+        background: #fff;
+        color:#6C6FFF;
+        padding:0.4266rem 0 ;
+        height: inherit;
+        line-height: inherit;
+    }
+    .dialog-content .close{
+        height:0.44rem;
+        width:100%;
+        position:static;
+    }
+    .dialog-content .close img{
+        display:block;
+        float:right;
+        width:0.44rem;
+        height:0.44rem;
+    }
+    .dialog-content .close{
+        background:transparent;
+    }
+    .topup_top_box{
+        font-size:0.48rem;
+    }
+    .dialog-content .dialog-article p{
+        text-align:center;
+        padding:0;
+        font-size:0.4533rem;
+        color:#666;
+        margin:0.6133rem 0;
+    }
+    .ui-dialogFail.backdrop{
+        background: rgba(0, 0, 0, .6);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        width: 100%;
+        height: 100%
+    }
+    .dialog-title{
+        font-weight:bold;
+    }
+</style>
+<div id="pay2">
+    <div class="page-pay" style="position: fixed;
+	    left: 0;
+	    top: 0;
+	    z-index: 99999;
+	    width: 100%;
+	    height: 100%;background: rgba(0, 0, 0, .6);">
+        <div class="dialog-content" style="top:50%;padding-bottom: 0.5rem;">
+            <div class="tips fz24 mt20 mb20 tc">请输入交易密码
+                <img class="close" src="../../images/pages/financing/payresult/close.png" style="width:0.3386rem;
+			height:0.3386rem;
+			position:absolute;
+			top:0.4rem;
+			left:0.5rem;"">
+            </div>
+
+            <div class="title">确认加入</div>
+            <div class="red money">￥0.00</div>
+            <div class="input-box">
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+                <span class="box"></span>
+
+                <input type="number" maxlength="6" class="input" value="">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+//    $(function(){
+//        var payInfo = sessionStorage.getItem('buy-pro');
+//        var userId = sessionStorage.getItem('uid');
+//        var param = Common.getParam();
+//        var reback = param.reback;
+//        var cycle = sessionStorage.getItem("cycle");
+//        var clicktype = sessionStorage.getItem('clicktype');
+//        var isJoinInvite = param.isJoinInvite;
+//        var userRateCouponIds='';//加息券、体验金id
+//        var userRate = '';
+//        var investCouponId='';//投资红包id
+//        var invest = '';
+//        var vjr_selectedConpon =  [];
+//        vjr_selectedConpon =  sessionStorage.getItem('vjr_selectedConpon');
+//        if(vjr_selectedConpon != undefined && vjr_selectedConpon != null && vjr_selectedConpon != '') {
+//            vjr_selectedConpon = JSON.parse(sessionStorage.getItem('vjr_selectedConpon'))
+//            for(var i = 0; i < vjr_selectedConpon.length; i++) {
+//                if (vjr_selectedConpon[i].type == 1 || vjr_selectedConpon[i].type == 2) {
+//                    userRateCouponIds = userRateCouponIds + vjr_selectedConpon[i].id + ',';
+//                }
+//
+//                if (vjr_selectedConpon[i].type == 3) {
+//                    userRateCouponIds = userRateCouponIds + vjr_selectedConpon[i].id + ',';
+//                }
+//
+//                if (vjr_selectedConpon[i].type == 5) {
+//                    investCouponId = investCouponId + vjr_selectedConpon[i].id + ',';
+//                }
+//            }
+//
+//            if(userRateCouponIds != undefined && userRateCouponIds != null && userRateCouponIds != '') {
+//                userRate = userRateCouponIds.substr(0,userRateCouponIds.length-1);
+//                userRate.toString();
+//            }
+//
+//            if(investCouponId != undefined && investCouponId != null && investCouponId != '') {
+//                invest = investCouponId.substr(0,investCouponId.length-1);
+//                invest.toString();
+//            }
+//        }
+//
+//
+//        var $ui_dialog = $('.ui-dialog');
+//        var $ui_dialogFail = $('.ui-dialogFail');
+//        var $btn_link  = $('.btn-link',$ui_dialog);
+//        var $btn_default = $('.btn-default-two',$ui_dialog);
+//        var $btn_linkFail  = $('.btn-link',$ui_dialogFail);//重新输入
+//        var $btn_defaultFail = $('.btn-default-two',$ui_dialogFail);//忘记密码
+//
+//
+//
+//        var $inputBox = $('.input-box');
+//        var $boxs = $('.box', $inputBox);
+//        var pass = '';
+//
+//        if(!userId){
+//            Common.toLogin();
+//            return false;
+//        }
+//        console.log(payInfo)
+//        if(!payInfo){
+//            return false;
+//        }
+//
+//        payInfo = JSON.parse(payInfo);
+//
+//        var $pay = $('.page-pay');
+//        var $money = $('.money');
+//
+//        // setData
+//        $money.text('￥'+parseFloat(payInfo.investAmt).toFixed(2));
+//        function pay(){
+//            var pwd = $('input', $inputBox).val();
+//            var post = {
+//                investAmt: payInfo.investAmt,
+//                userId: userId,
+//                prodId: payInfo.prodId,
+//                tradePassword: md5(pwd),
+//                reback: reback,
+//                isJoinInvite:isJoinInvite,
+//                userRateCouponIds:userRate,
+//                investCouponId:invest
+//            };
+//            if(param.noviceId){
+//                post.couponSumAmt = payInfo.investAmt;
+//                post.couponList = param.noviceId;
+//            }
+//            post.loginToken=sessionStorage.getItem('loginToken');
+//
+//
+//
+//            $.ajax({
+//                url: Setting.apiRoot1 + '/u/investPurchaseNew.p2p',
+//                type: 'post',
+//                dataType: 'json',
+//                data: post
+//            }).done(function(res){
+//                Common.ajaxDataFilter(res, function(res){
+//                    if(res.code == 1){
+//                        sessionStorage.setItem('payCode',res.code);
+//                        sessionStorage.setItem('bearingTime',res.data.bearingTime);
+//                        sessionStorage.setItem('endTime',res.data.endTime);
+//                        sessionStorage.setItem('newProd',res.data.newProd);//是否购买过新手标
+//                        if(res.data.giftCarCoupons != null){
+//                            sessionStorage.setItem('giftCarCoupons',res.data.giftCarCoupons);//是否有卡券礼包
+//                        }
+//                        window.location.href='./payResult.html'
+//                    }else if(res.code == -3){
+//                        alert('交易密码错误，请重试');
+//                        $('.ui-alert .dialog-content .btn-box2').css({
+//                            'margin':'0'
+//                        })
+//                        $('.btn-sm').css({
+//                            'width':'100%',
+//                            'height':'1rem',
+//                            'lineHeight':'1rem',
+//                            'background':'#fff',
+//                            'fontSize':'0.4533rem',
+//                            'color':'#0076FF',
+//                            'margin':'0',
+//                            'borderTopWidth':'0.0266rem',
+//                            'borderTopStyle':'solid',
+//                            'borderColor':'#D8D8D8',
+//                            'borderRadius':'0 0 0.325rem 0.325rem'
+//
+//                        })
+//                        $('.btn-sm').text('重试');
+//                        $('.btn-sm').click(function(){
+//                            $('#pay2').show();
+//                        })
+//                        $boxs.each(function(index, box){
+//                            $(this).removeClass('full');
+//                        });
+//                        $('#pay2').hide();
+//                        return false;
+//                    }else if(res.code == -2){
+//                        alert(res.message);
+//                        $('.ui-alert .dialog-content .btn-box2').css({
+//                            'margin':'0'
+//                        })
+//                        $('.btn-sm').css({
+//                            'width':'100%',
+//                            'height':'1rem',
+//                            'lineHeight':'1rem',
+//                            'background':'#fff',
+//                            'fontSize':'0.4533rem',
+//                            'color':'#0076FF',
+//                            'margin':'0',
+//                            'borderTopWidth':'0.0266rem',
+//                            'borderTopStyle':'solid',
+//                            'borderColor':'#D8D8D8',
+//                            'borderRadius':'0 0 0.325rem 0.325rem'
+//                        })
+//                        $('.btn-sm').text('确定')
+//                        $('#pay2').remove();
+//                        return false;
+//
+//                    }else if(res.code == -20){
+//                        alert(res.message);
+//                        $('#pay2').remove();
+//                        $('.submit').click(function(){
+//                            window.location.href = "../my-account/setting/problem/problemdetails.html";
+//                            return false;
+//                        })
+//                    }else if(res.code == -99){
+//                        window.location.href = "../account/login.html";
+//                        return false;
+//                    }else{
+//                        sessionStorage.setItem('payCode',res.code);
+//                        alert(res.message)
+//                        $('#pay2').remove();
+//                    }
+//                });
+//            }).fail(function(){
+//                alert('支付失败，请重试！');
+//                $('#pay2').remove();
+//                return false;
+//            });
+//        }
+//        var flag = 0;
+//        $inputBox.on('keydown input focus blur', 'input', function(e){
+//            flag = flag + 1;
+//            var $this = $(this);
+//
+//            if(e.type == 'keydown'){
+//                var code = e.keyCode;
+//                if(code != 8 && (code < 48 || code > 57)){
+//                    return false;
+//                }
+//            }
+//            var val = $.trim( $this.val() );
+//            pass = val;//parseInt(val);
+//
+//            isNaN(pass) && ( pass = '' );
+//
+//            pass = pass + '';
+//            if(pass.length > 6){
+//                pass = pass.substring(0, 6);
+//            }
+//            if(pass.length < 6){
+//                flag = 0;
+//            }
+//            $inputBox.find('input').val(pass);
+//
+//            if(e.type == 'focusout'){
+//                $boxs.removeClass('focus');
+//            }
+//            var len = pass.length;
+//            if(e.type == 'focusin'){
+//                len == 0 ? (true) : (len = len - 1);
+//            }
+//            $boxs.eq(len).addClass('focus').siblings('.focus').removeClass('focus');
+//            var passArr = pass.split('');
+//            $boxs.each(function(index, box){
+//                var $box = $(box);
+//
+//                if(!!passArr[index]){
+//                    $box.addClass('full');
+//                }else{
+//                    $box.removeClass('full');
+//                }
+//            });
+//            if(pass.length == 6 && flag == 1){//密码输入完毕
+//                pay();
+//
+//            }
+//        });
+//        $('.close>img').click(function(){
+//            $('.backdrop').addClass('hide');
+//        })
+//
+//        $('.page-pay img').click(function(){
+//            $('#pay2').remove();
+//        })
+//    });
+
+</script>

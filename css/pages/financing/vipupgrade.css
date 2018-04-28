@@ -1,0 +1,664 @@
+
+.wrapper {
+    background: #ffffff;
+}
+
+.vip_banner {
+    width: 100%;
+    height: 4.9rem;
+    background: url(../../../images/pages/financing/vip/banner.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.vip_banner_div {
+    width: 100%;
+    height: 1rem;
+    position:absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 0.5rem;
+}
+
+.vip_banner_div1 {
+    width: 4rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.vip_banner_div11 {
+    width: 1.5rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.vip_banner_div12 {
+    width: 2.5rem;
+    height: 100%;
+    text-align: left;
+    font-size: 0.435rem;
+    color: #9B9B9B;
+    line-height: 1rem;
+    position: absolute;
+    right: 0;
+}
+
+.vip_banner_div11 > img {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.2rem;
+    margin: 0 auto;
+}
+
+.vip_banner_div2 {
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: block;
+    line-height: 1rem;
+    text-align: center;
+    color: #D7BB88;
+    font-size: 0.28rem;
+}
+
+.vip_box_content {
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+
+.vip_box {
+    width: 9rem;
+    height: 7rem;
+    background:url(../../../images/pages/financing/vip/kuai.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:-0.7rem;
+    z-index: 100;
+}
+
+.vip_box7 {
+    width: 292px;
+    height: 1.2rem;
+    position: absolute;
+    /*background: #ff0000;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.vip_san {
+    width: 0.9rem;
+    height: 0.6rem;
+    background:url(../../../images/pages/financing/vip/san.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0.4rem;
+    left: -42px;
+    z-index: 100;
+}
+
+.vip_scroll {
+    width: 292px;
+    height: 1.1rem;
+    margin: 0 auto;
+    margin-top: -0.45rem;
+    position: relative;
+}
+
+.vip_scroll_01 {
+    width: 290px;
+    height: 4px;
+    background: #F0F0F0;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.vip_scroll_02 {
+    width: 11px;
+    height: 11px;
+    background:  #F0F0F0;
+    position: absolute;
+    top: 7px;
+    left: 16px;
+    border-radius: 5px;
+}
+
+.vip_scroll_03 {
+    width: 11px;
+    height: 11px;
+    background: #F0F0F0;
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    border-radius: 5px;
+}
+
+.vip_icon {
+    background: #D7BB88;
+}
+
+.vip_scroll_text01 {
+    width: 80px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+
+.vip_scroll_text02 {
+    width: 80px;
+    height: 40px;
+    float: right;
+    position: relative;
+}
+
+.vip_scroll_text011 {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: left;
+    color:  #9B9B9B;
+}
+
+.vip_scroll_text012 {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: right;
+    color:  #9B9B9B;
+}
+
+.vip_rules {
+    width: 7.8rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    position: relative;
+}
+
+.vip_rules_01 {
+    width: 7.3rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.6rem;
+    color:  #9B9B9B;
+    font-size: 0.3rem;
+    position: relative;
+}
+
+#toastMessage {
+    z-index: 100 !important;
+}
+
+.vip_rules_01_img {
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    border-radius: 0.15rem;
+    top: 0.15rem;
+    left: 0.4rem;
+    border: 1px solid #D7BB88;
+    overflow: hidden;
+    margin-right: 0.1rem;
+    /*background: #D7BB88;*/
+}
+.vip_img {
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../../../images/pages/financing/vip/select.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vip_rules_01 > a {
+    color: #D7BB88;
+}
+
+.vip_button {
+    width: 100%;
+    height: 1.1839rem;
+    background: #D7BB88;
+    display: block;
+    font-size: 0.435rem;
+    line-height: 1.1839rem;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.vip_box1 {
+    width: 100%;
+    height: 1.5rem;
+    /*background: #ff0000;*/
+    position: relative;
+}
+
+.vip_box11 {
+    width: 8.9rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+    text-align: center;
+    font-size: 0.3867rem;
+    color: #353535;
+    /*font-weight: bold;*/
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom: 0.5px solid #DCDCDC;
+}
+
+.vip_box12 {
+    width: 2.6rem;
+    height: 1.5rem;
+    /*background: fuchsia;*/
+    position: absolute;
+    right: 0.3rem;
+    top: 0;
+    display: block;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #D7BB88;
+}
+
+.vip_box121 {
+    width: 0.6rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 0.66rem;
+    right: 0.1rem;
+}
+
+.vip_select {
+    width: 0.3164rem;
+    height: 0.195rem;
+    background: url(../../../images/pages/financing/vip/kai.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vip_box2 {
+    width: 100%;
+    height: 0.6rem;
+    margin-top: 0.4rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 0.34rem;
+}
+
+.vip_box2 > a {
+    color: #4A4A4A;
+}
+
+.vip_box3 {
+    width: 100%;
+    height: 0.6rem;
+    margin: 0.2rem auto;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 0.3rem;
+}
+
+.vip_box3_a2 {
+    color: #9B9B9B;
+}
+
+.vip_box3_a1 {
+    color: #FF721F;
+}
+
+.vip_box4 {
+    width: 8rem;
+    height: 1rem;
+    /*background: red;*/
+    margin: 0 auto;
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.vip_box41 {
+    width: 1.5rem;
+    height: 1rem;
+    background: url(../../../images/pages/financing/vip/jian.png) 0 0 no-repeat;
+    background-size: 100%  100%;
+    position: absolute;
+    left: 0;
+    display: block;
+}
+
+.jiandisable {
+    background: url(../../../images/pages/financing/vip/jiandis.png) 0 0 no-repeat;
+    background-size: 100%  100%;
+}
+
+.vip_box42 {
+    width: 4.5rem;
+    height: 1rem;
+    border-bottom: 1px dashed #DCDCDC;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.vip_box43 {
+    width: 1.5rem;
+    height: 1rem;
+    background: url(../../../images/pages/financing/vip/add.png) 0 0 no-repeat;
+    background-size: 100%  100%;
+    position: absolute;
+    right: 0;
+    display: block;
+}
+
+.adddisable {
+    background: url(../../../images/pages/financing/vip/adddis.png) 0 0 no-repeat;
+    background-size: 100%  100%;
+}
+
+.vip_box421 {
+    width: 4.5rem !important;
+    height: 1rem!important;
+    border: none;
+    text-align: center;
+    line-height: 1rem!important;
+    color: #4A4A4A;
+    font-size: 0.58rem;
+
+}
+
+input[type=number] {
+    padding: 0 !important;
+}
+
+.vip_box5 {
+    width: 4rem;
+    height: 0.6rem;
+    background: #F9F5ED;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.6rem;
+    /*color: #D7BB88;*/
+    color: #9B9B9B;
+    font-size: 0.3rem;
+    display: block;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.vip_box6 {
+    width: 100%;
+    height: 1rem;
+    font-size: 0.3rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #4A4A4A;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.vip_box61 {
+    color: #4A4A4A;
+}
+
+.vip_box12 > p {
+    font-size: 0.28rem;
+    color: #D7BB88 !important;
+}
+
+.mui-poppicker-header {
+    width: 9rem;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.mui-poppicker-header .mui-btn {
+    font-size: 16px;
+}
+
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+    /*color: #007aff;*/
+    background: none;
+    border: none;
+    color: #2B6FF9;
+}
+
+.process {
+    width: 0;
+    height: 100%;
+    background: #D7BB88;
+    border-radius: 5px;
+}
+
+.vip_banner_div2:active {
+    color: #D7BB88;
+}
+
+.vip_box5:active {
+    color: #D7BB88;
+}
+
+.vip_card {
+    display: none;
+}
+
+.vip_card_background {
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*top: 0;*/
+    bottom: 0;
+    z-index: 10000;
+}
+
+.vip_card_box {
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #F2F2F2;
+    z-index: 10001;
+}
+
+.vip_card_box1 {
+    width: 100%;
+    height: 4.9rem;
+    position: relative;
+    padding-top: 0.3rem;
+    /*overflow-y: auto;*/
+}
+
+.vip_card_box2 {
+    width: 100%;
+    height: 1.1rem;
+    background: #ffffff;
+    display: block;
+    font-size: 0.45rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #4A4A4A;
+}
+
+.vip_card_box2:active {
+    color: #4A4A4A;
+}
+
+.vip_card_box1_no {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.3rem;
+}
+
+.vip_card_box1_no1 {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../../../images/pages/financing/vip/nocard.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.vip_card_box1_no2 {
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #9B9B9B;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.vip_card_box01 {
+    width: 100%;
+    height: 4.3rem;
+    margin-bottom: 0.3rem;
+    overflow-y: scroll;
+}
+
+.vip_card_box11 {
+    width: 8.339rem;
+    height: 1.45rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    color: #ffffff;
+}
+
+.card1 {
+    background: url(../../../images/pages/financing/vip/fan.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.card2 {
+    background: url(../../../images/pages/financing/vip/jia.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vip_card_box111 {
+    width: 1.9rem;
+    height: 100%;
+    float: left;
+}
+
+.vip_card_box112 {
+    width: 6.3rem;
+    height: 100%;
+    float: right;
+
+}
+
+.vip_card_box1111 {
+    width: 100%;
+    height: 0.8rem;
+    font-size: 18px;
+    line-height: 1.1rem;
+    text-align: center;
+}
+
+.vip_card_box1111 > a {
+    font-size: 12px !important;
+    color: #ffffff !important;
+}
+
+.vip_card_box1112 {
+    width: 100%;
+    height: 0.4rem;
+    text-align: center;
+    font-size: 12px;
+    line-height: 0.4rem;
+}
+
+.vip_card_box1121 {
+    width: 5rem;
+    height: 100%;
+    float: left;
+}
+
+.vip_card_box11211 {
+    width: 100%;
+    height: 0.8rem;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 1.1rem;
+    padding-left: 0.3rem;
+    font-weight: bold;
+}
+
+.vip_card_box11212 {
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding-left: 0.3rem;
+    font-size: 12px;
+    color:  #9B9B9B;
+}
+
+.vip_card_box1122 {
+    width: 1.3rem;
+    height: 100%;
+    /*background: darkgreen;*/
+    float: left;
+    position: relative;
+}
+
+.vip_card_box11221 {
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 2px solid #D7BB88;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0.525rem auto;
+    display: block;
+}
+
+.vipCardTrue {
+    background: url(../../../images/pages/financing/vip/select.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vip_button:active {
+    color: #ffffff;
+}

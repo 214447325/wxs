@@ -1,0 +1,43 @@
+
+.navTitle {
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    height: 1.2rem;
+    /*border-top: 1px solid #dfdfdf;*/
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateZ(0);
+    transform: translateX(-50%) translateZ(0);
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.commonWidth {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.returnImg {
+    width: 0.5rem;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.return-img {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.titleContent {
+    width: 8rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}

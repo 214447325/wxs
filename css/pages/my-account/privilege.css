@@ -1,0 +1,293 @@
+		.wrapper{
+			padding-bottom:1.333rem;
+		}
+		.float-left{
+			float:left;
+		}
+		.float-right{
+			float:right;
+		}
+		/*.title{
+			height:4.1066rem;
+		}*/
+		img{
+			width:100%;
+		}
+		.content{
+			font-size: 0.3733rem;
+			color: #9B9B9B;
+			line-height:0.5866rem;
+			min-height: 12.26rem;
+			padding:0.25rem 0.4rem;
+		}
+		.rule-explain{
+			width:0.3466rem;
+			height:0.4rem;
+			float:left;
+		}
+		.content-title{
+			margin-bottom:0.25rem;
+			margin-top:0.85rem;
+		}
+		.rule-title{
+			margin-left:0.25rem;
+			font-size: 0.4266rem;
+			color: #4A4A4A;
+			letter-spacing: 0;
+			line-height: 0.4266rem;
+			
+		}
+		.content-lineLeft{
+			width:0.1066rem;
+			height:0.4266rem;
+			background:#C29740;
+			float:left;
+		}
+		.content-box-margin-bottom{
+			margin-bottom:0.25rem;
+		}
+		.table{
+			text-align:center;
+			line-height: 0.9rem;
+			margin-bottom:0.4rem;
+		}
+		.table>div>div{
+			width:32%;
+			// border:0.00665rem solid #C29740;
+			border-bottom:0.00665rem solid #C29740;
+			border-right:0.00665rem solid #C29740;
+
+		}
+		.table>div>div:nth-child(3){
+			width:36%;
+
+		}
+		.table-title{
+			line-height:1.2256rem;
+			color:#fff;
+			background:#C29740;
+		}
+		.mask{
+			width:100%;
+			height:100%;
+			text-align: center;
+			font-size: 0.3733rem;
+			color: #FFFFFF;
+		    padding-top: 0.5rem;
+			position:absolute;
+			left: 0;
+			top:0;
+		}
+		.mask-alert{
+			background:#000;
+			opacity: 0.6;
+		}
+		.white{
+			width:0.2933rem;
+			height:0.384rem;
+		}
+		.white-2{
+			width:0.2933rem;
+			height:0.384rem;
+		}
+		.birthday-title{
+			font-size: 0.4277rem;
+		    color: #D7BB88;
+		    position: absolute;
+		    left: 0.6rem;
+		    top: 0.6rem;
+		}
+		.birthday-privilege{
+			position: relative;
+			height: 2.29rem;
+			overflow:hidden;
+			margin-bottom:0.5rem;
+		}
+		.birthday-text{
+			position: absolute;
+			right:0.25rem;
+			top:0.25rem;
+			font-size: 0.2933rem;
+			color: #D2AB69;
+		}
+		.birthday-botton{
+			display:none;
+			width:1.9466rem;
+			height:0.64rem;
+			line-height: 0.64rem;
+			text-align: center;
+			font-size: 0.32rem;
+			color: #FFFFFF;
+			background: #D7BB88;
+			border-radius: 0.08rem;
+			position:absolute;
+			right:1.8rem;
+			top:1rem;
+		}
+		.birthday-botton2{
+			display:none;
+			width:1.9466rem;
+			height:0.64rem;
+			line-height: 0.64rem;
+			text-align: center;
+			font-size: 0.32rem;
+			color: #FFFFFF;
+			background: #ccc;
+			border-radius: 0.08rem;
+			position:absolute;
+			right:1.8rem;
+			top:1rem;
+		}
+		.customService{
+			width:80%;
+			height:1.15rem;
+			line-height:1.15rem;
+			text-align:center;
+			font-size:0.4266rem;
+			letter-spacing: 0.05rem;
+			color:#fff;
+			background:#D7BB88;
+			border-radius: 0.16rem;
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0.5rem;
+			margin:0 auto;
+			display:none;
+		}
+		.customService-2{
+			opacity:0.7;
+			display:block
+		}
+		.return{
+			width:100%;
+			display:block;
+			line-height:1.333rem;
+			font-size: 0.48rem;
+			color: #D7BB88;
+			text-align: center;
+			background:#F3F3F3;
+			position: fixed;
+			bottom:0;
+			left:0;
+		}
+		/*加息特权*/
+		.interestTitle{
+			background-image:url('../../../images/pages/my-account3.0/privilege/icon.png');
+			background-size:0.48rem auto;
+			background-repeat:no-repeat;
+			background-position:0.75rem 0.3rem;
+		}
+		/*专享理财*/
+		.financil-libao{
+			width:9.2533rem;
+			height:2.64rem;
+			border:0.0266rem solid #DCDCDC;
+			padding:0.25rem;
+			background: #FAFAFA;
+			border-radius: 0.0266rem;
+		}
+		.financil-libao-2{
+			// border:0.0266rem solid #D7BB88;
+		}
+		.financial-libao-no{
+			height:100%;
+			text-align: center;
+			line-height:2.2rem;
+			font-size: 0.32rem;
+			color: #9B9B9B;
+		}
+		.financial-libao-yes{
+			display:none;
+		}
+		.financial-libao-background{
+			width:4rem;position:absolute;right:0;bottom:0;
+		}
+		.financial-libao-yes-title{
+			line-height: 0.6rem;color:#4A4A4A;font-size:0.32rem;margin-bottom:0.18rem;
+		}
+		.financial-libao-yes-pro{
+			width:40%;line-height:0.5rem;color: #C09350;font-size:0.64rem;
+		}
+		.financial-libao-yes-pro-right{
+			width:60%;font-size:0.3733rem;color: #4A4A4A;line-height:0.7rem;
+		}
+		.financial-libao-yes-pro-bottom-left{
+			width:40%;font-size:0.266rem;
+		}
+		.financial-libao-yes-pro-bottom-right{
+			width:60%;font-size:0.266rem;
+		}
+		.diamonds{
+			width:0.348rem;
+			height:0.348rem;
+			margin-top:0.1rem;
+			margin-right:0.15rem;
+			float:left;
+		}
+		/*弹框*/
+		 .dialog-content{
+		 	width:7.2rem;
+		 	min-height: 1rem;
+	 	    margin-left: -3.6rem;
+	    	border-radius: 0.32rem;
+	    	overflow: hidden;
+		 }
+
+		.topup_top_box{
+		  	padding:0.7rem;
+		   	text-align:center;
+		  	font-size:0.48rem;
+
+		}
+		.tc.btn-box1{
+	    	width:100%;
+		    border-top: 0.0133rem solid #D8D8D8;
+		    margin:0;
+		}
+		.btn{
+		    font-size: 0.4rem;
+		    font-weight:normal;
+		}
+		.btn.btn-link{
+		    width:48% !important;
+		    margin:0 !important;
+		    box-sizing: border-box;
+		    background: #fff;
+		    color:#666;
+		    border-right: 0.0133rem solid #D8D8D8;
+		    padding:0.4266rem 0 ;
+		    height: inherit;
+		    line-height: inherit;
+		}
+		.btn.btn-default-two{
+		    margin:0 !important;
+		    width:50% !important;
+		    background: #fff;
+		    padding:0.4266rem 0 ;
+		    height: inherit;
+		    line-height: inherit;
+			// font-size: 17px;
+			color: #0076FF;
+		}
+	 //  	.dialog-content .close{
+		//   height:0.44rem;
+		//   width:100%;
+		//   position:static;
+		// }
+		// .dialog-content .close img{
+		//   display:block;
+		//   float:right;
+		//   width:0.44rem;
+		//   height:0.44rem;
+		// }
+		// .dialog-content .close{
+		//   background:transparent;
+		// }
+		.dialog-content .dialog-article p{
+		  text-align:center;
+		  padding:0;
+		  font-size:0.3733rem;
+		  color:#666;
+		  // margin:0.6133rem 0;
+		}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+	<title>国庆乐翻天  你投我返现</title>
+	<script src="../../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  	<link rel="stylesheet" href="../../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../../css/pages/invite/newfriends.css">
+    <link rel="stylesheet" href="../../../css/pages/active/shareButton.css">
+    <style>
+    html,body{
+    	width:100%;
+    	height:100%;
+    }
+    img{
+    	width:100%;
+    	display:block;
+    }
+    .wrapper{
+    	width:100%;
+    	height:100%;
+    	overflow: auto;
+    	background:#C4162A;
+    }
+    .top{
+    	padding-top:0.5rem;
+    }
+    .input-downImg{
+    	width:90%;
+    	margin:auto;
+    }
+    .numberInput{
+    	width:7.5466rem;
+    	height:0.96rem;
+    	text-align:center;
+    	border-radius:0.48rem;
+    	background-image:url(../../../images/pages/activity/nationalDay/inputbackground.png);
+    	background-size:100% 100%;
+    }
+    .numberInputDiv{
+    	width:7.5466rem;
+    	height:0.96rem;
+    	font-size:0.4rem;
+    	color:#CBAF3F;
+    	margin:auto;
+    	display:block;
+    	margin-top:0.5rem;
+    	position:relative;
+    }
+    .numberInputDivYUAN{
+    	position:absolute;
+    	right:0.3rem;
+    	top:0.2rem;
+    }
+    .downImg{
+    	width:0.88rem;
+    	margin:auto;
+    	margin-top:0.5466rem;
+    	margin-bottom:0.5466rem;
+    }
+    .content{
+    	width:9.4133rem;
+    	height:17.33rem;
+    	margin:auto;
+    	font-size:0.3733rem;
+    	color:#505050;
+    	text-align:center;
+    	background-image:url(../../../images/pages/activity/nationalDay/background.png);
+    	background-size:100% 100%;
+    	padding:0.6933rem 0.8rem;
+
+    }
+    .redLabel{
+    	margin-bottom:0.9466rem;
+    }
+    .content-1Img{
+    	width:7.8133rem;
+    	margin:auto;
+    }
+    .content-text{
+    	width:100%;
+    	height:3.41rem;
+    	background-image:url(../../../images/pages/activity/nationalDay/content-2.png);
+    	background-size:100% 100%;
+    	margin-bottom: -0.28rem;
+    	padding-top:0.5466rem;
+    	position:relative;
+    }
+    .content-text-top{
+    	margin-bottom:0.25rem;
+    }
+    .content-text-top span{
+    	color:#CBAF3F;
+    }
+    .redPacket1{
+    	color:#FE0F00;
+    	font-size:0.8rem;
+    	font-weight: bolder;
+    }
+    .redPacket1 span:nth-child(2){
+    	font-size:0.6rem;
+    	vertical-align: middle;
+    }
+    .redPacketName{
+    	font-size:0.32rem;
+    }
+    .content-botton{
+    	width:100%;
+    	height:1.5rem;
+    	background-image:url(../../../images/pages/activity/nationalDay/content-button.png);
+    	background-size:100% 100%;
+    	position:relative;
+    }
+    .content-botton a{
+    	display:block;
+    	line-height:1.4rem;
+    	color:#FF2251;
+    	font-size:0.48rem;
+    	font-weight: bolder;
+    }
+    .margin-bottom{
+    	margin-bottom:-0.23rem;
+    }
+    .button{
+    	margin-top:0.5rem;
+    }
+    .button a{
+    	display:block;
+    	width:6.333rem;
+    	height:1.1733rem;
+    	line-height:1.1733rem;
+    	font-size:0.5333rem;
+    	color:#FF2251;
+    	text-align:center;
+    	margin:auto;
+    	margin-bottom:0.5rem;
+    	background-image:url(../../../images/pages/activity/nationalDay/button.png);
+    	background-size:100% 100%;
+    }
+    .bottom{
+    	width:9.0266rem;
+    	margin:auto;
+    	color:#fff;
+    	font-size:0.32rem;
+    }
+    .bottom-title{
+    	font-size:0.48rem;
+    	font-weight:bolder;
+    	line-height:1.5rem;
+    	border-bottom:0.0266rem solid #fff;
+    }
+    .bottom-centent{
+    	padding:0.5rem 0;
+    }
+    .bottom-centent li{
+    	margin-bottom:0.2rem;
+    }
+    .community{
+    	margin-bottom:1.2rem;
+    }
+    
+    
+    </style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<img src="../../../images/pages/activity/nationalDay/top.jpg" alt="" class="topImg">
+		</div>
+		<div class="input-down">
+			<img src="../../../images/pages/activity/nationalDay/input-down.png" alt="" class="input-downImg">
+		</div>
+		<div class="numberInputDiv">
+			<input type="number" id="numberInput" class="numberInput" placeholder='10000元≤投资金额≤500000元' onKeypress="if(event.keyCode != 46 && event.keyCode != 45 && (event.keyCode < 48 || event.keyCode > 57)) event.returnValue = false">
+			<div class="numberInputDivYUAN">元</div>
+		</div>
+
+		<div>
+			<img src="../../../images/pages/activity/nationalDay/down.png" alt="" class="downImg">
+		</div>
+		<div class='content'>
+			<div class="redLabel">
+				<div class="margin-bottom">
+					<img src="../../../images/pages/activity/nationalDay/content-1.png" alt="" class="content-1Img">
+				</div>
+				<div class="content-text">
+					<div class="content-text-top">
+						投资<span>2周</span>定期满<span class="money">0</span><span>元</span>
+					</div>
+					<div class="redPacket1"><span class="redPacket">0</span><span>元</span></div>
+					<div class="redPacketName">现金红包奖励</div>
+				</div>
+				<div class="content-botton">
+					<a href="javascript:;" index='2'>去投资</a>
+				</div>
+			</div>
+
+			<div class="redLabel">
+				<div class="margin-bottom">
+					<img src="../../../images/pages/activity/nationalDay/content-1.png" alt="" class="content-1Img">
+				</div>
+				<div class="content-text">
+					<div class="content-text-top">
+						投资<span>4周</span>定期满<span class="money">0</span><span>元</span>
+					</div>
+					<div class="redPacket1"><span class="redPacket">0</span><span>元</span></div>
+					<div class="redPacketName">现金红包奖励</div>
+				</div>
+				<div class="content-botton">
+					<a href="javascript:;" index='4' >去投资</a>
+				</div>
+			</div>
+
+			<div class="redLabel">
+				<div class="margin-bottom">
+					<img src="../../../images/pages/activity/nationalDay/content-1.png" alt="" class="content-1Img">
+				</div>
+				<div class="content-text">
+					<div class="content-text-top">
+						投资<span>8周</span>定期满<span class="money">0</span><span>元</span>
+					</div>
+					<div class="redPacket1"><span class="redPacket">0</span><span>元</span></div>
+					<div class="redPacketName">现金红包奖励</div>
+				</div>
+				<div class="content-botton">
+					<a href="javascript:;" index='8'>去投资</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<a href="../../financing/regular.html"></a>
+		</div>
+
+		<div class="bottom">
+			<div class="bottom-title">活动规则</div>
+			<ul class="bottom-centent">
+				<li>1.活动时间：2017.10.01~2017.10.20；</li>
+				<li>2.活动期间投资相应定期产品金额达到1万元的整数倍（且1万元≤投资金额≤50万元），即可获得相应金额的现金红包奖励，多余部分无奖励；</li>
+				<li>3.参与活动产品：2周、4周、8周定期；</li>
+				<li>4.参与活动要求：4周及以上定期产品在投金额≥5000元的用户；</li>
+				<li>5.活动现金红包奖励将在投资后派发至您的“账户-现金奖励”中；</li>
+				<li>6.活动期间投资可使用全程加息券、天数加息券、投资红包；</li>
+				<li>7.如有疑问，可致电：4000-521-388（工作日9:00-18:00）</li>
+			</ul>
+		</div>
+
+	</div>
+
+
+  <script src="../../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+  <script src="../../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../../js/setting.js?v=9.0.0"></script>
+  <script src="../../../js/common3.0.js?v=9.0.0"></script>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+  <!-- <script src="../../../js/pages/invite/myInvite.js?v=9.0.0"></script> -->
+ <script src="../../../js/pages/activity/shareButton.js?v=9.1.0"></script>
+ <script src="../../../js/pages/activity/shareActivity.js?v=9.1.0"></script>
+ <script>
+ 	
+ $(function(){
+ 	//分享
+ 	var imgurl = 'http://106.15.44.101/group1/M00/00/14/ag8sZVnEp3OAXvVZAABWD1JNh_Y911.jpg';
+    var title = '国庆乐翻天，你投我返现';
+    var desc = '这个国庆，V金融现金红包任性发，还不上车？';
+    var link = Setting.staticRoot + '/pages/activity/nationalDay/nationalDay.html';
+    share.shareFixed(imgurl, title, desc, link, "888");
+ 	$('#numberInput').on('input propertychange',function(){
+        var val = $(this).val();//val 决定投资金额
+        var reg = /^[1-9]\d*(\.|\.\d+)?$/.test(val);
+ 		if(reg){
+            var money = 0; //决定现金红包的钱
+            var redPacketOne = 0;//2周的现金红包
+            var redPacketTwo = 0;//4周的现金红包
+            var redPacketThere = 0;//8周的现金红包
+            var interestRateOne = 0;
+            var interestRateTwo = 0;
+            var interestRateThere = 0;
+ 			if(val == ''){
+                $('.money').html('0');
+		 		return;
+		 	};
+ 			if(val.length > 15){
+ 				val = val.substring(0,15)
+	 			$('#numberInput').val(val);
+ 			}
+	 		if(val > 500000){
+	 			money = 500000;
+	 		}
+	 		if(val >= 10000 && val <= 500000){
+	 			var falge = Math.floor(val/10000);
+	 			money = falge * 10000;
+	 		}
+	 		if(money >= 10000){
+	 			if(money < 30000){
+	 				interestRateOne = 0.004;
+	 				interestRateTwo = 0.005;
+	 				interestRateThere = 0.007;
+	 			}else if(money >= 30000 && money < 100000){
+	 				interestRateOne = 0.0045;
+	 				interestRateTwo = 0.006;
+	 				interestRateThere = 0.0082;
+	 			}else if(money >= 100000 && money < 200000){
+					interestRateOne = 0.0065;
+	 				interestRateTwo = 0.0083;
+	 				interestRateThere = 0.0107;
+	 			}else if(money >= 200000 && money < 350000){
+	 				interestRateOne = 0.0086;
+	 				interestRateTwo = 0.0105;
+	 				interestRateThere = 0.013;
+	 			}else if(money >= 350000 && money <= 500000){
+	 				interestRateOne = 0.0108;
+	 				interestRateTwo = 0.0128;
+	 				interestRateThere = 0.0154;
+	 			}
+	 			var redPacketOne = parseInt(money * interestRateOne*2*7/365);
+	 			var redPacketTwo = parseInt(money * interestRateTwo*4*7/365);
+	 			var redPacketThere = parseInt(money * interestRateThere*8*7/365);
+	 		}
+            $('.money').html(money);
+	 		$('.redPacket').eq(0).html(redPacketOne)
+	 		$('.redPacket').eq(1).html(redPacketTwo)
+	 		$('.redPacket').eq(2 ).html(redPacketThere)
+ 		}else{
+            $('.money').html('0');
+            $('#numberInput').val('');
+            $('#numberInput').blur();
+ 		}
+ 	});
+    $('.content-botton>a').click(function(){
+        window.location.href = '../../financing/regular.html';
+        // var index = '';
+        // index = $(this).attr('index');
+        // $.ajax({
+        //     url:Setting.apiRoot1 + '/getCurrentRegularIdByLoanCycle.p2p',
+        //     type:'GET',
+        //     data:{
+        //         loanCycle:index
+        //     }
+        // }).done(function(res){
+        //     if(res.code == 1){
+        //         window.location.href = '../../financing/buy3.0.html?pid='+ res.data;
+        //     }else{
+        //         alert(res.message);
+        //     }
+        // }).fail(function(){
+        //      alert('网络连接失败')
+        // });
+    })
+ })
+ </script>
+</body>
+</html>

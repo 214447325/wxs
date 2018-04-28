@@ -1,0 +1,384 @@
+/*
+* @Author: User
+* @Date:   2016-08-23 21:42:22
+* @Last Modified by:   User
+* @Last Modified time: 2016-11-08 19:23:42
+*/
+
+.current-account{
+	background: #fff url() 0 0 no-repeat;
+}
+#main{
+	background: #fff url() 0 0 no-repeat;
+    position: relative;
+}
+  .total{
+    position: absolute;
+/*     height: 1.5rem; */
+    top: 3.05rem;
+/*     left: 0; */
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    background:transparent url() 0 0 no-repeat;
+    -webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+  }
+  
+  .total span {
+    display: block;
+    height: 0.65rem;
+    line-height: 0.65rem;
+    font-size: 0.35rem;
+  }
+   .total span.investment{
+    width: 3.4rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.5rem;
+    color: #000;
+   }
+   .total span.investment-p{
+    width: 2.5rem;
+    margin: 0 auto;
+   }
+   .null{
+    width: 100%;
+    height: 0.1rem;
+    background: rgb(231, 231, 231) url() 0 0 no-repeat;
+   }
+  .maindata{
+     width:100%;
+     height:1rem;
+     background: #fff url() 0 0 no-repeat;
+     display: flex;
+     font-size: 0.5rem;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    -webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+margin-bottom: 0.2rem;
+z-index: 100;
+  }
+   .maindata .data-left, .data-right{
+        width: 50%;
+        box-sizing: border-box;
+   }
+ .maindata .data-left {
+    border-right:  1px solid rgb(216,216,216);
+ }
+   .maindata .data-left .span1{
+    height: 0.5rem;
+    line-height: 0.5rem;
+/*     font-size: 0.5rem; */
+    font-weight: bold;
+   }
+      .maindata .data-left .span2{
+    height: 0.3rem;
+    line-height: 0.3rem;        
+    font-size: 0.3rem;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+        margin-top: 0.15rem;
+   }
+   .maindata .data-right .span1{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    /* font-size: 0.5rem; */
+    font-weight: bold;
+   }
+   .maindata .data-right .span2{
+    height: 0.3rem;
+    line-height: 0.3rem;    
+    font-size: 0.3rem;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin-top: 0.15rem;
+   }
+     .maindata span{
+     	display: block;
+     	width: 100%;
+     	height: 0.9rem;
+     	line-height: 0.9rem;
+     	text-align: center;
+     }
+     .check{
+     	display: block;
+     	width: 100%;
+     	height: 1rem;
+     	padding: 0 0.5rem;
+     	box-sizing: border-box;
+     	background: #fff url() 0 0 no-repeat;
+     	font-size: 0.4rem;
+     	line-height: 1rem;
+        color: rgb(0, 0, 0);
+           border-bottom: 0.5px solid #ddd;
+    overflow: hidden;
+    z-index: 1;
+    clear: both;
+     }
+   .check span{
+    float: left;
+     }
+    .check .word{
+    float: right;
+    font-size: 0.3rem;
+    color: rgb(153,153,153);
+     }
+   .check .backimg{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0.3rem;
+    float: right;
+}
+     .mainbtn{
+     width:100%;
+     height:1rem;
+     background: #fff url() 0 0 no-repeat;
+     display: -webkit-box;
+     display: -moz-box;
+     display:box;
+     padding:0 0.75rem;
+     box-sizing:  border-box;
+     font-size: 0.4rem;
+     margin-top: 0.25rem;
+     }
+
+     .mainbtn a{
+     display: block;
+     -moz-box-flex:1;
+     -webkit-box-flex:1;
+     box-flex:1;
+     text-align: center;
+   }
+   
+    .mainbtn a button{
+    	width: 3.6rem;
+    	height: 0.9rem;
+            background: #fff url() 0 0 no-repeat;
+            color: #3e50b4;
+            line-height: 0.9rem;
+        border: 1px solid #3e50b4;
+        box-sizing:  border-box;
+    }
+    .mainbtn a.topup-btn button{
+        background:#3e50b4 url() 0 0 no-repeat;
+        color: #fff;
+        border: 1px solid #3e50b4;
+        box-sizing:  border-box;
+       border: none;
+    }
+.top-icon {
+    width: 100%;
+    height: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.top-icon .top-left{
+    width: 2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+.top-icon .top-privilege{
+    width: 1.65rem;
+    height: 0.85rem;
+    cursor: pointer;
+    z-index: 10000;
+    position: absolute;
+    left: 2rem;
+    overflow: hidden;
+}
+.top-icon .top-privilege span{
+    display: block;
+    width: 1.65rem;
+    height: 0.45rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: rgb(55,78,171);
+    border: 1px solid rgb(55,78,171);
+}
+.top-icon .top-award{
+    width: 1.85rem;
+    height: 0.85rem;
+    cursor: pointer;    
+    z-index: 10000;
+    position: absolute;
+    right: 2rem;
+    overflow: hidden;
+}
+.top-icon .top-award span{
+    display: block;
+    width: 1.85rem;
+    height: 0.45rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: rgb(55,78,171);
+    border: 1px solid rgb(55,78,171);
+}
+.top-icon .top-right{
+    width: 2rem;
+    height: 1.2rem;
+    cursor: pointer;    
+    z-index: 10000;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.top-icon .top-right-past{
+    width: 2rem;
+    height: 1.2rem;
+    cursor: pointer;    
+    z-index: 10000;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.top-icon .top-left .icon-left{
+    width: 0.65rem;
+    height: 0.65rem;
+    z-index: 1000;
+    cursor: pointer;
+    float: left;
+    margin-top: 0.15rem;
+    margin-left: 0.4rem;
+}
+.top-icon .top-right .icon-right{
+    width: 0.65rem;
+    height: 0.65rem;
+    z-index: 1000;
+    cursor: pointer;
+    float: right;
+    margin-top: 0.15rem;
+    margin-right: 0.4rem;
+}
+.top-icon .top-right-past .icon-right{
+    width: 0.5rem;
+    height: 0.5rem;
+    z-index: 1000;
+    cursor: pointer;
+    float: right;
+    margin-top: 0.15rem;
+    margin-right: 0.4rem;
+}
+.newUser{
+    display: none;
+}
+.new1{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:  10003;
+}
+.new2{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10002;
+}
+.new3{
+        width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10001;
+}
+.new4{
+        width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:10000;
+}
+.newimg1,.newimg2,.newimg3,.newimg4{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-height: 480px) {
+   .charts{
+        height: 4rem!important;
+   }
+}
+@media screen and (min-height: 736px) {
+   .charts{
+        height: 5rem!important;
+   }
+}
+
+
+/**
+*
+* 2016-09-26 add by Lean
+*
+*/
+
+.maindata {
+    clear: both;
+}
+.data-left {
+    float: left;
+}
+.data-right {
+    float: right;
+}
+.mainbtn {
+    display: block;
+}
+.mainbtn a {
+    display: block;
+    float: left;
+}
+.mainbtn a button {
+    width: auto;
+}
+.btn-container {
+    margin-top: 0.25rem;
+    clear: both;
+}
+.btn-container a {
+    display: block;
+    float: left;
+    width: 41%;
+    margin-left: 6%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+}
+.btn-container a.withdraw-btn {
+    background: #fff;
+    color: #3e50b4;
+    border: 1px solid #3e50b4;
+}
+.btn-container a.topup-btn {
+    background-color: #3e50b4;
+    color: #fff;
+}
+.null {
+    clear: both;
+}
+.section {
+    border-top: 4px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+

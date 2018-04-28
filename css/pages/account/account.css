@@ -1,0 +1,26 @@
+.account-page {
+    background: #f1f1f1;
+    /* reset */
+    .form-ui {
+        margin-top: 25px;
+    }
+    .input {
+        margin-top: 35px;
+    }
+    .ui-text-input li {
+        position: relative;
+    }
+    .ui-text-input li label {
+        width: 180px;
+        padding-left: 50px;
+    }
+    p {
+        width: 560px;
+        margin: 0 auto;
+    }
+    @import 'login.css';
+    @import 'register.css';
+    @import 'register2.css';
+    @import 'forget-pwd.css';
+    @import 'reset-pwd.css';
+}

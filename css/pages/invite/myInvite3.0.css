@@ -1,0 +1,260 @@
+
+.wrapper {
+    background: rgb(231,233,236);
+}
+.currentTitle {
+    width: 100%;
+    height: 1.2rem;
+    background: rgb(255,255,255);
+}
+
+.currentContent {
+    width: 9rem;
+    height:0.6rem;
+    float: left;
+    line-height: 0.6rem;
+    margin: 0 0.476rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}
+
+.server {
+    margin: 0 auto;
+    width: 3rem;
+}
+
+.returnImg {
+    float: left;
+    width: 0.6rem;
+}
+
+.world {
+    float: right;
+    width: 0.52rem;
+    margin-top: 0.05rem;
+}
+
+
+.header {
+    width: 100%;
+    height: 5.3rem;
+    background: rgb(55,78,171);
+}
+
+.headerRecord {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contentcol {
+    width: 4.3rem;
+    height: 100%;
+    float: left;
+}
+
+.content1 {
+    width:100%;
+    height: 2.65rem;
+}
+
+.inviteCount {
+    width:100%;
+    height: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(255,255,255);
+}
+
+.inviteContent {
+    text-align: center;
+    color: rgb(255,255,255);
+}
+
+.inviteList {
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    float: left;
+    margin-top: 0.53rem;
+    text-align: center;
+    color: rgb(255,255,255);
+}
+
+.list {
+    width: 100%;
+    height: 1rem;
+    line-height: 0.5rem;
+    float: left;
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+.listSpan {
+    font-size: 0.4rem;
+}
+
+.fgImg {
+    width: 0.2rem;
+    height: 100%;
+    line-height: 5.3rem;
+    float: left;
+    text-align: center;
+}
+
+.img1 {
+    text-align: center;
+    height: 3rem;
+    margin: 1.2rem auto;
+}
+
+.ranking {
+    width: 100%;
+    height: 1rem;
+    background: rgb(254,248,214);
+    margin: 0.15rem auto;
+}
+
+.reward {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.rewardContent {
+    width: 100%;
+    height: 0.8rem;
+    float: left;
+    margin: 0.1rem auto;
+}
+
+.trophy {
+    text-align: center;
+    width: 0.5rem;
+    float: left;
+    margin: 0.1rem auto;
+}
+
+.seniority {
+    width: 2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255,109,85);
+    font-size: 0.35rem;
+}
+
+.charmTable {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: right;
+    text-align: center;
+    color: rgb(102,102,102);
+}
+
+.rewardTable {
+    background: rgb(255,255,255);
+}
+
+.inviteTable {
+    width: 100%;
+    height: 1rem;
+    border-bottom: 0.02rem solid rgb(213,215,220);
+}
+
+.inviteTh {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.investedFriends {
+    width: 4.36rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    float: left;
+    margin: 0.1rem auto;
+    border-right: 0.02rem solid rgb(213,215,220);
+    color: rgb(153,153,153);
+}
+
+.noInvestend {
+    width: 4.36rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    float: left;
+    margin: 0.1rem auto;
+    color: rgb(153,153,153);
+}
+
+.blue {
+    color: rgb(55,78,171);
+}
+
+.invitefriendsTable {
+    width: 100%;
+    height: 6.3rem;
+    background: rgb(255,255,255);
+}
+
+.invitefriendsTr {
+    width: 9rem;
+    height: 1rem;
+    margin: 0 auto;
+}
+
+.name {
+    width: 1.6rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    color:rgb(153,153,153);
+}
+
+.phone {
+    width: 2.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: left;
+    color:rgb(153,153,153);
+}
+
+.cumulative {
+    width: 2.6rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: right;
+    text-align: right;
+    color:rgb(153,153,153);
+}
+
+.inviteBtn {
+    width: 100%;
+    height: 1.4rem;
+    margin-top: 0.2rem;
+}
+
+.invitefriendsBtn {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.friends-btn {
+    width: 9rem;
+    height: 1.15rem;
+    line-height: 1.15rem;
+    float: left;
+    background: rgb(62,80,180);
+    margin: 0.1rem auto;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 0.46rem;
+}

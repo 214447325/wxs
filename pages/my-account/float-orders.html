@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>V金融</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+</head>
+<style>
+    .float-orders{
+    	background: #fff url() 0 0 no-repeat;
+    }
+.my-product .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.4rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+.my-product .caption a.back{
+  display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../images/lib/icon_dot.png) no-repeat;
+    background-size: contain;
+    transform:rotate(180deg);
+-ms-transform:rotate(180deg);   /* IE 9 */
+-moz-transform:rotate(180deg);  /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg);  /* Opera */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+.my-product .caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+ .noExpired .item,.hadExpired .item{
+width:100%;
+height:2.7rem;
+/* padding:0.25rem 0.5rem; */
+box-sizing:border-box;
+position: relative;
+margin:0 auto;
+ }
+  .noExpired .item .round,.hadExpired .item .round{
+  	width:2rem;
+  	height:2rem;
+  	background:  url(../../images/pages/financing/yuan.png) 0 0 no-repeat;
+  	background-size:contain;
+  	position: absolute;
+  	left:0;
+  	text-align:center;
+  	line-height:2rem;
+  	color:#fff;
+  	font-size:0.375rem;
+  }
+    .noExpired .item .floatinfo,.hadExpired .item .floatinfo{
+	position: absolute;
+	left:0;
+	/* -webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%); */
+    }
+.noExpired .item .floatinfo .amount,.currentWeight,.expectInterest,.yearrate{
+        	height:0.7rem;
+        	line-height:0.7rem;
+        	width:4rem;
+        	text-align:left;
+        	font-size:0.325rem;
+        	font-style:normal;
+        }
+.hadExpired .item .floatinfo .amount,.currentWeight,.expectInterest,.yearrate{
+          height:0.7rem;
+          line-height:0.7rem;
+          width:4rem;
+          text-align:left;
+          font-size:0.325rem;
+          font-style:normal;
+}
+.noExpired .expectInterest,.hadExpired .expectInterest{
+          width:6rem!important;
+}
+    .noExpired .item .floatinfo2,.hadExpired .item .floatinfo2{
+    position: absolute;
+    right:0;
+    }
+.noExpired .item .floatinfo2 .endDate,.newNetValue,.endInterest,.yearRate{
+        	height:0.7rem;
+        	line-height:0.7rem;
+        	width:4rem;
+        	text-align:left;
+        	font-size:0.325rem;
+        	font-style:normal;
+        }
+.hadExpired .item .floatinfo2 .endDate,.newNetValue,.endInterest,.yearRate{
+          height:0.7rem;
+          line-height:0.7rem;
+          width:4rem;
+          text-align:left;
+          font-size:0.325rem;
+          font-style:normal;
+}
+    .float-orders .block-items {
+    width: 100%;
+    padding:0 0.5rem;
+    margin:0;
+    box-sizing:border-box;
+    border: none;
+}
+    .float-orders .info .noExpired dl,.float-orders .info .hadExpired dl{
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+    margin: 0 auto;
+    width:100%;
+    height: 2.9rem;
+padding:0;
+}
+.special{
+  color:#68d2c6;
+}
+</style>
+    <body class="my-product bg financing float-orders">
+  <div class="wrapper">
+ <div class="caption">
+ <a href="../../pages/my-account/my-float.html" class="back"></a>
+  <span class="lineTitle">择时稳赢一期</span>
+ </div>
+  <div class="tab-info"> 
+      <a href="javascript:;" class="active" data-target="info">未到期</a>
+      <a href="javascript:;" data-target="safemode">已到期</a>
+  </div>
+  <div class="tab-container">
+ 
+  	<div class="block-items info">
+  		<div class="noExpired"></div>
+  	</div>
+  	<div class="block-items safemode hide">
+  		<div class="hadExpired"></div>
+  	</div>
+  </div>
+</div>
+  <div class="btn-box tc">
+    <a href="javascript:;" class="btn btn-link">购买</a>
+  </div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common.js?v=9.0.0"></script>
+  <script src="../../js/pages/my-account/float-orders.js?v=9.0.0"></script>
+</body>
+
+</html>

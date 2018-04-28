@@ -1,0 +1,62 @@
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 2.6rem;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 9.5rem;
+    height: 100%;
+}
+
+.swiper-container .swiper-wrapper{
+    height: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide{
+    background-size: cover;
+}
+
+.vip {
+    width: 1.6rem !important;
+    height: 100%;
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+.div1 {
+    width: 100%;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    padding-top: 0.285rem;
+    text-align: center;
+}
+
+.img {
+    width: 28px;
+    height: 28px;
+}
+
+.div2 {
+    width: 100%;
+    height: 0.6rem;
+    color: rgb(71,71,71);
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+}
+
+.distance {
+    width: 100%;
+    height: 0.3rem;
+    background: rgb(231,233,236) ;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <title>送iPhone7活动</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/commonTitle.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/active/iphoneActive1.css">
+</head>
+<body class="iphoneActive">
+
+<div class="com"></div>
+<div class="wrapper">
+    <div class="inviteBanner"></div>
+    <div class="active-p">
+        <p class="p2">用户投资以下定期产品即可获得相应奖品：</p>
+        <img src="../../images/pages/activity/table.png" alt="" class="tableImg">
+        <p class="p1">活动细则：</p>
+        <p class="p2">1、客服将在用户投资成功后三个工作日内致电并核实所选颜
+            色，iPhone7系列产品将在30天内按用户投资的先后顺序安排
+            发放；</p>
+        <!--<img src="../../images/pages/activity/chart.png" alt="">-->
+        <p class="p2">2、本活动与投资返现活动奖励同享，到期归还本金；</p>
+        <p class="p2">3、参加本次活动的理财产品为：24周、48周定期产品；</p>
+        <p class="p2">4、V金融享有本次活动的最终解释权；</p>
+        <p class="p2">5、本活动由V金融提供，与设备生产商Apple Inc.公司无关。</p>
+    </div>
+
+
+</div>
+<div class="btns">
+    <a href="../../pages/financing/regular.html"><div  class="regist-img1">5万拿iPhone7</div></a>
+    <a href="../../pages/financing/regular.html"><div  class="regist-img2">10万拿iPhone7</div></a>
+</div>
+
+	  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+	  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+	  <script src="../../js/setting.js?v=9.0.0"></script>
+	  <script src="../../js/common.js?v=9.0.0"></script>
+    <script src="../../js/commonTitle.js?v=9.0.0"></script>
+	  <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+	 <script src="../../js/pages/activity/iphone.js?v=9.0.0"></script> 
+
+  <script type="text/javascript">
+  
+  
+  var url = window.location.href;
+//   alert(url);
+//   return false;
+  //'http://static.wdclc.cn/wx/pages/cr.html?n=1';
+  var info = {
+       url:url
+  };
+  
+  $.ajax({
+      url: Setting.apiRoot1 + '/wx/jsInfo.p2p',
+      type: 'GET',
+      dataType: 'json',
+      data: {"param": JSON.stringify(info)},
+      async: true
+    }).done(function(res) {
+      if (res.code == 1) {
+        var data = res;
+        wx.config({
+	        debug: false,
+            appId: data.appId,
+            timestamp: data.timestamp,
+            nonceStr: data.nonceStr,
+            signature: data.signature,
+	        jsApiList: [
+	            'checkJsApi',  //判断当前客户端版本是否支持指定JS接口
+		       'onMenuShareTimeline', //分享给好友
+		       'onMenuShareAppMessage', //分享到朋友圈
+		       'onMenuShareQQ',  //分享到QQ
+		       'onMenuShareWeibo' //分享到微博
+	          ]
+	      });
+
+	     // 微信JSSDK开发
+	     wx.ready(function () {
+	        // 分享给朋友
+	        wx.onMenuShareAppMessage({
+	          title: '护肾运动全面打响！你的iPhone7我包了！', // 商品名
+	          desc: '关爱肾宝宝，从我做起！投资5万就拿iPhone7让你的肾安心吧~', // 店铺名
+	          link: 'http://static.wdclc.cn/wx/pages/active/iphone-active.html', // 商品购买地址
+	          imgUrl: 'http://static.wdclc.cn/wx/images/pages/iphoneshare.png', // 分享的图标
+	          fail: function (res) {
+	            alert(JSON.stringify(res));
+	          }
+	        });
+
+	        // 分享到朋友圈
+	        wx.onMenuShareTimeline({
+	          title: '护肾运动全面打响！你的iPhone7我包了！', // 商品名
+	          link: 'http://static.wdclc.cn/wx/pages/active/iphone-active.html', // 商品购买地址
+	          imgUrl: 'http://static.wdclc.cn/wx/images/pages/iphoneshare.png', // 分享的图标
+	          fail: function (res) {
+	            alert(JSON.stringify(res));
+	          }
+	        });
+	        
+	    });
+	 
+	    wx.error(function (res) {
+	    	 alert(res.errMsg);  //打印错误消息。及把 debug:false,设置为debug:ture就可以直接在网页上看到弹出的错误提示
+	    });
+	    
+      }else{
+        //alert("网络异常:"+res.code);
+      }
+                
+    }).fail(function() {
+      alert('网络链接失败，请刷新重试！');
+      return false;
+    });
+
+</script>
+<script>
+    $(function() {
+        window.location.href = '../activityOver/activityOver.html';
+    });
+</script>
+</body>
+</html>

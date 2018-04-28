@@ -1,0 +1,236 @@
+
+html {
+    background:#0E245D;
+}
+
+.header {
+    width: 100%;
+    height: 9rem;
+    background: url(../../../images/pages/activity/vip-header.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vipbutton {
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.vipbutton1 {
+    width: 6rem;
+    height: 100%;
+    background: url(../../../images/pages/activity/vip-button.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.dvip {
+    width: 9.5rem;
+    height: 16.5rem;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+}
+
+.vip {
+   width: 100%;
+    height: 100%;
+    background: url(../../../images/pages/activity/vip-middle.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.dvip1 {
+    width: 9.5rem;
+    height: 7.6rem;
+    background: url(../../../images/pages/activity/vip-background.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.vip1 {
+    width: 9rem;
+    height: 5.6rem;
+    float: left;
+    margin: 0.6rem 0.25rem;
+}
+
+.vipleft1 {
+    width: 2.8rem;
+    height: 100%;
+    float: left;
+    background: url(../../../images/pages/activity/vip-left.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.vipright1 {
+    width: 6.2rem;
+    height: 100%;
+    float: right;
+}
+
+.img {
+    width: 2.5rem;
+    height: 100%;
+}
+
+.prompt {
+    width:9.5rem;
+    height: 5.6rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.promptile {
+    width: 2.4rem;
+    height: 0.5rem;
+    background: url(../../../images/pages/activity/vip-prompt.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.promptcontent {
+    width: 100%;
+    height: 4.6rem;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 0.33rem;
+    line-height: 0.52rem;
+}
+
+.mighty {
+    width: 9.5rem;
+    height: 2.6rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.mightytitle {
+    width: 2.6rem;
+    height: 0.5rem;
+    background: url(../../../images/pages/activity/vip-mighty.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.mightycontent {
+    width: 100%;
+    height: 0.55rem;
+    margin: 0.3rem auto;
+    color: #ffffff;
+    font-size: 0.33rem;
+    line-height: 0.52rem;
+}
+
+.mightyimg {
+    width: 9rem;
+    height: 0.7rem;
+    background: url(../../../images/pages/activity/vip-instructions.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.demotion {
+    width: 9.5rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.demotiontitle {
+    width: 3rem;
+    height: 0.5rem;
+    background: url(../../../images/pages/activity/vip-demotion.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.demtent {
+    width: 100%;
+    height: 0.55rem;
+    margin: 0.3rem auto;
+    color: #ffffff;
+    font-size: 0.33rem;
+    line-height: 0.52rem;
+}
+
+.swiper-container {
+    width: 6.2rem;
+    height: 100%;
+}
+
+.swiper-container .swiper-wrapper{
+    height: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide{
+    /*width: 2.2rem!important;*/
+    background-size: cover;
+}
+
+.v0 {
+    background: url(../../../images/pages/activity/v0.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v1 {
+    background: url(../../../images/pages/activity/v1.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v2 {
+    background: url(../../../images/pages/activity/v2.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v3 {
+    background: url(../../../images/pages/activity/v3.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v4 {
+    background: url(../../../images/pages/activity/v4.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v5 {
+    background: url(../../../images/pages/activity/v5.png) 0 0 no-repeat;
+    background-size: 100% 100%!important;
+}
+
+.v6 {
+    height: 100%;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}

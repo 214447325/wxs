@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>我的设置</title>
+  <script src="../../../js/lib/flexible.debug.js?v=2.0.0"></script>
+  <link rel="stylesheet" href="../../../css/main.min3.0.css?v=2.0.0">
+  <link rel="stylesheet" href="../../../css/pages/account/setting-center.css">
+</head>
+
+<body class="setting-center bg">
+  <div class="wrapper">
+      <div class="ui-list mt20">
+          <ul>
+              <li style="height: 1.8rem;margin:0.3rem 0; overflow: hidden" onsubmit="return saveReport();">
+                  <div class="user">
+                      <!---->
+                      <form id="imageForm" enctype="multipart/form-data" action="https://bbsweb.wdclc.cn/pic/upload.do"  method="POST" >
+                          <a href="javascript:;" class="user_infor">
+                              <img class="userImg"/>
+                              <input class="userInput" type="file" name="uploadFile" id="inputImg"/>
+                              <span class="icon icon-dot2 icon-dot">&nbsp</span>
+                              <div class="uinfo">
+                                  <!--<div class="uname">高阳</div>-->
+                                  <!--<div class="uname">138****1234</div>-->
+                              </div>
+
+                              <!--uphone-->
+                          </a>
+                      </form>
+                  </div>
+              </li>
+              <li>
+                  <a href="javascript:;" class="real-name">
+                      <span class="icon icon-dot2 icon-dot">未认证</span>
+                      <i class="icon icon-user">实名认证</i>
+                  </a>
+              </li>
+              <li>
+                  <a href="problem/problemdetails.html">
+                      <span class="icon icon-dot2 icon-dot" id="setting-risk">尚未评测</span>
+                      <i class="icon icon-login-password">风险评估</i>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="../../shoppingMall/map/myAddress.html">
+                      <span class="icon icon-dot2 icon-dot">&nbsp;</span>
+                      <i class="icon icon-login-password">地址管理</i>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="pass-world.html">
+                      <span class="icon icon-dot2 icon-dot">&nbsp</span>
+                      <i class="icon icon-login-password">密码管理</i>
+                  </a>
+              </li>
+
+              <li style="margin-top: 0.3rem;">
+                  <a href="aboutwe.html">
+                      <span class="icon icon-dot2 icon-dot">&nbsp</span>
+                      <i class="icon icon-login-password">关于</i>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="../../../pages/problem.html">
+                      <span class="icon icon-dot2 icon-dot">&nbsp</span>
+                      <i class="icon icon-login-password">帮助中心</i>
+                  </a>
+              </li>
+
+              <li class="li-btn">
+                  <a href="javascript:;" class="alibtn Sign_out">
+                    退出登录
+                  </a>
+              </li>
+
+          </ul>
+      </div>
+
+  </div>
+  <script src="../../../js/lib/jquery-2.1.3.min.js?v=2.0.0"></script>
+  <script src="../../../js/lib/doT.min.js?v=2.0.0"></script>
+  <script src="../../../js/setting.js?v=2.0.0"></script>
+  <script src="../../../js/common3.0.js?v=2.0.0"></script>
+  <script src="../../../js/common2.js?v=9.0.0"></script>
+  <script src="../../../js/lib/jquery.form.js"></script>
+  <script src="../../../js/pages/set-account/setting-center.js?v=2.0.0"></script>
+</body>
+</html>

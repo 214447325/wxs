@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>投资活动</title>
+    <style>
+	      	body{font-family: "微软雅黑";overflow-x: hidden;font-size: 12px;color: #fff;}
+        @charset "utf-8";
+   body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,header,hgroup,nav,section,article,aside,footer,figure,figcaption,menu,button {margin:0;padding:0;}
+		html,body,a,b,p,li,img,div {-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+		li{list-style: none;}
+		a {text-decoration:none;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+		.shell{width:100%;margin:auto;overflow: hidden;}
+		.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+		.wrap{position: absolute;left: 50%;z-index: 2;width: 320px;margin-left: -160px;}
+		.act{ position:relative;}
+		.act>img{width:320px;display:block;z-index: -1;}
+		.act>a img{width:320px;display:block;z-index: -1;}
+		.act .btn{display: inline-block;width: 256px;height: 48px;
+		position: absolute;left:50%; bottom:20px;
+		-webkit-transform: translateX(-50%);
+		-ms-transform:translateX(-50%) ;
+		-o-transform:translateX(-50%);
+		transform: translateX(-50%);;
+		 background:url(../images/pages/activity/2.png) no-repeat; background-size:100% 100%; text-indent:-999em;}
+    </style>
+</head>
+<body>
+	<div class="sheel" id="center">
+    	<div class="wrap">
+        	<div class="act">
+            	<img src="../images/pages/activity/active_2.png">
+<!--                 <a class="btn" onclick="share()">立即邀请</a> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/pages/activity/zepto.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/setting.js"></script>
+    <script type="text/javascript">
+	    (function () {
+	    var autoScale = function () {
+	        setTimeout(function() {
+	            var winW = document.documentElement.clientWidth ? document.documentElement.clientWidth : 320;
+	            var scale = (winW/320).toString().substring(0, 6);
+	            var cssText = '-webkit-transform: scale('+ scale +');-webkit-transform-origin: top;';
+	            $('.wrap').attr('style', cssText);
+	        }, 0);
+	    };  
+	    if ($(window).width() > 320) {
+	        autoScale();
+	    }
+	    window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", autoScale , false); //切换横竖屏
+	})();
+	    
+	</script>
+</body>
+</html>

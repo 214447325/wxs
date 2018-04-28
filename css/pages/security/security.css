@@ -1,0 +1,76 @@
+.wrapper{
+    font-size:0.48rem;
+    color;#4A4A4A;
+}
+.float-left{
+    float:left;
+}
+.security-top{
+    // height:4rem;
+    color: #fff;
+    background:#2B6FF9;
+}
+.security-title{
+    font-size；0.4rem;
+    text-align:center;
+    padding:1.5rem 0 0.5rem 0;
+}
+.security-count{
+    text-align:center;
+}
+.number{
+    padding:0.05rem 0.2rem;
+    border:0.0533rem solid #fff;
+    margin:0 0.05rem;
+}
+.explain{
+    font-size: 0.32rem;
+    color: #7DA6FB;
+    margin-top:0.35rem;
+}
+.security-account{
+    padding-bottom:0.8rem;
+}
+.security-account .float-left{
+    width:48.5%;
+    height:auto;
+    padding:0 0.766rem;
+}
+.security-account .line{
+    width:0.02533rem;
+    height:1rem;
+    padding:0;
+    margin-top:0.3rem;
+    // margin:0.5rem 0;
+    background:#fff;
+}
+.data{
+    text-align:center;
+}
+.security-bottom{
+    padding:0.8rem 0.766rem;
+}
+.security-bottom .explain{
+    color:#B9B9B9;
+}
+.list{
+    margin-top:1rem;
+}
+.list .float-left{
+    width:49%;
+    // height: 2.1rem;
+    padding:0.5rem 0.766rem;
+    //  border-right:0.0133rem solid #B9B9B9;
+    // border-bottom:0.0133rem solid #B9B9B9;
+}
+.list .float-left:nth-child(odd){
+    border-right:0.0133rem solid #EBEBEB;
+    border-bottom:0.0133rem solid #EBEBEB;
+    padding-left:0;
+}
+.list .float-left:nth-child(even){
+    border-bottom:0.0133rem solid #EBEBEB;
+}
+.border-bottom-none{
+    border-bottom: 0px solid #fff !important;
+}

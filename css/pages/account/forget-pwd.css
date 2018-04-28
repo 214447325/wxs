@@ -1,0 +1,17 @@
+/* 忘记密码页面 */
+.forget-pwd-form {
+    .sms-code {
+        padding-right: 200px;
+    }
+    .send-sms-code {
+        position: absolute;
+        width: auto;
+        padding: 0 20px;
+        border-radius: 10px;
+        right: 25px;
+        top: 20px;
+    }
+    .next-step {
+        margin-top: 135px;
+    }
+}

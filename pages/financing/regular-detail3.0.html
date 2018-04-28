@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <title></title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+  <link rel="stylesheet" href="../../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+  <link rel="stylesheet" href="../../css/pages/regular-detail3.0.css"> 
+  <link rel="stylesheet" href="../../css/pages/financing/prodDetail.css" />
+
+</head>
+<body class="financing rgDetail" data-target="money">
+<!-- 	<div class="topContain">
+		<a href="regular.html" class="back-btn"><img src="../../images/pages/financing/regular3.0/back.png"></a><span class="prod-title"></span>
+	</div> -->
+	<div class="wrapper"><!-- wrapper外层 -->
+		<div class="current-bg">
+			<!--<div class="p-label hide">投资越多，加息越多，最高1.5%</div>-->
+			<div class="p2"><span class="showRate"></span><span class="addInterest"></span>
+					<div class="p1">历史年化收益</div>
+				<!--<span class="btn-detail" >详情</span>-->
+			</div>
+			
+			
+            <div class="p3">
+            	<div class="p3text p6"><a class="cast">0</a></div>
+            	<div class="p3text p6"><a class="cycle">0</a></div>
+            	<div class="p3text p6"><a class="minInvestAmount">0</a></div>
+            </div>
+            <div class="p3">  
+				<div class="p3text">剩余金额(元)</div>
+				<div class="p3text">期限(周)</div>
+				<div class="p3text">起投金额(元)</div>			
+			</div>
+
+
+			<!-- <div class="p4 canBuyAmt"></div> -->
+            <!-- <div class="p3 p6">可投金额:<a class="cast"></a>元</div> -->
+		</div>
+		<a class="look" href="../../pages/financing/transactionrules.html" style="display:block;margin-bottom:0;border-bottom:0.0133rem solid #DEDEDE;">交易规则
+			<span style="float:right;color:#888888;font-size:0.32rem;">查看详情<img src="../../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;margin-top: 0.45rem;"></span>
+		</a>
+		<div class="currentBar">
+			<div class="barword">
+					<span class="time1 word1">买入</span>
+					<span class="time2 word2">产生收益</span>
+					<span class="time3 word3"></span>
+					<span class="time4 due">到期</span>
+				<!-- 	<div class="barword-left">
+						<div class="start">
+							<div class="startTime">1-09  12:00<br/>开始加入</div>
+							<img src="../../images/pages/financing/current3.0/one-left.png">
+						</div>
+						
+						<div class="text">募集阶段</div>
+					</div>
+					<div  class="barword-right">
+						<div class="doing">
+							<div class="floatLeft">
+								<div class="lockTime">1-09  12:00<br/>进入锁定</div>
+								<img src="../../images/pages/financing/current3.0/two-left.png">
+							</div>
+							<div class="floatRight">
+								<div class="time-three">1-09  12:00<br/>到期退出</div>
+								<img style="float:right" src="../../images/pages/financing/current3.0/two-right.png">
+							</div>
+						</div>
+						
+						<div class="text" style="">28天持续计息</div>
+					</div> -->
+			</div>
+			<div class="barimg">
+				<!-- <div class="time1 circle"><span class="node1"></span></div>
+				<div class="time2 circle"><span class="node2"></span></div>
+				<div class="fanalcircle"><span class="fanalnode"></span></div> -->
+				<img src="../../images/pages/financing/current3.0/262@3x.png" class="barBg">				
+			</div>
+			
+			<div class="bartime">
+				<!-- 资金到期退出具体时间，视债权转让市场交易情况而定 -->
+				<span class="time1 day1">今日</span><span class="time2 day2 lockTime">02-12</span><span class="duedata day3 endTime">03-12</span>
+			</div>
+			<div style="color:#FF8424;font-size:0.32rem;margin-top:0.3rem;">
+				<img src="../../images/pages/financing/regular3.0/i.png" style="width:0.32rem;height:0.32rem;vertical-align: middle;margin-top:-0.05rem;">
+				资金到期退出具体时间，视债权转让市场交易情况而定
+			</div>
+		</div>
+
+		<div class="zczh look">资产组合<span style="float:right;color:#888888;font-size:0.32rem;"><img src="../../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;margin-top: 0.45rem;"></span>
+		</div>
+
+		<a class="cpjs look" style="display:block;" href="../../pages/financing/product.html">产品介绍<span style="float:right;color:#888888;font-size:0.32rem;"><img src="../../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;margin-top: 0.45rem;"></span>
+		</a>
+
+    <!-- 	<div class="aqbz look" style="font-size:0.4rem;color:#4A4A4A;">安全保障
+    		<span style="float:right;color:#888888;font-size:0.3733rem;">
+    			<img src="../../images/pages/financing/current3.0/shanghaiyinhang.png" alt="" style="float:left;width: 0.32rem;height: 0.32rem; margin-top: 0.38rem;margin-right: 0.1rem;">
+    			<span style="display:inline-block;line-height:1.2rem;">上海银行资金存管</span>
+    			<img src="../../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;margin-top: 0.4rem;">
+    		</span>
+    	</div> -->
+		<!-- <div id="portfolioChart" style="height: 5.12rem;"></div>
+		<div class="look">查看资产组合详情<img src="../../images/pages/my-account3.0/nextPage3.0.png"></div>
+ -->
+		<a class="cjwt look" href="../../pages/problem.html" style='display:block;margin-bottom:0px;border-bottom:0.0266rem solid #DEDEDE'>
+			<!-- <div class="zczh-title active floatLeft"> -->
+				常见问题 <span style="float:right;color:#9B9B9B;font-size:0.32rem;">查看更多<img src="../../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;margin-top: 0.45rem;"></span>
+			<!-- </div> -->
+		</a>
+			<section class="detailtips">
+				<div class="singel">
+					<div class="sg-top">
+						<img src="../../images/pages/financing/regular3.0/q.png" style="width:0.32rem;height:0.32rem;vertical-align: middle;margin-top:0.35rem;">
+						什么是固收？
+					</div>
+					<div>
+						<img src="../../images/pages/financing/regular3.0/a.png" style="float:left;width:0.32rem;height:0.32rem;vertical-align: middle;margin-top:0.2rem;">
+						
+					    <p style="width:8.5rem;padding-left:0.4rem;float:left;color:#9B9B9B;font-size:0.3733rem;border-bottom:0.0133rem solid #DEDEDE;">定期产品：“周周派息”根据锁定时间不同分为2周、4周、8周、12周、26周、52周，年化收益分别为8.3%、9%、9.5%、10%、11%、12%。投资标的主要分散在具有高保障系数的小额信贷、消费信贷等多种优质资产，历史坏账率极低。
+			         	</p>
+					</div>
+	            </div>
+
+	            <div class="singel">
+					<div class="sg-top">
+						<img src="../../images/pages/financing/regular3.0/q.png" style="width:0.32rem;height:0.32rem;vertical-align: middle;margin-top:0.35rem;">
+						如何计息？
+					</div>
+					<div>
+						<img src="../../images/pages/financing/regular3.0/a.png" style="float:left;width:0.32rem;height:0.32rem;vertical-align: middle;margin-top:0.2rem;">
+						
+					    <p style="width:8.5rem;padding-left:0.4rem;float:left;color:#9B9B9B;font-size:0.3733rem;">每7天派息一次，利息可提现，也可复投享受复利，收益产品到期一次还本。
+			         	</p>
+					</div>
+	            </div>
+				
+	        </section>
+
+
+	        <div class="cjwt look" style='margin-bottom:0px;margin-top:0.25rem;border-bottom:0.0266rem solid #DEDEDE'>
+				定期产品&nbsp;&nbsp;安心陪伴
+			</div>
+			<section style="background:#fff;">
+				<div class="floatLeft" style="width:33.33%;text-align:center;padding:0.5rem 0;color:#9B9B9B;line-height:0.6rem;font-size:0.32rem;background:#fff;">
+					<img src="../../images/pages/financing/regular3.0/left.png" style="width:0.9066rem;height:0.8rem;">
+					<div>严选优质资产</div>
+				</div>
+				<div class="floatLeft" style="width:33.33%;text-align:center;padding:0.5rem 0;color:#9B9B9B;line-height:0.6rem;font-size:0.32rem;background:#fff;">
+					<img src="../../images/pages/financing/regular3.0/center.png" style="width:0.9066rem;height:0.8rem;">
+					<div>账户安全保障</div>
+
+				</div>
+				<div class="floatLeft" style="width:33.33%;text-align:center;padding:0.5rem 0;color:#9B9B9B;line-height:0.6rem;font-size:0.32rem;background:#fff;">
+					<img src="../../images/pages/financing/regular3.0/right.png" style="width:0.9066rem;height:0.8rem;">
+					<div>历史100%兑付</div>
+
+				</div>
+			</section>
+		<div style="text-align:center;color:#9B9B9B;font-size:0.32rem;line-height:0.6rem;margin-bottom:0.3rem;padding:0.4rem 0 1.466rem 0 ;">页面展示收益率不代表收益承诺，市场有风险，投资需谨慎</div>
+
+		
+		
+	</div>
+	
+
+	<a href="javascript:;" class="buy_btn"></a>
+	<div class="ui-dialog ui-dialog-name backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未完成实名认证，请先完成实名认证</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link-name btn-sm" >确认</a>
+	       <a href="javascript:;" class="btn btn-default-name btn-sm">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+	<div class="ui-dialog ui-dialog-trade backdrop hide">
+	  <div class="dialog-content">
+	    <a href="javascript:;" class="close"></a>
+	     <h3 class="dialog-title red">温馨提示</h3> <!-- 标题 -->
+	     <div class="dialog-article"> <!-- 内容 -->
+	       <p>您还未设置交易密码，请先设置交易密码</p>
+	     </div>
+
+	     <div class="tc btn-box1  "><!-- 按钮 -->
+	       <a href="javascript:;" class="btn btn-link btn-sm btn-link-trade" >确认</a>
+	       <a href="javascript:;" class="btn btn-default btn-sm btn-default-trade">取消</a>
+	     </div>
+	  </div>
+	</div>
+
+
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/highcharts.js"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common3.0.js?v=9.0.0"></script>
+  <script src="../../js/common2.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/regular-detail3.0.js?v=9.1.1"></script>	
+</body>
+</html>

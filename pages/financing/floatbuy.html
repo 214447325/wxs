@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>  
+
+  <title>V金融-购买</title>
+  <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+</head>
+
+<style>
+   .page-buy .auto p1{
+      display: inline-block;
+      width:80%;
+       height:0.5rem;
+  line-height:.5rem;
+      float: left;
+    }
+     
+   .page-buy .auto .joinActive{
+   border-radius:0;
+   width:0.5rem;
+   height:0.5rem;
+   float: left;
+   background:#fff url(../../images/pages/buy7day_true.png) center center no-repeat;
+   background-size:cover;
+   }   
+ 
+.sevdaycontent{
+  width:100%;
+    height:1.475rem;
+   margin:0 auto;
+   position: relative;
+ margin-top:0.3rem; 
+   margin-bottom:0.3rem;
+}
+.sev{
+  display: none;
+}
+.page-buy  .trangle{
+    width:0.85rem;
+    height:1.375rem; 
+    background:#fff url(../../images/pages/buy7day_context_arrow.png) center center no-repeat;
+	background-size:contain;
+	position: absolute;
+	top:0;
+	right:0.5rem;
+	z-index:3;
+  }
+     
+.page-buy  .sevday{
+    width:8.3125rem;
+    height:1.475rem;
+    background:#fff url(../../images/pages/financing/da.png) center center no-repeat;
+  background-size:contain;
+  position: absolute;
+  top:0;
+  left:50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+ }
+  
+  .page-buy .detail{
+    margin-bottom:5rem;
+    margin-right: 0.2rem;
+       border: none;
+  }
+  .page-buy .ui-list{
+       border: none;
+  }
+     
+.maskLayer{
+	width:100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top:0;
+	left:50%;
+	 	-webkit-transform: translateX(-50%);
+	 	-ms-transform: translateX(-50%);
+	 	-o-transform: translateX(-50%);
+	 	transform: translateX(-50%); 
+	display: none;
+	z-index:200;
+}
+ .maskLayer .juzhong{
+	width:100%;
+	height: 100%;
+	position:relative;
+}
+.bunus{
+	width:9rem;
+	height:14rem;
+	background: #f4f2e6;
+    position: absolute;
+	 	bottom:1.109375rem;
+	 	left:50%;
+	 	-webkit-transform: translate(-50%);
+	 	-ms-transform: translate(-50%);
+	 	-o-transform: translate(-50%);
+	 	transform: translate(-50%); 
+ 	font-size:0.4rem;
+ 	padding:0.35rem;
+ 	z-index:999;
+ 	
+}
+.bunus .close{
+	width:0.8rem;
+	height:0.8rem;
+	background:  url(../../images/pages/invite/p2-x.png) 0 0 no-repeat;
+	background-size:contain;
+	position: absolute;
+	top:0.45rem;
+	right:0.4rem;
+}
+.bunus h1{
+	font-size:0.6rem;
+	line-height:0.859375rem;
+	color:#fff;
+	width:7.1875rem;
+	height:0.859375rem;
+	background:  url(../../images/pages/invite/p2-4.png) 0 0 no-repeat;
+	background-size:contain;
+	margin:0 auto;
+	text-align:center;
+}
+span{
+	color:#ee5e00;
+}
+.page-buy .agreement{
+   display: block;
+   width:100%;
+   text-align:center;
+   font-size:0.35rem;
+/*    margin-bottom:0.5rem; */
+position: fixed;
+bottom:1.953125rem;
+}
+.page-buy .agreement i{
+  font-style:normal;
+  text-decoration:underline;
+}
+.page-buy .Bonusrules{
+   color:#ef5344;
+   font-size:0.4rem;
+
+}
+/* 新样式 */
+.my-product .caption{
+    height:1.25rem;
+    width:100%;
+    text-align:center;
+    font-size:0.4rem;
+    line-height:1.25rem;
+    position: relative;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom:0.2rem;
+}
+.my-product .caption a.back{
+  display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../images/lib/icon_dot.png) no-repeat;
+    background-size: contain;
+    transform:rotate(180deg);
+-ms-transform:rotate(180deg);   /* IE 9 */
+-moz-transform:rotate(180deg);  /* Firefox */
+-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+-o-transform:rotate(180deg);  /* Opera */
+    position: absolute;
+    left:0.4140625rem;
+    top: .359375rem;
+
+}
+.my-product .caption a.check{
+  position: absolute;
+    right:0.4140625rem;
+    top: 0;
+    font-size:0.325rem;
+}
+.page-buy .row {
+    margin:0;
+    border-bottom: 1px solid #dfdfdf!important;
+    padding-left:0.5rem;
+    box-sizing:border-box;
+    color: #333;
+    height: 1.025rem;
+    line-height: 1.025rem;
+    font-size: .40625rem;
+    background: #fff url() 0 0 no-repeat;
+}
+.page-buy .row.margin{
+margin-bottom:0.2rem;
+}
+.page-buy .row span{
+  color: #333;
+}
+.page-buy .row .rechargeBtn{
+      display: inline-block;
+    text-align:center;
+  text-decoration:none;
+  position:absolute;
+  right:0.5rem;
+  color:#ef5344;
+}
+.page-buy .row-buy{
+  position:relative;
+}
+.page-buy .row-buy input{
+  width:5.5rem;
+  border: none;
+  height:0.9rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+line-height:0.9rem;
+position:absolute;
+top:50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+  .page-buy .auto{
+    width:100%;
+    height:0.7rem;
+    padding: 0.2rem .4375rem   0;
+    font-size:0.5rem;
+    color: #333;
+    box-sizing:border-box;
+    z-index:1;
+  }
+    .page-buy .wrapper{
+      padding-bottom:0;
+    }
+    .page-buy .row .selfExtra{
+      font-size:0.35rem;
+      color:#999999;
+    }
+    .expectmoney{
+        color:#ef5344!important;
+    }
+    .content-Img {
+       width: 100%;
+       height: 100%;
+   }
+
+    .float-span {
+        color: red;
+    }
+   .float-div {
+       font-size: 0.4rem;
+   }
+
+    .content-Img0 {
+        width: 1rem;
+        position: absolute;
+        right: -0.20rem;
+        top: -0.20rem;
+    }
+</style>
+<body class="page-buy bg my-product">
+  <div class="wrapper">
+   <div class="caption">
+ <a href="../../pages/financing/float.html" class="back"></a>
+<div class="title">购买择时稳赢一期</div>
+ </div>
+
+      <div class="row last">可购份额（份）：<span class="amount">0.00</span></div>
+      <div class="row margin" >
+      	  账户余额（元）：<span  class="balanceAccount">0.00</span>
+	      <a href="../my-account/top-upBF.html"><span class="rechargeBtn">充值</span></a>
+      </div>
+      
+      <div class="row ">单位净值（元）：<span class="weightValue">0.00</span></div>
+      <div class="row row-buy">购买份额（份）：<input class="buyshare" type="number" placeholder="起购份额5000" onkeyup="limitInput()"></div>
+      <div class="row margin">支付金额（元）：<span  class="floatMoney">0.00</span></div>
+<!--       <div class="buy-detail">
+        <div class="money-input">
+          <input type="number" placeholder="起投金额100" onkeyup="limitInput()">
+          <i>预期<span class="month"></span>收益<span class="profit">0</span>元</i>
+        </div>
+      </div> -->
+       <div class="row ">预期<!-- <span class="month"></span> -->收益（元）：<span class=" expectmoney">0.00</span></div>
+       <div class="row  margin">活动奖励（元）：<span class="selfExtra" >勾选参加邀请活动会获得活动奖励</span></div>
+
+   <!--<div class="auto" >-->
+      <!--<div >-->
+         <!--<input type="checkbox" id="joinActive" checked="checked" class="joinActive" name="joinActiveChk">-->
+         <!--<p1>参加活动(起投金额1000元)</p1>-->
+      <!--</div>-->
+  <!--</div>-->
+      <div class="float-div">该产品参加投资返现活动最高可获得<span class="float-span">10000</span>元现金奖励,</div>
+
+      <!--<div class="sevdaycontent">-->
+	  <!--<div class="sevday"></div> -->
+ <!--</div>-->
+  <div class="detail" align="left">
+  	  	  <div class="Bonusrules"  id="Bonusrules">查看具体奖励细则>></div>
+  </div>
+  <a class="agreement"   href="javascript:;">购买即同意《<i>浮动收益产品投资协议</i>》</a>
+
+  <div class="ui-list ">
+	    <div class="public-title mt30">
+	    </div>
+	      <ul>
+	      </ul>
+  </div>
+  </div>
+  
+  <div class="btn-box tc">
+   
+<!--     <div class="totle">支付总计：<span class="red total">0.00元</span></div> -->
+    <a href="javascript:;" class="btn btn-default pay-money">确定</a>
+  </div>
+<!-- <div class="ui-dialog backdrop hide"> -->
+<!--   <div class="dialog-content"> -->
+<!--     <a href="javascript:;" class="close"></a> -->
+<!--      <h3 class="dialog-title red">温馨提示</h3> 标题 -->
+<!--      <div class="dialog-article"> 内容 -->
+<!--        <p>如有意购买本产品,请点击"立即预约".系统将在开标前5分钟,通过短信通知到您!</p> -->
+<!--      </div> -->
+
+<!--      <div class="tc btn-box1  ">按钮 -->
+<!--        <a href="javascript:;" class="btn btn-link btn-sm">暂不预约</a> -->
+<!--        <a href="javascript:;" class="btn btn-default btn-sm">立即预约</a> -->
+<!--      </div> -->
+<!--   </div> -->
+<!-- </div> -->
+
+<div class="maskLayer" id="maskLayer">
+     	
+	 <div class="juzhong">
+	        <div class="bunus" id="bunus">
+                <img src="../../images/pages/invite/cha.png" class="content-Img0">
+              <img src="../../images/pages/invite/jianglixq.png" class="content-Img">
+<!--  			<h1>奖励细则</h1>
+ 			<div class="close"></div>
+ 			<br>
+ 			<table >
+ 			<tr valign="top" ><td>• &nbsp;</td>
+	 			<td>
+	 			<p>邀请好友成功注册，且好友每笔投资额不低于1000元或满足以上金额，邀请人和被邀请人即可分别获得相应现金奖励；<br></p>
+	 			</td>
+ 			</tr>
+ 			<tr valign="top"><td>• &nbsp;</td>
+	 			<td>
+	 			<p>被邀请人每投资一笔相应金额，邀请人和被邀请人即可同时获得相应现金奖励;被邀请人投资多笔金额，双方即可获得多笔奖励；<br> </p>
+            	</td>
+ 			</tr>
+ 			<tr valign="top"><td>• &nbsp;</td>
+	 			<td>
+	 			<p>现金奖励当日发放，可提现，用户可前往"账户-我的邀请"进行查看； <br></p>
+            	</td>
+ 			</tr>
+ 			<tr valign="top"><td>•&nbsp; </td>
+	 			<td>
+	 			<p>已注册但未绑定过自己的邀请人可补填邀请码，可前往"我的账户"点击"齿轮"图标中进行绑定； <br></p>
+            </td>
+ 			</tr>
+ 			<tr valign="top"><td>• &nbsp;</td>
+	 			<td>
+	 			<p>活动期间，所有实名用户作为被邀请人投资以下产品，满足额度即可获得对应奖励。 <br></p>
+            </td>
+ 			</tr>
+ 			<tr valign="top"><td>•&nbsp; </td>
+	 			<td>
+	 			<p>参与本次活动的产品为：7天乐(锁定7天不可赎回)，12周定期、24周定期产品；<br></p>
+            </td>
+ 			</tr>
+ 			<tr valign="top"><td>•&nbsp; </td>
+	 			<td>
+	 			<p>如有任何问题，可致电客服热线：4000-521-388，V金融享有本次活动的最终解释权。<br></p>
+            </td>
+ 			</tr>
+ 			</table>
+ 			
+    		</div>
+    		<div class="redpackets">
+    			<div class="center" id="center"></div> -->
+
+    		</div>
+       	</div>
+  </div>
+  
+  <script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+  <script src="../../js/lib/moment.js"></script>
+  <script src="../../js/setting.js?v=9.0.0"></script>
+  <script src="../../js/common.js?v=9.0.0"></script>
+  <script src="../../js/pages/financing/floatbuy.js?v=9.0.0"></script>
+</body>
+</html>

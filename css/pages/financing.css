@@ -1,0 +1,480 @@
+/* financing 我的理财 */
+.financing{ 
+  background-color: #f1f1f1;
+  padding-bottom: 30px;
+
+  .tab-info{
+    height: 70px;
+    background-color: #FFF;
+    border-bottom: 1px solid #dfdfdf;/*no*/
+    line-height: 70px;
+  }
+
+  .tab-info a{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .tab-info a.active{
+    border-bottom: 2px solid #f76156;/*no*/
+  }
+
+  .text-block{
+    margin-top: 30px;
+    background-color: #FFF;
+    padding: 15px 25px;
+  }
+
+  .text-block:first-child{
+    margin-top: 15px;
+  }
+
+  .text-block .title{
+    color: #ef5344;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .text-block .content{
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .tab{
+    height: 70px;
+    background-color: #ef5344;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 640px;
+    transform: translateX(-50%) translateZ(0);
+  }
+  
+  .tab a{
+    text-align: center;
+    float: left;
+    width: 33.33333%;
+    height: 100%;
+    color: #ffc1a7;
+    font-size: 30px;
+    position: relative;
+  }
+
+  .tab a.active{
+    color: #FFF;
+  }
+
+  .tab a.active:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #f1f1f1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.regular,
+  &.current,
+  &.novice{
+    padding-top: 70px;
+    padding-bottom: 95px;
+  }
+  &.current p:nth-child(2) ,&.current p:nth-child(2) {
+    font-size: 24px !important;
+  }
+  &.current p span.min,
+  &.current p span.max{
+    font-size: 28px; font-weight: 400;line-height: 70px
+  }
+
+  &.current p span i{
+    font-style: normal;
+    font-size: 34px;
+  }
+
+  .container{
+    padding-top: 45px;
+    position: relative;
+  }
+
+  .title{
+    font-size: 30px;
+    color: #757575;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .tag{
+    text-align: center;
+    font-size: 22px;
+    height: 54px;
+    line-height: 65px;
+    margin-top: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 161px 54px;
+  }
+
+  .items{
+    height: 50px;
+    margin-top: 75px;
+  }
+
+  .items .item{
+    width: 33.33333%;
+    float: left;
+    border-right: 1px solid #b3b3b3;
+    text-align: center;
+    font-size: 22px;
+    color: #757575;
+    height: 100%;
+    line-height: 75px;
+    position: relative;
+  }
+
+  .items .item i{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .items .item:nth-child(2) i{
+    top: -5px;
+  }
+  
+  .items .item:nth-child(3){
+    border-right: none;
+  }
+  
+  .bottom{
+    margin-top: 40px;
+    padding: 46px 26px;
+    background-color: #FFF;
+  }
+
+  .bottom p{
+    text-align: center;
+    font-size: 24px;
+    color: #757575;
+    margin-bottom: 32px;
+  }
+
+  .bottom .btn{
+    width: 100%;
+    border-radius: 74px;
+  }
+
+  .progerss{
+    height: 300px;
+    position: relative;
+  }
+
+  .progerss canvas{
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .inner-circle{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: url(../images/pages/financing/line.png) no-repeat center 145px #ff867d;
+    background-size: 141px 2px;
+    text-align: center;
+    box-shadow: 0 0 14px #aaa;
+  }
+  
+  .inner-circle p:nth-child(1){
+    font-size: 26px;
+    color: #FFF;
+    margin-top: 35px;
+  }
+
+  .inner-circle p:nth-child(2){
+    font-size: 32px;
+    color: #FFF;
+    font-weight: bold;
+    text-indent: 10px;
+  }
+
+  .inner-circle p span{
+    font-size: 53px;
+  }
+
+  .inner-circle .info{
+    color: #FFF;
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+  }
+
+  &.regular{
+    .circles{
+      height: 260px;
+      position: relative;
+    }
+
+    .circles .swiper-container {
+      width: 640px;
+      height: 260px;
+    }  
+
+    .circle{
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background-color: #FFF;
+      box-shadow: 0 0 8px #E4E4E4;
+      position: absolute;
+      top: 50%;
+      display: none;
+    }
+
+    .circle .inner{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #f8bd68;
+      position: absolute;
+      top: 50%;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .swiper-slide-prev .circle{
+      display: block;
+      left: 30px;
+      transform: translateY(-50%);
+      .inner{
+        left: 7px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .swiper-slide-active .circle{
+      display: block;
+      width: 260px;
+      height: 260px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .inner{
+        width: 240px;
+        height: 240px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .month{
+        display: none;
+      }
+      .content{
+        display: block;
+      }
+    }
+
+    .swiper-slide-next .circle{
+      display: block;
+      right: 30px;
+      transform: translateY(-50%);
+      .inner{
+        right: 7px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .circle .month{
+      font-size: 24px;
+      color: #FFF;
+      line-height: 70px;
+    }
+
+    .circle .content{
+      color: #FFF;
+      display: none;
+    }
+
+    .circle .content p:nth-child(1){
+      font-size: 21px;
+      margin-top: 40px;
+    }
+
+    .circle .content p:nth-child(2){
+      font-size: 32px;  
+      padding-bottom: 15px;
+      width: 100%;
+      margin: 0 auto;
+      text-shadow: 0 0 3px #ABA9A9;
+    }
+
+    .circle .content p:nth-child(2) span{
+      font-size: 62px;
+      font-weight: bold;
+    } 
+
+    .circle .content p.line{
+      width: 125px;
+      height: 1px;/*no*/
+      margin: 0 auto;
+      background-color: #FFF;
+    }
+
+    .circle .content a{
+      font-size: 20px;
+      color: #FFF;
+      display: block;
+      height: 70px;
+      line-height: 70px;
+    }
+ 
+    .tag{
+      color: #f8bd68;
+      background-image: url(../images/pages/financing/icon1.png);
+    }
+  }
+  
+  &.current{
+    .title{
+      color: #333;
+    }
+    
+    .maomi{
+      position: absolute;
+      background: url(../images/pages/financing/maomi.png) no-repeat center center;
+      background-size: 108px 83px;
+      width: 108px;
+      height: 83px;
+      top: 40px;
+      right: 45px;
+      z-index: 99;
+    }
+
+    .tag{
+      color: #ff867d;
+      background-image: url(../images/pages/financing/icon2.png);
+    }
+
+    .items{
+      background-color: #FFF;
+      margin-top: 35px;
+    }
+
+    .items .item{
+      margin-top: 40px;
+    }
+    .items .item:nth-child(1) i{
+      top: -12px;
+    }
+    .items .item:nth-child(2) i{
+      top: -7px;
+    }
+    .items .item:nth-child(3) i{
+      top: -2px;
+    }
+    .bottom{
+      margin-top: 0;
+      padding-top: 96px;
+    }
+  }
+
+  &.novice{
+    .title{
+      color: #333;
+    }
+    
+    .maomi{
+      position: absolute;
+      background: url(../images/pages/financing/maomi.png) no-repeat center center;
+      background-size: 108px 83px;
+      width: 108px;
+      height: 83px;
+      top: 40px;
+      right: 45px;
+      z-index: 99;
+    }
+
+    .tag{
+      color: #ff867d;
+      background-image: url(../images/pages/financing/icon2.png);
+    }
+
+    .items{
+      background-color: #FFF;
+      margin-top: 35px;
+    }
+
+    .items .item{
+      margin-top: 40px;
+    }
+
+    .bottom{
+      margin-top: 0;
+      padding-top: 96px;
+    }
+
+    .container{
+      padding-top: 30px;
+    }
+
+    .title{
+      border-bottom: 1px dashed #bdbdbd; /*no*/
+      padding-bottom: 15px;
+    }
+
+    .inner-circle{
+      background-color: #aad472;
+    }
+
+    .tag{
+      color: #aad472;
+      background-image: url(../images/pages/financing/icon3.png);
+    }
+
+    .icon4{
+      background: url(../images/pages/financing/icon4.png);
+      background-size: cover;
+      width: 97px;
+      height: 97px;
+      position: absolute; 
+      top: 95px;
+      right: 7px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+/*
+* @Author: User
+* @Date:   2016-09-16 10:50:40
+* @Last Modified by:   User
+* @Last Modified time: 2016-09-16 10:56:17
+*/
+.real-name .caption {
+    height: 1.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.475rem;
+    line-height: 1.25rem;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+    color: rgb(55,78,171);
+    background: #fff url() 0 0 no-repeat;
+}
+
+.real-name .caption a.back {
+    display: block;
+    width: .21785rem;
+    height: .421875rem;
+    background: url(../../../images/pages/financing/regular3.0/back.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0.4140625rem;
+    top: .359375rem;
+}
+
+.real-name .mt20{
+	margin-top: 0!important;
+}
+
+.ui-text-input li {
+    border-bottom: none;
+}
+
+.ui-text-input li label {
+    padding-left: .375rem;
+}
+
+.ui-text-input .txt {
+    padding-left: .05625rem;
+    color: #CDCDCD;
+    width: 6rem;
+}
+
+.realname-icon {
+    width: 0.4rem;
+    height: 0.4rem;
+    float: right;
+    background: url(../../../images/pages/my-account3.0/vimg/Fill%201@3x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0.58125rem;
+    margin-right: .375rem;
+}
+
+
+.realnameicon {
+    width: 0.5rem;
+    height: 0.3rem;
+    float: right;
+    margin-top: 0.58125rem;
+    margin-right: .375rem;
+}
+
+.ticon {
+    width: 0.5rem;
+    height: 0.3rem;
+    background: url(../../../images/pages/my-account3.0/vimg/bi.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.ficon {
+    width: 0.5rem;
+    height: 0.3rem;
+    background: url(../../../images/pages/my-account3.0/vimg/z.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.real-box {
+
+}
+
+.real-box > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.reabox {
+    width: 6rem;
+    height: auto;
+    background: #ffffff;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+
+.real-box > div:nth-child(2) > div:nth-child(1) {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+.real-box > div:nth-child(2) > div:nth-child(2) {
+    width: 5rem;
+    height: auto;
+    line-height: 0.6rem;
+    font-size: 0.36rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #666666;
+    margin-bottom: 0.5rem;
+}
+
+.rknow {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.4rem;
+    display: block;
+    color: #2B6FF9;
+    border-top: 1px solid rgba(77,77,77,0.58);
+}

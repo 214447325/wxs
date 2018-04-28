@@ -1,0 +1,143 @@
+/*
+* @Author: Cp
+* @Date:   2016-07-08 11:05:25
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 18:51:35
+*/
+.invitefriend{
+    position: relative;
+    /*overflow-y:scroll;*/
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:5rem;
+    background:  url(../../../images/pages/redPacket/redhead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.inviteform{
+    width:100%;
+    padding: 0 0.5rem;
+    box-sizing:border-box;
+}
+
+p {
+    color: #db3732;
+    font-size: 0.4375rem;
+    font-weight:bold;
+    line-height:2;
+}
+
+
+
+.splieFontSpan{
+    color:white;
+    font-size: 0.4375rem;
+    line-height:0.6rem;
+}
+
+.acqImg1 {
+    width: 9rem;
+    height: 10.5rem;
+    margin: 0.5rem 0.4rem;
+}
+
+.acqImg2 {
+    width: 4rem;
+    height: 2.3rem;
+    position: absolute;
+    left: 3.2rem;
+    top: 5.8rem;
+}
+
+.inviteregister {
+    position: absolute;
+    left: 1.2rem;
+    top: 8.6rem;
+}
+
+.acqContent1 {
+    width:100%;
+    height:16rem;
+    background:  url(../../../images/pages/redPacket/rp-content.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 0.5rem auto;
+}
+
+.acqContent2 {
+    width:100%;
+    height:11.5rem;
+    background:  url(../../../images/pages/redPacket/rp-content2.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 1rem auto;
+}
+
+.ui-text-input {
+    width: 7.5rem;
+    border-top: none;
+}
+.short {
+    width: 1rem;
+    overflow: hidden;
+}
+.form-ui .ui-text-input li.short{
+    border: none;
+    background: transparent url() 0 0 no-repeat;
+}
+.form-ui .ui-text-input li.short .txt {
+    display:inline-block;
+    width:4.3rem;
+    background: #fff url() 0 0 no-repeat;
+    /*border: 1px solid #333;*/
+    box-sizing:border-box;
+    border-radius: 0;
+}
+.ui-text-input li {
+    width: 100%;
+    height: 1.35rem;
+    margin:0 auto 0.5rem;
+    line-height: 1.35rem;
+    background: #fff;
+    /*border: 1px solid #333;*/
+    position: relative;
+}
+
+.form-ui .ui-text-input li .txt {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    line-height:1.05rem;
+    padding-left:0.5rem;
+    margin-top: 0;
+    background: transparent url() 0 0 no-repeat;
+    font-size: .40625rem;
+    color: #757575;
+}
+.btn.btn-sm {
+    height: 1.35rem;
+    padding: 0.23rem;
+}
+
+.send-sms-code {
+    position: absolute;
+    color: red;
+    background:  url(../../../images/pages/redPacket/rp-login.png) no-repeat center 0 ;
+    left: 4.4rem;
+    top: 1.85rem;
+}
+
+.acqImg3 {
+    position: absolute;
+    left: 5.9rem;
+    width: 7.5rem;
+    height:1.35rem;
+    left: 0;
+    top: 5.5rem;
+}
+
+.btn {
+    border-radius: 0;
+}

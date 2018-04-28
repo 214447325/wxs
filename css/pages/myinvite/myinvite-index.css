@@ -1,0 +1,209 @@
+/*
+* @Author: User
+* @Date:   2016-05-12 10:33:36
+* @Last Modified by:   User
+* @Last Modified time: 2016-05-12 17:48:10
+*/
+
+html{
+	font-size: 1rem;
+}
+
+.myinvite-index {
+	background: #fff url() 0 0 no-repeat !important;
+}
+
+.myinvite-index  header.bgred {
+	display: block;
+	width: 100%;
+	height: 4.8rem;
+	padding: 0.3rem;
+	padding-bottom: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 0.4rem;
+}
+
+.myinvite-index .bgred .top {
+	width: 100%;
+	height: 1rem;
+	line-height:1rem;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.myinvite-index .bgred .top .avatar {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	background-size: contain;
+	float: left;
+}
+
+.myinvite-index .bgred .top .name {
+	font-size: 1rem;
+	line-height: 1rem;
+	float: left;
+	margin-left: 1rem;
+}
+
+.myinvite-index .bgred .tips {
+	height: 2rem;
+	overflow: hidden;
+	z-index: 1;
+	border-bottom: 2px dashed #ffffff;
+	box-sizing: border-box;
+}
+
+.myinvite-index .bgred .tips .col3 {
+	width: 50%;
+	height: 2rem;
+	float: left;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 1rem;
+	box-sizing: border-box;
+}
+
+.myinvite-index .bgred .tips4 {
+	height: 1.5rem;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.myinvite-index .bgred .tips4 .col4 {
+	width: 50%;
+	height: 1.5rem;
+	float: left;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 0.5rem;
+	box-sizing: border-box;
+}
+
+.myinvite-index .bgred .tips4 .tipleft4 {
+	border-right: 2px dashed #ffffff;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+
+.myinvite-index .bgred .tips .col3 .accountInvite, .accountMoney {
+	margin-top: 1rem;
+}
+
+.myinvite-index .bgred .tips .tipleft {
+	border-right: 2px dashed #ffffff;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+.myinvite-index  .ranking {
+	width: 100%;
+	height: 1.5rem;
+/* 	background: #fffad4 url() 0 0 no-repeat; */
+	overflow: hidden;
+	font-size: 0.3rem;
+}
+
+.myinvite-index  .ranking .left, .right {
+	float: left;
+	width: 50%;
+	line-height: 1.5rem;
+	text-align: center;
+}
+
+.myinvite-index  .ranking .viewRanking {
+	color: #f76156;
+	text-decoration: underline;
+}
+
+.myinvite-index .rankingprompt {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.myinvite-index  .ranking1 {
+	font-size: 0.3rem;
+	width: 100%;
+	height: 1rem;
+	background: rgb(248, 247, 200) url() 0 0 no-repeat;
+	overflow: hidden;
+}
+
+.myinvite-index  .ranking1 .left1 {
+	z-index: 1;
+	border-right: 1px solid red;
+	box-sizing: border-box;
+}
+
+.myinvite-index  .ranking1 .left1, .right1 {
+	float: left;
+	width: 50%;
+	line-height: 1rem;
+	text-align: center;
+}
+
+.myinvite-index  .ranking1 .viewRanking1 {
+	color: #f76156;
+	text-decoration: underline;
+}
+
+.myinvite-index .rankingprompt1 {
+	width: 100%;
+	margin: 0 auto;
+}
+	
+
+.myinvite-index .tab-info, .invitelist, .moneylist {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.myinvite-index .invitelist ul, .moneylist ul {
+	height: 8rem;
+	overflow-y: scroll;
+}
+
+
+.remark {
+	display: inline-block;
+	width: 40%;
+	text-align: left;
+}
+
+.pmobile {
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+}
+
+.pname {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+
+.myinvite-index .invitelist li, .moneylist li {
+	font-size: 0.4rem;
+	line-height: 1rem;
+}
+
+.myinvite-index .begininvite {
+	width: 8.75rem;
+	margin: 0.5rem auto;
+}
+
+.myinvite-index .tab-info a.active {
+	border-bottom: none;
+	color: #f76156;
+}
+
+.myinvite-index .listmore {
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #f76156;
+}

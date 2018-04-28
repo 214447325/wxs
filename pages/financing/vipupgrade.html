@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <title>会员升级</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/mui.min.css?v=9.0.0">
+    <link href="../../css/mui.picker.css" rel="stylesheet" />
+    <link href="../../css/mui.poppicker.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="../../css/dropload.css">-->
+    <link rel="stylesheet" href="../../css/pages/financing/vipupgrade.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="vip_banner">
+        <div class="vip_banner_div">
+            <div class="vip_banner_div1">
+                <div class="vip_banner_div11"><img src="../../images/pages/financing/vip/1.png" class="vip_img_icon"/></div>
+                <div class="vip_banner_div12">普通会员</div>
+            </div>
+            <a href="javascript:;" class="vip_banner_div2">会员规则</a>
+        </div>
+    </div>
+    <div class="vip_box_content">
+        <!--主内容框-->
+        <div class="vip_box">
+            <div class="vip_box1">
+                <div class="vip_box11"></div>
+                <a class="vip_box12" href="javascript:;" id="showUserPicker">
+                    <p>更高等级</p>
+                    <div class="vip_box121 vip_select"></div>
+                </a>
+            </div>
+            <div class="vip_box2">V计划 <a class="vip_box2_p investTerm"></a></div>
+            <div class="vip_box3">历史年化收益 <a class="vip_box3_a1 regularRate"></a>  可加入金额 <a class="vip_box3_a2 balanceAccount"></a>元</div>
+            <div class="vip_box4">
+                <a class="vip_box41 jian" href="javascript:;"></a>
+                <div class="vip_box42"><input type="number" class="vip_box421 input" style="border: none;" /></div>
+                <a class="vip_box43 add" href="javascript:;"></a>
+            </div>
+            <a class="vip_box5 user_card" href="javascript:;">无可用优惠券</a>
+            <div class="vip_box6">距离会员升级，还差<a class="vip_box61"></a>投资额</div>
+        </div>
+        <div class="vip_box7"><div class="vip_san"></div></div>
+    </div>
+    <div class="vip_scroll">
+        <!--进度条-->
+        <div class="vip_scroll_01">
+            <div class="process"></div>
+        </div>
+        <!--进度条上的圆点(左边)-->
+        <div class="vip_scroll_02 "></div>
+        <!--进度条上的圆点(右边)-->
+        <div class="vip_scroll_03"></div>
+        <!--进度条左边的文案-->
+        <div class="vip_scroll_text01">
+            <div class="vip_scroll_text011">普通会员</div>
+        </div>
+        <!--进度条右边的文案-->
+        <div class="vip_scroll_text02">
+            <div class="vip_scroll_text012">白金会员</div>
+        </div>
+    </div>
+    <div class="vip_rules">
+        <div class="vip_rules_01_img vip_img"></div>
+        <div class="vip_rules_01">同意<a class="vip_rules_011" href="javascript:;">《定期投资协议》</a>，已确认<a class="vip_rules_012" href="javascript:;">《风险提示》</a></div>
+    </div>
+    <a class="vip_button" href="javascript:;">立即加入</a>
+</div>
+
+<div class="vip_card">
+    <div class="vip_card_background vip_close"></div>
+    <div class="vip_card_box">
+        <div class="vip_card_box1">
+            <!--&lt;!&ndash;卡券页面&ndash;&gt;-->
+            <!--<div class="vip_card_box01">-->
+            <!--<div class="vip_card_box11 card1">-->
+            <!--<div class="vip_card_box111">-->
+            <!--<div class="vip_card_box1111">3<a>%</a></div>-->
+            <!--<div class="vip_card_box1112">返现券</div>-->
+            <!--</div>-->
+            <!--<div class="vip_card_box112">-->
+            <!--<div class="vip_card_box1121">-->
+            <!--<div class="vip_card_box11211">加入15,000元可使用</div>-->
+            <!--<div class="vip_card_box11212">限4周定期产品使用</div>-->
+            <!--</div>-->
+            <!--<div class="vip_card_box1122">-->
+            <!--<a class="vip_card_box11221 vipCardTrue" href="javascript:;"></a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="vip_card_box11 card2"></div>-->
+            <!--<div class="vip_card_box11 card1"></div>-->
+            <!--<div class="vip_card_box11 card1"></div>-->
+            <!--<div class="vip_card_box11 card1"></div>-->
+            <!--<div class="vip_card_box11 card1"></div>-->
+            <!--</div>-->
+
+
+            <!--无卡券-->
+            <!--<div class="vip_card_box1_no">-->
+            <!--<div class="vip_card_box1_no1"></div>-->
+            <!--<div class="vip_card_box1_no2">暂无可使用优惠券</div>-->
+            <!--</div>-->
+        </div>
+        <a class="vip_card_box2 vip_close" href="javascript:;">取消</a>
+    </div>
+</div>
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<!--<script src="../../js/dropload.min.js?v=9.0.0"></script>-->
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/mui.min.js?v=9.0.0"></script>
+<script src="../../js/mui.picker.js"></script>
+<script src="../../js/mui.poppicker.js"></script>
+<script src="../../js/lib/moment.js"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/common2.js?v=9.0.0"></script>
+<script src="../../js/pages/financing/vipupgrade.js?v=9.0.3"></script>
+<!--<script>-->
+    <!---->
+<!--</script>-->
+</body>
+</html>

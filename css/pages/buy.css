@@ -1,0 +1,20 @@
+.page-buy{
+  .wrapper{padding-bottom: 125px;}
+  .bgred{padding-bottom: 30px;}
+  .row{margin: 0 28px; border-bottom: 1px solid #ffdcbf;/*no*/ color: #fff; height: 90px; line-height: 90px;font-size: 26px;}
+  .row h3{font-weight: 400}
+  .row a{color: #fff;padding: 0 20px;}
+  .row.last{border:none}
+  .buy-detail div.tr{color: #fff; padding-bottom: 10px;padding-right: 30px;}
+  .money-input{display: block;height: 90px;width: 580px;margin-left: 28px;position: relative;}
+  .money-input input{border:none; border-radius: 10px;width: 100%;padding: 30px 0;padding-left: 180px;font-size: 24px;}
+  .money-input:before{content: '投资金额'; position: absolute;top:0;line-height: 90px;font-size: 24px;padding-left: 15px;}
+  .money-input:after{content: '元'; position: absolute;top:0;right: 0; line-height: 90px;font-size: 24px;padding-right: 15px;}
+  .money-input i{position: absolute;left:80px;  display: none;background: #ffdcbf; color: #ff7a65; border:1px solid #ffa68d;/* no */ font-style: normal;padding:6px 10px ;border-radius: 10px;}
+  .money-input i:after{content: ''; width: 20px; height: 9px; position: absolute;display: inline-block;background: url(../images/lib/dot.png) no-repeat; background-size: cover; top: -9px; left: 49%}
+  .money-input input:focus+i{display: block}
+  .btn-box{background: #fff; height: ; border-top: 1px solid #dfdfdf;/* no */ height: 125px;position: fixed;bottom: 0;width: 640px;padding-top: 30px;width: 100%}
+  .totle{position: absolute;top:-40px;width: 100%;font-size: 26px;color: #757575}
+  .slideOne{float: right; margin-right: 30px; margin-top: 20px;}
+  span.red{font-size: 24px; border:none;-webkit-appearance:none; line-height: 32px; color: #c03336   }
+}

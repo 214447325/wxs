@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <title>V金融（原我的菜理财）-现金狂欢</title>
+    
+</head>
+<body style="background-color: #692c60">
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260338952'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260338952' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">
+
+    var url = location.search; //获取url中"?"符后的字串
+	var param = {};
+	if (url.indexOf("?") != -1) {
+		var str = url.substr(1);
+		strs = str.split("&");
+		for (var i = 0; i < strs.length; i++) {
+			param[strs[i].split("=")[0]] = decodeURIComponent(strs[i]
+					.split("=")[1]);
+		}
+	}
+
+	var uid = param.uid;
+	var loginToken = param.loginToken;
+	var phoneNum = param.phoneNum;
+	if(loginToken==null || loginToken==undefined){
+		loginToken = param.logintoken;
+	}
+	sessionStorage.setItem('uid', uid);
+	sessionStorage.setItem('loginToken', loginToken);
+	sessionStorage.setItem('uname', phoneNum);
+	sessionStorage.setItem('validName', param.validName);
+	sessionStorage.setItem('validTrade', param.validTrade);	
+	
+	
+	var timeType = param.timeType;
+	if(timeType==null || timeType==undefined || timeType==''){
+		timeType = 44;
+	}
+	
+	function  jumurl(){
+		window.location.href ='../../pages/financing/regular.html?timeType='+timeType;
+	}
+	setTimeout(jumurl,300);
+
+
+	
+</script>
+
+</body>
+</html>

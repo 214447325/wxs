@@ -1,0 +1,27 @@
+.wrapper > div:nth-child(1) {
+    width: 9rem;
+    height: auto;
+    margin: 0.5rem auto;
+}
+
+.wrapper > div:nth-child(1) > div {
+    margin-top: 0.5rem;
+    font-size: 0.4rem;
+    line-height: 0.5rem;
+    color: #9B9B9B;
+}
+
+.pbtn {
+    width: 100%;
+    height: 1rem;
+    background: #2B6FF9;
+    color: #ffffff;
+    font-size: 0.4rem;
+    line-height: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.1rem;
+}

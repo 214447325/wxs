@@ -1,0 +1,38 @@
+.dialog {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	color: #333;
+	font-size: 1.6rem;
+}
+.dialog-content {
+	position: fixed;
+	width: 70%;
+	top: 0;
+	left: 50%;
+	margin-left: -35%;
+	top: 40%;
+	z-index: 9999;
+	background-color: #fff;
+}
+.dialog-title {
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+.dialog-desc {
+	padding: 0.5rem 1.5rem 2rem 1.5rem;
+	line-height: 1.8rem;
+	font-size: 1.4rem;
+}
+.dialog-btn {
+	color: rgb(68,49,155);
+	border-top: 1px solid #dedede;
+	line-height: 4.2rem;
+}
+.dialog-bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}

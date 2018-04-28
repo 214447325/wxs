@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0"/>
+    <title>奥运红包</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min.css?v=9.0.0">
+    <style>
+        .invitefriend{
+            position: relative;
+        }
+
+        .oly-div {
+            width: 100%;
+            position: relative;
+
+        }
+
+        .oly-img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .oly-img1 {
+            margin: 0.5rem auto;
+            width: 3.3rem;
+
+        }
+
+        .oly-div2 {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            bottom: 0rem;
+        }
+
+
+        .oly-img2 {
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body class="invitefriend">
+<div class="wrapper" >
+
+        <div class="oly-div"><img src="../../images/pages/olympic/olympic-background.jpg" class="oly-img">
+<div class="oly-div4 ">
+    <div class="oly-div2">
+<!--     <a href="javascript:;" class="ajump"> -->
+    <img src="../../images/pages/olympic/oly-button.png" class="oly-img1">
+<!--     </a> -->
+    <img src="../../images/pages/olympic/oly-phone.png" class="oly-img2"></div>
+</div>
+        </div>
+</div>
+</body>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/swiper/js/swiper.min.js?v=9.0.0"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260106986'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1260106986' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script>
+	
+$(function() {
+
+	
+    $('.oly-img1').click(function() {
+    	
+    	var jumpurl = Setting.staticRoot + '/pages/financing/regular.html'; 
+    	
+    	window.location.href=jumpurl;
+    	
+    });
+    
+});
+
+</script>
+
+</html>

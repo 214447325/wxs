@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的账户</title>
+	<script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+	<script src="../../js/pages/my-account/echarts.common.min.js"></script>
+	<link rel="stylesheet" href="../../css/main.min3.0.css">
+	<link rel="stylesheet" href="../../css/pages/account/myAccount.css?v=9.1.0">
+</head>
+<style>
+	.mainbtn{
+		z-index: 500;
+	}
+	#navNew  a{
+        	font-size: .28rem;
+        }
+</style>
+
+<body class="current-account myAccount" data-target="account">
+	<div class="wrapper">
+		<div class="top-icon">
+
+			<div class="top-left">
+				<img src="../../images/pages/my-account3.0/Group.png" class="group">
+				<img src="../../images/pages/my-account3.0/headportrait.png" class="icon-left">
+			</div>
+			<!-- 消息暂时不要 -->
+		<!-- 	<div class="top-right">
+				<img src="../../images/pages/my-account3.0/information.png" class="icon-right">
+				<img src="../../images/pages/my-account3.0/nowinformation.png" class="newinformation">
+			</div> -->
+
+
+		</div>
+		<div id="main">
+			<div class="total">
+				<div class="investment-p">
+					<span style="color: #AAC5FC;">总资产(元)</span> 
+					<img src="../../images/pages/my-account3.0/hide.png" class="show">
+				</div>
+				<span class="investment">--</span>
+			</div>
+		</div>
+		
+		
+
+		<div class="maindata">
+			<div class="data-left">
+				<span class="span2">昨日收益(元)</span>
+				<span class="span1 income">--</span>
+				
+			</div>
+			
+			<div class="data-right">
+				<span class="span2">累计收益（元）</span>
+				<span class="span1 totalIncome">--</span>
+				
+				<!-- <span class="income">最新收益<span>+88.88</span></span> -->
+			</div>
+		</div>
+		<div class="mainbtn">
+			<div style="font-size:0.32rem;color:#9B9B9B;">可用余额(元)</div>
+			<div>
+				<span class="accountAmt">--</span>
+		       	<a href="javascript:;" class="withdraw-btn" style="border-left: 0.0133rem solid #DEDEDE;">提现</a>
+		       	<a href="javascript:;" class="topup-btn">充值</a>
+			</div>		      
+		</div>
+
+		<ul class="tap">
+			<li class="regular">
+				<div class="title">固收产品</div>
+				<div class='remark'>查询我的固收资产</div>
+			</li>
+			<li class="current">
+				<div class="title">周周涨</div>
+				<div class='remark'>查询我的周周涨资产</div>
+			</li>
+			<li class="li06">
+				<div class="title">交易明细</div>
+				<div class='remark'>查询我的资金明细</div>
+			</li>
+			<li class="li01">
+				<div class="title">会员中心</div>
+				<div class='remark'>查询我的特权</div>
+			</li>
+			<li  class="li02">
+				<div class="title">优惠券</div>
+				<div class='remark'>查询我的优惠券</div>
+			</li>
+			<li class="li03">
+				<div class="title">现金奖励</div>
+				<div class='remark'>查询我的现金奖励</div>
+			</li>
+			<li class="li04">
+				<div class="title">邀请记录</div>
+				<div class='remark'>查询我的邀请记录</div>
+			</li>
+			<li class="li05">
+				<div class="title">我的积分</div>
+				<div class='remark'>查询我的积分</div>
+			</li>
+		</ul>
+
+		<!-- <section>
+			<div class="prod current" style="display:none;">
+				<img src="../../images/pages/my-account3.0/prod1.png" >
+				<div class="row1">
+					<span>周周涨</span>
+					<span class="yesterDayTotalRate">昨日年化</span>
+				</div>
+				<div class="row2">
+					<span class="curHoldAmount">0.00</span>
+					<span class="yesterDayInterest">昨日收益</span>
+				</div>
+			</div>
+			<div class="prod regular">
+				<img src="../../images/pages/my-account3.0/prod2.png" >
+				<div class="row1">
+					<span>定期</span>
+					<span class="regularTime">最近一笔到期</span>
+				</div>
+				<div class="row2">
+					<span class="regularHoldAmt">0.00</span>
+					<span class="regularTotalAmount">预期总收益 </span>
+				</div>
+			</div>
+			<div class="prod float" style="display:none;">
+				<img src="../../images/pages/my-account3.0/prod3.png" >
+				<div class="row1">
+					<span>浮动收益</span>
+					<span class="floatEndTime">最近一笔到期</span>
+				</div>
+				<div class="row2">
+					<span class="floatHoldAmt">0.00</span>
+					<span class="floatTotalAmount">预期总收益</span>
+				</div>
+			</div>
+		</section> -->
+		
+
+		
+		
+
+	</div>  
+
+  	<div class="nav clearfix" id="navNew"></div>
+
+
+
+
+
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/pages/my-account/myAccount.js?v=9.3.0"></script>
+</body>
+</html>

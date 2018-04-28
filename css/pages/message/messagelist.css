@@ -1,0 +1,125 @@
+/*
+* @Author: zyx
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 40px;
+}
+.messagelist{
+	background:#fff ;
+}
+.messagelist .wrapper{
+           width:100%;
+	background:#E7ECED;
+	height:100%;
+}
+/* .messagelist .bgred{
+	width: 100%;
+	height: 1.25rem;
+	text-align: center;
+	line-height:1.25rem;
+	font-size: 0.5rem;
+	position: relative;
+	color: #fff;
+} */
+/* .messagelist .bgred .back{
+	width: 0.3rem;
+	height: 0.5375rem;
+	background:url(../../../images/pages/message/back.png) 0 0 no-repeat;
+	position: absolute;
+	left: 0.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+ */
+.messageList .messageOne{
+	width: 100%;
+	height:1.8375rem;
+	background: #fff;
+	padding: 0.35rem 0.4rem;
+    box-sizing:border-box;
+	margin-bottom: 0.3rem;
+	overflow-y: hidden; 
+}
+
+.messageList li{
+	
+	 text-overflow:ellipsis;
+}
+.messageList li a{
+	display: block;
+	position: relative;
+	width:100%;
+	height:100%;
+}
+/* .messagebg{
+	background: url(../../../images/pages/message/1.png) no-repeat 0 0;
+	background-size: contain;
+	
+	display: inline-block;
+	position: absolute;
+	left:0;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+} */
+
+.messageInfo{
+	width:100%;
+	display: inline-block;
+/* 	position: absolute;
+	right:0;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%); */
+	overflow-y: hidden; 
+	
+}
+	
+.messageInfo h2{
+    font-size: 0.45rem;
+    color:#666;
+    font-weight:normal;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    cursor: pointer;  
+
+}
+.messageInfo p.detail{
+	height:0.825rem;
+	font-size: 0.425rem;
+	line-height:0.825rem;
+	color: #b3adad;
+	overflow: hidden;  
+    text-overflow: ellipsis;  
+    white-space: nowrap;
+    cursor: pointer;  
+}
+.messageInfo p.time{
+	height:0.5rem;
+	font-size: 0.375rem;
+	line-height:0.5rem;
+	color: #b3adad;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align:right;
+}
+/* .messageFinal{
+	margin-bottom: 0;
+	color: #b3adad;
+}
+.messageFirst h2,.messageFirst p{
+	color: #494948;
+} */
+
+

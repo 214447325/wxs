@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no" />
+    <title>V金融</title>
+    <script src="../../js/lib/flexible.debug.js?v=9.0.0"></script>
+    <link rel="stylesheet" href="../../css/main.min3.0.css?v=9.0.0">
+    <link rel="stylesheet" href="../../css/pages/platform/platform-two.css">
+</head>
+<body class="account-page">
+<div class="wrapper">
+    <div class="platform-title">
+        <div class="title-content">
+            <img src="../../images/pages/platform/returnpage.png" class="return-btn">
+            <div class="title">平台介绍</div>
+        </div>
+    </div>
+
+    <div class="header-title">风控措施</div>
+    <div class="header">
+        <div class="header-content">
+            <div class="header-div1">
+                    <div class="header-content-div1">
+                        <img src="../../images/pages/platform/f1.png" class="f1">
+                        <div class="paper1">专业团队</div>
+                    </div>
+                    <div class="header-content-div2">
+                        V金融风控内审团队，
+                        由数位多年金融行业精英组成，
+                        该团队成员来自银行、券商、基金公司等多家金融机构。
+                        审核项目资产的所有资料，
+                        保证合作机构提供资料的真实可信，
+                        并对投资时机进行把握，
+                        帮助投资人实现收益最大化。
+                    </div>
+            </div>
+            <div class="header-div2">
+                <div class="header-content-div1">
+                    <img src="../../images/pages/platform/f2.png" class="f1 f2">
+                    <div class="paper1">极限分散</div>
+                </div>
+                <div class="header-content-div2">
+                    小微信贷：专注于小额分散微金融模式，
+                    拥有严格的银行计量模型和严谨的风控系统，
+                    多重筛选借款项目。您的每笔资金都极限分散到数千比小微信贷中，
+                    最大限度分散风险。
+                </div>
+
+            </div>
+            <div class="header-div3">
+                <div class="header-content-div1">
+                    <img src="../../images/pages/platform/f3.png" class="f1 f2">
+                    <div class="paper1">金融机构</div>
+                </div>
+                <div class="header-content-div2">
+                    金融产品：对接金融机构，选择正规银行、证券、保险、
+                    基金等大型金融机构的金融产品，
+                    利用金融机构自身强大的抗风险能力及成熟的风控体系，
+                    产品兑付风险极低。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-btn">
+        <img src="../../images/pages/platform/btn1-icon.png" class="btn1">
+    </div>
+</div>
+<script src="../../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../../js/lib/md5.min.js?v=9.0.0"></script>
+<script src="../../js/setting.js?v=9.0.0"></script>
+<script src="../../js/common3.0.js?v=9.0.0"></script>
+<script src="../../js/lib/jquery.cookie.js?v=9.0.0"></script>
+<script>
+    $(function() {
+        var displayTitle= sessionStorage.getItem('displayTitle');//app端不显示顶部title
+        if (displayTitle==0) {
+            $('.platform-title').hide();
+        }
+//        var $btn = $('.btn1');
+//        $btn.click(function() {
+//            window.location.href =  '../../pages/platform/platform-three.html'
+//        });
+        var $returnBtn = $('.return-btn');
+        $returnBtn.click(function() {
+            window.location.href =  '../../pages/platform/platform-one.html';
+        });
+    });
+</script>
+</body>
+</html>

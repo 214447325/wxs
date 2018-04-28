@@ -1,0 +1,305 @@
+body {
+    background: #7CEDFA;
+}
+
+.logo {
+    width: 100%;
+    height: 1.8rem;
+    background: url(../../../../images/pages/activity/cn/logo.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.center {
+    width: 100%;
+    height: 13rem;
+    background: url(../../../../images/pages/activity/cn/registered-center.jpg) 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.center .world {
+    width: 100%;
+    position: absolute;
+    top: 1rem;
+    /*background: red;*/
+}
+.center .title {
+    width: 100%;
+    height: 1.5rem;
+    color: #ffffff;
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.formDiv {
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+.ui-text-input {
+    border: none;
+}
+
+.eleven {
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 0;
+}
+
+.eleven input {
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 1em;
+}
+li.elevenPassworld{
+    overflow:hidden;
+    z-index:1;
+}
+.eleven input.cipher{
+    width:80%;
+    height:100%;
+
+    float: left;
+}
+.eleven .switchPassword{
+    width:1.5rem;
+    height:0.9rem;
+    margin-top:0.3rem;
+    padding-left:0.2rem;
+    border-left: 1px solid #efefef;
+    float: right;
+}
+.eleven  .sms-code {
+    width: 8.5rem;
+
+}
+
+.ui-text-input li {
+    width: 7.5rem;
+    height: 1.2rem;
+    margin:0 auto 0.25rem;
+    line-height: 1.35rem;
+    border-radius:0;
+    background: #fff;
+    /*border: 1px solid gray;*/
+    position: relative;
+}
+
+.form-ui .ui-text-input li .txt {
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    line-height:1.05rem;
+    padding-left:0.6rem;
+    margin-top: 0;
+    background: transparent url() 0 0 no-repeat;
+    border: none;
+    font-size: .30625rem;
+    color: #757575;
+}
+.form-ui .ui-text-input li.short{
+    border: none;
+    background: transparent url() 0 0 no-repeat;
+}
+.form-ui .ui-text-input li.short .txt{
+    display:inline-block;
+    width:3.85rem;
+    border-radius:0;
+    background: #fff url() 0 0 no-repeat;
+    box-sizing:border-box;
+}
+.form-ui .ui-text-input li.short .btn-sm {
+    display:inline-block!important;
+    width:3.5rem;
+    height: 1.35rem;
+    margin-left:4rem;
+    font-size:0.40625rem;
+    line-height: 1.35rem;
+    box-sizing:border-box;
+    border-radius: 0;
+    background: #FF5400;
+}
+.form-ui .ui-text-input li{
+    position:relative;
+}
+.icon1{
+    display: block;
+    width:0.34375rem;
+    height:0.671875rem;
+    background:  url(../../../../images/pages/activity/cn/ph1.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon2{
+    display: block;
+    width:0.484375rem;
+    height:0.484375rem;
+    background:  url(../../../../images/pages/activity/cn/registered-code.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    z-index:200;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.icon3{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../../images/pages/activity/cn/registered-close.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    top:50%;
+    left:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon4{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../../images/pages/activity/cn/registered-close.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    right:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#cipher {
+    padding-left: 0;
+}
+
+.icon5{
+    display: block;
+    width:0.49375rem;
+    height:0.61875rem;
+    background:  url(../../../../images/pages/activity/cn/registered-open.png) 0 0 no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:50%;
+    right:0.25rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.registered {
+    width: 7.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+    /*margin-top: 1rem;*/
+    background: #FF5400;
+}
+
+.sms-code {
+    background: red;
+}
+
+.registered h1 {
+    font-size: 0.5rem;
+    color: #ffffff;
+}
+
+.ui-text-input .prompt {
+    width: 7.5rem;
+    height: 0.4rem;
+    border-bottom: none;
+    line-height: 0.4rem;
+    margin: 0.2rem auto;
+    background: none;
+    /*display: none;*/
+}
+
+.symbol {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+}
+
+.img {
+    width: 0.3rem;
+    margin: 0.05rem auto;
+
+}
+
+ .div1 {
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+ .div2 {
+    float: left;
+    font-size: 0.3rem;
+    text-align: center;
+    color: green;
+}
+
+.messageTitle {
+    width: 100%;
+    height:1.2rem;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+
+.messageContent {
+    width: 9rem;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.returnPage {
+    width: 0.5rem;
+    height: 100%;
+    float: left;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.returnImg {
+    width: 0.36rem;
+    float: left;
+    margin: 0.33rem auto;
+}
+
+.message-title {
+    width: 8rem;
+    float: left;
+    height: 100%;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: rgb(55,78,171);
+}

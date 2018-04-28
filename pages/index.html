@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="format-detection" content="telephone=no" />
+  <title>V金融</title>
+  <script src="../js/lib/flexible.debug.js?v=9.0.0"></script>
+  <link rel="stylesheet" href="../css/main.min3.0.css">
+  <link rel="stylesheet" href="../css/pages/index.css">
+  <link rel="stylesheet" href="../css/pages/index/index.css?v=9.2.0">
+  <link rel="stylesheet" href="../js/lib/swiper/css/swiper.min.css?v=9.0.0">
+  <link rel="stylesheet" href="../css/pages/messagestyle.css">
+  <style type="text/css">
+  	.relativeW {
+  		position: relative;
+        background:#fff;
+  	}
+  	
+  	.index-active {
+  		/*position: absolute;*/
+  		z-index: 1000;
+  		width: 100%;
+    	border-radius: 10px;
+
+	    /*background: transparent;*/
+    	left: 0px;
+    	right: 0px;
+    	bottom: 0.4533rem;
+    	margin: 0 auto;
+  	}
+  	.index {
+  		background: #eaeaea;
+  	}
+  	.twoClass{
+  		margin-top: 0.15rem;
+  	}
+  	.licai {
+        background:#fff;
+  		margin-top:0.2666rem;
+        display:none;
+  	}
+  	#navNew a{
+  		font-size: .2666667rem;
+  	}
+  	.demo_line_05{
+        letter-spacing: -1px;
+        color: #ddd;
+		}
+		.demo_line_05 span{
+            letter-spacing: 0;
+            color: #222;
+            margin:0 20px;
+        }
+
+    .a1 {
+        width: 1.6rem;
+        height: 0.6rem;
+        background: url(../images/pages/index/rectangle25@3x.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        line-height: 0.6rem;
+        text-align: center;
+        color: #ffffff;
+        font-size: 0.35rem;
+        overflow: hidden;
+        float: left;
+        margin-top: 0.15rem;
+    }
+    .acttitle2{
+    	background: #fff;
+		width: 100%;
+	    height: 1.6533rem;
+	    line-height: 1.6533rem;
+	    box-sizing: border-box;
+	    /*text-align:center;*/
+        padding:0 0.426rem;
+	    border-bottom:0.0133rem solid #DEDEDE;
+    }
+    .acttitle2 img{
+    	width:0.48rem;
+    	height:0.48rem;
+    	margin-top: -0.04rem;
+    	vertical-align: middle;
+    }
+    .acttitle2 span{
+        /*font-size: 0.4533rem;*/
+	    font-size: 0.3733rem;
+        color:#4A4A4A;
+	    /*line-height: 1.25rem;*/
+	    /*font-weight:bolder;*/
+    }
+    .indexItem {
+    	width: 33.33%;
+        float:left;
+	    height: auto;
+	    background: #fff url() 0 0 no-repeat;
+	    box-sizing: border-box;
+	    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        margin:0.36rem 0;
+
+	    /*border-bottom:1px solid #E4E4E4;*/
+    }
+    .indexItem:nth-child(even){
+        border-left:0.0133rem solid #DEDEDE;
+        border-right:0.0133rem solid #DEDEDE;
+    }
+
+    /*-----------lyxiugai--------*/
+    .index-active a p{
+    	color:#4A4A4A;
+    }
+    .acttitle span:nth-child(1){
+    	color:#4A4A4A;
+    	margin-right:0.25rem;
+    	/*line-height: 1.12rem;*/
+    	/*font-size: 0.41rem;*/
+    	font-size: 0.3733rem;
+    }
+    .acttitle span:nth-child(2){
+    	color:#888888;
+    	/*font-size:0.33rem;*/
+    	font-size:0.32rem;
+    }
+    .noviceChild{
+    	width:20%;
+    	float:left;
+    }
+    .noviceChild-one{
+    	width:25%;
+    	/*width:1.8133rem;*/
+    	height: 1.1866rem;
+    }
+    .noviceChild-two{
+    	width:25%;
+    	/*width:2.7rem;*/
+    	height: 1.1866rem;
+    	padding-left:5%;
+    	/*border-left:0.0133rem solid #E4E4E4;*/
+    	/*border-right:0.0133rem solid #E4E4E4;*/
+    }
+    .noviceChild-three{
+    	width:25%;
+    	/*width:2.4533rem;*/
+    	height: 1.1866rem;
+    	padding-left:5%;
+    }
+    .actbtn{
+    	/*width:24%;*/
+    	/*width:1.96rem;
+    	margin-top:0.13rem;*/
+        padding: 0.35rem;
+    }
+    .novice{
+    	margin-bottom: 0.5rem;
+        padding:0.35rem 0.25rem;
+    }
+    .noviceMoney{
+    	color:#FF721F;
+    	/*font-size:0.55rem;*/
+    	font-size:0.7466rem;
+        text-align: center;
+    	/*line-height:1.1rem;*/
+    }
+    .noviceTitle{
+    	/*font-size:0.33rem;*/
+    	font-size:0.32rem;
+    	margin-top:0.05rem;
+        color:#9B9B9B;
+        text-align: center;
+    }
+    .noviceBtn{
+    	/*width: 90%;*/
+    	width: 1.96rem;
+	    height: 0.933rem;
+	    font-size: 0.4rem;
+	    line-height: 0.933rem;
+	    color: #FAFAFF;
+	    text-align: center;
+	    background: #6C6FFF;
+	    border-radius:0.5rem;
+	    float:right;
+    }
+    .yearrateEa{
+        display:block;
+        width:100%;
+    	color:#4A4A4A;
+    	line-height: 0.5rem;
+    	font-size:0.32rem;
+        text-align:center;
+    }
+    .itemContain:before{
+    	display: block;
+    	content:"";
+    	clear:both;
+    }
+    .itemContain:after{
+    	display: block;
+    	content:"";
+    	clear:both;
+    }
+    .text-overflow{
+    	text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+    }
+    /*生日礼包*/
+    .birthday{
+	    background: rgba(0, 0, 0, .6);
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    z-index: 99999;
+	    width: 100%;
+	    height: 100%;
+	    font-size:0.4266rem;
+	    color:#333;
+	    overflow:auto;
+	    display:none;
+	}
+    .birthdayContent{
+    	width:8rem;
+    	padding:0.4rem;
+    	background: #fff;
+    	border-radius:0.2rem;
+    	position:absolute;
+    	top:20%;
+    	left:0px;
+    	right:0px;
+    	margin:0 auto;
+        text-align: center;
+    }
+    .birthdayContent>div{
+    	margin:0.4rem auto;
+    }
+    .birbtnDiv{
+    	margin:0.6rem 0 0.4rem 0;
+    }
+    .birimg{
+    	width:80%;
+    	margin:auto;
+    }
+    .birbtn{
+    	width:58%;
+    	margin:auto;
+    }
+    .birName{
+    	color:#ff5764;
+    }
+    .fluid:before{
+    	display: block;
+    	content: "";
+    	clear: both;
+    }
+    .fluid:after{
+    	display: block;
+    	content: "";
+    	clear: both;
+    }
+    .birthdayCoupon{
+    	width:8rem;
+    	position:absolute;
+    	top:10%;
+    	left:0px;
+    	right:0px;
+    	bottom:0px;
+    	margin:0 auto;
+        text-align: center;
+        display:none;
+
+    }
+    .birthdayCouponCten{
+    	background:#fff;
+    	border-radius:0.2rem;
+    	padding:0.4rem;
+    	overflow: hidden;
+    	position: relative;
+    }
+    .birthdayCouponCten>div{
+    	font-size:0.32rem;
+    }
+    .birthdayCouponCten>div:nth-child(1){
+    	font-size:0.3466rem;
+    }
+    .couponOne{
+    	background-image:url(../images/pages/indexPage/birthday/quan1.png);
+    	background-size:100% 100%;
+    	width:5.5rem;
+    	line-height:1.2rem;
+    	margin:0.2rem auto !important;
+    }
+    .couponTwo{
+    	background-image:url(../images/pages/indexPage/birthday/quan2.png);
+    	background-size:100% 100%;
+    	width:5.5rem;
+    	line-height:1.2rem;
+    	margin:0.2rem auto !important;
+
+    }
+    .couponThree{
+    	background-image:url(../images/pages/indexPage/birthday/quan3.png);
+    	background-size:100% 100%;
+    	width:5.5rem;
+    	line-height:1.2rem;
+    	margin:0.2rem auto !important;
+
+    }
+    .couponLeft{
+    	width:70%;
+    	float:left;
+    	color:#ff5764;
+    }
+    .couponRight{
+    	width:30%;
+    	float:left;
+    	color:#fff;
+    }
+    .birPour{
+    	width:6.8rem;
+    	margin:0 auto;
+    	font-size:0.2666rem !important;
+    	color:#000;
+    	line-height:0.55rem;
+    }
+    .vwx{
+    	width:30%;
+    	margin:0.1rem 0;
+    }
+    .couponClose{
+    	width:13%;
+    }
+    .share{
+    	width:0.5rem;
+    	height:0.8rem;
+    	background:url(../images/pages/indexPage/birthday/share.png) no-repeat 100% 100%;
+    	background-size: contain;
+    	position:absolute;
+    	left:7.26rem;
+    	top:0.25rem;
+    }
+    .yearrate{
+        /*text-align:center !important;*/
+    }
+    .yearrate-p{
+        /*text-align:center !important;*/
+    }
+    .indexItem .itemContain .contain-left{
+        width:100%;
+        /*padding:  0.3rem;*/
+
+    }
+    .indexItem .itemContain .contain-right{
+        /*width:3.8rem;*/
+        padding:0.3rem;
+    }
+    .index .banner img{
+        /*width:8.4;*/
+    	/*height:auto;*/
+        /*padding:0 0.1rem;*/
+        /*border-radius:0.2rem;*/
+    }
+    .InterestLabel{
+        width:auto !important;display:inline !important;font-size:0.55rem;
+    }
+    .financeResearchTitle{
+        width:9rem;
+        margin:auto;
+    height:3.76rem;border-bottom: 0.0133rem solid #E4E4E4;overflow: hidden;
+    }
+    .indexList{
+        /*width:95%;*/
+        /*margin:auto;*/
+    }
+    .hide{
+        display:none;
+    }
+  </style>
+</head>
+
+
+<body class="index" data-target="home">
+  <div class="wrapper">
+    <div class="download">关注微信公众号:&nbsp;V金融投资<i class="open">下载APP</i><i class="close"></i></div>
+    <!-- <div class="banner hide"></div> -->
+
+    <div class="relativeW">
+        <div class="banner hide"></div>
+	    	<div class="index-active hide">
+		      <a class="invite-friend" href="../pages/invite/myInvite.html" style="position:relative;">
+		        <img src="../images/pages/indexPage/daily-drawNew3.png" class="index-img2">
+		        <p>邀请有礼</p>
+		      </a>
+		     
+		      <a class="platform" href="../pages/dial.html">
+		        <img src="../images/pages/indexPage/platformNew3.png" class="index-img3">
+		        <p>每日抽奖</p>
+		      </a>
+
+		      <a class="platform" href="../pages/security/security.html">
+		        <img src="../images/pages/indexPage/safeNew3.png" class="index-img4">
+		        <p>信息披露</p>
+		      </a>
+               <a class="daily-draw" href="../pages/active/mouths/mouths.html">
+                <img src="../images/pages/indexPage/invite-friendNew3.png" class="index-img1">
+                <p>运营月报</p>
+              </a>
+	    	</div>
+
+            <div class="index-active">
+              <a class="invite-friend" href="../pages/invite/myInvite.html" style="position:relative;">
+                <img src="../images/pages/indexPage/daily-drawNew3.png" class="index-img2">
+                <p>邀请有礼</p>
+               <!--  <div style='position: absolute;left: 60%;
+top: 0.2rem;width: 0.9466rem;text-align: center;background: #000;background-color: #ff791f;border-radius: 0.5rem 0.5rem 0.5rem 0;color: #fff;line-height: 0.3733rem;font-size: 0.2rem;'>1%分红</div> -->
+              </a>
+             
+              <!-- <a class="platform" href="../pages/platform/platform-one.html"> -->
+              <a class="platform" href="../pages/security/security.html">
+                <img src="../images/pages/indexPage/platformNew3.png" class="index-img3">
+                <p>信息披露</p>
+              </a>
+              <!-- https://teststatic.wdclc.cn/wx/pages/active/mouths/mouths.html -->
+              <!-- /pages/security/security.html -->
+              <a class="platform" href="../pages/active/mouths/mouths.html">
+                <img src="../images/pages/indexPage/safeNew3.png" class="index-img4">
+                <p>运营月报</p>
+              </a>
+               <!-- <a class="daily-draw" href="../pages/dial.html"> 每日抽奖-->
+               <a class="daily-draw" href="../pages/my-account/myPrivilege.html">
+                <img src="../images/pages/indexPage/invite-friendNew3.png" class="index-img1">
+                <p>会员中心</p>
+              </a>
+            </div>
+	    </div>
+			<div class="twoClass">
+				<div class="noviceAct clearfix">
+                    <div class="acttitle">
+                        <div class="titleitem">
+                            <!-- <img src="../images/pages/indexPage/redline1.png"> -->
+                            <span>新人专享</span>
+                            <span style="height:0.4266rem;line-height:0.4266rem;background:#FF503E;font-size:0.2933rem;margin-top:0.3rem;color:#fff;padding:0 0.12rem;border-radius:0.12rem;">三重好礼</span>
+                            <!-- <img src="../images/pages/indexPage/redline2.png"> -->
+                        </div>
+                    </div>
+               <!--      <div class="actbtn">
+                        <img src="../images/pages/indexPage/xinshou.png" style="width:100%">
+                    </div> -->
+                   <div class="novice">
+                           <!-- <img src="../images/pages/indexPage/experienceNew.png"> -->
+                            <!-- <span>+</span> -->
+                            <!-- <img src="../images/pages/indexPage/318redNew.png">       -->
+                            <!-- <span>+</span> -->
+                            <!-- <img src="../images/pages/indexPage/noviceNew.png">   -->
+                            <div class="noviceChild noviceChild-one">
+                                <div class="noviceMoney">12.00</div>
+                                <div class="noviceTitle">新手标(%)</div>
+                            </div>  
+                                <div class='noviceChild' style="width:10%;font-size:0.48rem;color:#FF721F;line-height: 1rem;text-align: center;">+</div>
+
+                            <div class="noviceChild noviceChild-two">
+                                <div class="noviceMoney">318</div>
+                                <div class="noviceTitle">红包(元)</div>
+                            </div>  
+                             <div class='noviceChild' style="width:10%;font-size:0.48rem;color:#FF721F;line-height: 1rem;text-align: center;">+</div>
+
+                            <div class="noviceChild noviceChild-three">
+                                <div class="noviceMoney">0.5</div>
+                                <div class="noviceTitle">加息券(%)</div>
+                            </div>  
+                           <!--  <div class="actbtn">
+                                <div class="noviceBtn">领取</div>
+                            </div>   -->
+                    </div>
+                    <div class="actbtn">
+                        <span>注册领取</span> 
+                    </div>    
+                </div>
+
+	<!-- 理财精选 -->
+	    <div class="licai" style="">
+	    	<div class="acttitle2">
+		    	<!-- <span>
+		    		<img src="../images/pages/indexPage/redline3.png"> 
+		    	</span> -->
+	    		<span>V精选 <span style="color:#9B9B9B;font-size:0.32rem;">固收产品&nbsp;&nbsp;精心挑选</span></span>
+	    		<!-- <img src="../images/pages/indexPage/redline2.png"> -->
+                <a href="./financing/regular.html" style="float:right;color:#9B9B9B;font-size:0.32rem;">更多产品<img src="../images/pages/my-account3.0/nextPage3.0.png" alt="" style="width: 0.4rem;height: 0.3rem;"></a>
+	    	</div> 
+	    		<div class="itemTitle"></div>
+		    <div class="indexList">
+				<!--      <div class="indexItem">
+		        <div class="itemTitle">
+		          <span class="title">七天乐</span>
+		          <span class="title-p">投资越久，利润越高</span>
+		        </div>
+		        <div class="itemContain">
+		          <span class="contain-left">
+		            <i class="yearrate-p">年化收益率</i>
+		            <i class="yearrate">8.88%-12.08%</i>
+		          </span>
+		          <span class="contain-right">
+		            <i class="yearrate-p">投资期限</i>
+		            <i class="text">提前赎回</i>
+		          </span>
+		        </div>
+		      </div>
+		      <div class="regularItem indexItem">
+		        <div class="itemTitle">
+		          <span class="title">浮动收益</span>
+		          <span class="title-p">最高收益33％</span>
+		        </div>
+		        <div class="itemContain">
+		          <span class="contain-left">
+		            <i class="yearrate-p">年化收益率</i>
+		            <i class="yearrate">8.88%-12.08%</i>
+		          </span>
+		          <span class="contain-right">
+		            <i class="yearrate-p">投资期限</i>
+		            <i class="text">提前赎回</i>
+		          </span>
+		        </div>        
+		      </div>
+		      <div class="floatItem indexItem">
+		        <div class="itemTitle">
+		          <span class="title">七天乐</span>
+		          <span class="title-p">投资越久，利润越高</span>
+		        </div>
+		        <div class="itemContain">
+		          <span class="contain-left">
+		            <i class="yearrate-p">年化收益率</i>
+		            <i class="yearrate">8.88%-12.08%</i>
+		          </span>
+		          <span class="contain-right">
+		            <i class="yearrate-p">投资期限</i>
+		            <i class="text">提前赎回</i>
+		          </span>
+		        </div>          
+		      </div> -->
+		    </div>
+	    </div>
+
+	<!-- 金融研究所 -->
+	    <div class="licai">
+	    	<div class="acttitle2">
+		    	<!-- <span>
+		    		<img src="../images/pages/indexPage/finance.png"> 
+		    	</span> -->
+	    		<span>金融研究所</span>
+	    	</div>
+            <div class="financeResearchList">
+            </div>
+		   <!--  <div class="financeResearch" onclick="hrefUrl(1)">
+		        <div class="financeRsh-title text-overflow">为什么要买中国好资产的组合为什么要买中国好资产的组合</div>
+		        <div class="financeRsh-content text-overflow">从绝对收益的角度，并得不出买组合有优势的结论。从绝对收益的角度，并得不出买组合有优势的结论。</div>
+		        <div class="financeRsh-contact">
+		            <img src="../images/pages/indexPage/redline3.png" alt="">
+		            <span>V金融报员</span>
+		            <span style="">&bull;&nbsp;20评论</span>
+		        </div>
+		    </div> -->
+		    <!-- <div class="addFinanceRshList" >查看更多 </div> -->
+		    <!-- <a class="addFinanceRshList" href="../pages/message/messages.html" >查看更多 </a> -->
+	    </div>
+        <!-- <div style="font-size: 0.344rem;text-align: center;line-height:1rem;color:rgb(136,136,136);">我是有底线的</div> -->
+			
+		</div>
+
+
+
+
+    
+  </div>  
+
+    <div class="nav clearfix" id="navNew"></div>
+    <!-- 生日礼包 -->
+    <div class="birthday">
+	    <!-- <div class="birthdayContent">
+		    <div>亲爱的<span class="birName">张媛媛</span>，V金融祝您生日月快乐！</div>
+		    <div>
+		    	<img src="../images/pages/indexPage/birthday/main.png" alt="" class="birimg">
+		    </div>
+		    <div class="birbtnDiv">
+		    	<img src="../images/pages/indexPage/birthday/button.png" alt="" class="birbtn">
+		    </div>
+	    </div>
+	    <div class="birthdayCoupon">
+		    <div class="birthdayCouponCten">
+		    	<div>小小礼物，远不及您的支持与陪伴,<br/>却是我们浓浓的爱意：</div>
+		    	<div class="couponOne fluid">
+		    		<div class="couponLeft">1%全程加息券</div>
+		    		<div class="couponRight">1张</div>
+		    	</div>
+		    	<div class="couponTwo fluid">
+		    		<div class="couponLeft">1%全程加息券</div>
+		    		<div class="couponRight">1张</div>
+		    	</div>
+		    	<div class="couponThree fluid">
+		    		<div class="couponLeft">1%全程加息券</div>
+		    		<div class="couponRight">1张</div>
+		    	</div>
+		    	<div class="birPour fluid">
+			    	<div style="float:left;margin-bottom:0.46rem;">注：</div>
+			    	<div style="float:left;">1.加息券：直接发放至“账户-超值礼券”中；</div>
+			    	<div style="float:left;">2.现金奖励：直接发放至“账户-现金奖励”中。</div>
+		    	</div>
+		    	 <div>
+			    	<img src="../images/pages/indexPage/birthday/vwx.png" alt="" class="vwx">
+			    	<div style="font-size:0.2666rem;color:#000;">扫一扫，关注服务号</div>
+			    </div>
+		    	<div class="share"></div>
+		    </div>
+		    <div>
+		    	<img src="../images/pages/indexPage/birthday/cancel.png" alt="" class="couponClose">
+		    </div>
+	    </div> -->
+    </div>
+
+<script src="../js/lib/jquery-2.1.3.min.js?v=9.0.0"></script>
+<script src="../js/lib/circle-progress.js?v=9.0.0"></script>
+<script src="../js/lib/doT.min.js?v=9.0.0"></script>
+<script src="../js/lib/swiper/js/swiper.jquery.min.js?v=9.0.0"></script>
+<script src="../js/setting.js?v=9.0.0"></script>
+<script src="../js/common3.0.js?v=9.0.1"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js?v=9.0.0"></script>
+<script src="../js/pages/activity/shareActivity.js?v=9.1.0"></script>
+<script src="../js/pages/activity/shareButton.js"></script>
+<script src="../js/pages/index3.0.js?v=9.3.2"></script>
+  <script type="text/javascript">
+    function getUrl(url){
+    if(url=="https://"){
+      return "javascript:;";
+    }else{
+      self.location=url;
+    }
+  }
+  </script>
+  
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260443749'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260443749' type='text/javascript'%3E%3C/script%3E"));</script>
+  
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+
+.platform-title {
+    width: 10rem;
+    height:1.2rem;
+    border-bottom: 0.02rem solid rgb(153,153,153);
+
+}
+
+.title-content {
+    width: 9rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.2rem;
+    color: rgb(55, 78, 171);
+}
+
+.return-btn {
+    width: 0.3rem;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.title {
+    font-size: 0.5rem;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    color: rgb(55,78,171);
+    font-size: 0.6rem;
+    margin: 0.55rem auto;
+    font-weight: bold;
+    font-family: '汉仪菱星体';
+}
+
+.footer {
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    bottom:0;
+}
+
+.footer-btn {
+    width: 1rem;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn1 {
+    width: 0.68rem;
+    margin-top: 0.8rem;
+}
+
+.header {
+    width:100%;
+    /*height:10rem;*/
+    /*background: red;*/
+    margin-top: 0.85rem;
+}
+
+.header-content {
+    width: 8.6rem;
+    height:2.5rem;
+    /*background: greenyellow;*/
+    margin: 0 auto;
+}
+
+.header-content2 {
+    width: 8.6rem;
+    height:2.5rem;
+    /*background: ghostwhite;*/
+    margin: 0 auto;
+}
+
+.header-content3 {
+    width: 8.6rem;
+    height:2.5rem;
+    /*background: fuchsia;*/
+    margin: 0 auto;
+}
+
+.header-content4 {
+    width: 8.6rem;
+    height:2.5rem;
+    /*background: #f2914a;*/
+    margin: 0 auto;
+}
+
+.header-sequence1 {
+    width: 1rem;
+    height: 100%;
+    /*background: goldenrod;*/
+    float: left;
+}
+
+.sequence {
+    width: 0.78rem;
+    height: 0.78rem;
+    line-height: 0.78rem;
+    color: rgb(255,255,255);
+    background: rgb(55,78,171);
+    font-family: '汉仪菱星体';
+    text-align: center;
+    font-size: 0.56rem;
+    margin: 0 auto;
+    float: left;
+    margin-top: 0.3rem;
+}
+
+.content1 {
+    width: 7rem;
+    height:2rem;
+    line-height: 0.6rem;
+    /*background: blanchedalmond;*/
+    float: right;
+    margin-top: 0.16rem;
+    font-size: 0.4rem;
+    color: rgb(102,102,102);
+}
+
+.span1 {
+    font-size: 0.5rem;
+    font-weight: bold;
+}

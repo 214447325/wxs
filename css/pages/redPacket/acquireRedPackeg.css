@@ -1,0 +1,102 @@
+/*
+* @Author: User
+* @Date:   2016-07-08 11:05:25
+* @Last Modified by:   User
+* @Last Modified time: 2016-07-08 18:51:35
+*/
+.invitefriend{
+    position: relative;
+    /*overflow-y:scroll;*/
+}
+.invitefriend .inviteBanner{
+    width:100%;
+    height:5rem;
+    background:  url(../../../images/pages/redPacket/redhead.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.inviteform{
+    width:100%;
+    padding: 0 0.5rem;
+    box-sizing:border-box;
+}
+
+p {
+    color: #db3732;
+    font-size: 0.4375rem;
+    font-weight:bold;
+    line-height:2;
+}
+
+.splieFontSpan{
+    color:white;
+    font-size: 0.35rem;
+    line-height:0.6rem;
+}
+
+.acqImg1 {
+    width: 9rem;
+    height: 5rem;
+    margin: 0.2rem 0.4rem;
+}
+
+.acqImg2 {
+    width: 4rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 3rem;
+    top: 5.5rem;
+}
+
+.form-ui {
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 8.2rem;
+
+}
+
+.ui-text-input li {
+    width: 100%;
+    height: 1.25rem;
+    margin:0 auto 0.25rem;
+    line-height: 1rem;
+    background: #fff;
+    padding-top: 0;
+    position: relative;
+}
+
+.ui-text-input li .txt {
+    /*margin-top: -5rem;*/
+}
+.ui-text-input .txt {
+    width: 4.875rem;
+    margin-top: 0.22rem;
+}
+.acqImg3 {
+    width: 3rem;
+    /*height: 1.5rem;*/
+    position: absolute;
+    left: 5.9rem;
+    top: 8.5rem;
+}
+
+.acqContent1 {
+    width:100%;
+    height:16rem;
+    background:  url(../../../images/pages/redPacket/rp-content.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 1rem auto;
+}
+
+.acqContent2 {
+    width:100%;
+    height:11.5rem;
+    background:  url(../../../images/pages/redPacket/rp-content2.png) no-repeat center 0 ;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin: 1rem auto;
+}
